@@ -202,5 +202,9 @@
         "repository": "https://github.com/stere8/machine-learning-explorations"
       }
     ]
-  }
+  },
+  "Download": "Télécharger",
+  "SelectCV": "Sélectionner CV",
+  "EnglishCV": "CV en anglais",
+  "PolishCV": "CV en polonais"
 }

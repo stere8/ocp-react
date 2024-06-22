@@ -28,12 +28,12 @@ const Home = () => {
                         <p>{t('InterestInMyWork')}</p>
                         <p>{t('DownloadCV')}
                             <select id="languageDropdown" name="culture" onChange={handleChange} value={downloadLink} className="form-control">
-                                <option value="">Select CV</option>
-                                <option value={cvEng}>English CV</option>
-                                <option value={cvPL}>Polski CV</option>
+                                <option value="">{t('SelectCV')}</option>
+                                <option value={cvEng}>{t('EnglishCV')}</option>
+                                <option value={cvPL}>{t('PolishCV')}</option>
                             </select>
                             {downloadLink && (
-                                <a href={downloadLink} download>
+                                <a href={downloadLink} download="Oreste TWIZEYIMANA CV">
                                     <Button color="primary" className="mt-2">
                                         {t('Download')}
                                     </Button>
