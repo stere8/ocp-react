@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/Header.css';
 import logo from '../img/logo.png'
+import Dropdown from "./Dropdown";
 
 const Header = () => (
   <header>
@@ -9,9 +10,6 @@ const Header = () => (
       <Link className="navbar-brand" to="/">
         <img src={logo} alt="Oracle Consults Portfolio" className="logo" />
       </Link>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-        <span className="navbar-toggler-icon"></span>
-      </button>
       <div className="collapse navbar-collapse" id="mainNavbar">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
@@ -30,6 +28,7 @@ const Header = () => (
           </li>
         </ul>
       </div>
+      <Dropdown/>
     </nav>
   </header>
 );

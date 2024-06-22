@@ -44,14 +44,15 @@ const Contact = () => {
         <div className="col-md-12">
           <h2>{t('LetsConnectHeading')}</h2>
           <p>{t('ContactFormDescription')}</p>
+          <p>{t('contactMessage')}</p>
           <form onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name">{t('YourNameLabel')}</label>
-              <input id="name" name="from_name" type="text" value={formData.user_name} onChange={handleChange} />
+              <input id="name" name="from_name" type="text" value={formData.user_name} onChange={handleChange}/>
             </div>
             <div>
               <label htmlFor="email">{t('EmailLabel')}</label>
-              <input id="email" name="from_email" type="email" value={formData.user_email} onChange={handleChange} />
+              <input id="email" name="from_email" type="email" value={formData.user_email} onChange={handleChange}/>
             </div>
             <div>
               <label htmlFor="message">{t('MessageLabel')}</label>

@@ -31,8 +31,9 @@ header {
   color: #946d5a; /* Dark blue text */
   text-decoration: none;
   font-size: 1rem;
+  background: #000000;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #000000; /* Black text on hover */
+  color: #ffffff; /* Black text on hover */
 }

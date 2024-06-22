@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Dropdown = () => {
-  const [language, setLanguage] = useState('en-US');
+  const { i18n } = useTranslation();
+  const [language, setLanguage] = useState('en');
 
   const handleChange = (event) => {
-    setLanguage(event.target.value);
-    // Add logic to change language
+    const newLanguage = event.target.value;
+    setLanguage(newLanguage);
+    i18n.changeLanguage(newLanguage);
   };
 
   return (
     <select id="languageDropdown" name="culture" onChange={handleChange} value={language} className="form-control">
-      <option value="en-US">English</option>
+      <option value="en">English</option>
       <option value="es">Español</option>
-      <option value="fr-FR">Français</option>
-      <option value="pl-PL">Polski</option>
+      <option value="fr">Français</option>
+      <option value="pl">Polski</option>
     </select>
   );
 };
