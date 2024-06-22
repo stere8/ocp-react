@@ -131,5 +131,75 @@
       "Travail acharné",
       "Travail d'équipe"
     ]
+  },
+  "programming": {
+    "title": "Mon parcours de programmation",
+    "intro": "En tant que développeur .NET passionné et expérimenté avec une solide expérience dans la création et le déploiement d'applications backend robustes. Au cours de plus de 2 ans dans l'industrie, j'ai perfectionné mes compétences dans diverses technologies et méthodologies, me permettant de contribuer efficacement à des projets complexes et de fournir des solutions de haute qualité.",
+    "technologies": "Technologies",
+    "technicalExpertise": "Expertise technique",
+    "expertiseDescription": "Mon expertise couvre un spectre de technologies et d'outils :",
+    "projectsTitle": "Projets en vedette",
+    "projects": [
+      {
+        "name": "RT Trackers",
+        "description": "Une application web basée sur Flask conçue pour suivre les prix des actions et les conditions météorologiques.",
+        "keyFeatures": [
+          "Suivi des actions utilisant plusieurs API.",
+          "Suivi météorologique avec mises à jour en temps réel.",
+          "Interface web conviviale avec Bootstrap et jQuery."
+        ],
+        "repository": "https://github.com/stere8/RTTrackers"
+      },
+      {
+        "name": "DreamNDine",
+        "description": "Une application web complète pour gérer les réservations de restaurants et les interactions avec les clients.",
+        "keyFeatures": [
+          "Authentification des utilisateurs et gestion des profils.",
+          "Système de réservation avec disponibilité en temps réel.",
+          "Intégration avec des API tierces pour une fonctionnalité améliorée."
+        ],
+        "repository": "https://github.com/stere8/dreamndine"
+      },
+      {
+        "name": "Explorations en Python",
+        "description": "Une collection de projets Python pour débutants afin de développer des compétences de programmation fondamentales.",
+        "keyFeatures": [
+          "Divers petits projets couvrant différents aspects de la programmation en Python.",
+          "Accent mis sur l'apprentissage et l'expérimentation.",
+          "Code bien documenté et exemples."
+        ],
+        "repository": "https://github.com/stere8/python-explorations"
+      },
+      {
+        "name": "Application de tâches multiplateforme",
+        "description": "Un projet React Native pour créer une application de tâches multiplateforme.",
+        "keyFeatures": [
+          "Compatibilité multiplateforme (iOS et Android).",
+          "Interface conviviale avec des fonctionnalités de gestion des tâches.",
+          "Intégration avec le stockage local pour la persistance des données."
+        ],
+        "repository": "https://github.com/stere8/cross-platform-todo-app"
+      },
+      {
+        "name": "Système d'authentification utilisateur robuste",
+        "description": "Un projet complet démontrant la conception de systèmes d'authentification sécurisés et évolutifs pour les applications web.",
+        "keyFeatures": [
+          "Authentification sécurisée des utilisateurs avec JWT.",
+          "Contrôle d'accès basé sur les rôles.",
+          "Intégration avec des frameworks et bibliothèques populaires."
+        ],
+        "repository": "https://github.com/stere8/robust-user-authentication-system"
+      },
+      {
+        "name": "Explorations en Machine Learning",
+        "description": "Une collection de projets et d'expériences en machine learning pour explorer divers algorithmes et techniques.",
+        "keyFeatures": [
+          "Implémentation d'algorithmes populaires de machine learning.",
+          "Analyse et visualisation des données.",
+          "Accent mis sur les applications pratiques et l'expérimentation."
+        ],
+        "repository": "https://github.com/stere8/machine-learning-explorations"
+      }
+    ]
   }
 }
