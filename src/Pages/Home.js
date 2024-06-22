@@ -1,6 +1,9 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
 import '../Styles/Home.css';
+import cvEng from '../doc/CV EN.pdf'
+import cvPL from '../doc/CV PL.pdf'
+
 
 const Home = () => {
     const {t} = useTranslation();
@@ -18,8 +21,14 @@ const Home = () => {
                     <div className="col-md-12 text-center mt-5">
                         <h1>{t('WelcomeToMyPortfolio')}</h1>
                         <p>{t('InterestInMyWork')}</p>
-                        <p>{t('DownloadCV')} <a href="/docs/CV - Oreste BO+(EN).pdf"
-                                                download="CV Oreste TWIZEYIMANA">{t('DownloadCV')}</a></p>
+                        <p>{t('DownloadCV')}
+                            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a className="dropdown-item" href={cvEng}
+                                   download="CV Oreste TWIZEYIMANA EN">CV EN</a>
+                                <a className="dropdown-item" href={cvPL}
+                                   download="CV Oreste TWIZEYIMANA PL">CV PL</a>
+                            </div>
+                        </p>
                         <p>{t('ShapingYourVision')}</p>
                         <div className="skills-section">
                             {Object.keys(skills).map(category => (
