@@ -21,11 +21,6 @@ const Header = () => (
           <li className="nav-item">
             <Link className="nav-link" to="/contact">Contact</Link>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/docs/CV - Oreste BO+(EN).pdf" download="CV Oreste TWIZEYIMANA">
-              <i className="fa-solid fa-download"></i>
-            </a>
-          </li>
         </ul>
       </div>
       <Dropdown />
