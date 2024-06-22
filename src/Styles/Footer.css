@@ -9,6 +9,12 @@ footer {
 footer a {
   color: #61dafb;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+footer a i {
+  margin-right: 8px;
 }
 
 footer a:hover {
