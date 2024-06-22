@@ -1,0 +1,68 @@
+/* Contact Component Styles */
+.hero-section-bis {
+  background: linear-gradient(135deg, #001F3F 0%, #F2F2F2 100%); /* Primary and Accent Colors */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero-section-bis h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #FFFFFF; /* Secondary Color */
+}
+
+.hero-section-bis p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #FFFFFF; /* Secondary Color */
+}
+
+form {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  background: #0041C4; /* Accent Color */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #001F3F; /* Primary Color */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}

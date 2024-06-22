@@ -8,11 +8,13 @@
 .hero-section h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  color: #000000; /* Black text color */
 }
 
 .hero-section p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  color: #000000; /* Black text color */
 }
 
 .skills-section {
@@ -35,6 +37,7 @@
 .skill-box h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #000000; /* Black text color */
 }
 
 .skill-box ul {

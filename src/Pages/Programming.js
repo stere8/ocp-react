@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import '../Styles/Programming.css'; // Import the CSS file
 
 const Programming = () => {
   const { t } = useTranslation();
@@ -30,7 +31,7 @@ const Programming = () => {
           </ul>
           <div className="row">
             <div className="col-md-12">
-              <p>I'm always learning and experimenting. If you have a project in mind, or just want to connect <a href="/contact">let's connect!</a> also feel free to <a href="/docs/CV - Oreste BO+(EN).pdf" download="CV Oreste TWIZEYIMANA">Download my CV</a> to learn more about my experience and skills.</p>
+              <p>I'm always learning and experimenting. If you have a project in mind, or just want to connect <a href="/ocp-react/src/Pages/Contact">let's connect!</a> also feel free to <a href="/docs/CV - Oreste BO+(EN).pdf" download="CV Oreste TWIZEYIMANA">Download my CV</a> to learn more about my experience and skills.</p>
             </div>
             <h1>{t('programming.projectsTitle')}</h1>
           </div>

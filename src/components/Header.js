@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';
+import '../Styles/Header.css';
+import logo from '../img/logo.png'
 
 const Header = () => (
   <header>
     <nav className="navbar container-fluid">
       <Link className="navbar-brand" to="/">
-        <img src="/img/Logo.jpg" alt="Oracle Consults Portfolio" className="logo" />
+        <img src={logo} alt="Oracle Consults Portfolio" className="logo" />
       </Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
         <span className="navbar-toggler-icon"></span>

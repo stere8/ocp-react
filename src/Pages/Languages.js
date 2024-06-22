@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import '../Styles/Languages.css'
 
 const Languages = () => {
   const { t } = useTranslation();
@@ -34,7 +35,7 @@ const Languages = () => {
       <blockquote>{t('Testimonial2')}</blockquote>
       <p><a href="https://buki.org.pl/en/user-33204/#users_reviews">{t('MoreTestimonialsLink')}</a></p>
       <h2>{t('ContactMeHeading')}</h2>
-      <p>{t('ContactMeDescription')} <a href="/contact">{t('LetsConnectHeading')}</a></p>
+      <p>{t('ContactMeDescription')} <a href="/ocp-react/src/Pages/Contact">{t('LetsConnectHeading')}</a></p>
     </div>
   );
 };
