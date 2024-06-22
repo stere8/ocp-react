@@ -93,4 +93,12 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+
+  .hero-section-bis h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section-bis p {
+    font-size: 1rem;
+  }
 }

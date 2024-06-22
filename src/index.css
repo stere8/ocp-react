@@ -17,6 +17,7 @@ code {
   background-color: #001F3F; /* Primary Color */
   border-bottom: 1px solid #ddd;
   padding: 10px 20px;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
 .navbar-brand img {
@@ -51,4 +52,18 @@ code {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 40px; /* Smaller logo size for small screens */
+  }
+
+  .btn {
+    padding: 8px 16px;
+  }
+
+  .container {
+    padding: 10px;
+  }
 }

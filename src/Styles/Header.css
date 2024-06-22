@@ -10,10 +10,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
 .navbar-brand img {
-  height: 100px; /* Increased logo size */
+  height: 60px; /* Adjusted logo size for better responsiveness */
 }
 
 .navbar-nav {
@@ -21,6 +22,7 @@ header {
   list-style: none;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
 .navbar-nav .nav-item {
@@ -36,4 +38,14 @@ header {
 
 .navbar-nav .nav-link:hover {
   color: #ffffff; /* Black text on hover */
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    margin-right: 10px;
+  }
+
+  .navbar-brand img {
+    height: 40px; /* Smaller logo size for small screens */
+  }
 }
