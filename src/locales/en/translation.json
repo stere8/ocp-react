@@ -1,0 +1,205 @@
+{
+  "AboutMeTitle": "About Me",
+  "AboutOresteHeading": "About Oreste",
+  "AboutOresteDescription1": "I'm Oreste Twizeyimana, a Programmer Developer with 2 years of experience building software solutions that are both elegant and effective. My technical expertise includes C#, .NET, Vue.js, and more – see my ProgrammingModel section for a deeper dive.",
+  "AboutOresteDescription2": "I'm a dedicated problem-solver who thrives on the challenge of crafting clean, well-structured code. In my spare time, I'm always tinkering with side projects and exploring new technologies.",
+  "AboutOresteDescription3": "I also enjoy modeling; explore my portfolio on Instagram [Insert Instagram Link Here].",
+  "ContactTitle": "Contact",
+  "LetsConnectHeading": "Let's connect",
+  "ContactFormDescription": "Please use this form to contact us with any questions or feedback:",
+  "YourNameLabel": "Your Name:",
+  "EmailLabel": "Email:",
+  "MessageLabel": "Message:",
+  "SendButton": "Send",
+  "HomePageTitle": "Home Page",
+  "CraftingTechnicalSolutionsHeading": "Crafting Technical Solutions with Multilingual Flair",
+  "FromCodeToCommunicationSubheading": "From code to communication, shaping your vision",
+  "WelcomeToMyPortfolio": "Hey, welcome to my OC Portfolio!",
+  "InterestInMyWork": "Thank you for taking an interest in my work. This page serves as a comprehensive showcase of my programming styles, skills, and overall profile. I am a passionate developer adept at crafting technical solutions that are not only functional but also linguistically sound.",
+  "DownloadCV": "Download my CV to learn more about my experience and skills.",
+  "ShapingYourVision": "From code to communication, shaping your vision. I'm Oreste TWIZEYIMANA, a Programmer Developer with {0} years of experience in the field. I'm passionate about creating innovative and user-friendly software solutions.",
+  "SeekingCollaboration": "Whether you're seeking a skilled programmer for collaboration, valuable advice on a project, or simply have an inquiry, feel free to reach out to me. I'm always happy to connect and discuss potential opportunities.",
+  "LanguagesTitle": "Languages",
+  "LanguagesDescription": "I have a strong foundation in multilingual communication, including native-level proficiency in three languages and fluency in another. Additionally, I bring substantial experience in tutoring English and French.",
+  "LanguageProficiencyHeading": "Language Proficiency",
+  "EnglishProficiency": "English: Native Speaker",
+  "FrenchProficiency": "French: Native Speaker",
+  "KinyarwandaProficiency": "Kinyarwanda: Native Speaker",
+  "PolishProficiency": "Polish: Fluent",
+  "TutoringExperienceHeading": "Tutoring Experience",
+  "TutoringExperienceDescription": "I have a wide range of experience tutoring students of all ages and abilities. I've helped elementary school students with English, high schoolers with English, French, and Math, and adults seeking to improve their conversational French or prepare for the IELTS exam. My expertise includes Business English for professionals, tailored lessons for young learners, and exam preparation for students facing important assessments. I pride myself on adapting my teaching methods to individual student needs, helping them achieve their unique language and academic goals.",
+  "MyServicesHeading": "My Services",
+  "MyServicesDescription": "I offer a variety of language learning services, including:",
+  "OneOnOneTutoring": "One-on-one tutoring",
+  "GroupClasses": "Group classes",
+  "OnlineTutoring": "Online tutoring",
+  "ExamPreparation": "Exam preparation",
+  "ConversationPractice": "Conversation practice",
+  "TranslationServices": "I am also available for translation and interpretation services.",
+  "MyApproachHeading": "My Approach",
+  "MyApproachDescription": "I believe that language learning should be fun and engaging. I tailor my lessons to the individual needs of each student, and I use a variety of methods to keep my students motivated. I am patient and encouraging, and I am always willing to answer questions.",
+  "TestimonialsHeading": "Testimonials",
+  "Testimonial1": "Great teacher! Nice atmosphere and professional approach to the student. - Jaroslaw",
+  "Testimonial2": "Very good cooperation. We are satisfied with the lessons. - Katarzyna",
+  "MoreTestimonialsLink": "See more testimonials on my Buki.org.pl Profile reviews",
+  "ContactMeHeading": "Contact Me",
+  "ContactMeDescription": "Interested in improving your language skills? Let's connect!",
+  "ProgrammingTitle": "ProgrammingModel Skills",
+  "ProgrammingJourneyHeading": "My Programming Journey",
+  "ProgrammingJourneyDescription": "As a passionate and experienced .NET developer with a strong background in building and deploying robust backend applications. Over the course of more than 2 years in the industry, I have honed my skills in various technologies and methodologies, enabling me to contribute effectively to complex projects and deliver high-quality solutions.",
+  "TechnologiesHeading": "Technologies",
+  "TechnicalExpertiseHeading": "Technical Expertise",
+  "TechnicalExpertiseDescription": "My expertise spans across a spectrum of technologies and tools:",
+  "CSharpSkill": "C# (.NET): Proficient in developing scalable applications using C# and .NET framework.",
+  "WPFSkill": "WPF: Skilled in creating rich desktop applications with WPF.",
+  "EntityFrameworkSkill": "Entity Framework: Experienced in database interaction and ORM using Entity Framework.",
+  "SQLSkill": "SQL: Proficient in database design, querying, and optimization using SQL.",
+  "GitSkill": "Git: Proficient in version control and collaborative development workflows using Git.",
+  "CI_CDPracticesSkill": "CI/CD Practices: Experienced in Continuous Integration and Continuous Deployment practices.",
+  "HTML_CSSSkill": "HTML/CSS: Familiar with front-end technologies for creating user interfaces.",
+  "VueJSSkill": "Vue.js: Knowledgeable in developing dynamic web applications using Vue.js.",
+  "AgileScrumSkill": "Agile/Scrum: Experienced in Agile practices for efficient project management.",
+  "AlwaysLearningDescription": "I'm always learning and experimenting. If you have a project in mind, or just want to connect let's connect! also feel free to Download my CV to learn more about my experience and skills.",
+  "FeaturedProjectsHeading": "Featured Projects",
+  "RTTrackersProject": "RT Trackers",
+  "RTTrackersDescription": "The stere8/rttrackers repository is a Flask-based web application designed for tracking stock prices and weather conditions. Here's a summary of its key components and functionalities:",
+  "CoreFunctionalitiesHeading": "Core Functionalities",
+  "StockTracking": "Stock Tracking: Utilizes two classes, StockTracker and StockTracker2, to fetch current stock prices from different APIs (Alpha Vantage and possibly IEX Cloud). These classes are defined in stock_trackers.py and stock_trackers2.py.",
+  "WeatherTracking": "Weather Tracking: The WeatherTracker class in weather_tracker.py fetches current weather data, including humidity, pressure, wind speed, and temperature, using the OpenWeatherMap API.",
+  "WebApplicationStructureHeading": "Web Application Structure",
+  "FlaskApp": "Flask App: The main application logic is contained in app.py, which defines routes for different functionalities such as displaying the homepage, tracking selected stocks, selecting stocks, selecting regions for weather tracking, and tracking weather conditions in selected regions.",
+  "HTMLTemplates": "HTML Templates: The templates directory contains HTML files (index.html, selectstocks.html, stocktracker.html, and others) for rendering the web pages. These templates use Bootstrap and jQuery for styling and functionality.",
+  "StockRepresentation": "Stock Representation: The Stock class in Stock.py represents a stock with attributes like name, ticker, and last price.",
+  "ConfigurationAndManagementHeading": "Configuration and Management",
+  "Gitignore": ".gitignore: Specifies files and directories that Git should ignore, including build results, user-specific files, and other non-source code files.",
+  "Gitattributes": ".gitattributes: Configures Git settings for handling line endings, diffing certain file types, and managing merge behaviors for specific file types.",
+  "EnhancementsToStockTrackingHeading": "Enhancements to Stock Tracking",
+  "RealTimeUpdates": "Real-time Updates: Implement WebSocket or AJAX polling to provide real-time updates of stock prices without needing to refresh the page.",
+  "ExpandedAPIIntegration": "Expanded API Integration: Integrate more financial data APIs to provide a broader range of stock market data, including international markets.",
+  "UserCustomization": "User Customization: Allow users to save their stock selections and view them upon returning to the site, possibly through user accounts or local storage.",
+  "EnhancementsToWeatherTrackingHeading": "Enhancements to Weather Tracking",
+  "ExtendedForecast": "Extended Forecast: Incorporate a 5-day or 10-day weather forecast feature in addition to the current weather conditions.",
+  "GeolocationSupport": "Geolocation Support: Automatically detect the user's location to display local weather information without manual region selection.",
+  "WeatherAlerts": "Weather Alerts: Implement weather alerts or warnings based on severe weather conditions in the selected regions.",
+  "UI_UXImprovementsHeading": "UI/UX Improvements",
+  "ResponsiveDesign": "Responsive Design: Ensure the web application is fully responsive and provides an optimal viewing experience across all devices.",
+  "InteractiveCharts": "Integrate interactive charts for stock price history and weather patterns using libraries like Chart.js or D3.js.",
+  "ThemeCustomization": "Offer theme customization options for users, such as light mode and dark mode.",
+  "DreamNDineProject": "DreamNDine",
+  "DreamNDineDescription": "The stere8/dreamndine is a comprehensive web application...",
+  "PythonExplorationsProject": "Python Explorations",
+  "PythonExplorationsDescription": "This collection of beginner-friendly Python projects was a fantastic starting point for developing my core programming skills...",
+  "CrossPlatformTodoAppProject": "Cross-Platform Todo App",
+  "CrossPlatformTodoAppDescription": "This React Native project was my foray into mobile development...",
+  "RobustUserAuthenticationSystemProject": "Robust User Authentication System",
+  "RobustUserAuthenticationSystemDescription": "This comprehensive project demonstrates my ability to design secure and scalable authentication systems for web applications...",
+  "Skills": {
+    "Development": [
+      "C# (.NET)",
+      "ASP.NET",
+      "WPF",
+      "Entity Framework",
+      "SQL",
+      "Git",
+      "CI/CD practices",
+      "HTML",
+      "CSS",
+      "Vue.js"
+    ],
+    "Process Improvement": [
+      "Automation",
+      "Streamlining",
+      "Integration",
+      "Optimization",
+      "Agile/Scrum methodologies"
+    ],
+    "Problem Solving": [
+      "Debugging",
+      "Code review",
+      "Clean code writing",
+      "Project documentation"
+    ],
+    "Customer Focus": [
+      "Improved customer experiences through streamlined processes and enhanced applications"
+    ],
+    "Adaptability": [
+      "Quick learner",
+      "Open to new technologies"
+    ],
+    "Soft Skills": [
+      "Dedication",
+      "Hard work",
+      "Teamwork"
+    ]
+  },
+  "programming": {
+    "title": "My Programming Journey",
+    "intro": "AS a passionate and experienced .NET developer with a strong background in building and deploying robust backend applications. Over the course of more than 2 years in the industry, I have honed my skills in various technologies and methodologies, enabling me to contribute effectively to complex projects and deliver high-quality solutions.",
+    "technologies": "Technologies",
+    "technicalExpertise": "Technical Expertise",
+    "expertiseDescription": "My expertise spans across a spectrum of technologies and tools:",
+    "projectsTitle": "Featured Projects",
+    "projects": [
+      {
+        "name": "RT Trackers",
+        "description": "A Flask-based web application designed for tracking stock prices and weather conditions.",
+        "keyFeatures": [
+          "Stock tracking using multiple APIs.",
+          "Weather tracking with real-time updates.",
+          "User-friendly web interface with Bootstrap and jQuery."
+        ],
+        "repository": "https://github.com/stere8/RTTrackers"
+      },
+      {
+        "name": "DreamNDine",
+        "description": "A comprehensive web application for managing restaurant reservations and customer interactions.",
+        "keyFeatures": [
+          "User authentication and profile management.",
+          "Reservation system with real-time availability.",
+          "Integration with third-party APIs for enhanced functionality."
+        ],
+        "repository": "https://github.com/stere8/dreamndine"
+      },
+      {
+        "name": "Python Explorations",
+        "description": "A collection of beginner-friendly Python projects to develop fundamental programming skills.",
+        "keyFeatures": [
+          "Various small projects covering different aspects of Python programming.",
+          "Focus on learning and experimentation.",
+          "Well-documented code and examples."
+        ],
+        "repository": "https://github.com/stere8/python-explorations"
+      },
+      {
+        "name": "Cross-Platform Todo App",
+        "description": "A React Native project for creating a cross-platform todo application.",
+        "keyFeatures": [
+          "Cross-platform compatibility (iOS and Android).",
+          "User-friendly interface with task management features.",
+          "Integration with local storage for data persistence."
+        ],
+        "repository": "https://github.com/stere8/cross-platform-todo-app"
+      },
+      {
+        "name": "Robust User Authentication System",
+        "description": "A comprehensive project demonstrating the design of secure and scalable user authentication systems for web applications.",
+        "keyFeatures": [
+          "Secure user authentication with JWT.",
+          "Role-based access control.",
+          "Integration with popular frameworks and libraries."
+        ],
+        "repository": "https://github.com/stere8/robust-user-authentication-system"
+      },
+      {
+        "name": "Machine Learning Explorations",
+        "description": "A collection of machine learning projects and experiments to explore various algorithms and techniques.",
+        "keyFeatures": [
+          "Implementation of popular machine learning algorithms.",
+          "Data analysis and visualization.",
+          "Focus on practical applications and experimentation."
+        ],
+        "repository": "https://github.com/stere8/machine-learning-explorations"
+      }
+    ]
+  }
+}

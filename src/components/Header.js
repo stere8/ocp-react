@@ -4,9 +4,9 @@ import './Header.css';
 
 const Header = () => (
   <header>
-    <nav className="navbar navbar-expand-md navbar-light container-fluid">
+    <nav className="navbar container-fluid">
       <Link className="navbar-brand" to="/">
-        <img src="/img/Logo.jpg" alt="Oculus Consults Portfolio" className="logo" />
+        <img src="/img/Logo.jpg" alt="Oracle Consults Portfolio" className="logo" />
       </Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
         <span className="navbar-toggler-icon"></span>

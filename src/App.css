@@ -1,7 +1,11 @@
+/* General App Styles */
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
 }
 
+/* Logo Animation */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,6 +17,16 @@
   }
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Header Styles */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,15 +38,68 @@
   color: white;
 }
 
+/* Link Styles */
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 50px 0;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.skill-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: calc(33.333% - 20px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-box h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.skill-box p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Footer Styles */
+footer {
+  background: #282c34;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
