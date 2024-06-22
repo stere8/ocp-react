@@ -6,8 +6,8 @@ import '../Styles/Contact.css';
 const Contact = () => {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    from_name: '',
+    from_email: '',
     message: ''
   });
 
@@ -47,11 +47,11 @@ const Contact = () => {
           <form onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name">{t('YourNameLabel')}</label>
-              <input id="name" name="name" type="text" value={formData.name} onChange={handleChange} />
+              <input id="name" name="from_name" type="text" value={formData.user_name} onChange={handleChange} />
             </div>
             <div>
               <label htmlFor="email">{t('EmailLabel')}</label>
-              <input id="email" name="email" type="email" value={formData.email} onChange={handleChange} />
+              <input id="email" name="from_email" type="email" value={formData.user_email} onChange={handleChange} />
             </div>
             <div>
               <label htmlFor="message">{t('MessageLabel')}</label>
