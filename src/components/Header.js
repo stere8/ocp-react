@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/Header.css';
-import logo from '../img/logo.png'
+import logo from '../img/logo.png';
 import Dropdown from "./Dropdown";
 
 const Header = () => (
@@ -28,7 +28,7 @@ const Header = () => (
           </li>
         </ul>
       </div>
-      <Dropdown/>
+      <Dropdown />
     </nav>
   </header>
 );

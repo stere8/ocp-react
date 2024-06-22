@@ -1,14 +1,19 @@
-import React from 'react';
-import {useTranslation} from 'react-i18next';
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import '../Styles/Home.css';
-import cvEng from '../doc/CV EN.pdf'
-import cvPL from '../doc/CV PL.pdf'
-
+import cvEng from '../doc/CV EN.pdf';
+import cvPL from '../doc/CV PL.pdf';
+import { Button } from 'react-bootstrap';
 
 const Home = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
+    const [downloadLink, setDownloadLink] = useState('');
 
-    const skills = t('Skills', {returnObjects: true});
+    const handleChange = (event) => {
+        setDownloadLink(event.target.value);
+    };
+
+    const skills = t('Skills', { returnObjects: true });
 
     return (
         <div className="container">
@@ -22,12 +27,18 @@ const Home = () => {
                         <h1>{t('WelcomeToMyPortfolio')}</h1>
                         <p>{t('InterestInMyWork')}</p>
                         <p>{t('DownloadCV')}
-                            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href={cvEng}
-                                   download="CV Oreste TWIZEYIMANA EN">CV EN</a>
-                                <a className="dropdown-item" href={cvPL}
-                                   download="CV Oreste TWIZEYIMANA PL">CV PL</a>
-                            </div>
+                            <select id="languageDropdown" name="culture" onChange={handleChange} value={downloadLink} className="form-control">
+                                <option value="">Select CV</option>
+                                <option value={cvEng}>English CV</option>
+                                <option value={cvPL}>Polski CV</option>
+                            </select>
+                            {downloadLink && (
+                                <a href={downloadLink} download>
+                                    <Button color="primary" className="mt-2">
+                                        {t('Download')}
+                                    </Button>
+                                </a>
+                            )}
                         </p>
                         <p>{t('ShapingYourVision')}</p>
                         <div className="skills-section">
@@ -47,8 +58,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
-    )
-        ;
+    );
 };
 
 export default Home;
