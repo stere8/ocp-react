@@ -18,7 +18,7 @@
   "WelcomeToMyPortfolio": "Hey, welcome to my OC Portfolio!",
   "InterestInMyWork": "Thank you for taking an interest in my work. This page serves as a comprehensive showcase of my programming styles, skills, and overall profile. I am a passionate developer adept at crafting technical solutions that are not only functional but also linguistically sound.",
   "DownloadCV": "Download my CV to learn more about my experience and skills.",
-  "ShapingYourVision": "From code to communication, shaping your vision. I'm Oreste TWIZEYIMANA, a Programmer Developer with {0} years of experience in the field. I'm passionate about creating innovative and user-friendly software solutions.",
+  "ShapingYourVision": "From code to communication, shaping your vision. I'm Oreste TWIZEYIMANA, a Programmer Developer with over two years of experience in the field. I am passionate about creating innovative and user-friendly software solutions.",
   "SeekingCollaboration": "Whether you're seeking a skilled programmer for collaboration, valuable advice on a project, or simply have an inquiry, feel free to reach out to me. I'm always happy to connect and discuss potential opportunities.",
   "LanguagesTitle": "Languages",
   "LanguagesDescription": "I have a strong foundation in multilingual communication, including native-level proficiency in three languages and fluency in another. Additionally, I bring substantial experience in tutoring English and French.",
@@ -51,19 +51,46 @@
   "TechnologiesHeading": "Technologies",
   "TechnicalExpertiseHeading": "Technical Expertise",
   "TechnicalExpertiseDescription": "My expertise spans across a spectrum of technologies and tools:",
-  "CSharpSkill": "C# (.NET): Proficient in developing scalable applications using C# and .NET framework.",
-  "WPFSkill": "WPF: Skilled in creating rich desktop applications with WPF.",
-  "EntityFrameworkSkill": "Entity Framework: Experienced in database interaction and ORM using Entity Framework.",
-  "SQLSkill": "SQL: Proficient in database design, querying, and optimization using SQL.",
-  "GitSkill": "Git: Proficient in version control and collaborative development workflows using Git.",
-  "CI_CDPracticesSkill": "CI/CD Practices: Experienced in Continuous Integration and Continuous Deployment practices.",
-  "HTML_CSSSkill": "HTML/CSS: Familiar with front-end technologies for creating user interfaces.",
-  "VueJSSkill": "Vue.js: Knowledgeable in developing dynamic web applications using Vue.js.",
-  "AgileScrumSkill": "Agile/Scrum: Experienced in Agile practices for efficient project management.",
+  "CSharpSkillHead": "C# (.NET):",
+  "CSharpSkillContent": "Proficient in developing scalable applications using C# and .NET framework.",
+  "WPFSkillHead": "WPF:",
+  "WPFSkillContent": "Skilled in creating rich desktop applications with WPF.",
+  "EntityFrameworkSkillHead": "Entity Framework:",
+  "EntityFrameworkSkillContent": "Experienced in database interaction and ORM using Entity Framework.",
+  "SQLSkillHead": "SQL:",
+  "SQLSkillContent": "Proficient in database design, querying, and optimization using SQL.",
+  "GitSkillHead": "Git:",
+  "GitSkillContent": "Proficient in version control and collaborative development workflows using Git.",
+  "CI_CDPracticesSkillHead": "CI/CD Practices:",
+  "CI_CDPracticesSkillContent": "Experienced in Continuous Integration and Continuous Deployment practices.",
+  "HTML_CSSSkillHead": "HTML/CSS:",
+  "HTML_CSSSkillContent": "Familiar with front-end technologies for creating user interfaces.",
+  "ReactJSSkillHead": "React JS:",
+  "ReactJSSkillContent": "Knowledgeable in developing dynamic web applications using React JS.",
+  "AngularSkillHead": "Angular:",
+  "AngularSkillContent": "Skilled in developing robust and dynamic single-page applications with Angular.",
+  "DjangoSkillHead": "Django/Flask:",
+  "DjangoSkillContent": "Skilled in building robust backend applications with Python technologies, including Django and Flask.",
+  "BootstrapSkillHead": "Bootstrap:",
+  "BootstrapSkillContent": "Experienced in creating responsive web interfaces with Bootstrap.",
+  "ASPNETCoreSkillHead": "ASP.NET Core:",
+  "ASPNETCoreSkillContent": "Proficient in building scalable web applications with ASP.NET Core.",
+  "RazorPagesSkillHead": "Razor Pages:",
+  "RazorPagesSkillContent": "Knowledgeable in creating dynamic web pages with Razor Pages.",
+  "ReactRouterSkillHead": "React Router:",
+  "ReactRouterSkillContent": "Experienced in client-side routing with React Router.",
+  "FontAwesomeSkillHead": "FontAwesome:",
+  "FontAwesomeSkillContent": "Familiar with using FontAwesome for web icons.",
+  "react_i18nextSkillHead": "react-i18next:",
+  "react_i18nextSkillContent": "Skilled in implementing internationalization with react-i18next.",
+  "EmailJSSkillHead": "EmailJS:",
+  "EmailJSSkillContent": "Experienced in integrating email services with EmailJS.",
+  "AgileScrumSkillHead": "Agile/Scrum:",
+  "AgileScrumSkillContent": "Experienced in Agile practices for efficient project management.",
   "AlwaysLearningDescription": "I'm always learning and experimenting. If you have a project in mind, or just want to connect let's connect! also feel free to Download my CV to learn more about my experience and skills.",
   "FeaturedProjectsHeading": "Featured Projects",
-  "RTTrackersProject": "RT Trackers",
-  "RTTrackersDescription": "The stere8/rttrackers repository is a Flask-based web application designed for tracking stock prices and weather conditions. Here's a summary of its key components and functionalities:",
+  "DoIt-TicketingSystemProject": "DoIt-Ticketing System",
+  "DoIt-TicketingSystemDescription": "The stere8/rttrackers repository is a Flask-based web application designed for tracking stock prices and weather conditions. Here's a summary of its key components and functionalities:",
   "CoreFunctionalitiesHeading": "Core Functionalities",
   "StockTracking": "Stock Tracking: Utilizes two classes, StockTracker and StockTracker2, to fetch current stock prices from different APIs (Alpha Vantage and possibly IEX Cloud). These classes are defined in stock_trackers.py and stock_trackers2.py.",
   "WeatherTracking": "Weather Tracking: The WeatherTracker class in weather_tracker.py fetches current weather data, including humidity, pressure, wind speed, and temperature, using the OpenWeatherMap API.",
@@ -97,28 +124,37 @@
   "Skills": {
     "Development": [
       "C# (.NET)",
-      "ASP.NET",
       "WPF",
+      "Angular",
       "Entity Framework",
       "SQL",
       "Git",
-      "CI/CD practices",
+      "CI/CD",
       "HTML",
       "CSS",
-      "Vue.js"
+      "React JS",
+      "Django",
+      "Bootstrap",
+      "ASP.NET Core",
+      "Razor Pages",
+      "React Router",
+      "FontAwesome",
+      "react-i18next",
+      "EmailJS"
     ],
     "Process Improvement": [
       "Automation",
       "Streamlining",
       "Integration",
       "Optimization",
-      "Agile/Scrum methodologies"
+      "Scrum methodologies"
     ],
     "Problem Solving": [
       "Debugging",
       "Code review",
       "Clean code writing",
-      "Project documentation"
+      "Project documentation",
+      "Project planning"
     ],
     "Customer Focus": [
       "Improved customer experiences through streamlined processes and enhanced applications"
@@ -136,70 +172,83 @@
   "programming": {
     "title": "My Programming Journey",
     "intro": "AS a passionate and experienced .NET developer with a strong background in building and deploying robust backend applications. Over the course of more than 2 years in the industry, I have honed my skills in various technologies and methodologies, enabling me to contribute effectively to complex projects and deliver high-quality solutions.",
+    "horizonExpansion": "Expanding My Horizons",
+    "aficionado": "As an aficionado of technology, I've continuously sought to expand my skill set beyond my primary focus. I've delved into modern frontend frameworks such as React and Angular, allowing me to create dynamic and responsive web applications. Additionally, my interest in Python has led me to explore powerful frameworks like Django and Flask. This exploration into diverse technologies has enriched my programming abilities and broadened my perspective on solving complex challenges.",
     "technologies": "Technologies",
-    "technicalExpertise": "Technical Expertise",
+    "technicalExpertise": "Technologies and Expertises",
     "expertiseDescription": "My expertise spans across a spectrum of technologies and tools:",
     "projectsTitle": "Featured Projects",
     "projects": [
       {
-        "name": "RT Trackers",
-        "description": "A Flask-based web application designed for tracking stock prices and weather conditions.",
-        "keyFeatures": [
-          "Stock tracking using multiple APIs.",
-          "Weather tracking with real-time updates.",
-          "User-friendly web interface with Bootstrap and jQuery."
+        "name": "DoIt-Ticketing System",
+        "description": "Developed a comprehensive ticket management system, allowing users to create, view, update, and delete tickets. The system includes user registration and login features.",
+        "overview": "A comprehensive ticket management system with robust feature implementation.",
+        "keyResponsibilities": [
+          "Implemented ticket and user management features",
+          "Built the API with Flask and frontend with Angular"
         ],
-        "repository": "https://github.com/stere8/RTTrackers"
+        "technologies": [
+          "Flask",
+          "Angular",
+          "SQLite"
+        ],
+        "keyContributions": "Increased user engagement and administrative efficiency through robust feature implementation.",
+        "repository": "https://github.com/stere8/DoIT-Ticketing"
       },
       {
-        "name": "DreamNDine",
-        "description": "A comprehensive web application for managing restaurant reservations and customer interactions.",
-        "keyFeatures": [
-          "User authentication and profile management.",
-          "Reservation system with real-time availability.",
-          "Integration with third-party APIs for enhanced functionality."
+        "name": "Multilingual React Portfolio Website",
+        "description": "Developed a responsive and multilingual portfolio website to showcase personal projects, technical skills, programming expertise, language proficiency, and contact information.",
+        "overview": "A portfolio website that demonstrates frontend development proficiency and versatility with React.",
+        "keyResponsibilities": [
+          "Led the development process",
+          "Integrated modern design principles",
+          "Implemented internationalization",
+          "Added interactive elements",
+          "Designed and integrated a contact form"
         ],
-        "repository": "https://github.com/stere8/dreamndine"
+        "technologies": [
+          "React",
+          "Bootstrap",
+          "React Router",
+          "FontAwesome",
+          "react-i18next",
+          "EmailJS"
+        ],
+        "keyContributions": "Created a responsive and user-friendly interface supporting multiple languages, and managed contact form submissions effectively.",
+        "repository": "https://github.com/stere8/ocp-react"
       },
       {
-        "name": "Python Explorations",
-        "description": "A collection of beginner-friendly Python projects to develop fundamental programming skills.",
-        "keyFeatures": [
-          "Various small projects covering different aspects of Python programming.",
-          "Focus on learning and experimentation.",
-          "Well-documented code and examples."
+        "name": "StockIT",
+        "description": "A web application for inventory management, providing a real-time view of stock levels.",
+        "overview": "An inventory management application designed for real-time stock level visibility.",
+        "keyResponsibilities": [
+          "Oversaw development",
+          "Collaborated with cross-functional teams",
+          "Developed core functionalities"
         ],
-        "repository": "https://github.com/stere8/python-explorations"
+        "technologies": [
+          "ASP.NET Core",
+          "Razor Pages",
+          "Entity Framework Core"
+        ],
+        "keyContributions": "Implemented a user-friendly interface; ensured data integrity and scalability.",
+        "repository": "https://github.com/stere8/stockit"
       },
       {
-        "name": "Cross-Platform Todo App",
-        "description": "A React Native project for creating a cross-platform todo application.",
-        "keyFeatures": [
-          "Cross-platform compatibility (iOS and Android).",
-          "User-friendly interface with task management features.",
-          "Integration with local storage for data persistence."
+        "name": "Django Real Estate Website",
+        "description": "Developed a comprehensive real estate platform with user account management, property listings, and a booking system.",
+        "overview": "A real estate platform featuring user account management and booking system.",
+        "keyResponsibilities": [
+          "Implemented user features for property visits and bookings",
+          "Built an admin dashboard"
         ],
-        "repository": "https://github.com/stere8/cross-platform-todo-app"
-      },
-      {
-        "name": "Robust User Authentication System",
-        "description": "A comprehensive project demonstrating the design of secure and scalable user authentication systems for web applications.",
-        "keyFeatures": [
-          "Secure user authentication with JWT.",
-          "Role-based access control.",
-          "Integration with popular frameworks and libraries."
+        "technologies": [
+          "Django",
+          "Bootstrap",
+          "SQLite"
         ],
-        "repository": "https://github.com/stere8/robust-user-authentication-system"
-      },
-      {
-        "name": "Machine Learning Explorations",
-        "description": "A collection of machine learning projects and experiments to explore various algorithms and techniques.",
-        "keyFeatures": [
-          "Implementation of popular machine learning algorithms.",
-          "Data analysis and visualization.",
-          "Focus on practical applications and experimentation."
-        ],
-        "repository": "https://github.com/stere8/machine-learning-explorations"
+        "keyContributions": "Enhanced user engagement and administrative efficiency through robust feature implementation.",
+        "repository": "https://github.com/stere8/real_estate"
       }
     ]
   },
@@ -208,3 +257,5 @@
   "EnglishCV": "English CV",
   "PolishCV": "Polish CV"
 }
+
+
