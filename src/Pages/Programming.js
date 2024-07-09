@@ -16,6 +16,12 @@ const Programming = () => {
             </div>
             <div className="row">
                 <div className="text-center">
+                    <h1>{t('programming.horizonExpansion')}</h1>
+                    <p>{t('programming.aficionado')}</p>
+                </div>
+            </div>
+            <div className="row">
+                <div className="text-center">
                     <h1>{t('programming.technologies')}</h1>
                     <h3>{t('programming.technicalExpertise')}</h3>
                     <p>{t('programming.expertiseDescription')}</p>
@@ -96,7 +102,8 @@ const Programming = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <p>I'm always learning and experimenting. If you have a project in mind, or just want to
-                                connect<Link className="nav-link" to="/contact">let's connect!</Link> also feel free to <a
+                                connect<Link className="nav-link" to="/contact">let's connect!</Link> also feel free
+                                to <a
                                     href="/docs/CV - Oreste BO+(EN).pdf" download="CV Oreste TWIZEYIMANA">Download my
                                     CV</a> to learn more about my experience and skills.</p>
                         </div>
