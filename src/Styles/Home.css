@@ -68,6 +68,7 @@
   }
 }
 
+
 @media (max-width: 480px) {
   .skill-box {
     width: calc(100% - 20px);

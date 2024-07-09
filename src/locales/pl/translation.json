@@ -7,7 +7,7 @@
   "ContactTitle": "Kontakt",
   "LetsConnectHeading": "Połączmy się",
   "ContactFormDescription": "Proszę użyć tego formularza, aby skontaktować się ze mną w przypadku pytań lub uwag:",
-  "contactMessage": "Drop me a line and I'll get back to you ASAP! Whether you have a suggestion, a comment, or just want to say hi, I'd love to hear from you!",
+  "contactMessage": "Napisz do mnie, a ja odezwę się jak najszybciej! Niezależnie od tego, czy masz sugestię, komentarz, czy po prostu chcesz się przywitać, chętnie Cię usłyszę!",
   "YourNameLabel": "Twoje imię:",
   "EmailLabel": "Email:",
   "MessageLabel": "Wiadomość:",
@@ -18,7 +18,7 @@
   "WelcomeToMyPortfolio": "Cześć, witaj w moim portfolio OC!",
   "InterestInMyWork": "Dziękuję za zainteresowanie moją pracą. Ta strona służy jako kompleksowa prezentacja moich stylów programowania, umiejętności i ogólnego profilu. Jestem pasjonatem programowania, biegłym w tworzeniu rozwiązań technicznych, które są nie tylko funkcjonalne, ale także językowo poprawne.",
   "DownloadCV": "Pobierz moje CV, aby dowiedzieć się więcej o moim doświadczeniu i umiejętnościach.",
-  "ShapingYourVision": "Od kodu do komunikacji, kształtując Twoją wizję. Jestem Oreste TWIZEYIMANA, programistą z {0} lat doświadczenia w branży. Pasjonuję się tworzeniem innowacyjnych i przyjaznych dla użytkownika rozwiązań programowych.",
+  "ShapingYourVision": "Od kodu do komunikacji, kształtując Twoją wizję. Jestem Oreste TWIZEYIMANA, programistą z ponad dwuletnim doświadczeniem w branży. Pasjonuję się tworzeniem innowacyjnych i przyjaznych dla użytkownika rozwiązań programowych.",
   "SeekingCollaboration": "Czy szukasz doświadczonego programisty do współpracy, cennych porad dotyczących projektu, czy po prostu masz pytanie, nie wahaj się ze mną skontaktować. Zawsze chętnie nawiążę kontakt i omówię potencjalne możliwości.",
   "LanguagesTitle": "Języki",
   "LanguagesDescription": "Mam solidne podstawy w komunikacji wielojęzycznej, w tym biegłość na poziomie ojczystym w trzech językach i płynność w innym. Dodatkowo mam duże doświadczenie w nauczaniu angielskiego i francuskiego.",
@@ -51,19 +51,46 @@
   "TechnologiesHeading": "Technologie",
   "TechnicalExpertiseHeading": "Ekspertyza techniczna",
   "TechnicalExpertiseDescription": "Moje umiejętności obejmują szeroki zakres technologii i narzędzi:",
-  "CSharpSkill": "C# (.NET): Biegły w tworzeniu skalowalnych aplikacji przy użyciu C# i frameworka .NET.",
-  "WPFSkill": "WPF: Biegły w tworzeniu bogatych aplikacji desktopowych za pomocą WPF.",
-  "EntityFrameworkSkill": "Entity Framework: Doświadczony w interakcji z bazami danych i ORM przy użyciu Entity Framework.",
-  "SQLSkill": "SQL: Biegły w projektowaniu baz danych, zapytaniach i optymalizacji przy użyciu SQL.",
-  "GitSkill": "Git: Biegły w kontroli wersji i współpracy w procesach rozwoju przy użyciu Git.",
-  "CI_CDPracticesSkill": "Praktyki CI/CD: Doświadczony w praktykach Continuous Integration i Continuous Deployment.",
-  "HTML_CSSSkill": "HTML/CSS: Znajomość technologii front-end do tworzenia interfejsów użytkownika.",
-  "VueJSSkill": "Vue.js: Znajomość tworzenia dynamicznych aplikacji webowych przy użyciu Vue.js.",
-  "AgileScrumSkill": "Agile/Scrum: Doświadczony w praktykach Agile dla efektywnego zarządzania projektami.",
+  "CSharpSkillHead": "C# (.NET):",
+  "CSharpSkillContent": "Biegły w tworzeniu skalowalnych aplikacji przy użyciu C# i frameworka .NET.",
+  "WPFSkillHead": "WPF:",
+  "WPFSkillContent": "Biegły w tworzeniu bogatych aplikacji desktopowych za pomocą WPF.",
+  "EntityFrameworkSkillHead": "Entity Framework:",
+  "EntityFrameworkSkillContent": "Doświadczony w interakcji z bazami danych i ORM przy użyciu Entity Framework.",
+  "SQLSkillHead": "SQL:",
+  "SQLSkillContent": "Biegły w projektowaniu baz danych, zapytaniach i optymalizacji przy użyciu SQL.",
+  "GitSkillHead": "Git:",
+  "GitSkillContent": "Biegły w kontroli wersji i współpracy w procesach rozwoju przy użyciu Git.",
+  "CI_CDPracticesSkillHead": "Praktyki CI/CD:",
+  "CI_CDPracticesSkillContent": "Doświadczony w praktykach Continuous Integration i Continuous Deployment.",
+  "HTML_CSSSkillHead": "HTML/CSS:",
+  "HTML_CSSSkillContent": "Znajomość technologii front-end do tworzenia interfejsów użytkownika.",
+  "ReactJSSkillHead": "React JS:",
+  "ReactJSSkillContent": "Znajomość tworzenia dynamicznych aplikacji webowych przy użyciu React JS.",
+  "AngularSkillHead": "Angular:",
+  "AngularSkillContent": "Biegły w tworzeniu solidnych i dynamicznych aplikacji jednostronicowych za pomocą Angular.",
+  "DjangoSkillHead": "Django/Flask:",
+  "DjangoSkillContent": "Biegły w budowaniu solidnych aplikacji backendowych za pomocą technologii Python, w tym Django i Flask.",
+  "BootstrapSkillHead": "Bootstrap:",
+  "BootstrapSkillContent": "Doświadczony w tworzeniu responsywnych interfejsów webowych za pomocą Bootstrap.",
+  "ASPNETCoreSkillHead": "ASP.NET Core:",
+  "ASPNETCoreSkillContent": "Biegły w tworzeniu skalowalnych aplikacji webowych za pomocą ASP.NET Core.",
+  "RazorPagesSkillHead": "Razor Pages:",
+  "RazorPagesSkillContent": "Znajomość tworzenia dynamicznych stron webowych za pomocą Razor Pages.",
+  "ReactRouterSkillHead": "React Router:",
+  "ReactRouterSkillContent": "Doświadczony w routingu po stronie klienta za pomocą React Router.",
+  "FontAwesomeSkillHead": "FontAwesome:",
+  "FontAwesomeSkillContent": "Znajomość używania FontAwesome do ikon webowych.",
+  "react_i18nextSkillHead": "react-i18next:",
+  "react_i18nextSkillContent": "Biegły w implementacji internacjonalizacji za pomocą react-i18next.",
+  "EmailJSSkillHead": "EmailJS:",
+  "EmailJSSkillContent": "Doświadczony w integracji usług emailowych za pomocą EmailJS.",
+  "AgileScrumSkillHead": "Agile/Scrum:",
+  "AgileScrumSkillContent": "Doświadczony w praktykach Agile dla efektywnego zarządzania projektami.",
   "AlwaysLearningDescription": "Zawsze się uczę i eksperymentuję. Jeśli masz na myśli projekt, lub po prostu chcesz się połączyć, połączmy się! również nie krępuj się pobrać moje CV, aby dowiedzieć się więcej o moim doświadczeniu i umiejętnościach.",
   "FeaturedProjectsHeading": "Wyróżnione projekty",
-  "RTTrackersProject": "RT Trackers",
-  "RTTrackersDescription": "Repozytorium stere8/rttrackers to aplikacja webowa oparta na Flasku, zaprojektowana do śledzenia cen akcji i warunków pogodowych. Oto podsumowanie jej kluczowych komponentów i funkcjonalności:",
+  "DoIt-TicketingSystemProject": "DoIt-Ticketing System",
+  "DoIt-TicketingSystemDescription": "Repozytorium stere8/rttrackers to aplikacja webowa oparta na Flasku, zaprojektowana do śledzenia cen akcji i warunków pogodowych. Oto podsumowanie jej kluczowych komponentów i funkcjonalności:",
   "CoreFunctionalitiesHeading": "Podstawowe funkcjonalności",
   "StockTracking": "Śledzenie akcji: Wykorzystuje dwie klasy, StockTracker i StockTracker2, do pobierania aktualnych cen akcji z różnych API (Alpha Vantage i prawdopodobnie IEX Cloud). Te klasy są zdefiniowane w stock_trackers.py i stock_trackers2.py.",
   "WeatherTracking": "Śledzenie pogody: Klasa WeatherTracker w weather_tracker.py pobiera aktualne dane pogodowe, w tym wilgotność, ciśnienie, prędkość wiatru i temperaturę, korzystając z API OpenWeatherMap.",
@@ -96,16 +123,16 @@
   "RobustUserAuthenticationSystemDescription": "Ten kompleksowy projekt demonstruje moją zdolność do projektowania bezpiecznych i skalowalnych systemów uwierzytelniania użytkowników dla aplikacji webowych...",
   "Skills": {
     "Development": [
-      "C# (.NET)",
-      "ASP.NET",
-      "WPF",
-      "Entity Framework",
-      "SQL",
-      "Git",
-      "Praktyki CI/CD",
-      "HTML",
-      "CSS",
-      "Vue.js"
+      "C# (.NET) \t |\t WPF",
+      "Angular \t |\t React JS",
+      "SQL \t |\t Git",
+      "HTML \t |\t CSS",
+      "Django \t |\t Flask",
+      "Bootstrap \t |\t CI/CD",
+      "ASP.NET Core \t |\t Razor Pages",
+      "React Router \t |\t FontAwesome",
+      "EmailJS \t |\t react-i18next",
+      "Entity Framework"
     ],
     "Process Improvement": [
       "Automatyzacja",
@@ -136,70 +163,83 @@
   "programming": {
     "title": "Moja podróż programistyczna",
     "intro": "Jako pasjonat i doświadczony programista .NET z solidnym doświadczeniem w budowaniu i wdrażaniu solidnych aplikacji backendowych. W ciągu ponad 2 lat w branży doskonaliłem swoje umiejętności w różnych technologiach i metodologiach, co pozwala mi skutecznie przyczyniać się do złożonych projektów i dostarczać wysokiej jakości rozwiązania.",
+    "horizonExpansion": "Rozszerzanie horyzontów",
+    "aficionado": "Jako miłośnik technologii, nieustannie dążę do poszerzania swoich umiejętności poza moją główną specjalizację. Zgłębiałem nowoczesne frameworki frontendowe, takie jak React i Angular, co pozwala mi tworzyć dynamiczne i responsywne aplikacje webowe. Dodatkowo, moje zainteresowanie Pythonem skłoniło mnie do eksploracji potężnych frameworków, takich jak Django i Flask. Ta eksploracja różnych technologii wzbogaciła moje umiejętności programistyczne i poszerzyła moje spojrzenie na rozwiązywanie złożonych wyzwań.",
     "technologies": "Technologie",
-    "technicalExpertise": "Ekspertyza techniczna",
+    "technicalExpertise": "Technologie i ekspertyzy",
     "expertiseDescription": "Moje umiejętności obejmują szeroki zakres technologii i narzędzi:",
     "projectsTitle": "Wyróżnione projekty",
     "projects": [
       {
-        "name": "RT Trackers",
-        "description": "Aplikacja webowa oparta na Flasku, zaprojektowana do śledzenia cen akcji i warunków pogodowych.",
-        "keyFeatures": [
-          "Śledzenie akcji przy użyciu wielu API.",
-          "Śledzenie pogody z aktualizacjami w czasie rzeczywistym.",
-          "Przyjazny dla użytkownika interfejs webowy z Bootstrap i jQuery."
+        "name": "DoIt-Ticketing System",
+        "description": "Opracowałem kompleksowy system zarządzania zgłoszeniami, umożliwiający użytkownikom tworzenie, przeglądanie, aktualizowanie i usuwanie zgłoszeń. System zawiera funkcje rejestracji i logowania użytkowników.",
+        "overview": "Kompleksowy system zarządzania zgłoszeniami z solidną implementacją funkcji.",
+        "keyResponsibilities": [
+          "Wdrożenie funkcji zarządzania zgłoszeniami i użytkownikami",
+          "Zbudowanie API za pomocą Flask i frontend za pomocą Angular"
         ],
-        "repository": "https://github.com/stere8/RTTrackers"
+        "technologies": [
+          "Flask",
+          "Angular",
+          "SQLite"
+        ],
+        "keyContributions": "Zwiększenie zaangażowania użytkowników i efektywności administracyjnej dzięki solidnej implementacji funkcji.",
+        "repository": "https://github.com/stere8/DoIT-Ticketing"
       },
       {
-        "name": "DreamNDine",
-        "description": "Kompleksowa aplikacja webowa do zarządzania rezerwacjami w restauracjach i interakcjami z klientami.",
-        "keyFeatures": [
-          "Uwierzytelnianie użytkowników i zarządzanie profilami.",
-          "System rezerwacji z dostępnością w czasie rzeczywistym.",
-          "Integracja z API firm trzecich dla ulepszonej funkcjonalności."
+        "name": "Wielojęzyczna strona portfolio w React",
+        "description": "Opracowałem responsywną i wielojęzyczną stronę portfolio do prezentacji projektów osobistych, umiejętności technicznych, doświadczenia programistycznego, biegłości językowej i informacji kontaktowych.",
+        "overview": "Strona portfolio, która demonstruje biegłość i wszechstronność w rozwoju frontendowym za pomocą React.",
+        "keyResponsibilities": [
+          "Prowadzenie procesu rozwoju",
+          "Integracja nowoczesnych zasad projektowania",
+          "Wdrożenie internacjonalizacji",
+          "Dodanie interaktywnych elementów",
+          "Zaprojektowanie i integracja formularza kontaktowego"
         ],
-        "repository": "https://github.com/stere8/dreamndine"
+        "technologies": [
+          "React",
+          "Bootstrap",
+          "React Router",
+          "FontAwesome",
+          "react-i18next",
+          "EmailJS"
+        ],
+        "keyContributions": "Stworzenie responsywnego i przyjaznego dla użytkownika interfejsu wspierającego wiele języków oraz skuteczne zarządzanie zgłoszeniami formularza kontaktowego.",
+        "repository": "https://github.com/stere8/ocp-react"
       },
       {
-        "name": "Eksploracje w Pythonie",
-        "description": "Kolekcja projektów w Pythonie dla początkujących, aby rozwijać podstawowe umiejętności programistyczne.",
-        "keyFeatures": [
-          "Różne małe projekty obejmujące różne aspekty programowania w Pythonie.",
-          "Skupienie na nauce i eksperymentowaniu.",
-          "Dobrze udokumentowany kod i przykłady."
+        "name": "StockIT",
+        "description": "Aplikacja webowa do zarządzania zapasami, zapewniająca widok w czasie rzeczywistym poziomów zapasów.",
+        "overview": "Aplikacja do zarządzania zapasami zaprojektowana do widoczności poziomów zapasów w czasie rzeczywistym.",
+        "keyResponsibilities": [
+          "Nadzór nad rozwojem",
+          "Współpraca z zespołami wielofunkcyjnymi",
+          "Rozwój podstawowych funkcjonalności"
         ],
-        "repository": "https://github.com/stere8/python-explorations"
+        "technologies": [
+          "ASP.NET Core",
+          "Razor Pages",
+          "Entity Framework Core"
+        ],
+        "keyContributions": "Wdrożenie przyjaznego dla użytkownika interfejsu; zapewnienie integralności danych i skalowalności.",
+        "repository": "https://github.com/stere8/stockit"
       },
       {
-        "name": "Aplikacja Todo na wiele platform",
-        "description": "Projekt React Native do tworzenia aplikacji Todo na wiele platform.",
-        "keyFeatures": [
-          "Kompatybilność z wieloma platformami (iOS i Android).",
-          "Przyjazny dla użytkownika interfejs z funkcjami zarządzania zadaniami.",
-          "Integracja z lokalnym przechowywaniem danych dla trwałości danych."
+        "name": "Strona nieruchomości w Django",
+        "description": "Opracowałem kompleksową platformę nieruchomości z zarządzaniem kontami użytkowników, listami nieruchomości i systemem rezerwacji.",
+        "overview": "Platforma nieruchomości z zarządzaniem kontami użytkowników i systemem rezerwacji.",
+        "keyResponsibilities": [
+          "Wdrożenie funkcji użytkownika do wizyt i rezerwacji nieruchomości",
+          "Zbudowanie panelu administracyjnego"
         ],
-        "repository": "https://github.com/stere8/cross-platform-todo-app"
-      },
-      {
-        "name": "Solidny system uwierzytelniania użytkowników",
-        "description": "Ten kompleksowy projekt demonstruje moją zdolność do projektowania bezpiecznych i skalowalnych systemów uwierzytelniania dla aplikacji webowych.",
-        "keyFeatures": [
-          "Bezpieczne uwierzytelnianie użytkowników za pomocą JWT.",
-          "Kontrola dostępu oparta na rolach.",
-          "Integracja z popularnymi frameworkami i bibliotekami."
+        "technologies": [
+          "Django",
+          "Bootstrap",
+          "SQLite"
         ],
-        "repository": "https://github.com/stere8/robust-user-authentication-system"
-      },
-      {
-        "name": "Eksploracje w Machine Learning",
-        "description": "Kolekcja projektów i eksperymentów z machine learning, aby zbadać różne algorytmy i techniki.",
-        "keyFeatures": [
-          "Implementacja popularnych algorytmów machine learning.",
-          "Analiza i wizualizacja danych.",
-          "Skupienie na praktycznych zastosowaniach i eksperymentach."
-        ],
-        "repository": "https://github.com/stere8/machine-learning-explorations"
+        "keyContributions": "Zwiększenie zaangażowania użytkowników i efektywności administracyjnej dzięki solidnej implementacji funkcji.",
+        "repository": "https://github.com/stere8/real_estate"
       }
     ]
   },
