@@ -169,34 +169,34 @@
     "technologies": "Technologies",
     "technicalExpertise": "Technologies and Expertises",
     "expertiseDescription": "My expertise spans across a spectrum of technologies and tools:",
-    "projectsTitle": "Proyectos Destacados",
+    "projectsTitle": "Featured Projects",
     "projects": [
       {
         "name": "DoIt-Ticketing System",
-        "description": "Desarrollé un sistema de gestión de tickets completo, permitiendo a los usuarios crear, ver, actualizar y eliminar tickets. El sistema incluye características de registro e inicio de sesión de usuarios.",
-        "overview": "Un sistema de gestión de tickets completo con una implementación robusta de características.",
+        "description": "Developed a comprehensive ticket management system, allowing users to create, view, update, and delete tickets. The system includes user registration and login features.",
+        "overview": "A comprehensive ticket management system with robust feature implementation.",
         "keyResponsibilities": [
-          "Implementé características de gestión de tickets y usuarios",
-          "Construí la API con Flask y el frontend con Angular"
+          "Implemented ticket and user management features",
+          "Built the API with Flask and the frontend with Angular"
         ],
         "technologies": [
           "Flask",
           "Angular",
           "SQLite"
         ],
-        "keyContributions": "Aumenté la participación de los usuarios y la eficiencia administrativa a través de una implementación robusta de características.",
+        "keyContributions": "Increased user engagement and administrative efficiency through robust feature implementation.",
         "repository": "https://github.com/stere8/DoIT-Ticketing"
       },
       {
-        "name": "Sitio Web de Portafolio Multilingüe en React",
-        "description": "Desarrollé un sitio web de portafolio receptivo y multilingüe para mostrar proyectos personales, habilidades técnicas, experiencia en programación, dominio de idiomas e información de contacto.",
-        "overview": "Un sitio web de portafolio que demuestra la competencia y versatilidad en el desarrollo frontend con React.",
+        "name": "Multilingual Portfolio Website in React",
+        "description": "Developed a responsive, multilingual portfolio website to showcase personal projects, technical skills, programming experience, language proficiency, and contact information.",
+        "overview": "A portfolio website demonstrating competency and versatility in frontend development with React.",
         "keyResponsibilities": [
-          "Lideré el proceso de desarrollo",
-          "Integré principios de diseño moderno",
-          "Implementé la internacionalización",
-          "Añadí elementos interactivos",
-          "Diseñé e integré un formulario de contacto"
+          "Led the development process",
+          "Integrated modern design principles",
+          "Implemented internationalization",
+          "Added interactive elements",
+          "Designed and integrated a contact form"
         ],
         "technologies": [
           "React",
@@ -206,46 +206,46 @@
           "react-i18next",
           "EmailJS"
         ],
-        "keyContributions": "Creé una interfaz receptiva y fácil de usar que soporta múltiples idiomas, y gestioné eficazmente las presentaciones del formulario de contacto.",
+        "keyContributions": "Created a responsive, user-friendly interface supporting multiple languages, and effectively managed contact form submissions.",
         "repository": "https://github.com/stere8/ocp-react"
       },
       {
         "name": "StockIT",
-        "description": "Una aplicación web para la gestión de inventarios, proporcionando una vista en tiempo real de los niveles de stock.",
-        "overview": "Una aplicación de gestión de inventarios diseñada para la visibilidad en tiempo real de los niveles de stock.",
+        "description": "A web application for inventory management, providing a real-time view of stock levels.",
+        "overview": "An inventory management application designed for real-time visibility of stock levels.",
         "keyResponsibilities": [
-          "Supervisé el desarrollo",
-          "Colaboré con equipos multifuncionales",
-          "Desarrollé funcionalidades principales"
+          "Oversaw the development",
+          "Collaborated with cross-functional teams",
+          "Developed core functionalities"
         ],
         "technologies": [
           "ASP.NET Core",
           "Razor Pages",
           "Entity Framework Core"
         ],
-        "keyContributions": "Implementé una interfaz fácil de usar; aseguré la integridad de los datos y la escalabilidad.",
+        "keyContributions": "Implemented a user-friendly interface; ensured data integrity and scalability.",
         "repository": "https://github.com/stere8/stockit"
       },
       {
-        "name": "Sitio Web Inmobiliario en Django",
-        "description": "Desarrollé una plataforma inmobiliaria completa con gestión de cuentas de usuario, listados de propiedades y un sistema de reservas.",
-        "overview": "Una plataforma inmobiliaria con gestión de cuentas de usuario y sistema de reservas.",
+        "name": "Real Estate Website in Django",
+        "description": "Developed a comprehensive real estate platform with user account management, property listings, and a booking system.",
+        "overview": "A real estate platform with user account management and booking system.",
         "keyResponsibilities": [
-          "Implementé características de usuario para visitas y reservas de propiedades",
-          "Construí un panel de administración"
+          "Implemented user features for property viewings and bookings",
+          "Built an admin panel"
         ],
         "technologies": [
           "Django",
           "Bootstrap",
           "SQLite"
         ],
-        "keyContributions": "Mejoré la participación de los usuarios y la eficiencia administrativa a través de una implementación robusta de características.",
+        "keyContributions": "Improved user engagement and administrative efficiency through robust feature implementation.",
         "repository": "https://github.com/stere8/real_estate"
       }
-    ]
-  },
-  "Download": "Descargar",
-  "SelectCV": "Seleccionar CV",
-  "EnglishCV": "CV en Inglés",
-  "PolishCV": "CV en Polaco"
+    ],
+    "Download": "Download",
+    "SelectCV": "Select CV",
+    "EnglishCV": "English CV",
+    "PolishCV": "Polish CV"
+  }
 }

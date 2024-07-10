@@ -6,6 +6,7 @@ import cvPL from '../doc/CV PL.pdf';
 import { Button } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 
+
 const Home = () => {
     const { t } = useTranslation();
     const [downloadLink, setDownloadLink] = useState('');
