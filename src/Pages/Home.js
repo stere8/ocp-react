@@ -4,6 +4,7 @@ import '../Styles/Home.css';
 import cvEng from '../doc/CV EN.pdf';
 import cvPL from '../doc/CV PL.pdf';
 import { Button } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
     const { t } = useTranslation();
@@ -16,7 +17,12 @@ const Home = () => {
     const skills = t('Skills', { returnObjects: true });
 
     return (
-        <div className="container">
+        <div className="container">      
+        <Helmet>
+            <title>Oracle Consults Portfolio | Oreste TWIZEYIMANA</title>
+            <meta name="description" content="Oracle Consults Portfolio: Showcasing the programming skills and expertise of Oreste TWIZEYIMANA, an experienced developer proficient in C#, Angular, React, SQL, and more." />
+            <meta name="keywords" content="Oracle Consults, Oreste TWIZEYIMANA, Programming, Developer, Portfolio, C#, Angular, React, SQL, Django, Flask" />
+        </Helmet>
             <div className="row hero-section">
                 <div className="col-md-12 text-center">
                     <h1>{t('CraftingTechnicalSolutionsHeading')}</h1>

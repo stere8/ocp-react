@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import emailjs from 'emailjs-com';
 import '../Styles/Contact.css';
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -28,18 +29,22 @@ const Contact = () => {
       formData,
       'jbwNUbuZVBETFQtqM' // Replace with your EmailJS user ID
     )
-    .then((response) => {
-      console.log('Email sent successfully!', response.status, response.text);
-      alert('Email sent successfully!');
-    })
-    .catch((error) => {
-      console.error('Failed to send email:', error);
-      alert('Failed to send email.');
-    });
+      .then((response) => {
+        console.log('Email sent successfully!', response.status, response.text);
+        alert('Email sent successfully!');
+      })
+      .catch((error) => {
+        console.error('Failed to send email:', error);
+        alert('Failed to send email.');
+      });
   };
 
   return (
     <div className="container hero-section-bis">
+      <Helmet>
+        <title>Contact | Oracle Consults Portfolio</title>
+        <meta name="description" content="Get in touch with Oreste TWIZEYIMANA through the contact form. I am available for collaboration, inquiries, and more." />
+      </Helmet>
       <div className="row">
         <div className="col-md-12">
           <h2>{t('LetsConnectHeading')}</h2>
@@ -48,11 +53,11 @@ const Contact = () => {
           <form onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name">{t('YourNameLabel')}</label>
-              <input id="name" name="from_name" type="text" value={formData.user_name} onChange={handleChange}/>
+              <input id="name" name="from_name" type="text" value={formData.user_name} onChange={handleChange} />
             </div>
             <div>
               <label htmlFor="email">{t('EmailLabel')}</label>
-              <input id="email" name="from_email" type="email" value={formData.user_email} onChange={handleChange}/>
+              <input id="email" name="from_email" type="email" value={formData.user_email} onChange={handleChange} />
             </div>
             <div>
               <label htmlFor="message">{t('MessageLabel')}</label>

@@ -1,13 +1,18 @@
 import React from 'react';
-import {useTranslation} from 'react-i18next';
-import {Link} from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 import '../Styles/Programming.css'; // Import the CSS file
+import { Helmet } from 'react-helmet';
 
 const Programming = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <div className="container hero-section-bis">
+            <Helmet>
+                <title>Programming | Oracle Consults Portfolio</title>
+                <meta name="description" content="Discover the programming expertise of Oreste TWIZEYIMANA, including proficiency in C#, Angular, React, SQL, and more." />
+            </Helmet>
             <div className="row">
                 <div className="text-center">
                     <h1>{t('programming.title')}</h1>
@@ -112,7 +117,7 @@ const Programming = () => {
                 </div>
             </div>
             <div className="row">
-                {t('programming.projects', {returnObjects: true}).map((project, index) => (
+                {t('programming.projects', { returnObjects: true }).map((project, index) => (
                     <div key={index} className="col-sm-6 skill-box">
                         <h1><a href={project.repository}>{project.name}</a></h1>
                         <p><strong>Overview:</strong> {project.overview}</p>
