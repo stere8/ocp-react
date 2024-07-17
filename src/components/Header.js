@@ -21,7 +21,7 @@ const Header = () => (
             <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Dropdown className="dropdown-small" style="width: 100px;"/>
+        <Dropdown/>
       </Container>
     </Navbar>
   </header>
