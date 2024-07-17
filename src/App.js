@@ -6,6 +6,8 @@ import Home from './Pages/Home';
 import Programming from './Pages/Programming';
 import Contact from './Pages/Contact';
 import Languages from "./Pages/Languages";
+import BlogList from './components/BlogList';
+import BlogPost from './components/BlogPost';
 import './App.css';
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
                     <Route path="/programming" element={<Programming/>}/>
                     <Route path="/languages" element={<Languages/>}/>
                     <Route path="/contact" element={<Contact/>}/>
+                    <Route path="/blog" exact component={BlogList} />
+                    <Route path="/blog/:id" component={BlogPost} />
                 </Routes>
                 <Footer/>
             </div>

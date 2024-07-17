@@ -1,0 +1,32 @@
+/* src/components/BlogPost.module.css */
+.blogPost {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .blogPost h1 {
+    color: #333;
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  .blogPost p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .blogPost a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .blogPost a:hover {
+    background-color: #0056b3;
+  }
+  
