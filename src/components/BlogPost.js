@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import '../Styles/BlogPost.css';
+import { useParams } from 'react-router-dom';
+import '../Styles/BlogPost.css'; // Ensure you have this CSS
 
 const BlogPost = () => {
   const { id } = useParams();
@@ -30,14 +30,7 @@ const BlogPost = () => {
   return (
     <div className="blogPost container">
       <h1>{post.title}</h1>
-      <p>
-        {post.content.split('\n').map((paragraph, idx) => (
-          <span key={idx}>
-            {paragraph}
-            <br />
-          </span>
-        ))}
-      </p>
+      <div dangerouslySetInnerHTML={{ __html: post.content }} />
       <p className="text-muted">Posted on {new Date(post.date).toLocaleDateString()}</p>
       {post.gitHubUrl && (
         <a href={post.gitHubUrl} target="_blank" rel="noopener noreferrer">

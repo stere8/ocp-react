@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import '../Styles/BlogList.css';
+import '../Styles/BlogList.css'; // Ensure you have this CSS
 
 const BlogList = () => {
   const [posts, setPosts] = useState([]);
@@ -39,7 +39,7 @@ const BlogList = () => {
                   <Link to={`/blog/${post.id}`}>
                     <h5 className="card-title">{post.title}</h5>
                   </Link>
-                  <p className="card-text">{post.content.substring(0, 100)}...</p>
+                  <div className="card-text" dangerouslySetInnerHTML={{ __html: post.content.substring(0, 100) + '...' }} />
                   <p className="card-text"><small className="text-muted">Posted on {new Date(post.date).toLocaleDateString()}</small></p>
                 </div>
               </div>
