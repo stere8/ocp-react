@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchBlogPostById } from './blogService';
-import styles from './BlogPost.module.css';
+import styles from '../Styles/BlogPost.css';
 
 const BlogPost = () => {
   const { id } = useParams();

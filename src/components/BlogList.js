@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { fetchBlogPosts } from './blogService';
 import { Link } from 'react-router-dom';
-import styles from './BlogList.module.css';
+import styles from '../Styles/BlogList.css';
 
 const BlogList = () => {
   const [posts, setPosts] = useState([]);
