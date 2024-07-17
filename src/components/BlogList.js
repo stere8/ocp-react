@@ -21,6 +21,11 @@ const BlogList = () => {
     getPosts();
   }, []);
 
+  const extractGitHubPath = (url) => {
+    const prefix = "https://github.com/";
+    return url.startsWith(prefix) ? url.substring(prefix.length) : url;
+  };
+
   return (
     <div className="blogList container">
       <h1>OC Blog Posts</h1>
@@ -41,6 +46,11 @@ const BlogList = () => {
                   </Link>
                   <div className="card-text" dangerouslySetInnerHTML={{ __html: post.content.substring(0, 100) + '...' }} />
                   <p className="card-text"><small className="text-muted">Posted on {new Date(post.date).toLocaleDateString()}</small></p>
+                  {post.gitHubUrl && (
+                    <p className="card-text">
+                      <small className="text-muted">Repo: {extractGitHubPath(post.gitHubUrl)}</small>
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
