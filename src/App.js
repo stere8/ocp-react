@@ -20,8 +20,8 @@ function App() {
                     <Route path="/programming" element={<Programming/>}/>
                     <Route path="/languages" element={<Languages/>}/>
                     <Route path="/contact" element={<Contact/>}/>
-                    <Route path="/blog" exact component={BlogList} />
-                    <Route path="/blog/:id" component={BlogPost} />
+                    <Route path="/blog" exact element={<BlogList/>} />
+                    <Route path="/blog/:id" element={<BlogPost/>} />
                 </Routes>
                 <Footer/>
             </div>

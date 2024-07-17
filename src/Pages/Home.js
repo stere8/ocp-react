@@ -18,12 +18,12 @@ const Home = () => {
     const skills = t('Skills', { returnObjects: true });
 
     return (
-        <div className="container">      
-        <Helmet>
-            <title>Oracle Consults Portfolio | Oreste TWIZEYIMANA</title>
-            <meta name="description" content="Oracle Consults Portfolio: Showcasing the programming skills and expertise of Oreste TWIZEYIMANA, an experienced developer proficient in C#, Angular, React, SQL, and more." />
-            <meta name="keywords" content="Oracle Consults, Oreste TWIZEYIMANA, Programming, Developer, Portfolio, C#, Angular, React, SQL, Django, Flask" />
-        </Helmet>
+        <div className="container">
+            <Helmet>
+                <title>Oracle Consults Portfolio | Oreste TWIZEYIMANA</title>
+                <meta name="description" content="Oracle Consults Portfolio: Showcasing the programming skills and expertise of Oreste TWIZEYIMANA, an experienced developer proficient in C#, Angular, React, SQL, and more." />
+                <meta name="keywords" content="Oracle Consults, Oreste TWIZEYIMANA, Programming, Developer, Portfolio, C#, Angular, React, SQL, Django, Flask" />
+            </Helmet>
             <div className="row hero-section">
                 <div className="col-md-12 text-center">
                     <h1>{t('CraftingTechnicalSolutionsHeading')}</h1>
@@ -34,18 +34,22 @@ const Home = () => {
                         <h1>{t('WelcomeToMyPortfolio')}</h1>
                         <p>{t('InterestInMyWork')}</p>
                         <p>{t('DownloadCV')}
-                            <select id="languageDropdown" name="culture" onChange={handleChange} value={downloadLink} className="form-control">
-                                <option value="">{t('SelectCV')}</option>
-                                <option value={cvEng}>{t('EnglishCV')}</option>
-                                <option value={cvPL}>{t('PolishCV')}</option>
-                            </select>
-                            {downloadLink && (
-                                <a href={downloadLink} download="Oreste TWIZEYIMANA CV">
-                                    <Button color="primary" className="mt-2">
-                                        {t('Download')}
-                                    </Button>
-                                </a>
-                            )}
+                            <div className="container">
+                                <div className="cv-download-container">
+                                    <select id="languageDropdown" name="culture" onChange={handleChange} value={downloadLink} className="form-control">
+                                        <option value="">{t('SelectCV')}</option>
+                                        <option value={cvEng}>{t('EnglishCV')}</option>
+                                        <option value={cvPL}>{t('PolishCV')}</option>
+                                    </select>
+                                    {downloadLink && (
+                                        <a href={downloadLink} download="Oreste TWIZEYIMANA CV" className="cv-download-link">
+                                            <Button color="primary" className="mt-2">
+                                                {t('Download')}
+                                            </Button>
+                                        </a>
+                                    )}
+                                </div>
+                            </div>
                         </p>
                         <p>{t('ShapingYourVision')}</p>
                         <div className="skills-section">

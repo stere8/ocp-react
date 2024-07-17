@@ -48,6 +48,20 @@
   padding: 0;
 }
 
+.cv-download-container {
+  display: flex;
+  align-items: center;
+}
+
+.cv-download-container .form-control {
+  flex: 1;
+  margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+.cv-download-container .cv-download-link {
+  margin-top: 0; /* Ensure there's no top margin on the link */
+}
+
 .skill-box ul li {
   font-size: 1rem;
   color: #666;

@@ -46,6 +46,10 @@ code {
   background-color: #001F3F; /* Primary Color */
 }
 
+#languageDropdown {
+  width: 100px !important; /* Adjust this value as needed */
+}
+
 /* Container Styles */
 .container {
   max-width: 1200px;

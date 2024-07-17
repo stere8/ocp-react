@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import './i18n';
 import emailjs from 'emailjs-com';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
