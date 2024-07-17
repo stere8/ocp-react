@@ -12,7 +12,7 @@ const Dropdown = () => {
   };
 
   return (
-    <select id="languageDropdown" name="culture" onChange={handleChange} value={language} className="form-control">
+    <select id="languageDropdown" name="culture" onChange={handleChange} value={language} style={{ width: '100px'  }}>
       <option value="en">English</option>
       <option value="es">Español</option>
       <option value="fr">Français</option>

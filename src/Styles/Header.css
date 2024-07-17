@@ -26,3 +26,7 @@
 #languageDropdown {
   width: 100px !important; /* Adjust this value as needed */
 }
+
+.container-100{
+  width: 100px;
+}
