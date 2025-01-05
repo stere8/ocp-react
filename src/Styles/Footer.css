@@ -36,6 +36,10 @@ footer a:hover {
   text-decoration: underline;
 }
 
+footer h8 {
+  color: #fff; /* Set the text color to white */
+}
+
 @media (max-width: 768px) {
   .social-links {
     display: flex;
