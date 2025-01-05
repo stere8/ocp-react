@@ -247,5 +247,47 @@
     "SelectCV": "Select CV",
     "EnglishCV": "English CV",
     "PolishCV": "Polish CV"
+  },
+  "pages":
+  {
+    "header": {
+    "BrandAlt": "Oreste TWIZEYIMANA - Technical Consultant",
+    "NavLinks": {
+      "Services": "Services",
+      "Projects": "Projects",
+      "Expertise": "Expertise",
+      "Schedule": "Schedule",
+      "Contact": "Contact"
+    },
+    "ScheduleButton": "Book a Consultation"
+  },
+    "home": {
+      "HeroSection": {
+        "Title": "Professional .NET & Python Solutions",
+        "Subtitle": "Delivering scalable backend systems, modern web applications, and technical consulting.",
+        "ScheduleButton": "Schedule Consultation",
+        "ContactButton": "Get in Touch"
+      },
+      "ServicesSection": {
+        "Title": "Services",
+        "Cards": [
+          {
+            "Icon": "fa-code",
+            "Title": "Custom Software Development",
+            "Description": "Creating tailored software solutions to meet your needs."
+          },
+          {
+            "Icon": "fa-lightbulb",
+            "Title": "Technical Consulting",
+            "Description": "Providing guidance for complex technical challenges."
+          },
+          {
+            "Icon": "fa-graduation-cap",
+            "Title": "Academic Project Support",
+            "Description": "Helping you complete your school or university projects."
+          }
+        ]
+      }
+    }
   }
 }

@@ -1,73 +1,49 @@
-import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../Styles/Home.css';
-import cvEng from '../doc/CV EN.pdf';
-import cvPL from '../doc/CV PL.pdf';
 import { Button } from 'react-bootstrap';
-import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
     const { t } = useTranslation();
-    const [downloadLink, setDownloadLink] = useState('');
-
-    const handleChange = (event) => {
-        setDownloadLink(event.target.value);
-    };
-
-    const skills = t('Skills', { returnObjects: true });
+    const heroSection = t('pages.home.HeroSection', { returnObjects: true });
+    const services = t('pages.home.ServicesSection.Cards', { returnObjects: true });
 
     return (
         <div className="container">
-            <Helmet>
-                <title>Oracle Consults Portfolio | Oreste TWIZEYIMANA</title>
-                <meta name="description" content="Oracle Consults Portfolio: Showcasing the programming skills and expertise of Oreste TWIZEYIMANA, an experienced developer proficient in C#, Angular, React, SQL, and more." />
-                <meta name="keywords" content="Oracle Consults, Oreste TWIZEYIMANA, Programming, Developer, Portfolio, C#, Angular, React, SQL, Django, Flask" />
-            </Helmet>
-            <div className="row hero-section">
-                <div className="col-md-12 text-center">
-                    <h1>{t('CraftingTechnicalSolutionsHeading')}</h1>
-                    <p className="lead">{t('FromCodeToCommunicationSubheading')}</p>
+            <section className="hero-section">
+                <h1>{heroSection.Title}</h1>
+                <p className="lead">{heroSection.Subtitle}</p>
+                <div className="cta-buttons">
+                    <Button
+                        href="https://cal.com/t.oreste"
+                        target="_blank"
+                        className="primary-cta"
+                    >
+                        {heroSection.ScheduleButton}
+                    </Button>
+                    <Button
+                        as={Link}
+                        to="/contact"
+                        variant="outline-primary"
+                    >
+                        {heroSection.ContactButton}
+                    </Button>
                 </div>
-                <div className="row">
-                    <div className="col-md-12 text-center mt-5">
-                        <h1>{t('WelcomeToMyPortfolio')}</h1>
-                        <p>{t('InterestInMyWork')}</p>
-                        <p>{t('DownloadCV')}
-                            <div className="container">
-                                <div className="cv-download-container">
-                                    <select id="languageDropdown" name="culture" onChange={handleChange} value={downloadLink} className="form-control">
-                                        <option value="">{t('SelectCV')}</option>
-                                        <option value={cvEng}>{t('EnglishCV')}</option>
-                                        <option value={cvPL}>{t('PolishCV')}</option>
-                                    </select>
-                                    {downloadLink && (
-                                        <a href={downloadLink} download="Oreste TWIZEYIMANA CV" className="cv-download-link">
-                                            <Button color="primary" className="mt-2">
-                                                {t('Download')}
-                                            </Button>
-                                        </a>
-                                    )}
-                                </div>
-                            </div>
-                        </p>
-                        <p>{t('ShapingYourVision')}</p>
-                        <div className="skills-section">
-                            {Object.keys(skills).map(category => (
-                                <div key={category} className="skill-box">
-                                    <h3>{t(category)}</h3>
-                                    <ul>
-                                        {skills[category].map(skill => (
-                                            <li key={skill}>{t(skill)}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
+            </section>
+
+            <section className="services-section">
+                <h2>{t('pages.home.ServicesSection.Title')}</h2>
+                <div className="services-grid">
+                    {services.map((service, index) => (
+                        <div key={index} className="service-card">
+                            <i className={`fa ${service.Icon}`}></i>
+                            <h3>{service.Title}</h3>
+                            <p>{service.Description}</p>
                         </div>
-                        <p>{t('SeekingCollaboration')}</p>
-                    </div>
+                    ))}
                 </div>
-            </div>
+            </section>
         </div>
     );
 };
