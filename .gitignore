@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.vs/ProjectSettings.json
+.vs/slnx.sqlite
+.vs/ocp-react/CopilotIndices/17.13.196.30798/CodeChunks.db
+.vs/ocp-react/CopilotIndices/17.13.196.30798/CodeChunks.db-shm
+.vs/ocp-react/CopilotIndices/17.13.196.30798/CodeChunks.db-wal
+.vs/ocp-react/CopilotIndices/17.13.196.30798/SemanticSymbols.db
+.vs/ocp-react/CopilotIndices/17.13.196.30798/SemanticSymbols.db-shm
+.vs/ocp-react/CopilotIndices/17.13.196.30798/SemanticSymbols.db-wal
+.vs/ocp-react/FileContentIndex/db0d5443-5a31-42db-bc2a-36d52ccfd760.vsidx
+/.vs/ocp-react/FileContentIndex

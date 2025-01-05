@@ -1,0 +1,54 @@
+/* Center Industries Section */
+.industries-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.industries-section h2 {
+  font-size: 1.8rem;
+  color: #0041c4;
+  margin-bottom: 1rem;
+}
+
+.industries-section ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block; /* Allows centering the list */
+  text-align: left; /* Ensures the bullets and text align properly */
+}
+
+.industries-section ul li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.industries-section ul li .custom-bullet {
+  margin-right: 10px;
+}
+
+/* Center Value Proposition Section */
+.value-proposition {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f9f9f9; /* Optional: Light background for separation */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for focus */
+}
+
+.value-proposition h2 {
+  font-size: 1.8rem;
+  color: #0041c4;
+  margin-bottom: 1rem;
+}
+
+.value-proposition p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto; /* Centers the text block */
+  line-height: 1.6;
+}

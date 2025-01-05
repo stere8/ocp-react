@@ -9,6 +9,8 @@ import Languages from "./Pages/Languages";
 import BlogList from './components/BlogList';
 import BlogPost from './components/BlogPost';
 import './App.css';
+import Projects from "./Pages/Projects";
+import Expertise from "./Pages/Expertise";
 
 function App() {
     return (
@@ -20,8 +22,10 @@ function App() {
                     <Route path="/programming" element={<Programming/>}/>
                     <Route path="/languages" element={<Languages/>}/>
                     <Route path="/contact" element={<Contact/>}/>
+                    <Route path="/projects" element={<Projects/>}/>
                     <Route path="/blog" exact element={<BlogList/>} />
                     <Route path="/blog/:id" element={<BlogPost/>} />
+                    <Route path="/Expertise" element={<Expertise/>}/>
                 </Routes>
                 <Footer/>
             </div>

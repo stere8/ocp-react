@@ -288,6 +288,184 @@
           }
         ]
       }
+    },
+    "projects": {
+    "Title": "Projects",
+    "Description": "A showcase of my technical expertise and the diverse projects I've worked on.",
+    "ProjectList": [
+      {
+        "Title": "School Management System (SMS)",
+        "Overview": "A comprehensive web-based system to manage daily operations of educational institutions, including student enrollment, teacher assignments, and course management.",
+        "KeyFeatures": [
+          "Add/remove students and enroll them in courses.",
+          "Add/remove teachers and assign them to courses.",
+          "Create/remove courses and manage enrollments.",
+          "Role-based access control for Admin, Teacher, Parent, and Student.",
+          "Dashboards with attendance tracking and marks management."
+        ],
+        "Technologies": [
+          "React.js",
+          "Bootstrap",
+          "ASP.NET Core",
+          "Swagger",
+          "Entity Framework Core"
+        ],
+        "Repository": "https://github.com/stere8/schoolmanagment"
+      },
+      {
+        "Title": "StockIT - Inventory Management",
+        "Overview": "A web application designed to streamline inventory management for small to medium-sized businesses.",
+        "KeyFeatures": [
+          "Create, edit, and delete products with detailed information.",
+          "Real-time stock level tracking and category-based organization.",
+          "Responsive design with dynamic product details display.",
+          "Inventory reports and exports to CSV/Excel formats."
+        ],
+        "Technologies": [
+          "ASP.NET Core",
+          ".NET 8.0",
+          "Entity Framework Core",
+          "SQL Server",
+          "Razor Pages",
+          "Bootstrap"
+        ],
+        "Repository": "https://github.com/stere8/stockit"
+      },
+      {
+        "Title": "DreamNDine",
+        "Overview": "An all-in-one platform for managing property listings, dining reservations, and user profiles.",
+        "KeyFeatures": [
+          "Property listing and search functionality.",
+          "User registration and authentication.",
+          "Dining reservation system with reviews and ratings.",
+          "Swagger API documentation and secure JWT authentication."
+        ],
+        "Technologies": [
+          ".NET 8.0",
+          "ASP.NET Core",
+          "Entity Framework Core",
+          "Razor Pages",
+          "Swagger",
+          "SQL Server"
+        ],
+        "Repository": "https://github.com/stere8/DreamNDine"
+      },
+      {
+        "Title": "Souls Scribbles and Sounds (SS&S)",
+        "Overview": "A blog platform combining written content with musical elements to create an immersive experience.",
+        "KeyFeatures": [
+          "Rich text editing with CKEditor 5.",
+          "Integration with Spotify for music features.",
+          "Organized blog archive and curated playlists.",
+          "Clean, responsive design for immersive reading."
+        ],
+        "Technologies": [
+          "ASP.NET Core",
+          "Entity Framework Core",
+          "HTML5",
+          "CSS3",
+          "CKEditor 5",
+          "Bootstrap"
+        ],
+        "Repository": "https://github.com/stere8/soulsscriblesandsounds"
+      },
+      {
+        "Title": "User Authentication System",
+        "Overview": "A secure and scalable system for user authentication and registration with both frontend and backend components.",
+        "KeyFeatures": [
+          "User registration with email validation.",
+          "Secure password hashing and JWT token-based authentication.",
+          "Responsive Blazor WebAssembly frontend.",
+          "API endpoints for registration and login."
+        ],
+        "Technologies": [
+          "ASP.NET Core",
+          "Entity Framework Core",
+          "Blazor WebAssembly",
+          "Bootstrap",
+          "SQL Server"
+        ],
+        "Repository": "https://github.com/stere8/userauthenticationsystem"
+      }
+    ]
+  },"expertise": {
+    "Title": "Technical Expertise",
+    "Intro": "As a versatile developer, I bring deep expertise in modern technologies, enabling scalable and user-friendly solutions.",
+    "Skills": {
+      "BackendDevelopment": {
+        "Title": "Backend Development",
+        "Description": "Building robust and scalable server-side applications.",
+        "Items": [
+          "ASP.NET Core",
+          "Entity Framework Core",
+          "Django/Flask",
+          "RESTful API Development",
+          "JWT Authentication"
+        ]
+      },
+      "FrontendDevelopment": {
+        "Title": "Frontend Development",
+        "Description": "Creating intuitive and dynamic user interfaces.",
+        "Items": [
+          "React.js",
+          "Angular",
+          "HTML5/CSS3",
+          "Bootstrap",
+          "Razor Pages"
+        ]
+      },
+      "DatabaseManagement": {
+        "Title": "Database Management",
+        "Description": "Designing and maintaining efficient database systems.",
+        "Items": [
+          "SQL Server",
+          "SQLite",
+          "PostgreSQL",
+          "Entity Framework Core"
+        ]
+      },
+      "DevOps": {
+        "Title": "DevOps Practices",
+        "Description": "Streamlining development and deployment processes.",
+        "Items": [
+          "Continuous Integration/Continuous Deployment (CI/CD)",
+          "Version Control (Git)",
+          "Azure Pipelines"
+        ]
+      },
+      "ProgrammingLanguages": {
+        "Title": "Programming Languages",
+        "Description": "Proficient in a variety of languages for versatile solutions.",
+        "Items": [
+          "C#",
+          "Python",
+          "JavaScript",
+          "SQL"
+        ]
+      }
+    },
+    "Certifications": {
+      "Title": "Certifications",
+      "Items": [
+        "Microsoft Certified: Azure Fundamentals",
+        "Certified Python Developer",
+        "AWS Certified Developer – Associate"
+      ]
+    },
+    "Industries": {
+      "Title": "Industries",
+      "Description": "I’ve worked across a range of industries, solving real-world problems in:",
+      "Items": [
+        "Education: School Management Systems",
+        "Real Estate: Property Listings and Management",
+        "Inventory Management: Streamlining product tracking",
+        "Blog Platforms: Content creation and user engagement"
+      ]
+    },
+    "ValueProposition": {
+      "Title": "Why Work With Me?",
+      "Description": "With a strong technical foundation and a passion for problem-solving, I bring value through innovative solutions tailored to client needs. Let's build something amazing together!"
     }
+  }
   }
 }
