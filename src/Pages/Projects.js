@@ -8,27 +8,29 @@ const Projects = () => {
 
   return (
     <div className="container">
-      <h1>{t('pages.projects.Title')}</h1>
-      <p>{t('pages.projects.Description')}</p>
-      <div className="projects-grid">
-        {projects.map((project, index) => (
+        <section className="hero-section">
+            <h1>{t('pages.projects.Title')}</h1>
+            <p>{t('pages.projects.Description')}</p>
+        </section>
+        <div className="projects-grid">
+            {projects.map((project, index) => (
           <div key={index} className="project-card">
             <h2>{project.Title}</h2>
             <p>{project.Overview}</p>
-            <h4>Key Features:</h4>
+            <h4>{t('pages.projects.KeyFeatures')}</h4>
             <ul>
               {project.KeyFeatures.map((feature, i) => (
                 <li key={i}>{feature}</li>
               ))}
             </ul>
-            <h4>Technologies:</h4>
+            <h4>{t('pages.projects.Technologies')}:</h4>
             <ul>
               {project.Technologies.map((tech, i) => (
                 <li key={i}>{tech}</li>
               ))}
             </ul>
             <a href={project.Repository} target="_blank" rel="noopener noreferrer">
-              View on GitHub
+              {t('pages.projects.ViewOnGitHub')}
             </a>
           </div>
         ))}

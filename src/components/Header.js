@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import '../Styles/Header.css';
 import logo from '../img/logo.png';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import Dropdown from "./Dropdown";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -25,6 +26,7 @@ const Header = () => {
               <Nav.Link href="https://cal.com/t.oreste" target="_blank">{navLinks.Schedule}</Nav.Link>
               <Nav.Link as={Link} to="/contact">{navLinks.Contact}</Nav.Link>
             </Nav>
+            <Dropdown/>
             <Button
               variant="primary"
               href="https://cal.com/t.oreste"

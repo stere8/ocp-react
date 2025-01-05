@@ -1,266 +1,16 @@
 {
-  "AboutMeTitle": "About Me",
-  "AboutOresteHeading": "About Oreste",
-  "AboutOresteDescription1": "I'm Oreste Twizeyimana, a Programmer Developer with 2 years of experience building software solutions that are both elegant and effective. My technical expertise includes C#, .NET, Vue.js, and more – see my ProgrammingModel section for a deeper dive.",
-  "AboutOresteDescription2": "I'm a dedicated problem-solver who thrives on the challenge of crafting clean, well-structured code. In my spare time, I'm always tinkering with side projects and exploring new technologies.",
-  "AboutOresteDescription3": "I also enjoy modeling; explore my portfolio on Instagram [Insert Instagram Link Here].",
-  "ContactTitle": "Contact",
-  "LetsConnectHeading": "Let's connect",
-  "ContactFormDescription": "Please use this form to contact with any questions or feedback:",
-  "contactMessage": "Drop me a line and I'll get back to you ASAP! Whether you have a suggestion, a comment, or just want to say hi, I'd love to hear from you!",
-  "YourNameLabel": "Your Name:",
-  "EmailLabel": "Email:",
-  "MessageLabel": "Message:",
-  "SendButton": "Send",
-  "HomePageTitle": "Home Page",
-  "CraftingTechnicalSolutionsHeading": "Crafting Technical Solutions with Multilingual Flair",
-  "FromCodeToCommunicationSubheading": "From code to communication, shaping your vision",
-  "WelcomeToMyPortfolio": "Hey, welcome to my OC Portfolio!",
-  "InterestInMyWork": "Thank you for taking an interest in my work. This page serves as a comprehensive showcase of my programming styles, skills, and overall profile. I am a passionate developer adept at crafting technical solutions that are not only functional but also linguistically sound.",
-  "DownloadCV": "Download my CV to learn more about my experience and skills.",
-  "ShapingYourVision": "From code to communication, shaping your vision. I'm Oreste TWIZEYIMANA, a Programmer Developer with over two years of experience in the field. I am passionate about creating innovative and user-friendly software solutions.",
-  "SeekingCollaboration": "Whether you're seeking a skilled programmer for collaboration, valuable advice on a project, or simply have an inquiry, feel free to reach out to me. I'm always happy to connect and discuss potential opportunities.",
-  "LanguagesTitle": "Languages",
-  "LanguagesDescription": "I have a strong foundation in multilingual communication, including native-level proficiency in three languages and fluency in another. Additionally, I bring substantial experience in tutoring English and French.",
-  "LanguageProficiencyHeading": "Language Proficiency",
-  "EnglishProficiency": "English: Native Speaker",
-  "FrenchProficiency": "French: Native Speaker",
-  "KinyarwandaProficiency": "Kinyarwanda: Native Speaker",
-  "PolishProficiency": "Polish: Fluent",
-  "TutoringExperienceHeading": "Tutoring Experience",
-  "TutoringExperienceDescription": "I have a wide range of experience tutoring students of all ages and abilities. I've helped elementary school students with English, high schoolers with English, French, and Math, and adults seeking to improve their conversational French or prepare for the IELTS exam. My expertise includes Business English for professionals, tailored lessons for young learners, and exam preparation for students facing important assessments. I pride myself on adapting my teaching methods to individual student needs, helping them achieve their unique language and academic goals.",
-  "MyServicesHeading": "My Services",
-  "MyServicesDescription": "I offer a variety of language learning services, including:",
-  "OneOnOneTutoring": "One-on-one tutoring",
-  "GroupClasses": "Group classes",
-  "OnlineTutoring": "Online tutoring",
-  "ExamPreparation": "Exam preparation",
-  "ConversationPractice": "Conversation practice",
-  "TranslationServices": "I am also available for translation and interpretation services.",
-  "MyApproachHeading": "My Approach",
-  "MyApproachDescription": "I believe that language learning should be fun and engaging. I tailor my lessons to the individual needs of each student, and I use a variety of methods to keep my students motivated. I am patient and encouraging, and I am always willing to answer questions.",
-  "TestimonialsHeading": "Testimonials",
-  "Testimonial1": "Great teacher! Nice atmosphere and professional approach to the student. - Jaroslaw",
-  "Testimonial2": "Very good cooperation. We are satisfied with the lessons. - Katarzyna",
-  "MoreTestimonialsLink": "See more testimonials on my Buki.org.pl Profile reviews",
-  "ContactMeHeading": "Contact Me",
-  "ContactMeDescription": "Interested in improving your language skills? Let's connect!",
-  "ProgrammingTitle": "ProgrammingModel Skills",
-  "ProgrammingJourneyHeading": "My Programming Journey",
-  "ProgrammingJourneyDescription": "As a passionate and experienced .NET developer with a strong background in building and deploying robust backend applications. Over the course of more than 2 years in the industry, I have honed my skills in various technologies and methodologies, enabling me to contribute effectively to complex projects and deliver high-quality solutions.",
-  "TechnologiesHeading": "Technologies",
-  "TechnicalExpertiseHeading": "Technical Expertise",
-  "TechnicalExpertiseDescription": "My expertise spans across a spectrum of technologies and tools:",
-  "CSharpSkillHead": "C# (.NET):",
-  "CSharpSkillContent": "Proficient in developing scalable applications using C# and .NET framework.",
-  "WPFSkillHead": "WPF:",
-  "WPFSkillContent": "Skilled in creating rich desktop applications with WPF.",
-  "EntityFrameworkSkillHead": "Entity Framework:",
-  "EntityFrameworkSkillContent": "Experienced in database interaction and ORM using Entity Framework.",
-  "SQLSkillHead": "SQL:",
-  "SQLSkillContent": "Proficient in database design, querying, and optimization using SQL.",
-  "GitSkillHead": "Git:",
-  "GitSkillContent": "Proficient in version control and collaborative development workflows using Git.",
-  "CI_CDPracticesSkillHead": "CI/CD Practices:",
-  "CI_CDPracticesSkillContent": "Experienced in Continuous Integration and Continuous Deployment practices.",
-  "HTML_CSSSkillHead": "HTML/CSS:",
-  "HTML_CSSSkillContent": "Familiar with front-end technologies for creating user interfaces.",
-  "ReactJSSkillHead": "React JS:",
-  "ReactJSSkillContent": "Knowledgeable in developing dynamic web applications using React JS.",
-  "AngularSkillHead": "Angular:",
-  "AngularSkillContent": "Skilled in developing robust and dynamic single-page applications with Angular.",
-  "DjangoSkillHead": "Django/Flask:",
-  "DjangoSkillContent": "Skilled in building robust backend applications with Python technologies, including Django and Flask.",
-  "BootstrapSkillHead": "Bootstrap:",
-  "BootstrapSkillContent": "Experienced in creating responsive web interfaces with Bootstrap.",
-  "ASPNETCoreSkillHead": "ASP.NET Core:",
-  "ASPNETCoreSkillContent": "Proficient in building scalable web applications with ASP.NET Core.",
-  "RazorPagesSkillHead": "Razor Pages:",
-  "RazorPagesSkillContent": "Knowledgeable in creating dynamic web pages with Razor Pages.",
-  "ReactRouterSkillHead": "React Router:",
-  "ReactRouterSkillContent": "Experienced in client-side routing with React Router.",
-  "FontAwesomeSkillHead": "FontAwesome:",
-  "FontAwesomeSkillContent": "Familiar with using FontAwesome for web icons.",
-  "react_i18nextSkillHead": "react-i18next:",
-  "react_i18nextSkillContent": "Skilled in implementing internationalization with react-i18next.",
-  "EmailJSSkillHead": "EmailJS:",
-  "EmailJSSkillContent": "Experienced in integrating email services with EmailJS.",
-  "AgileScrumSkillHead": "Agile/Scrum:",
-  "AgileScrumSkillContent": "Experienced in Agile practices for efficient project management.",
-  "AlwaysLearningDescription": "I'm always learning and experimenting. If you have a project in mind, or just want to connect let's connect! also feel free to Download my CV to learn more about my experience and skills.",
-  "FeaturedProjectsHeading": "Featured Projects",
-  "DoIt-TicketingSystemProject": "DoIt-Ticketing System",
-  "DoIt-TicketingSystemDescription": "The stere8/rttrackers repository is a Flask-based web application designed for tracking stock prices and weather conditions. Here's a summary of its key components and functionalities:",
-  "CoreFunctionalitiesHeading": "Core Functionalities",
-  "StockTracking": "Stock Tracking: Utilizes two classes, StockTracker and StockTracker2, to fetch current stock prices from different APIs (Alpha Vantage and possibly IEX Cloud). These classes are defined in stock_trackers.py and stock_trackers2.py.",
-  "WeatherTracking": "Weather Tracking: The WeatherTracker class in weather_tracker.py fetches current weather data, including humidity, pressure, wind speed, and temperature, using the OpenWeatherMap API.",
-  "WebApplicationStructureHeading": "Web Application Structure",
-  "FlaskApp": "Flask App: The main application logic is contained in app.py, which defines routes for different functionalities such as displaying the homepage, tracking selected stocks, selecting stocks, selecting regions for weather tracking, and tracking weather conditions in selected regions.",
-  "HTMLTemplates": "HTML Templates: The templates directory contains HTML files (index.html, selectstocks.html, stocktracker.html, and others) for rendering the web pages. These templates use Bootstrap and jQuery for styling and functionality.",
-  "StockRepresentation": "Stock Representation: The Stock class in Stock.py represents a stock with attributes like name, ticker, and last price.",
-  "ConfigurationAndManagementHeading": "Configuration and Management",
-  "Gitignore": ".gitignore: Specifies files and directories that Git should ignore, including build results, user-specific files, and other non-source code files.",
-  "Gitattributes": ".gitattributes: Configures Git settings for handling line endings, diffing certain file types, and managing merge behaviors for specific file types.",
-  "EnhancementsToStockTrackingHeading": "Enhancements to Stock Tracking",
-  "RealTimeUpdates": "Real-time Updates: Implement WebSocket or AJAX polling to provide real-time updates of stock prices without needing to refresh the page.",
-  "ExpandedAPIIntegration": "Expanded API Integration: Integrate more financial data APIs to provide a broader range of stock market data, including international markets.",
-  "UserCustomization": "User Customization: Allow users to save their stock selections and view them upon returning to the site, possibly through user accounts or local storage.",
-  "EnhancementsToWeatherTrackingHeading": "Enhancements to Weather Tracking",
-  "ExtendedForecast": "Extended Forecast: Incorporate a 5-day or 10-day weather forecast feature in addition to the current weather conditions.",
-  "GeolocationSupport": "Geolocation Support: Automatically detect the user's location to display local weather information without manual region selection.",
-  "WeatherAlerts": "Weather Alerts: Implement weather alerts or warnings based on severe weather conditions in the selected regions.",
-  "UI_UXImprovementsHeading": "UI/UX Improvements",
-  "ResponsiveDesign": "Responsive Design: Ensure the web application is fully responsive and provides an optimal viewing experience across all devices.",
-  "InteractiveCharts": "Integrate interactive charts for stock price history and weather patterns using libraries like Chart.js or D3.js.",
-  "ThemeCustomization": "Offer theme customization options for users, such as light mode and dark mode.",
-  "DreamNDineProject": "DreamNDine",
-  "DreamNDineDescription": "The stere8/dreamndine is a comprehensive web application...",
-  "PythonExplorationsProject": "Python Explorations",
-  "PythonExplorationsDescription": "This collection of beginner-friendly Python projects was a fantastic starting point for developing my core programming skills...",
-  "CrossPlatformTodoAppProject": "Cross-Platform Todo App",
-  "CrossPlatformTodoAppDescription": "This React Native project was my foray into mobile development...",
-  "RobustUserAuthenticationSystemProject": "Robust User Authentication System",
-  "RobustUserAuthenticationSystemDescription": "This comprehensive project demonstrates my ability to design secure and scalable authentication systems for web applications...",
-  "Skills": {
-    "Development": [
-      "C# (.NET) \t |\t WPF",
-      "Angular \t |\t React JS",
-      "SQL \t |\t Git",
-      "HTML \t |\t CSS",
-      "Django \t |\t Flask",
-      "Bootstrap \t |\t CI/CD",
-      "ASP.NET Core \t |\t Razor Pages",
-      "React Router \t |\t FontAwesome",
-      "EmailJS \t |\t react-i18next",
-      "Entity Framework"
-    ],
-    "Process Improvement": [
-      "Automation",
-      "Streamlining",
-      "Integration",
-      "Optimization",
-      "Scrum methodologies"
-    ],
-    "Problem Solving": [
-      "Debugging",
-      "Code review",
-      "Clean code writing",
-      "Project documentation",
-      "Project planning"
-    ],
-    "Customer Focus": [
-      "Improved customer experiences through streamlined processes and enhanced applications"
-    ],
-    "Adaptability": [
-      "Quick learner",
-      "Open to new technologies"
-    ],
-    "Soft Skills": [
-      "Dedication",
-      "Hard work",
-      "Teamwork"
-    ]
-  },
-  "programming": {
-    "title": "My Programming Journey",
-    "intro": "AS a passionate and experienced .NET developer with a strong background in building and deploying robust backend applications. Over the course of more than 2 years in the industry, I have honed my skills in various technologies and methodologies, enabling me to contribute effectively to complex projects and deliver high-quality solutions.",
-    "horizonExpansion": "Expanding My Horizons",
-    "aficionado": "As an aficionado of technology, I've continuously sought to expand my skill set beyond my primary focus. I've delved into modern frontend frameworks such as React and Angular, allowing me to create dynamic and responsive web applications. Additionally, my interest in Python has led me to explore powerful frameworks like Django and Flask. This exploration into diverse technologies has enriched my programming abilities and broadened my perspective on solving complex challenges.",
-    "technologies": "Technologies",
-    "technicalExpertise": "Technologies and Expertises",
-    "expertiseDescription": "My expertise spans across a spectrum of technologies and tools:",
-    "projectsTitle": "Featured Projects",
-    "projects": [
-      {
-        "name": "DoIt-Ticketing System",
-        "description": "Developed a comprehensive ticket management system, allowing users to create, view, update, and delete tickets. The system includes user registration and login features.",
-        "overview": "A comprehensive ticket management system with robust feature implementation.",
-        "keyResponsibilities": [
-          "Implemented ticket and user management features",
-          "Built the API with Flask and the frontend with Angular"
-        ],
-        "technologies": [
-          "Flask",
-          "Angular",
-          "SQLite"
-        ],
-        "keyContributions": "Increased user engagement and administrative efficiency through robust feature implementation.",
-        "repository": "https://github.com/stere8/DoIT-Ticketing"
-      },
-      {
-        "name": "Multilingual Portfolio Website in React",
-        "description": "Developed a responsive, multilingual portfolio website to showcase personal projects, technical skills, programming experience, language proficiency, and contact information.",
-        "overview": "A portfolio website demonstrating competency and versatility in frontend development with React.",
-        "keyResponsibilities": [
-          "Led the development process",
-          "Integrated modern design principles",
-          "Implemented internationalization",
-          "Added interactive elements",
-          "Designed and integrated a contact form"
-        ],
-        "technologies": [
-          "React",
-          "Bootstrap",
-          "React Router",
-          "FontAwesome",
-          "react-i18next",
-          "EmailJS"
-        ],
-        "keyContributions": "Created a responsive, user-friendly interface supporting multiple languages, and effectively managed contact form submissions.",
-        "repository": "https://github.com/stere8/ocp-react"
-      },
-      {
-        "name": "StockIT",
-        "description": "A web application for inventory management, providing a real-time view of stock levels.",
-        "overview": "An inventory management application designed for real-time visibility of stock levels.",
-        "keyResponsibilities": [
-          "Oversaw the development",
-          "Collaborated with cross-functional teams",
-          "Developed core functionalities"
-        ],
-        "technologies": [
-          "ASP.NET Core",
-          "Razor Pages",
-          "Entity Framework Core"
-        ],
-        "keyContributions": "Implemented a user-friendly interface; ensured data integrity and scalability.",
-        "repository": "https://github.com/stere8/stockit"
-      },
-      {
-        "name": "Real Estate Website in Django",
-        "description": "Developed a comprehensive real estate platform with user account management, property listings, and a booking system.",
-        "overview": "A real estate platform with user account management and booking system.",
-        "keyResponsibilities": [
-          "Implemented user features for property viewings and bookings",
-          "Built an admin panel"
-        ],
-        "technologies": [
-          "Django",
-          "Bootstrap",
-          "SQLite"
-        ],
-        "keyContributions": "Improved user engagement and administrative efficiency through robust feature implementation.",
-        "repository": "https://github.com/stere8/real_estate"
-      }
-    ],
-    "Download": "Download",
-    "SelectCV": "Select CV",
-    "EnglishCV": "English CV",
-    "PolishCV": "Polish CV"
-  },
-  "pages":
-  {
+  "pages": {
     "header": {
-    "BrandAlt": "Oreste TWIZEYIMANA - Technical Consultant",
-    "NavLinks": {
-      "Services": "Services",
-      "Projects": "Projects",
-      "Expertise": "Expertise",
-      "Schedule": "Schedule",
-      "Contact": "Contact"
+      "BrandAlt": "Oreste TWIZEYIMANA - Technical Consultant",
+      "NavLinks": {
+        "Services": "Services",
+        "Projects": "Projects",
+        "Expertise": "Expertise",
+        "Schedule": "Schedule",
+        "Contact": "Contact"
+      },
+      "ScheduleButton": "Book a Consultation"
     },
-    "ScheduleButton": "Book a Consultation"
-  },
     "home": {
       "HeroSection": {
         "Title": "Professional .NET & Python Solutions",
@@ -290,182 +40,197 @@
       }
     },
     "projects": {
-    "Title": "Projects",
-    "Description": "A showcase of my technical expertise and the diverse projects I've worked on.",
-    "ProjectList": [
-      {
-        "Title": "School Management System (SMS)",
-        "Overview": "A comprehensive web-based system to manage daily operations of educational institutions, including student enrollment, teacher assignments, and course management.",
-        "KeyFeatures": [
-          "Add/remove students and enroll them in courses.",
-          "Add/remove teachers and assign them to courses.",
-          "Create/remove courses and manage enrollments.",
-          "Role-based access control for Admin, Teacher, Parent, and Student.",
-          "Dashboards with attendance tracking and marks management."
-        ],
-        "Technologies": [
-          "React.js",
-          "Bootstrap",
-          "ASP.NET Core",
-          "Swagger",
-          "Entity Framework Core"
-        ],
-        "Repository": "https://github.com/stere8/schoolmanagment"
-      },
-      {
-        "Title": "StockIT - Inventory Management",
-        "Overview": "A web application designed to streamline inventory management for small to medium-sized businesses.",
-        "KeyFeatures": [
-          "Create, edit, and delete products with detailed information.",
-          "Real-time stock level tracking and category-based organization.",
-          "Responsive design with dynamic product details display.",
-          "Inventory reports and exports to CSV/Excel formats."
-        ],
-        "Technologies": [
-          "ASP.NET Core",
-          ".NET 8.0",
-          "Entity Framework Core",
-          "SQL Server",
-          "Razor Pages",
-          "Bootstrap"
-        ],
-        "Repository": "https://github.com/stere8/stockit"
-      },
-      {
-        "Title": "DreamNDine",
-        "Overview": "An all-in-one platform for managing property listings, dining reservations, and user profiles.",
-        "KeyFeatures": [
-          "Property listing and search functionality.",
-          "User registration and authentication.",
-          "Dining reservation system with reviews and ratings.",
-          "Swagger API documentation and secure JWT authentication."
-        ],
-        "Technologies": [
-          ".NET 8.0",
-          "ASP.NET Core",
-          "Entity Framework Core",
-          "Razor Pages",
-          "Swagger",
-          "SQL Server"
-        ],
-        "Repository": "https://github.com/stere8/DreamNDine"
-      },
-      {
-        "Title": "Souls Scribbles and Sounds (SS&S)",
-        "Overview": "A blog platform combining written content with musical elements to create an immersive experience.",
-        "KeyFeatures": [
-          "Rich text editing with CKEditor 5.",
-          "Integration with Spotify for music features.",
-          "Organized blog archive and curated playlists.",
-          "Clean, responsive design for immersive reading."
-        ],
-        "Technologies": [
-          "ASP.NET Core",
-          "Entity Framework Core",
-          "HTML5",
-          "CSS3",
-          "CKEditor 5",
-          "Bootstrap"
-        ],
-        "Repository": "https://github.com/stere8/soulsscriblesandsounds"
-      },
-      {
-        "Title": "User Authentication System",
-        "Overview": "A secure and scalable system for user authentication and registration with both frontend and backend components.",
-        "KeyFeatures": [
-          "User registration with email validation.",
-          "Secure password hashing and JWT token-based authentication.",
-          "Responsive Blazor WebAssembly frontend.",
-          "API endpoints for registration and login."
-        ],
-        "Technologies": [
-          "ASP.NET Core",
-          "Entity Framework Core",
-          "Blazor WebAssembly",
-          "Bootstrap",
-          "SQL Server"
-        ],
-        "Repository": "https://github.com/stere8/userauthenticationsystem"
-      }
-    ]
-  },"expertise": {
-    "Title": "Technical Expertise",
-    "Intro": "As a versatile developer, I bring deep expertise in modern technologies, enabling scalable and user-friendly solutions.",
-    "Skills": {
-      "BackendDevelopment": {
-        "Title": "Backend Development",
-        "Description": "Building robust and scalable server-side applications.",
-        "Items": [
-          "ASP.NET Core",
-          "Entity Framework Core",
-          "Django/Flask",
-          "RESTful API Development",
-          "JWT Authentication"
-        ]
-      },
-      "FrontendDevelopment": {
-        "Title": "Frontend Development",
-        "Description": "Creating intuitive and dynamic user interfaces.",
-        "Items": [
-          "React.js",
-          "Angular",
-          "HTML5/CSS3",
-          "Bootstrap",
-          "Razor Pages"
-        ]
-      },
-      "DatabaseManagement": {
-        "Title": "Database Management",
-        "Description": "Designing and maintaining efficient database systems.",
-        "Items": [
-          "SQL Server",
-          "SQLite",
-          "PostgreSQL",
-          "Entity Framework Core"
-        ]
-      },
-      "DevOps": {
-        "Title": "DevOps Practices",
-        "Description": "Streamlining development and deployment processes.",
-        "Items": [
-          "Continuous Integration/Continuous Deployment (CI/CD)",
-          "Version Control (Git)",
-          "Azure Pipelines"
-        ]
-      },
-      "ProgrammingLanguages": {
-        "Title": "Programming Languages",
-        "Description": "Proficient in a variety of languages for versatile solutions.",
-        "Items": [
-          "C#",
-          "Python",
-          "JavaScript",
-          "SQL"
-        ]
-      }
-    },
-    "Certifications": {
-      "Title": "Certifications",
-      "Items": [
-        "Microsoft Certified: Azure Fundamentals",
-        "Certified Python Developer",
-        "AWS Certified Developer – Associate"
+      "Title": "Projects",
+      "Description": "A showcase of my technical expertise and the diverse projects I've worked on.",
+      "KeyFeatures": "Key Features",
+      "Technologies": "Technologies",
+      "ViewOnGitHub": "View on Github",
+      "ProjectList": [
+        {
+          "Title": "School Management System (SMS)",
+          "Overview": "A comprehensive web-based system to manage daily operations of educational institutions, including student enrollment, teacher assignments, and course management.",
+          "KeyFeatures": [
+            "Add/remove students and enroll them in courses.",
+            "Add/remove teachers and assign them to courses.",
+            "Create/remove courses and manage enrollments.",
+            "Role-based access control for Admin, Teacher, Parent, and Student.",
+            "Dashboards with attendance tracking and marks management."
+          ],
+          "Technologies": [
+            "React.js",
+            "Bootstrap",
+            "ASP.NET Core",
+            "Swagger",
+            "Entity Framework Core"
+          ],
+          "Repository": "https://github.com/stere8/schoolmanagment"
+        },
+        {
+          "Title": "StockIT - Inventory Management",
+          "Overview": "A web application designed to streamline inventory management for small to medium-sized businesses.",
+          "KeyFeatures": [
+            "Create, edit, and delete products with detailed information.",
+            "Real-time stock level tracking and category-based organization.",
+            "Responsive design with dynamic product details display.",
+            "Inventory reports and exports to CSV/Excel formats."
+          ],
+          "Technologies": [
+            "ASP.NET Core",
+            ".NET 8.0",
+            "Entity Framework Core",
+            "SQL Server",
+            "Razor Pages",
+            "Bootstrap"
+          ],
+          "Repository": "https://github.com/stere8/stockit"
+        },
+        {
+          "Title": "DreamNDine",
+          "Overview": "An all-in-one platform for managing property listings, dining reservations, and user profiles.",
+          "KeyFeatures": [
+            "Property listing and search functionality.",
+            "User registration and authentication.",
+            "Dining reservation system with reviews and ratings.",
+            "Swagger API documentation and secure JWT authentication."
+          ],
+          "Technologies": [
+            ".NET 8.0",
+            "ASP.NET Core",
+            "Entity Framework Core",
+            "Razor Pages",
+            "Swagger",
+            "SQL Server"
+          ],
+          "Repository": "https://github.com/stere8/DreamNDine"
+        },
+        {
+          "Title": "Souls Scribbles and Sounds (SS&S)",
+          "Overview": "A blog platform combining written content with musical elements to create an immersive experience.",
+          "KeyFeatures": [
+            "Rich text editing with CKEditor 5.",
+            "Integration with Spotify for music features.",
+            "Organized blog archive and curated playlists.",
+            "Clean, responsive design for immersive reading."
+          ],
+          "Technologies": [
+            "ASP.NET Core",
+            "Entity Framework Core",
+            "HTML5",
+            "CSS3",
+            "CKEditor 5",
+            "Bootstrap"
+          ],
+          "Repository": "https://github.com/stere8/soulsscriblesandsounds"
+        },
+        {
+          "Title": "User Authentication System",
+          "Overview": "A secure and scalable system for user authentication and registration with both frontend and backend components.",
+          "KeyFeatures": [
+            "User registration with email validation.",
+            "Secure password hashing and JWT token-based authentication.",
+            "Responsive Blazor WebAssembly frontend.",
+            "API endpoints for registration and login."
+          ],
+          "Technologies": [
+            "ASP.NET Core",
+            "Entity Framework Core",
+            "Blazor WebAssembly",
+            "Bootstrap",
+            "SQL Server"
+          ],
+          "Repository": "https://github.com/stere8/userauthenticationsystem"
+        }
       ]
     },
-    "Industries": {
-      "Title": "Industries",
-      "Description": "I’ve worked across a range of industries, solving real-world problems in:",
-      "Items": [
-        "Education: School Management Systems",
-        "Real Estate: Property Listings and Management",
-        "Inventory Management: Streamlining product tracking",
-        "Blog Platforms: Content creation and user engagement"
-      ]
+    "expertise": {
+      "Title": "Technical Expertise",
+      "Intro": "As a versatile developer, I bring deep expertise in modern technologies, enabling scalable and user-friendly solutions.",
+      "Skills": {
+        "BackendDevelopment": {
+          "Title": "Backend Development",
+          "Description": "Building robust and scalable server-side applications.",
+          "Items": [
+            "ASP.NET Core",
+            "Entity Framework Core",
+            "Django/Flask",
+            "RESTful API Development",
+            "JWT Authentication"
+          ]
+        },
+        "FrontendDevelopment": {
+          "Title": "Frontend Development",
+          "Description": "Creating intuitive and dynamic user interfaces.",
+          "Items": [
+            "React.js",
+            "Angular",
+            "HTML5/CSS3",
+            "Bootstrap",
+            "Razor Pages"
+          ]
+        },
+        "DatabaseManagement": {
+          "Title": "Database Management",
+          "Description": "Designing and maintaining efficient database systems.",
+          "Items": [
+            "SQL Server",
+            "SQLite",
+            "PostgreSQL",
+            "Entity Framework Core"
+          ]
+        },
+        "DevOps": {
+          "Title": "DevOps Practices",
+          "Description": "Streamlining development and deployment processes.",
+          "Items": [
+            "Continuous Integration/Continuous Deployment (CI/CD)",
+            "Version Control (Git)",
+            "Azure Pipelines"
+          ]
+        },
+        "ProgrammingLanguages": {
+          "Title": "Programming Languages",
+          "Description": "Proficient in a variety of languages for versatile solutions.",
+          "Items": [
+            "C#",
+            "Python",
+            "JavaScript",
+            "SQL"
+          ]
+        }
+      },
+      "Certifications": {
+        "Title": "Certifications",
+        "Items": [
+          "Microsoft Certified: Azure Fundamentals",
+          "Certified Python Developer",
+          "AWS Certified Developer – Associate"
+        ]
+      },
+      "Industries": {
+        "Title": "Industries",
+        "Description": "I’ve worked across a range of industries, solving real-world problems in:",
+        "Items": [
+          "Education: School Management Systems",
+          "Real Estate: Property Listings and Management",
+          "Inventory Management: Streamlining product tracking",
+          "Blog Platforms: Content creation and user engagement"
+        ]
+      },
+      "ValueProposition": {
+        "Title": "Why Work With Me?",
+        "Description": "With a strong technical foundation and a passion for problem-solving, I bring value through innovative solutions tailored to client needs. Let's build something amazing together!"
+      }
     },
-    "ValueProposition": {
-      "Title": "Why Work With Me?",
-      "Description": "With a strong technical foundation and a passion for problem-solving, I bring value through innovative solutions tailored to client needs. Let's build something amazing together!"
+    "ContactUs": {
+      "LetsConnectHeading": "Let's Connect",
+      "ContactFormDescription": "Feel free to reach out to me using the contact form below",
+      "contactMessage": "I'm always interested in hearing about new opportunities, projects, or just having a friendly conversation",
+      "ContactForm": {
+        "YourNameLabel": "Your Name",
+        "EmailLabel":"Email",
+        "MessageLabel": "Message",
+        "SendButton": "Send"
+      }
     }
-  }
   }
 }

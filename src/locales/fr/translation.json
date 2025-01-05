@@ -1,251 +1,236 @@
 {
-  "AboutMeTitle": "À propos de moi",
-  "AboutOresteHeading": "À propos d'Oreste",
-  "AboutOresteDescription1": "Je suis Oreste Twizeyimana, un développeur de logiciels avec 2 ans d'expérience dans la création de solutions logicielles à la fois élégantes et efficaces. Mon expertise technique inclut C#, .NET, Vue.js, et plus encore – voir ma section ProgrammingModel pour une plongée plus profonde.",
-  "AboutOresteDescription2": "Je suis un résolveur de problèmes dévoué qui prospère face au défi de créer un code propre et bien structuré. Pendant mon temps libre, je travaille toujours sur des projets parallèles et j'explore de nouvelles technologies.",
-  "AboutOresteDescription3": "J'aime aussi le mannequinat ; explorez mon portfolio sur Instagram [Insérer le lien Instagram ici].",
-  "ContactTitle": "Contact",
-  "LetsConnectHeading": "Connectons-nous",
-  "ContactFormDescription": "Veuillez utiliser ce formulaire pour me contacter pour toute question ou commentaire :",
-  "contactMessage": "Napisz do mnie, a ja odezwę się jak najszybciej! Niezależnie od tego, czy masz sugestię, komentarz, czy po prostu chcesz się przywitać, chętnie Cię usłyszę!",
-  "YourNameLabel": "Votre nom :",
-  "EmailLabel": "Email :",
-  "MessageLabel": "Message :",
-  "SendButton": "Envoyer",
-  "HomePageTitle": "Page d'accueil",
-  "CraftingTechnicalSolutionsHeading": "Créer des solutions techniques avec une touche multilingue",
-  "FromCodeToCommunicationSubheading": "Du code à la communication, façonnant votre vision",
-  "WelcomeToMyPortfolio": "Salut, bienvenue dans mon portfolio OC !",
-  "InterestInMyWork": "Merci de vous intéresser à mon travail. Cette page sert de vitrine complète de mes styles de programmation, compétences et profil général. Je suis un développeur passionné, expert dans la création de solutions techniques qui ne sont pas seulement fonctionnelles mais aussi linguistiquement correctes.",
-  "DownloadCV": "Téléchargez mon CV pour en savoir plus sur mon expérience et mes compétences.",
-  "ShapingYourVision": "Du code à la communication, façonnant votre vision. Je suis Oreste TWIZEYIMANA, un développeur de logiciels avec plus de deux ans d'expérience dans le domaine. Je suis passionné par la création de solutions logicielles innovantes et conviviales.",
-  "SeekingCollaboration": "Que vous recherchiez un programmeur qualifié pour collaborer, des conseils précieux sur un projet, ou simplement une question, n'hésitez pas à me contacter. Je suis toujours heureux de me connecter et de discuter des opportunités potentielles.",
-  "LanguagesTitle": "Langues",
-  "LanguagesDescription": "J'ai une solide base en communication multilingue, y compris une maîtrise native de trois langues et une maîtrise courante d'une autre. De plus, j'ai une expérience considérable dans le tutorat de l'anglais et du français.",
-  "LanguageProficiencyHeading": "Maîtrise des langues",
-  "EnglishProficiency": "Anglais : Langue maternelle",
-  "FrenchProficiency": "Français : Langue maternelle",
-  "KinyarwandaProficiency": "Kinyarwanda : Langue maternelle",
-  "PolishProficiency": "Polonais : Courant",
-  "TutoringExperienceHeading": "Expérience en tutorat",
-  "TutoringExperienceDescription": "J'ai une vaste expérience dans le tutorat d'élèves de tous âges et de tous niveaux. J'ai aidé des élèves de primaire avec l'anglais, des lycéens avec l'anglais, le français et les mathématiques, et des adultes cherchant à améliorer leur français conversationnel ou à se préparer à l'examen IELTS. Mon expertise inclut l'anglais des affaires pour les professionnels, des leçons personnalisées pour les jeunes apprenants et la préparation aux examens pour les étudiants confrontés à des évaluations importantes. Je suis fier d'adapter mes méthodes d'enseignement aux besoins individuels de chaque élève, les aidant à atteindre leurs objectifs linguistiques et académiques uniques.",
-  "MyServicesHeading": "Mes services",
-  "MyServicesDescription": "J'offre une variété de services d'apprentissage des langues, y compris :",
-  "OneOnOneTutoring": "Tutorat individuel",
-  "GroupClasses": "Cours en groupe",
-  "OnlineTutoring": "Tutorat en ligne",
-  "ExamPreparation": "Préparation aux examens",
-  "ConversationPractice": "Pratique de conversation",
-  "TranslationServices": "Je suis également disponible pour des services de traduction et d'interprétation.",
-  "MyApproachHeading": "Mon approche",
-  "MyApproachDescription": "Je crois que l'apprentissage des langues doit être amusant et engageant. J'adapte mes leçons aux besoins individuels de chaque élève et j'utilise une variété de méthodes pour garder mes élèves motivés. Je suis patient et encourageant, et je suis toujours prêt à répondre aux questions.",
-  "TestimonialsHeading": "Témoignages",
-  "Testimonial1": "Super professeur ! Bonne ambiance et approche professionnelle de l'élève. - Jaroslaw",
-  "Testimonial2": "Très bonne coopération. Nous sommes satisfaits des leçons. - Katarzyna",
-  "MoreTestimonialsLink": "Voir plus de témoignages sur mon profil Buki.org.pl",
-  "ContactMeHeading": "Contactez-moi",
-  "ContactMeDescription": "Intéressé par l'amélioration de vos compétences linguistiques ? Connectons-nous !",
-  "ProgrammingTitle": "Compétences en ProgrammingModel",
-  "ProgrammingJourneyHeading": "Mon parcours de programmation",
-  "ProgrammingJourneyDescription": "En tant que développeur .NET passionné et expérimenté avec une solide expérience dans la création et le déploiement d'applications backend robustes. Au cours de plus de 2 ans dans l'industrie, j'ai perfectionné mes compétences dans diverses technologies et méthodologies, me permettant de contribuer efficacement à des projets complexes et de fournir des solutions de haute qualité.",
-  "TechnologiesHeading": "Technologies",
-  "TechnicalExpertiseHeading": "Expertise technique",
-  "TechnicalExpertiseDescription": "Mon expertise couvre un spectre de technologies et d'outils :",
-  "CSharpSkillHead": "C# (.NET) :",
-  "CSharpSkillContent": "Compétent dans le développement d'applications évolutives utilisant C# et le framework .NET.",
-  "WPFSkillHead": "WPF :",
-  "WPFSkillContent": "Compétent dans la création d'applications de bureau riches avec WPF.",
-  "EntityFrameworkSkillHead": "Entity Framework :",
-  "EntityFrameworkSkillContent": "Expérimenté dans l'interaction avec les bases de données et l'ORM utilisant Entity Framework.",
-  "SQLSkillHead": "SQL :",
-  "SQLSkillContent": "Compétent dans la conception, la requête et l'optimisation de bases de données utilisant SQL.",
-  "GitSkillHead": "Git :",
-  "GitSkillContent": "Compétent dans le contrôle de version et les workflows de développement collaboratif utilisant Git.",
-  "CI_CDPracticesSkillHead": "Pratiques CI/CD :",
-  "CI_CDPracticesSkillContent": "Expérimenté dans les pratiques d'intégration continue et de déploiement continu.",
-  "HTML_CSSSkillHead": "HTML/CSS :",
-  "HTML_CSSSkillContent": "Familiarisé avec les technologies front-end pour la création d'interfaces utilisateur.",
-  "ReactJSSkillHead": "React JS :",
-  "ReactJSSkillContent": "Connaissance dans le développement d'applications web dynamiques utilisant React JS.",
-  "AngularSkillHead": "Angular :",
-  "AngularSkillContent": "Compétent dans le développement d'applications monopage robustes et dynamiques avec Angular.",
-  "DjangoSkillHead": "Django/Flask :",
-  "DjangoSkillContent": "Compétent dans la création d'applications backend robustes avec les technologies Python, y compris Django et Flask.",
-  "BootstrapSkillHead": "Bootstrap :",
-  "BootstrapSkillContent": "Expérimenté dans la création d'interfaces web réactives avec Bootstrap.",
-  "ASPNETCoreSkillHead": "ASP.NET Core :",
-  "ASPNETCoreSkillContent": "Compétent dans la création d'applications web évolutives avec ASP.NET Core.",
-  "RazorPagesSkillHead": "Razor Pages :",
-  "RazorPagesSkillContent": "Connaissance dans la création de pages web dynamiques avec Razor Pages.",
-  "ReactRouterSkillHead": "React Router :",
-  "ReactRouterSkillContent": "Expérimenté dans le routage côté client avec React Router.",
-  "FontAwesomeSkillHead": "FontAwesome :",
-  "FontAwesomeSkillContent": "Familiarisé avec l'utilisation de FontAwesome pour les icônes web.",
-  "react_i18nextSkillHead": "react-i18next :",
-  "react_i18nextSkillContent": "Compétent dans la mise en œuvre de l'internationalisation avec react-i18next.",
-  "EmailJSSkillHead": "EmailJS :",
-  "EmailJSSkillContent": "Expérimenté dans l'intégration de services de messagerie avec EmailJS.",
-  "AgileScrumSkillHead": "Agile/Scrum :",
-  "AgileScrumSkillContent": "Expérimenté dans les pratiques agiles pour une gestion de projet efficace.",
-  "AlwaysLearningDescription": "Je suis toujours en train d'apprendre et d'expérimenter. Si vous avez un projet en tête, ou si vous voulez simplement vous connecter, connectons-nous ! N'hésitez pas non plus à télécharger mon CV pour en savoir plus sur mon expérience et mes compétences.",
-  "FeaturedProjectsHeading": "Projets en vedette",
-  "DoIt-TicketingSystemProject": "DoIt-Ticketing System",
-  "DoIt-TicketingSystemDescription": "Le stere8/rttrackers est une application web basée sur Flask conçue pour suivre les prix des actions et les conditions météorologiques. Voici un résumé de ses composants et fonctionnalités clés :",
-  "CoreFunctionalitiesHeading": "Fonctionnalités principales",
-  "StockTracking": "Suivi des actions : Utilise deux classes, StockTracker et StockTracker2, pour obtenir les prix actuels des actions à partir de différentes API (Alpha Vantage et peut-être IEX Cloud). Ces classes sont définies dans stock_trackers.py et stock_trackers2.py.",
-  "WeatherTracking": "Suivi météorologique : La classe WeatherTracker dans weather_tracker.py obtient les données météorologiques actuelles, y compris l'humidité, la pression, la vitesse du vent et la température, en utilisant l'API OpenWeatherMap.",
-  "WebApplicationStructureHeading": "Structure de l'application web",
-  "FlaskApp": "Application Flask : La logique principale de l'application est contenue dans app.py, qui définit les routes pour différentes fonctionnalités telles que l'affichage de la page d'accueil, le suivi des actions sélectionnées, la sélection des actions, la sélection des régions pour le suivi météorologique et le suivi des conditions météorologiques dans les régions sélectionnées.",
-  "HTMLTemplates": "Templates HTML : Le répertoire templates contient des fichiers HTML (index.html, selectstocks.html, stocktracker.html et autres) pour rendre les pages web. Ces templates utilisent Bootstrap et jQuery pour le style et la fonctionnalité.",
-  "StockRepresentation": "Représentation des actions : La classe Stock dans Stock.py représente une action avec des attributs tels que le nom, le ticker et le dernier prix.",
-  "ConfigurationAndManagementHeading": "Configuration et gestion",
-  "Gitignore": ".gitignore : Spécifie les fichiers et répertoires que Git doit ignorer, y compris les résultats de compilation, les fichiers spécifiques à l'utilisateur et d'autres fichiers non liés au code source.",
-  "Gitattributes": ".gitattributes : Configure les paramètres de Git pour gérer les fins de ligne, les différences dans certains types de fichiers et gérer les comportements de fusion pour des types de fichiers spécifiques.",
-  "EnhancementsToStockTrackingHeading": "Améliorations du suivi des actions",
-  "RealTimeUpdates": "Mises à jour en temps réel : Implémenter WebSocket ou le sondage AJAX pour fournir des mises à jour en temps réel des prix des actions sans avoir besoin de rafraîchir la page.",
-  "ExpandedAPIIntegration": "Intégration API étendue : Intégrer plus d'API de données financières pour fournir une gamme plus large de données du marché boursier, y compris les marchés internationaux.",
-  "UserCustomization": "Personnalisation de l'utilisateur : Permettre aux utilisateurs de sauvegarder leurs sélections d'actions et de les voir à leur retour sur le site, éventuellement via des comptes utilisateurs ou le stockage local.",
-  "EnhancementsToWeatherTrackingHeading": "Améliorations du suivi météorologique",
-  "ExtendedForecast": "Prévisions étendues : Incorporer une fonction de prévision météorologique de 5 jours ou 10 jours en plus des conditions météorologiques actuelles.",
-  "GeolocationSupport": "Support de géolocalisation : Détecter automatiquement la localisation de l'utilisateur pour afficher les informations météorologiques locales sans sélection manuelle de la région.",
-  "WeatherAlerts": "Alertes météorologiques : Implémenter des alertes ou des avertissements météorologiques basés sur des conditions météorologiques sévères dans les régions sélectionnées.",
-  "UI_UXImprovementsHeading": "Améliorations de l'UI/UX",
-  "ResponsiveDesign": "Design réactif : Assurer que l'application web soit entièrement réactive et offre une expérience de visualisation optimale sur tous les appareils.",
-  "InteractiveCharts": "Intégrer des graphiques interactifs pour l'historique des prix des actions et les modèles météorologiques en utilisant des bibliothèques comme Chart.js ou D3.js.",
-  "ThemeCustomization": "Offrir des options de personnalisation de thème pour les utilisateurs, comme le mode clair et le mode sombre.",
-  "DreamNDineProject": "DreamNDine",
-  "DreamNDineDescription": "Le stere8/dreamndine est une application web complète...",
-  "PythonExplorationsProject": "Explorations en Python",
-  "PythonExplorationsDescription": "Cette collection de projets Python pour débutants a été un point de départ fantastique pour développer mes compétences de base en programmation...",
-  "CrossPlatformTodoAppProject": "Application de tâches multiplateforme",
-  "CrossPlatformTodoAppDescription": "Ce projet React Native a été mon incursion dans le développement mobile...",
-  "RobustUserAuthenticationSystemProject": "Système d'authentification utilisateur robuste",
-  "RobustUserAuthenticationSystemDescription": "Ce projet complet démontre ma capacité à concevoir des systèmes d'authentification sécurisés et évolutifs pour les applications web...",
-  "Skills": {
-    "Development": [
-      "C# (.NET) \t |\t WPF",
-      "Angular \t |\t React JS",
-      "SQL \t |\t Git",
-      "HTML \t |\t CSS",
-      "Django \t |\t Flask",
-      "Bootstrap \t |\t CI/CD",
-      "ASP.NET Core \t |\t Razor Pages",
-      "React Router \t |\t FontAwesome",
-      "EmailJS \t |\t react-i18next",
-      "Entity Framework"
-    ],
-    "Process Improvement": [
-      "Automatisation",
-      "Rationalisation",
-      "Intégration",
-      "Optimisation",
-      "Méthodologies Agile/Scrum"
-    ],
-    "Problem Solving": [
-      "Débogage",
-      "Revue de code",
-      "Écriture de code propre",
-      "Documentation de projet",
-      "Planification de projet"
-    ],
-    "Customer Focus": [
-      "Amélioration des expériences client grâce à des processus rationalisés et des applications améliorées"
-    ],
-    "Adaptability": [
-      "Apprentissage rapide",
-      "Ouvert aux nouvelles technologies"
-    ],
-    "Soft Skills": [
-      "Dévouement",
-      "Travail acharné",
-      "Travail d'équipe"
-    ]
-  },
-  "programming": {
-    "title": "Mon parcours de programmation",
-    "intro": "En tant que développeur .NET passionné et expérimenté avec une solide expérience dans la création et le déploiement d'applications backend robustes. Au cours de plus de 2 ans dans l'industrie, j'ai perfectionné mes compétences dans diverses technologies et méthodologies, me permettant de contribuer efficacement à des projets complexes et de fournir des solutions de haute qualité.",
-    "horizonExpansion": "Élargir mes horizons",
-    "aficionado": "En tant qu'aficionado de la technologie, j'ai continuellement cherché à élargir mon ensemble de compétences au-delà de mon objectif principal. J'ai exploré des frameworks frontend modernes tels que React et Angular, me permettant de créer des applications web dynamiques et réactives. De plus, mon intérêt pour Python m'a conduit à explorer des frameworks puissants comme Django et Flask. Cette exploration de diverses technologies a enrichi mes capacités de programmation et élargi ma perspective sur la résolution de défis complexes.",
-    "technologies": "Technologies",
-    "technicalExpertise": "Technologies et Expertises",
-    "expertiseDescription": "Mon expertise couvre un spectre de technologies et d'outils :",
-    "projectsTitle": "Projets en vedette",
-    "projects": [
-      {
-        "name": "DoIt-Ticketing System",
-        "description": "Développé un système de gestion de tickets complet, permettant aux utilisateurs de créer, visualiser, mettre à jour et supprimer des tickets. Le système comprend des fonctionnalités d'enregistrement et de connexion des utilisateurs.",
-        "overview": "Un système de gestion de tickets complet avec une mise en œuvre robuste des fonctionnalités.",
-        "keyResponsibilities": [
-          "Implémentation des fonctionnalités de gestion des tickets et des utilisateurs",
-          "Construction de l'API avec Flask et du frontend avec Angular"
-        ],
-        "technologies": [
-          "Flask",
-          "Angular",
-          "SQLite"
-        ],
-        "keyContributions": "Augmentation de l'engagement des utilisateurs et de l'efficacité administrative grâce à une mise en œuvre robuste des fonctionnalités.",
-        "repository": "https://github.com/stere8/DoIT-Ticketing"
+  "pages": {
+    "header": {
+      "BrandAlt": "Oreste TWIZEYIMANA - Consultant Technique",
+      "NavLinks": {
+        "Services": "Services",
+        "Projects": "Projets",
+        "Expertise": "Expertise",
+        "Schedule": "Planifier une consultation",
+        "Contact": "Contact"
       },
-      {
-        "name": "Site Web de Portfolio Multilingue en React",
-        "description": "Développé un site web de portfolio réactif et multilingue pour présenter des projets personnels, des compétences techniques, une expertise en programmation, une maîtrise des langues et des informations de contact.",
-        "overview": "Un site web de portfolio qui démontre la maîtrise et la polyvalence du développement frontend avec React.",
-        "keyResponsibilities": [
-          "Dirigé le processus de développement",
-          "Intégré des principes de conception modernes",
-          "Implémenté l'internationalisation",
-          "Ajouté des éléments interactifs",
-          "Conçu et intégré un formulaire de contact"
-        ],
-        "technologies": [
-          "React",
-          "Bootstrap",
-          "React Router",
-          "FontAwesome",
-          "react-i18next",
-          "EmailJS"
-        ],
-        "keyContributions": "Créé une interface réactive et conviviale supportant plusieurs langues, et géré efficacement les soumissions de formulaires de contact.",
-        "repository": "https://github.com/stere8/ocp-react"
+      "ScheduleButton": "Réserver une consultation"
+    },
+    "home": {
+      "HeroSection": {
+        "Title": "Solutions professionnelles .NET & Python",
+        "Subtitle": "Fourniture de systèmes backend évolutifs, d'applications web modernes et de conseils techniques.",
+        "ScheduleButton": "Planifier une consultation",
+        "ContactButton": "Contactez-moi"
       },
-      {
-        "name": "StockIT",
-        "description": "Une application web pour la gestion des stocks, offrant une vue en temps réel des niveaux de stock.",
-        "overview": "Une application de gestion des stocks conçue pour la visibilité en temps réel des niveaux de stock.",
-        "keyResponsibilities": [
-          "Supervisé le développement",
-          "Collaboré avec des équipes multifonctionnelles",
-          "Développé les fonctionnalités principales"
-        ],
-        "technologies": [
-          "ASP.NET Core",
-          "Razor Pages",
-          "Entity Framework Core"
-        ],
-        "keyContributions": "Implémenté une interface conviviale ; assuré l'intégrité des données et l'évolutivité.",
-        "repository": "https://github.com/stere8/stockit"
-      },
-      {
-        "name": "Site Web Immobilier en Django",
-        "description": "Développé une plateforme immobilière complète avec gestion des comptes utilisateurs, annonces de propriétés et système de réservation.",
-        "overview": "Une plateforme immobilière avec gestion des comptes utilisateurs et système de réservation.",
-        "keyResponsibilities": [
-          "Implémenté des fonctionnalités utilisateur pour les visites et les réservations de propriétés",
-          "Construit un tableau de bord administrateur"
-        ],
-        "technologies": [
-          "Django",
-          "Bootstrap",
-          "SQLite"
-        ],
-        "keyContributions": "Amélioré l'engagement des utilisateurs et l'efficacité administrative grâce à une mise en œuvre robuste des fonctionnalités.",
-        "repository": "https://github.com/stere8/real_estate"
+      "ServicesSection": {
+        "Title": "Services",
+        "Cards": [
+          {
+            "Icon": "fa-code",
+            "Title": "Développement de logiciels sur mesure",
+            "Description": "Création de solutions logicielles sur mesure pour répondre à vos besoins."
+          },
+          {
+            "Icon": "fa-lightbulb",
+            "Title": "Consultation technique",
+            "Description": "Fournir des conseils pour les défis techniques complexes."
+          },
+          {
+            "Icon": "fa-graduation-cap",
+            "Title": "Support pour projets académiques",
+            "Description": "Aider à compléter vos projets scolaires ou universitaires."
+          }
+        ]
       }
-    ],
-    "Download": "Télécharger",
-    "SelectCV": "Sélectionner le CV",
-    "EnglishCV": "CV en anglais",
-    "PolishCV": "CV en polonais"
+    },
+    "projects": {
+      "Title": "Projets",
+      "Description": "Une vitrine de mon expertise technique et des projets divers sur lesquels j'ai travaillé.",
+      "KeyFeatures": "Caractéristiques clés",
+      "Technologies": "Technologies",
+      "ViewOnGitHub": "Voir sur GitHub",
+      "ProjectList": [
+        {
+          "Title": "Système de gestion scolaire (SGS)",
+          "Overview": "Un système web complet pour gérer les opérations quotidiennes des établissements éducatifs, y compris l'inscription des étudiants, l'affectation des enseignants et la gestion des cours.",
+          "KeyFeatures": [
+            "Ajouter/supprimer des étudiants et les inscrire dans les cours.",
+            "Ajouter/supprimer des enseignants et les affecter aux cours.",
+            "Créer/supprimer des cours et gérer les inscriptions.",
+            "Contrôle d'accès basé sur les rôles pour Administrateur, Enseignant, Parent et Étudiant.",
+            "Tableaux de bord avec suivi des présences et gestion des notes."
+          ],
+          "Technologies": [
+            "React.js",
+            "Bootstrap",
+            "ASP.NET Core",
+            "Swagger",
+            "Entity Framework Core"
+          ],
+          "Repository": "https://github.com/stere8/schoolmanagment"
+        },
+        {
+          "Title": "StockIT - Gestion des stocks",
+          "Overview": "Une application web conçue pour simplifier la gestion des stocks pour les petites et moyennes entreprises.",
+          "KeyFeatures": [
+            "Créer, éditer et supprimer des produits avec des informations détaillées.",
+            "Suivi en temps réel des niveaux de stock et organisation par catégories.",
+            "Conception responsive avec affichage dynamique des détails des produits.",
+            "Rapports d'inventaire et exportation au format CSV/Excel."
+          ],
+          "Technologies": [
+            "ASP.NET Core",
+            ".NET 8.0",
+            "Entity Framework Core",
+            "SQL Server",
+            "Razor Pages",
+            "Bootstrap"
+          ],
+          "Repository": "https://github.com/stere8/stockit"
+        },
+        {
+          "Title": "DreamNDine",
+          "Overview": "Une plateforme tout-en-un pour gérer les annonces immobilières, les réservations de repas et les profils utilisateurs.",
+          "KeyFeatures": [
+            "Annonces immobilières et fonctionnalité de recherche.",
+            "Enregistrement et authentification des utilisateurs.",
+            "Système de réservation de repas avec critiques et évaluations.",
+            "Documentation API Swagger et authentification sécurisée par JWT."
+          ],
+          "Technologies": [
+            ".NET 8.0",
+            "ASP.NET Core",
+            "Entity Framework Core",
+            "Razor Pages",
+            "Swagger",
+            "SQL Server"
+          ],
+          "Repository": "https://github.com/stere8/DreamNDine"
+        },
+        {
+          "Title": "Souls Scribbles and Sounds (SS&S)",
+          "Overview": "Une plateforme de blog alliant contenu écrit et éléments musicaux pour créer une expérience immersive.",
+          "KeyFeatures": [
+            "Édition de texte riche avec CKEditor 5.",
+            "Intégration avec Spotify pour des fonctionnalités musicales.",
+            "Archive de blogs organisée et playlists curées.",
+            "Conception propre et responsive pour une lecture immersive."
+          ],
+          "Technologies": [
+            "ASP.NET Core",
+            "Entity Framework Core",
+            "HTML5",
+            "CSS3",
+            "CKEditor 5",
+            "Bootstrap"
+          ],
+          "Repository": "https://github.com/stere8/soulsscriblesandsounds"
+        },
+        {
+          "Title": "Système d'authentification des utilisateurs",
+          "Overview": "Un système sécurisé et évolutif pour l'authentification des utilisateurs et l'enregistrement avec des composants frontend et backend.",
+          "KeyFeatures": [
+            "Enregistrement des utilisateurs avec validation par email.",
+            "Hachage sécurisé des mots de passe et authentification basée sur les jetons JWT.",
+            "Frontend Blazor WebAssembly responsive.",
+            "Points d'API pour l'enregistrement et la connexion."
+          ],
+          "Technologies": [
+            "ASP.NET Core",
+            "Entity Framework Core",
+            "Blazor WebAssembly",
+            "Bootstrap",
+            "SQL Server"
+          ],
+          "Repository": "https://github.com/stere8/userauthenticationsystem"
+        }
+      ]
+    },
+    "expertise": {
+      "Title": "Expertise technique",
+      "Intro": "En tant que développeur polyvalent, j'apporte une expertise approfondie dans les technologies modernes, permettant des solutions évolutives et conviviales.",
+      "Skills": {
+        "BackendDevelopment": {
+          "Title": "Développement Backend",
+          "Description": "Création d'applications serveur robustes et évolutives.",
+          "Items": [
+            "ASP.NET Core",
+            "Entity Framework Core",
+            "Django/Flask",
+            "Développement d'API RESTful",
+            "Authentification JWT"
+          ]
+        },
+        "FrontendDevelopment": {
+          "Title": "Développement Frontend",
+          "Description": "Création d'interfaces utilisateurs intuitives et dynamiques.",
+          "Items": [
+            "React.js",
+            "Angular",
+            "HTML5/CSS3",
+            "Bootstrap",
+            "Razor Pages"
+          ]
+        },
+        "DatabaseManagement": {
+          "Title": "Gestion des bases de données",
+          "Description": "Conception et maintenance de systèmes de bases de données efficaces.",
+          "Items": [
+            "SQL Server",
+            "SQLite",
+            "PostgreSQL",
+            "Entity Framework Core"
+          ]
+        },
+        "DevOps": {
+          "Title": "Pratiques DevOps",
+          "Description": "Optimisation des processus de développement et de déploiement.",
+          "Items": [
+            "Intégration continue/Déploiement continu (CI/CD)",
+            "Contrôle de version (Git)",
+            "Azure Pipelines"
+          ]
+        },
+        "ProgrammingLanguages": {
+          "Title": "Langages de programmation",
+          "Description": "Compétent dans divers langages pour des solutions polyvalentes.",
+          "Items": [
+            "C#",
+            "Python",
+            "JavaScript",
+            "SQL"
+          ]
+        }
+      },
+      "Certifications": {
+        "Title": "Certifications",
+        "Items": [
+          "Microsoft Certified: Azure Fundamentals",
+          "Certified Python Developer",
+          "AWS Certified Developer – Associate"
+        ]
+      },
+      "Industries": {
+        "Title": "Industries",
+        "Description": "J'ai travaillé dans divers secteurs pour résoudre des problèmes réels dans :",
+        "Items": [
+          "Éducation : Systèmes de gestion scolaire",
+          "Immobilier : Annonces et gestion des propriétés",
+          "Gestion des stocks : Optimisation du suivi des produits",
+          "Plateformes de blogs : Création de contenu et engagement des utilisateurs"
+        ]
+      },
+      "ValueProposition": {
+        "Title": "Pourquoi travailler avec moi ?",
+        "Description": "Avec une solide base technique et une passion pour la résolution de problèmes, j'apporte de la valeur à travers des solutions innovantes adaptées aux besoins des clients. Construisons quelque chose d'incroyable ensemble !"
+      }
+    },
+    "ContactUs": {
+      "LetsConnectHeading": "Entrons en contact",
+      "ContactFormDescription": "N'hésitez pas à me contacter en utilisant le formulaire ci-dessous",
+      "contactMessage": "Je suis toujours intéressé par de nouvelles opportunités, projets, ou même une conversation amicale",
+      "ContactForm": {
+        "YourNameLabel": "Votre nom",
+        "EmailLabel":"Email",
+        "MessageLabel": "Message",
+        "SendButton": "Envoyer"
+      }
+    }
   }
 }
