@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\public",
+    "\\src",
+    "\\src\\locales",
+    "\\src\\locales\\en"
   ],
+  "SelectedNode": "\\src\\locales\\en\\translation.json",
   "PreviewInSolutionExplorer": false
 }

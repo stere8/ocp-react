@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import '../Styles/Dropdown.css';
 
 const Dropdown = () => {
   const { i18n } = useTranslation();
@@ -12,7 +13,7 @@ const Dropdown = () => {
   };
 
   return (
-    <select id="languageDropdown" name="culture" onChange={handleChange} value={language} style={{ width: '100px'  }}>
+    <select id="languageDropdown" name="culture" onChange={handleChange} value={language} >
       <option value="en">English</option>
       <option value="es">Español</option>
       <option value="fr">Français</option>

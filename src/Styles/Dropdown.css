@@ -1,0 +1,21 @@
+/* src/Styles/dropdown.css */
+
+#languageDropdown {
+  background-color: #0041C4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+}
+
+#languageDropdown:hover {
+  background-color: #001F3F;
+}
+
+#languageDropdown option {
+  background-color: #fff;
+  color: #333;
+  padding: 5px;
+}
