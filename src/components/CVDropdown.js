@@ -19,8 +19,8 @@ const CVDropdown = () => {
                 <option value="" disabled>
                     {t('DownloadCV')}
                 </option>
-                <option value="/src/doc/CV EN.pdf">CV EN</option>
-                <option value="/src/doc/CV PL.pdf">CV PL</option>
+                <option value="/doc/CV EN.pdf">CV EN</option>
+                <option value="/doc/CV PL.pdf">CV PL</option>
             </select>
         </div>
     );
