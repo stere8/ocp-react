@@ -9,7 +9,8 @@
         "Schedule": "Agenda",
         "Contact": "Contacto"
       },
-      "ScheduleButton": "Reserva una Consulta"
+      "ScheduleButton": "Reserva una Consulta",
+      "DownloadDropDown": "Descargar CV"
     },
     "home": {
       "HeroSection": {

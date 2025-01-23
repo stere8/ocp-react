@@ -17,7 +17,7 @@ const CVDropdown = () => {
                 defaultValue=""
             >
                 <option value="" disabled>
-                    {t('DownloadCV')}
+                    {t('pages.header.DownloadDropDown')}
                 </option>
                 <option value="/doc/CV EN.pdf">CV EN</option>
                 <option value="/doc/CV PL.pdf">CV PL</option>
