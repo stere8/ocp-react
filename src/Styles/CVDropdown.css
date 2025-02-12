@@ -1,0 +1,21 @@
+.cv-dropdown-container {
+    margin-right: 10px;
+}
+
+.cv-dropdown {
+    background-color: #343a40;
+    color: white;
+    border: 1px solid #495057;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.cv-dropdown:hover {
+    background-color: #495057;
+}
+
+.cv-dropdown option {
+    background-color: #343a40;
+    color: white;
+}
