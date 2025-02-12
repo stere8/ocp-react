@@ -1,5 +1,11 @@
 {
   "pages": {
+    "loading":{
+      "message" : "Loading expertise..."
+    },
+    "error": {
+      "fallbackMessage": "Something went wrong. Please refresh the page."
+    },
     "header": {
       "BrandAlt": "Oreste TWIZEYIMANA - Technical Consultant",
       "NavLinks": {
