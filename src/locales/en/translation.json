@@ -1,7 +1,12 @@
 {
+  "$schema": "../translation.schema.json",
+  "meta": {
+    "description": "Oracle Cloud Consulting Services | Database Management, ERP Solutions, and Cloud Migration Experts",
+    "ogTitle": "OracleConsults | Certified Oracle Consulting"
+  },
   "pages": {
-    "loading":{
-      "message" : "Loading expertise..."
+    "loading": {
+      "message": "Loading expertise..."
     },
     "error": {
       "fallbackMessage": "Something went wrong. Please refresh the page."
@@ -234,7 +239,7 @@
       "contactMessage": "I'm always interested in hearing about new opportunities, projects, or just having a friendly conversation",
       "ContactForm": {
         "YourNameLabel": "Your Name",
-        "EmailLabel":"Email",
+        "EmailLabel": "Email",
         "MessageLabel": "Message",
         "SendButton": "Send"
       }

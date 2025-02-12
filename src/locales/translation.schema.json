@@ -1,0 +1,214 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://oracleconsults.com/translation.schema.json",
+  "title": "Translation Schema",
+  "description": "Schema for validating i18n translation files",
+  "type": "object",
+  "required": ["meta", "pages"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["description", "ogTitle"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 50,
+          "maxLength": 160
+        },
+        "ogTitle": {
+          "type": "string",
+          "maxLength": 60
+        }
+      }
+    },
+    "pages": {
+      "type": "object",
+      "required": ["loading", "error", "header", "home", "projects", "expertise", "ContactUs"],
+      "properties": {
+        "loading": {
+          "type": "object",
+          "required": ["message"],
+          "properties": {
+            "message": { "type": "string" }
+          }
+        },
+        "error": {
+          "type": "object",
+          "required": ["fallbackMessage"],
+          "properties": {
+            "fallbackMessage": { "type": "string" }
+          }
+        },
+        "header": {
+          "type": "object",
+          "required": ["BrandAlt", "NavLinks", "ScheduleButton", "DownloadDropDown"],
+          "properties": {
+            "BrandAlt": { "type": "string" },
+            "NavLinks": {
+              "type": "object",
+              "required": ["Services", "Projects", "Expertise", "Schedule", "Contact"],
+              "properties": {
+                "Services": { "type": "string" },
+                "Projects": { "type": "string" },
+                "Expertise": { "type": "string" },
+                "Schedule": { "type": "string" },
+                "Contact": { "type": "string" }
+              }
+            },
+            "ScheduleButton": { "type": "string" },
+            "DownloadDropDown": { "type": "string" }
+          }
+        },
+        "home": {
+          "type": "object",
+          "required": ["HeroSection", "ServicesSection"],
+          "properties": {
+            "HeroSection": {
+              "type": "object",
+              "required": ["Title", "Subtitle", "ScheduleButton", "ContactButton"],
+              "properties": {
+                "Title": { "type": "string" },
+                "Subtitle": { "type": "string" },
+                "ScheduleButton": { "type": "string" },
+                "ContactButton": { "type": "string" }
+              }
+            },
+            "ServicesSection": {
+              "type": "object",
+              "required": ["Title", "Cards"],
+              "properties": {
+                "Title": { "type": "string" },
+                "Cards": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["Icon", "Title", "Description"],
+                    "properties": {
+                      "Icon": { "type": "string" },
+                      "Title": { "type": "string" },
+                      "Description": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "projects": {
+          "type": "object",
+          "required": ["Title", "Description", "KeyFeatures", "Technologies", "ViewOnGitHub", "ProjectList"],
+          "properties": {
+            "Title": { "type": "string" },
+            "Description": { "type": "string" },
+            "KeyFeatures": { "type": "string" },
+            "Technologies": { "type": "string" },
+            "ViewOnGitHub": { "type": "string" },
+            "ProjectList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["Title", "Overview", "KeyFeatures", "Technologies", "Repository"],
+                "properties": {
+                  "Title": { "type": "string" },
+                  "Overview": { "type": "string" },
+                  "KeyFeatures": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  },
+                  "Technologies": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                  },
+                  "Repository": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "expertise": {
+          "type": "object",
+          "required": ["Title", "Intro", "Skills", "Certifications", "Industries", "ValueProposition"],
+          "properties": {
+            "Title": { "type": "string" },
+            "Intro": { "type": "string" },
+            "Skills": {
+              "type": "object",
+              "required": ["BackendDevelopment", "FrontendDevelopment", "DatabaseManagement", "DevOps", "ProgrammingLanguages"],
+              "properties": {
+                "BackendDevelopment": { "$ref": "#/definitions/skillCategory" },
+                "FrontendDevelopment": { "$ref": "#/definitions/skillCategory" },
+                "DatabaseManagement": { "$ref": "#/definitions/skillCategory" },
+                "DevOps": { "$ref": "#/definitions/skillCategory" },
+                "ProgrammingLanguages": { "$ref": "#/definitions/skillCategory" }
+              }
+            },
+            "Certifications": {
+              "type": "object",
+              "required": ["Title", "Items"],
+              "properties": {
+                "Title": { "type": "string" },
+                "Items": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                }
+              }
+            },
+            "Industries": {
+              "type": "object",
+              "required": ["Title", "Description", "Items"],
+              "properties": {
+                "Title": { "type": "string" },
+                "Description": { "type": "string" },
+                "Items": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                }
+              }
+            },
+            "ValueProposition": {
+              "type": "object",
+              "required": ["Title", "Description"],
+              "properties": {
+                "Title": { "type": "string" },
+                "Description": { "type": "string" }
+              }
+            }
+          }
+        },
+        "ContactUs": {
+          "type": "object",
+          "required": ["LetsConnectHeading", "ContactFormDescription", "contactMessage", "ContactForm"],
+          "properties": {
+            "LetsConnectHeading": { "type": "string" },
+            "ContactFormDescription": { "type": "string" },
+            "contactMessage": { "type": "string" },
+            "ContactForm": {
+              "type": "object",
+              "required": ["YourNameLabel", "EmailLabel", "MessageLabel", "SendButton"],
+              "properties": {
+                "YourNameLabel": { "type": "string" },
+                "EmailLabel": { "type": "string" },
+                "MessageLabel": { "type": "string" },
+                "SendButton": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "skillCategory": {
+      "type": "object",
+      "required": ["Title", "Description", "Items"],
+      "properties": {
+        "Title": { "type": "string" },
+        "Description": { "type": "string" },
+        "Items": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}
