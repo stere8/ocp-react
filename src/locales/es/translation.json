@@ -1,6 +1,15 @@
 {
+  "$schema": "../translation.schema.json",
+  "meta": {
+    "description": "Servicios de Consultoría en Oracle Cloud | Gestión de Bases de Datos, Soluciones ERP y Expertos en Migración a la Nube",
+    "ogTitle": "OracleConsults | Consultoría Certificada Oracle"
+  },
   "pages": {
-    "header": {
+"loading": {
+    "message": "Cargando experiencia..."},
+ "error": {
+    "fallbackMessage": "Algo salió mal. Por favor actualice la página."
+  },    "header": {
       "BrandAlt": "Oreste TWIZEYIMANA - Consultor Técnico",
       "NavLinks": {
         "Services": "Servicios",

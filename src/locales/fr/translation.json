@@ -1,5 +1,16 @@
 {
+  "$schema": "../translation.schema.json",
+  "meta": {
+    "description": "Services de Conseil Oracle Cloud | Gestion de Base de Données, Solutions ERP et Experts en Migration Cloud",
+    "ogTitle": "OracleConsults | Conseil Certifié Oracle"
+  },
   "pages": {
+    "loading": {
+      "message": "Chargement de l'expertise..."
+    },
+    "error": {
+      "fallbackMessage": "Quelque chose s'est mal passé. Veuillez actualiser la page."
+    },
     "header": {
       "BrandAlt": "Oreste TWIZEYIMANA - Consultant Technique",
       "NavLinks": {
@@ -228,7 +239,7 @@
       "contactMessage": "Je suis toujours intéressé par de nouvelles opportunités, projets, ou même une conversation amicale",
       "ContactForm": {
         "YourNameLabel": "Votre nom",
-        "EmailLabel":"Email",
+        "EmailLabel": "Email",
         "MessageLabel": "Message",
         "SendButton": "Envoyer"
       }

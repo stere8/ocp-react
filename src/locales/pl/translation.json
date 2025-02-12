@@ -1,5 +1,16 @@
 {
+  "$schema": "../translation.schema.json",
+  "meta": {
+    "description": "Usługi Konsultingowe Oracle Cloud | Zarządzanie Bazami Danych, Rozwiązania ERP i Eksperci Migracji do Chmury",
+    "ogTitle": "OracleConsults | Certyfikowane Konsultacje Oracle"
+  },
   "pages": {
+    "loading": {
+      "message": "Ładowanie ekspertyzy..."
+    },
+    "error": {
+      "fallbackMessage": "Coś poszło nie tak. Proszę odświeżyć stronę."
+    },
     "header": {
       "BrandAlt": "Oreste TWIZEYIMANA - Konsultant Techniczny",
       "NavLinks": {
@@ -203,18 +214,18 @@
         "Title": "Certyfikaty",
         "Items": [
           "Microsoft Certified: Azure Fundamentals",
-          "Certyfikowany Programista Pythona",
+          "Certyfikowany Deweloper Pythona",
           "AWS Certified Developer – Associate"
         ]
       },
       "Industries": {
         "Title": "Branże",
-        "Description": "Pracowałem w różnych branżach, rozwiązując rzeczywiste problemy:",
+        "Description": "Pracowałem w różnych branżach, rozwiązując rzeczywiste problemy w:",
         "Items": [
           "Edukacja: Systemy zarządzania szkołami",
-          "Nieruchomości: Ogłoszenia i zarządzanie nieruchomościami",
-          "Zarządzanie Zapasami: Optymalizacja śledzenia produktów",
-          "Platformy Blogowe: Tworzenie treści i zaangażowanie użytkowników"
+          "Nieruchomości: Listy i zarządzanie nieruchomościami",
+          "Zarządzanie zapasami: Usprawnianie śledzenia produktów",
+          "Platformy blogowe: Tworzenie treści i zaangażowanie użytkowników"
         ]
       },
       "ValueProposition": {

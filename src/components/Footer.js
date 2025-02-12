@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome C
 const Footer = () => (
     <footer className="border-top footer text-muted">
         <div className="container">
-            <h8>&copy; 2025 - Oracle Consults</h8>
+            <h6>&copy; 2025 - Oracle Consults</h6>
             <div className="social-links">
                 <a href="https://github.com/stere8/" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-github"></i> GitHub

@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import {useTranslation, withTranslation} from "react-i18next";
 import ErrorBoundary from './components/ErrorBoundary';
+import Seo from "./components/Seo";
 
 
 const Home = lazy(() => import('./Pages/Home'));
@@ -37,6 +38,7 @@ function App({t}) {
     return (
         <Router>
             <div className="App">
+                <Seo/>
                 <Header/>
                 <ErrorBoundary>
                     <Suspense fallback={<LoadingFallback/>}>
