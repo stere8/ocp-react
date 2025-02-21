@@ -1,5 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';  // ✅ Import HelmetProvider
 import './index.css';
 import App from './App';
@@ -13,9 +14,11 @@ const root = createRoot(container);
 emailjs.init('jbwNUbuZVBETFQtqM'); // Replace with your EmailJS user ID
 
 root.render(
-  <React.StrictMode>
-    <HelmetProvider>  {/* ✅ Wrap App with HelmetProvider */}
-      <App />
-    </HelmetProvider>
-  </React.StrictMode>
+    <React.StrictMode>
+        <HelmetProvider>  {/* ✅ Wrap App with HelmetProvider */}
+            <Router>
+                <App />
+            </Router>
+        </HelmetProvider>
+    </React.StrictMode>
 );

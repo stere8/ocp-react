@@ -22,4 +22,4 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 
 fs.writeFileSync('public/sitemap.xml', sitemap);
 
-console.log("✅ Sitemap generated successfully!");
+console.log("Sitemap generated successfully!");
