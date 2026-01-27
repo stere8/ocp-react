@@ -21,12 +21,18 @@
         "Contact": "Contact"
       },
       "ScheduleButton": "Réserver une consultation",
-      "DownloadDropDown": "Télécharger le CV"
+      "DownloadDropDown": "Télécharger le CV",
+      "CVOptions": {
+        "CV_NET_EN": "CV .NET EN",
+        "CV_NET_PL": "CV .NET PL",
+        "CV_PYTHON_EN": "CV Python EN",
+        "CV_PYTHON_PL": "CV Python PL"
+      }
     },
     "home": {
       "HeroSection": {
-        "Title": "Solutions professionnelles .NET & Python",
-        "Subtitle": "Fourniture de systèmes backend évolutifs, d'applications web modernes et de conseils techniques.",
+        "Title": "Solutions backend .NET haute performance (avec automatisation Python)",
+        "Subtitle": "Création d'API et de systèmes backend évolutifs en .NET 8, complétés par l'automatisation Python 3.",
         "ScheduleButton": "Planifier une consultation",
         "ContactButton": "Contactez-moi"
       },
@@ -35,27 +41,34 @@
         "Cards": [
           {
             "Icon": "fa-code",
-            "Title": "Développement de logiciels sur mesure",
-            "Description": "Création de solutions logicielles sur mesure pour répondre à vos besoins."
+            "Title": "Développement backend (.NET & Python)",
+            "Description": "Conception et déploiement d'API et de services backend robustes en .NET 8 et Python 3."
           },
           {
             "Icon": "fa-lightbulb",
-            "Title": "Consultation technique",
-            "Description": "Fournir des conseils pour les défis techniques complexes."
+            "Title": "Conseil Cloud & DevOps",
+            "Description": "Accompagnement sur le CI/CD, Docker et les déploiements Azure pour une infrastructure sécurisée et évolutive."
           },
           {
             "Icon": "fa-graduation-cap",
-            "Title": "Support pour projets académiques",
-            "Description": "Aider à compléter vos projets scolaires ou universitaires."
+            "Title": "Accompagnement académique et mentorat",
+            "Description": "Aide aux mémoires et projets académiques avec un focus sur les bonnes pratiques backend."
           }
         ]
       }
+    },
+    "about": {
+      "AboutmeHeading": "À propos de moi",
+      "AboutmeDescription1": "Ingénieur backend avec plus de 2,5 ans d'expérience commerciale dans la création d'API .NET en production et de systèmes backend déployés dans le cloud pour des plateformes à fort trafic.",
+      "AboutmeDescription2": "Actuellement en MSc de mécatronique (parcours automatisation et systèmes embarqués), renforçant mes bases en ingénierie des systèmes, embedded et automatisation industrielle — directement utiles pour mes projets backend, IoT et automatisation Python.",
+      "AboutmeDescription3": "Diplômé d'un B.Eng. en ingénierie informatique et mécatronique (note finale : Très bien 4,26/5,0). Solide base en algorithmes, architecture logicielle, bases de données, réseaux et systèmes embarqués."
     },
     "projects": {
       "Title": "Projets",
       "Description": "Une vitrine de mon expertise technique et des projets divers sur lesquels j'ai travaillé.",
       "KeyFeatures": "Caractéristiques clés",
       "Technologies": "Technologies",
+      "Impact": "Impact",
       "ViewOnGitHub": "Voir sur GitHub",
       "ProjectList": [
         {
@@ -75,7 +88,8 @@
             "Swagger",
             "Entity Framework Core"
           ],
-          "Repository": "https://github.com/stere8/schoolmanagment"
+          "Impact": "Amélioration de l'efficacité administrative de 40 % grâce à des workflows élèves/cours optimisés.",
+          "Repository": ""
         },
         {
           "Title": "StockIT - Gestion des stocks",
@@ -94,6 +108,7 @@
             "Razor Pages",
             "Bootstrap"
           ],
+          "Impact": "Amélioration de la précision des stocks de 30 % grâce au suivi en temps réel.",
           "Repository": "https://github.com/stere8/stockit"
         },
         {
@@ -113,6 +128,7 @@
             "Swagger",
             "SQL Server"
           ],
+          "Impact": "Réduction de 25 % des frictions de réservation via des workflows simplifiés.",
           "Repository": "https://github.com/stere8/DreamNDine"
         },
         {
@@ -132,6 +148,7 @@
             "CKEditor 5",
             "Bootstrap"
           ],
+          "Impact": "Augmentation de 20 % de l'engagement grâce à un storytelling multimédia enrichi.",
           "Repository": "https://github.com/stere8/soulsscriblesandsounds"
         },
         {
@@ -150,6 +167,7 @@
             "Bootstrap",
             "SQL Server"
           ],
+          "Impact": "Baisse de 35 % des erreurs d'authentification grâce à une validation renforcée et au JWT.",
           "Repository": "https://github.com/stere8/userauthenticationsystem"
         }
       ]
@@ -160,18 +178,19 @@
       "Skills": {
         "BackendDevelopment": {
           "Title": "Développement Backend",
-          "Description": "Création d'applications serveur robustes et évolutives.",
+          "Description": "Création d'API et de services backend robustes et évolutifs avec .NET et Python.",
           "Items": [
+            "C# / .NET 8",
             "ASP.NET Core",
             "Entity Framework Core",
-            "Django/Flask",
-            "Développement d'API RESTful",
+            "Conception d'API REST",
+            "FastAPI / Flask",
             "Authentification JWT"
           ]
         },
         "FrontendDevelopment": {
           "Title": "Développement Frontend",
-          "Description": "Création d'interfaces utilisateurs intuitives et dynamiques.",
+          "Description": "Compétences UI d'accompagnement pour compléter la livraison backend.",
           "Items": [
             "React.js",
             "Angular",
@@ -182,31 +201,32 @@
         },
         "DatabaseManagement": {
           "Title": "Gestion des bases de données",
-          "Description": "Conception et maintenance de systèmes de bases de données efficaces.",
+          "Description": "Conception, optimisation et maintenance de bases de données performantes.",
           "Items": [
             "SQL Server",
             "SQLite",
             "PostgreSQL",
-            "Entity Framework Core"
+            "Optimisation des requêtes et performance"
           ]
         },
         "DevOps": {
           "Title": "Pratiques DevOps",
-          "Description": "Optimisation des processus de développement et de déploiement.",
+          "Description": "Fluidification des workflows de développement et de déploiement.",
           "Items": [
-            "Intégration continue/Déploiement continu (CI/CD)",
-            "Contrôle de version (Git)",
-            "Azure Pipelines"
+            "Pipelines CI/CD (GitHub Actions)",
+            "Docker & conteneurisation",
+            "Déploiements Azure App Service",
+            "Contrôle de version (Git)"
           ]
         },
         "ProgrammingLanguages": {
           "Title": "Langages de programmation",
-          "Description": "Compétent dans divers langages pour des solutions polyvalentes.",
+          "Description": "Langages complémentaires pour soutenir la delivery.",
           "Items": [
-            "C#",
-            "Python",
             "JavaScript",
-            "SQL"
+            "TypeScript",
+            "SQL",
+            "Bash/PowerShell"
           ]
         }
       },
@@ -230,7 +250,7 @@
       },
       "ValueProposition": {
         "Title": "Pourquoi travailler avec moi ?",
-        "Description": "Avec une solide base technique et une passion pour la résolution de problèmes, j'apporte de la valeur à travers des solutions innovantes adaptées aux besoins des clients. Construisons quelque chose d'incroyable ensemble !"
+        "Description": "Ingénieur backend ayant amélioré les performances de base de données d'environ 25 % et réduit les incidents de flux de paiement d'environ 30 % sur des systèmes e-commerce à fort trafic. Expertise en ASP.NET Core, optimisation SQL et clean architecture."
       }
     },
     "ContactUs": {

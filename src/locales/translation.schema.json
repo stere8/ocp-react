@@ -23,7 +23,7 @@
     },
     "pages": {
       "type": "object",
-      "required": ["loading", "error", "header", "home", "projects", "expertise", "ContactUs"],
+      "required": ["loading", "error", "header", "home", "about", "projects", "expertise", "ContactUs"],
       "properties": {
         "loading": {
           "type": "object",
@@ -41,7 +41,7 @@
         },
         "header": {
           "type": "object",
-          "required": ["BrandAlt", "NavLinks", "ScheduleButton", "DownloadDropDown"],
+          "required": ["BrandAlt", "NavLinks", "ScheduleButton", "DownloadDropDown", "CVOptions"],
           "properties": {
             "BrandAlt": { "type": "string" },
             "NavLinks": {
@@ -56,7 +56,17 @@
               }
             },
             "ScheduleButton": { "type": "string" },
-            "DownloadDropDown": { "type": "string" }
+            "DownloadDropDown": { "type": "string" },
+            "CVOptions": {
+              "type": "object",
+              "required": ["CV_NET_EN", "CV_NET_PL", "CV_PYTHON_EN", "CV_PYTHON_PL"],
+              "properties": {
+                "CV_NET_EN": { "type": "string" },
+                "CV_NET_PL": { "type": "string" },
+                "CV_PYTHON_EN": { "type": "string" },
+                "CV_PYTHON_PL": { "type": "string" }
+              }
+            }
           }
         },
         "home": {
@@ -94,20 +104,31 @@
             }
           }
         },
+        "about": {
+          "type": "object",
+          "required": ["AboutmeHeading", "AboutmeDescription1", "AboutmeDescription2", "AboutmeDescription3"],
+          "properties": {
+            "AboutmeHeading": { "type": "string" },
+            "AboutmeDescription1": { "type": "string" },
+            "AboutmeDescription2": { "type": "string" },
+            "AboutmeDescription3": { "type": "string" }
+          }
+        },
         "projects": {
           "type": "object",
-          "required": ["Title", "Description", "KeyFeatures", "Technologies", "ViewOnGitHub", "ProjectList"],
+          "required": ["Title", "Description", "KeyFeatures", "Technologies", "Impact", "ViewOnGitHub", "ProjectList"],
           "properties": {
             "Title": { "type": "string" },
             "Description": { "type": "string" },
             "KeyFeatures": { "type": "string" },
             "Technologies": { "type": "string" },
+            "Impact": { "type": "string" },
             "ViewOnGitHub": { "type": "string" },
             "ProjectList": {
               "type": "array",
               "items": {
                 "type": "object",
-                "required": ["Title", "Overview", "KeyFeatures", "Technologies", "Repository"],
+                "required": ["Title", "Overview", "KeyFeatures", "Technologies", "Impact", "Repository"],
                 "properties": {
                   "Title": { "type": "string" },
                   "Overview": { "type": "string" },
@@ -119,6 +140,7 @@
                     "type": "array",
                     "items": { "type": "string" }
                   },
+                  "Impact": { "type": "string" },
                   "Repository": { "type": "string" }
                 }
               }

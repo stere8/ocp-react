@@ -8,10 +8,10 @@ const AboutMe = () => {
     <div className="container">
       <div className="row">
         <div className="col-md-12 text-center mt-5">
-          <h1>{t('AboutOresteHeading')}</h1>
-          <p>{t('AboutOresteDescription1')}</p>
-          <p>{t('AboutOresteDescription2')}</p>
-          <p>{t('AboutOresteDescription3')}</p>
+          <h1>{t('pages.about.AboutmeHeading')}</h1>
+          <p>{t('pages.about.AboutmeDescription1')}</p>
+          <p>{t('pages.about.AboutmeDescription2')}</p>
+          <p>{t('pages.about.AboutmeDescription3')}</p>
         </div>
       </div>
     </div>

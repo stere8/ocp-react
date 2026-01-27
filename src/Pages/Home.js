@@ -16,7 +16,7 @@ const Home = () => {
                 <p className="lead">{heroSection.Subtitle}</p>
                 <div className="cta-buttons">
                     <Button
-                        href="https://cal.com/t.oreste"
+                        href="https://cal.com/t.oreste?timezone=Europe%2FWarsaw"
                         target="_blank"
                         className="primary-cta"
                     >

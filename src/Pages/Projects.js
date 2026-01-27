@@ -29,9 +29,16 @@ const Projects = () => {
                 <li key={i}>{tech}</li>
               ))}
             </ul>
-            <a href={project.Repository} target="_blank" rel="noopener noreferrer">
-              {t('pages.projects.ViewOnGitHub')}
-            </a>
+            {project.Impact && (
+              <p>
+                <strong>{t('pages.projects.Impact')}:</strong> {project.Impact}
+              </p>
+            )}
+            {project.Repository && (
+              <a href={project.Repository} target="_blank" rel="noopener noreferrer">
+                {t('pages.projects.ViewOnGitHub')}
+              </a>
+            )}
           </div>
         ))}
       </div>
