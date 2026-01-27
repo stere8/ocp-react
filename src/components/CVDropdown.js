@@ -19,8 +19,10 @@ const CVDropdown = () => {
                 <option value="" disabled>
                     {t('pages.header.DownloadDropDown')}
                 </option>
-                <option value="/doc/CV EN.pdf">CV EN</option>
-                <option value="/doc/CV PL.pdf">CV PL</option>
+                <option value="/doc/Oreste Twizeyimana — .NET Backend Developer General.pdf">CV EN .Net</option>
+                <option value="/doc/Oreste Twizeyimana —PL .NET Backend Developer General.pdf">CV PL .Net</option>
+                <option value="/doc/Oreste TWIZEYIMANA - Python Backend Developer General.pdf">CV EN Python</option>
+                <option value="/doc/Oreste TWIZEYIMANA -PL Python Backend Developer General.pdf">CV PL Python</option>
             </select>
         </div>
     );
