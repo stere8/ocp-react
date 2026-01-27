@@ -19,17 +19,11 @@ const CVDropdown = () => {
                 <option value="" disabled>
                     {t('pages.header.DownloadDropDown')}
                 </option>
-<<<<<<< HEAD
-                <option value="/doc/Oreste Twizeyimana — .NET Backend Developer General.pdf">CV EN .Net</option>
-                <option value="/doc/Oreste Twizeyimana —PL .NET Backend Developer General.pdf">CV PL .Net</option>
-                <option value="/doc/Oreste TWIZEYIMANA - Python Backend Developer General.pdf">CV EN Python</option>
-                <option value="/doc/Oreste TWIZEYIMANA -PL Python Backend Developer General.pdf">CV PL Python</option>
-=======
+
                 <option value="/doc/CV_NET_EN.pdf">{t('pages.header.CVOptions.CV_NET_EN')}</option>
                 <option value="/doc/CV_NET_PL.pdf">{t('pages.header.CVOptions.CV_NET_PL')}</option>
                 <option value="/doc/CV_PYTHON_EN.pdf">{t('pages.header.CVOptions.CV_PYTHON_EN')}</option>
                 <option value="/doc/CV_PYTHON_PL.pdf">{t('pages.header.CVOptions.CV_PYTHON_PL')}</option>
->>>>>>> origin/codex/implement-site-updates-for-backend-focus
             </select>
         </div>
     );
