@@ -89,7 +89,7 @@
             "Entity Framework Core"
           ],
           "Impact": "Amélioration de l'efficacité administrative de 40 % grâce à des workflows élèves/cours optimisés.",
-          "Repository": "https://github.com/stere8/school-management-system"
+          "Repository": ""
         },
         {
           "Title": "StockIT - Gestion des stocks",
