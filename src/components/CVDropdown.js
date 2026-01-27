@@ -19,8 +19,10 @@ const CVDropdown = () => {
                 <option value="" disabled>
                     {t('pages.header.DownloadDropDown')}
                 </option>
-                <option value="/doc/CV EN.pdf">CV EN</option>
-                <option value="/doc/CV PL.pdf">CV PL</option>
+                <option value="/doc/CV_NET_EN.pdf">{t('pages.header.CVOptions.CV_NET_EN')}</option>
+                <option value="/doc/CV_NET_PL.pdf">{t('pages.header.CVOptions.CV_NET_PL')}</option>
+                <option value="/doc/CV_PYTHON_EN.pdf">{t('pages.header.CVOptions.CV_PYTHON_EN')}</option>
+                <option value="/doc/CV_PYTHON_PL.pdf">{t('pages.header.CVOptions.CV_PYTHON_PL')}</option>
             </select>
         </div>
     );

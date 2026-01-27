@@ -24,14 +24,14 @@ const Header = () => {
               <Nav.Link as={Link} to="/">{navLinks.Services}</Nav.Link>
               <Nav.Link as={Link} to="/projects">{navLinks.Projects}</Nav.Link>
               <Nav.Link as={Link} to="/expertise">{navLinks.Expertise}</Nav.Link>
-              <Nav.Link href="https://cal.com/t.oreste" target="_blank">{navLinks.Schedule}</Nav.Link>
+              <Nav.Link href="https://cal.com/t.oreste?timezone=Europe%2FWarsaw" target="_blank">{navLinks.Schedule}</Nav.Link>
               <Nav.Link as={Link} to="/contact">{navLinks.Contact}</Nav.Link>
             </Nav>
             <CVDropdown/>
             <Dropdown/>
             <Button
               variant="primary"
-              href="https://cal.com/t.oreste"
+              href="https://cal.com/t.oreste?timezone=Europe%2FWarsaw"
               target="_blank"
               className="schedule-btn"
             >
