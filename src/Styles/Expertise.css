@@ -7,9 +7,10 @@
   padding: 6rem 2rem 2.75rem;
   border-radius: 28px;
   background:
-    radial-gradient(circle at bottom right, rgba(11, 61, 145, 0.15), transparent 25%),
-    linear-gradient(135deg, #f7fbff 0%, #ffffff 52%, #e7f0ff 100%);
-  border: 1px solid #dbe4ee;
+    radial-gradient(circle at bottom right, rgba(11, 61, 145, 0.14), transparent 24%),
+    linear-gradient(135deg, #f7fbff 0%, #ffffff 52%, #e5efff 100%);
+  border: 1px solid #d7e3f4;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
 }
 
 .expertise-page .expertise-hero h1 {
@@ -24,48 +25,52 @@
   line-height: 1.75;
 }
 
-.expertise-skills-grid {
+.expertise-services-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 2rem;
 }
 
-.expertise-skill-box {
-  width: auto;
-  margin: 0;
-  padding: 1.5rem;
-  border-radius: 18px;
-  border: 1px solid #dbe4ee;
+.expertise-service-card,
+.process-list-card,
+.profile-extra-card {
+  background: #ffffff;
+  border: 1px solid #d7e3f4;
+  border-radius: 20px;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.expertise-service-card {
+  padding: 1.5rem;
   text-align: left;
 }
 
-.expertise-skill-box h2 {
+.expertise-service-card h2 {
   margin-bottom: 0.75rem;
   color: #0f172a;
 }
 
-.expertise-skill-box p {
+.expertise-service-card p {
   margin: 0 0 1rem;
   color: #475569;
   line-height: 1.7;
   text-align: left;
 }
 
-.expertise-skill-box ul {
+.expertise-service-card ul,
+.profile-extra-card ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.expertise-skill-box li,
-.profile-extra-card li,
-.direction-card li {
+.expertise-service-card li,
+.profile-extra-card li {
   display: flex;
   align-items: flex-start;
   gap: 0.55rem;
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.8rem;
   color: #475569;
   line-height: 1.65;
 }
@@ -73,6 +78,31 @@
 .custom-bullet {
   color: #0b3d91;
   font-weight: 700;
+}
+
+.consulting-process-section {
+  margin-top: 2rem;
+}
+
+.process-list-card {
+  padding: 1.6rem;
+  text-align: left;
+}
+
+.process-list-card h2 {
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.process-list-card ol {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.process-list-card li {
+  margin-bottom: 0.9rem;
+  color: #475569;
+  line-height: 1.7;
 }
 
 .profile-extra-section {
@@ -84,10 +114,6 @@
 
 .profile-extra-card {
   padding: 1.5rem;
-  border-radius: 18px;
-  background: #ffffff;
-  border: 1px solid #dbe4ee;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
   text-align: left;
 }
 
@@ -96,24 +122,14 @@
   color: #0f172a;
 }
 
-.profile-extra-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.direction-section {
-  margin-top: 2rem;
-}
-
 .direction-card {
   background:
-    radial-gradient(circle at top right, rgba(11, 61, 145, 0.12), transparent 26%),
+    radial-gradient(circle at top right, rgba(11, 61, 145, 0.1), transparent 25%),
     linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
 }
 
 @media (max-width: 1024px) {
-  .expertise-skills-grid,
+  .expertise-services-grid,
   .profile-extra-section {
     grid-template-columns: 1fr;
   }

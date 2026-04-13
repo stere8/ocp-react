@@ -27,7 +27,10 @@ const Projects = () => {
           <article key={project.title} className="project-card">
             <div className="project-card-body">
               <div className="project-card-header">
-                <h2>{project.title}</h2>
+                <div>
+                  <h2>{project.title}</h2>
+                  <p className="project-subtitle">{project.subtitle}</p>
+                </div>
                 <div className="project-signals">
                   {project.signals.map((signal) => (
                     <span key={signal} className="project-signal">
@@ -39,16 +42,16 @@ const Projects = () => {
 
               <div className="project-story-grid">
                 <div className="project-story-block">
-                  <h3>Problem</h3>
-                  <p>{project.problem}</p>
+                  <h3>Context</h3>
+                  <p>{project.context}</p>
                 </div>
                 <div className="project-story-block">
-                  <h3>System</h3>
-                  <p>{project.system}</p>
+                  <h3>Approach</h3>
+                  <p>{project.approach}</p>
                 </div>
                 <div className="project-story-block">
-                  <h3>Impact</h3>
-                  <p>{project.impact}</p>
+                  <h3>Outcome</h3>
+                  <p>{project.outcome}</p>
                 </div>
               </div>
 
@@ -63,7 +66,7 @@ const Projects = () => {
 
             {project.repository && (
               <a href={project.repository} target="_blank" rel="noopener noreferrer">
-                View on GitHub
+                View repository
               </a>
             )}
           </article>

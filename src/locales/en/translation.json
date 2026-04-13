@@ -1,8 +1,8 @@
 {
   "$schema": "../translation.schema.json",
   "meta": {
-    "description": "Backend engineer portfolio focused on .NET systems, Python tooling, and practical software for real operations.",
-    "ogTitle": "Oreste Twizeyimana | Backend Engineer Portfolio"
+    "description": "Backend and systems engineering consulting for APIs, integrations, SQL-backed systems, automation, and workflow-heavy software.",
+    "ogTitle": "Backend & Systems Engineering Consulting | Oreste Twizeyimana"
   },
   "pages": {
     "loading": {
@@ -12,16 +12,16 @@
       "fallbackMessage": "Something went wrong. Please refresh the page."
     },
     "header": {
-      "BrandAlt": "Oreste Twizeyimana - Backend Engineer",
+      "BrandAlt": "Oreste Twizeyimana - Backend & Systems Consultant",
       "NavLinks": {
-        "Services": "Home",
+        "Services": "Consulting",
         "Profile": "Profile",
-        "Projects": "Projects",
-        "Expertise": "Expertise",
-        "Schedule": "Schedule",
+        "Projects": "Case Studies",
+        "Expertise": "Services",
+        "Schedule": "Book Call",
         "Contact": "Contact"
       },
-      "ScheduleButton": "Book a Call",
+      "ScheduleButton": "Book Intro Call",
       "DownloadDropDown": "Download CV",
       "CVOptions": {
         "CV_NET_EN": "CV .NET EN",
@@ -255,9 +255,9 @@
       }
     },
     "ContactUs": {
-      "LetsConnectHeading": "Let's Connect",
-      "ContactFormDescription": "Feel free to reach out to me using the contact form below",
-      "contactMessage": "I'm always interested in hearing about new opportunities, projects, or just having a friendly conversation",
+      "LetsConnectHeading": "Let's Talk",
+      "ContactFormDescription": "Tell me about the backend, integration, automation, or system problem you want to solve.",
+      "contactMessage": "I am open to consulting work, engineering roles, collaborations, and technically serious conversations.",
       "ContactForm": {
         "YourNameLabel": "Your Name",
         "EmailLabel": "Email",

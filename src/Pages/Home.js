@@ -25,25 +25,25 @@ const Home = () => {
             </div>
 
             <div className="cta-buttons">
-              <Button as={Link} to="/about" className="primary-cta">
+              <Button
+                href="https://cal.com/t.oreste?timezone=Europe%2FWarsaw"
+                target="_blank"
+                className="primary-cta"
+              >
                 {profile.ctaLabel}
               </Button>
               <Button as={Link} to="/projects" variant="outline-primary">
-                View projects
+                {profile.secondaryCtaLabel}
               </Button>
             </div>
           </div>
 
           <aside className="hero-proof-card">
-            <span className="section-kicker">Core Identity</span>
-            <h2>Production engineer, systems thinker, and technical explainer.</h2>
-            <p>
-              The strongest pattern across the profile is simple: practical backend
-              engineering for real workflows, backed by clear communication and
-              architecture discipline.
-            </p>
+            <span className="section-kicker">Credibility</span>
+            <h2>{profile.trustTitle}</h2>
+            <p>{profile.trustSummary}</p>
             <ul>
-              {profile.journeyItems.map((item) => (
+              {profile.trustPoints.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
@@ -53,12 +53,12 @@ const Home = () => {
 
       <section className="profile-summary-section">
         <div className="section-heading">
-          <span className="section-kicker">Evidence</span>
-          <h2>What the profile already proves</h2>
+          <span className="section-kicker">Proof</span>
+          <h2>Reference points behind the consulting offer</h2>
           <p>
-            This is not a portfolio built on tutorials or vague positioning. The
-            strongest evidence comes from production backend work, a serious thesis
-            project, and a repeated pattern of structured systems thinking.
+            The offer is anchored in production backend work, operationally grounded
+            projects, and a systems mindset that has been consistent across both
+            commercial experience and independent builds.
           </p>
         </div>
 
@@ -72,31 +72,67 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="profile-story-section">
+      <section className="value-section">
         <div className="section-heading">
-          <span className="section-kicker">My Story</span>
-          <h2>{profile.storyTitle}</h2>
+          <span className="section-kicker">Value</span>
+          <h2>{profile.valueTitle}</h2>
+          <p>{profile.valueIntro}</p>
         </div>
-        <div className="profile-story-grid">
-          {profile.storyCards.map((card) => (
-            <article key={card.title} className="profile-story-card">
-              <h3>{card.title}</h3>
-              <p>{card.text}</p>
+        <div className="value-grid">
+          {profile.valuePoints.map((item) => (
+            <article key={item.title} className="value-card">
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="profile-pillars-section">
+      <section className="why-section">
         <div className="section-heading">
-          <span className="section-kicker">Strengths</span>
-          <h2>{profile.pillarsTitle}</h2>
+          <span className="section-kicker">Positioning</span>
+          <h2>{profile.whyTitle}</h2>
         </div>
-        <div className="profile-pillars-grid">
-          {profile.pillars.map((pillar) => (
-            <article key={pillar.title} className="profile-pillar-card">
-              <h3>{pillar.title}</h3>
-              <p>{pillar.description}</p>
+        <div className="why-grid">
+          {profile.whyParagraphs.map((paragraph, index) => (
+            <article key={index} className="why-card">
+              <p>{paragraph}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="services-section">
+        <div className="section-heading">
+          <span className="section-kicker">Offer</span>
+          <h2>{profile.servicesTitle}</h2>
+        </div>
+        <div className="services-grid">
+          {profile.services.map((service) => (
+            <article key={service.title} className="service-card">
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+              <ul>
+                {service.bullets.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="process-section">
+        <div className="section-heading">
+          <span className="section-kicker">Approach</span>
+          <h2>{profile.processTitle}</h2>
+        </div>
+        <div className="process-grid">
+          {profile.process.map((step, index) => (
+            <article key={step.title} className="process-card">
+              <span className="process-step">0{index + 1}</span>
+              <h3>{step.title}</h3>
+              <p>{step.description}</p>
             </article>
           ))}
         </div>
@@ -115,6 +151,36 @@ const Home = () => {
               <p>{item.description}</p>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="communication-section">
+        <div className="communication-card">
+          <span className="section-kicker">Communication</span>
+          <h2>{profile.communicationTitle}</h2>
+          <p>{profile.communication}</p>
+        </div>
+      </section>
+
+      <section className="contact-cta-section">
+        <div className="contact-cta-card">
+          <div>
+            <span className="section-kicker">Contact</span>
+            <h2>{profile.contactTitle}</h2>
+            <p>{profile.contactText}</p>
+          </div>
+          <div className="contact-cta-actions">
+            <Button as={Link} to="/contact" className="primary-cta">
+              Contact me
+            </Button>
+            <Button
+              href="https://cal.com/t.oreste?timezone=Europe%2FWarsaw"
+              target="_blank"
+              variant="outline-primary"
+            >
+              Schedule a call
+            </Button>
+          </div>
         </div>
       </section>
     </div>

@@ -13,9 +13,9 @@ const Expertise = () => {
         <p>{profileExpertise.intro}</p>
       </section>
 
-      <section className="skills-section expertise-skills-grid">
-        {profileExpertise.skillGroups.map((group) => (
-          <article key={group.title} className="skill-box expertise-skill-box">
+      <section className="skills-section expertise-services-grid">
+        {profileExpertise.serviceGroups.map((group) => (
+          <article key={group.title} className="expertise-service-card">
             <h2>{group.title}</h2>
             <p>{group.description}</p>
             <ul>
@@ -29,11 +29,23 @@ const Expertise = () => {
         ))}
       </section>
 
+      <section className="consulting-process-section">
+        <div className="process-list-card">
+          <span className="section-kicker">Delivery</span>
+          <h2>{profileExpertise.processTitle}</h2>
+          <ol>
+            {profileExpertise.process.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
       <section className="profile-extra-section">
         <div className="profile-extra-card">
-          <h2>{profileExpertise.highlightsTitle}</h2>
+          <h2>{profileExpertise.profileTitle}</h2>
           <ul>
-            {profileExpertise.highlights.map((item) => (
+            {profileExpertise.profile.map((item) => (
               <li key={item}>
                 <span className="custom-bullet">&lt;/&gt;</span> {item}
               </li>
@@ -42,9 +54,9 @@ const Expertise = () => {
         </div>
 
         <div className="profile-extra-card">
-          <h2>{profileExpertise.workStyleTitle}</h2>
+          <h2>{profileExpertise.differentiatorsTitle}</h2>
           <ul>
-            {profileExpertise.workStyle.map((item) => (
+            {profileExpertise.differentiators.map((item) => (
               <li key={item}>
                 <span className="custom-bullet">&lt;/&gt;</span> {item}
               </li>
@@ -63,19 +75,6 @@ const Expertise = () => {
           </ul>
         </div>
 
-        <div className="profile-extra-card">
-          <h2>{profileExpertise.domainsTitle}</h2>
-          <ul>
-            {profileExpertise.domains.map((item) => (
-              <li key={item}>
-                <span className="custom-bullet">&lt;/&gt;</span> {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      <section className="direction-section">
         <div className="profile-extra-card direction-card">
           <h2>{profileExpertise.currentFocusTitle}</h2>
           <ul>

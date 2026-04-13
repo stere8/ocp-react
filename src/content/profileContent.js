@@ -1,224 +1,293 @@
 const profileContent = {
   home: {
-    eyebrow: 'Profile Snapshot',
-    title: 'Backend engineer building practical systems for real operations.',
+    eyebrow: 'Backend & Systems Engineering Consulting',
+    title: 'Helping businesses build, improve, and untangle real software systems.',
     intro:
-      '2.5+ years of production .NET backend work, a serious Python tooling track, and a systems mindset shaped by mechatronics, mentoring, and business-process reality.',
+      'I work on the operational side of software: APIs, data flows, integrations, workflow logic, and backend systems that businesses depend on every day.',
     heroSupport:
-      'I build APIs, workflow-heavy applications, and data systems that reduce friction, improve visibility, and stay maintainable when the operational mess is real.',
+      'The strongest evidence behind this offer is 2.5+ years of production .NET backend work, a serious systems-oriented project portfolio, and a practical engineering mindset shaped by mechatronics and real business-process exposure.',
     focusAreas: [
-      'Production .NET systems',
-      'Python APIs, tooling, and automation',
-      'System thinking from mechatronics',
-      'Clear technical communication'
+      'Scalable backend systems with .NET and ASP.NET Core',
+      'Data flow and performance improvement in SQL-backed systems',
+      'Python automation, APIs, and system-level tooling',
+      'Clear communication, mentoring, and structured delivery'
+    ],
+    ctaLabel: 'Book an intro call',
+    secondaryCtaLabel: 'See case studies',
+    trustTitle: 'Why this offer is credible',
+    trustSummary:
+      'This is not generic consulting language. The offer is built on actual production work, evidence-backed projects, and a profile centered on operational usefulness.',
+    trustPoints: [
+      'Commercial backend work at Oponeo.pl from September 2021 to February 2024',
+      'Experience with APIs, SQL optimization, integrations, and production support',
+      'B.Eng. in Computer Engineering & Mechatronics, final grade 4.26/5.0',
+      'Repeated tutoring and mentoring experience that strengthens communication'
     ],
     stats: [
-      { value: '2.5+ years', label: 'commercial backend engineering at Oponeo.pl' },
+      { value: '2.5+ years', label: 'commercial backend delivery in production environments' },
       { value: '.NET first', label: 'C#, ASP.NET Core, EF Core, SQL Server, REST APIs' },
-      { value: 'Python range', label: 'FastAPI, Flask, automation, networking, and device-adjacent tooling' },
-      { value: 'B.Eng. 4.26/5.0', label: 'Computer Engineering & Mechatronics, final grade Very Good' }
+      { value: 'Python range', label: 'FastAPI, Flask, automation, networking, and tooling work' },
+      { value: 'Systems mindset', label: 'mechatronics, diagnostics, data flow, and operational thinking' }
     ],
-    storyTitle: 'Why this work matters',
-    storyCards: [
+    valueTitle: 'What I Actually Do',
+    valueIntro:
+      'I focus on systems that matter in day-to-day operations: inventory, reservations, orders, integrations, reporting, and workflows that become costly when the structure is weak.',
+    valuePoints: [
       {
-        title: 'Origin',
-        text:
-          'I grew up around small-business operations and saw directly how stock, workflows, and reporting become fragile without good systems.'
+        title: 'Backend systems development',
+        description:
+          'Designing and implementing APIs and backend applications with a focus on maintainability, workflow clarity, and production reliability.'
       },
       {
-        title: 'Turning Point',
-        text:
-          'StockIT came from that reality. It was not a filler thesis project, but a real attempt to solve operational problems with structured software.'
+        title: 'System optimization and integration',
+        description:
+          'Improving existing systems through query tuning, cleaner boundaries, better data flow, and safer integration with external services.'
       },
       {
-        title: 'Engineering Lens',
-        text:
-          'Since then, the through-line has stayed the same: build systems that remove manual friction, clarify data flow, and behave reliably under pressure.'
+        title: 'Automation and tooling',
+        description:
+          'Building Python-based tools and scripts for operational support, data processing, diagnostics, and repetitive workflow reduction.'
       }
     ],
-    pillarsTitle: 'Core Strengths',
-    pillars: [
+    whyTitle: 'Why Work With Me',
+    whyParagraphs: [
+      'My approach to software comes from practical reality, not only technical interest. I grew up around small-business operations and saw how manual inventory and workflow problems create friction, mistakes, and poor visibility.',
+      'That is what led to StockIT. It was not built as a filler academic exercise, but as a real attempt to solve an operational problem through structured software.',
+      'The through-line has stayed consistent ever since: turn messy requirements into dependable systems without losing clarity, maintainability, or usefulness for real people.'
+    ],
+    servicesTitle: 'Consulting Services',
+    services: [
       {
-        title: 'Production .NET',
+        title: 'Backend Systems Development',
         description:
-          'Built and maintained ASP.NET Core APIs in a live e-commerce environment, optimized SQL performance, and worked on payment and logistics integrations.'
+          'Design and development of scalable APIs and backend systems with a focus on architecture clarity, maintainability, and production readiness.',
+        bullets: [
+          'ASP.NET Core APIs and layered backend design',
+          'Workflow-driven business logic',
+          'Relational data modeling and validation boundaries'
+        ]
       },
       {
-        title: 'Python and Tooling',
+        title: 'System Optimization & Integration',
         description:
-          'Use Python for APIs, rule-based systems, automation, device workflows, and exploratory tooling where flexibility and speed matter.'
+          'Improving existing systems through database tuning, performance-focused data access, and integration with external services such as payments, logistics, and APIs.',
+        bullets: [
+          'SQL query tuning and indexing',
+          'Payment and logistics integration awareness',
+          'Refactoring brittle or legacy backend flows'
+        ]
       },
       {
-        title: 'Teaching and Communication',
+        title: 'Automation & Tooling',
         description:
-          'Mentored programming students and taught languages, which strengthened documentation, explanation, and the ability to break down complexity.'
+          'Building custom Python tools for automation, data processing, analysis, and backend support work where smaller utilities create real operational leverage.',
+        bullets: [
+          'Python scripts and small internal tools',
+          'Diagnostics and workflow automation',
+          'System-facing and OS-adjacent utilities'
+        ]
+      },
+      {
+        title: 'Security-Oriented Engineering',
+        description:
+          'Designing systems with stronger attention to validation, reliability, and operational awareness while extending deeper into security-minded tooling and diagnostics.',
+        bullets: [
+          'Safer API boundaries and validation',
+          'Security-aware backend thinking',
+          'Network and system-level exploration'
+        ]
+      }
+    ],
+    processTitle: 'How I Work',
+    process: [
+      {
+        title: 'Understand the real problem',
+        description:
+          'I start from the workflow, not just the ticket, so the technical work maps to an actual operational need.'
+      },
+      {
+        title: 'Analyze the system shape',
+        description:
+          'Data flow, failure points, integrations, and constraints matter more than surface features when software has to keep working.'
+      },
+      {
+        title: 'Design for maintainability',
+        description:
+          'I prefer clear boundaries, understandable logic, and systems that remain workable after the first sprint.'
+      },
+      {
+        title: 'Ship with long-term use in mind',
+        description:
+          'The goal is not only to make it work once. The goal is to make it reliable, inspectable, and easier to evolve.'
       }
     ],
     currentFocusTitle: 'Current Focus',
     currentFocusIntro:
-      'The profile is strongest when backend engineering meets systems awareness. The next layer of growth is moving further into tooling, diagnostics, and security-minded engineering.',
+      'My current direction stays anchored in backend engineering, but it is extending further into automation, diagnostics, and security-aware system work.',
     currentFocus: [
       {
-        title: 'Secure backend systems',
+        title: 'Security-oriented backend systems',
         description:
-          'Designing APIs and workflow-heavy applications with stronger attention to validation, maintainable boundaries, and reliability.'
+          'Designing APIs and backend services with stronger attention to validation, boundaries, and operational resilience.'
       },
       {
-        title: 'Python automation and diagnostics',
+        title: 'Network and system-level tooling',
         description:
-          'Building scripts and small tools for analysis, investigation, device workflows, and backend support work.'
+          'Building smaller tools and diagnostics closer to the OS, protocol, or device layer to better understand and improve real systems.'
       },
       {
-        title: 'System-level exploration',
+        title: 'Automation for analysis and investigation',
         description:
-          'Extending backend work with networking, OS-adjacent, and embedded experiments that sharpen operational understanding.'
+          'Using Python to reduce repetitive work, support analysis, and create sharper operational visibility.'
       }
     ],
-    journeyTitle: 'What shapes the work',
-    journeyItems: [
-      'StockIT grew out of direct exposure to small-business inventory problems in my family and early work experience.',
-      'Mechatronics added systems thinking: integration, constraints, diagnostics, hardware awareness, and reliability.',
-      'Multilingual communication made explanation, adaptation, and audience-awareness part of the engineering style.'
-    ],
-    ctaLabel: 'Read the full profile'
+    communicationTitle: 'Communication & Teaching',
+    communication:
+      'Alongside engineering, I teach programming and languages. That strengthened my ability to explain complex systems clearly, decompose vague problems, and work effectively across different levels of understanding.',
+    contactTitle: 'Start a Conversation',
+    contactText:
+      'If you need help with backend systems, workflow-heavy applications, integrations, data reliability, or technical problem-solving around real operations, reach out.'
   },
   about: {
-    eyebrow: 'Detailed Personal Profile',
-    title: 'A broader portrait than a CV',
+    eyebrow: 'Working Reference Profile',
+    title: 'The profile behind the consulting offer',
     lead:
-      'This page brings together the stable picture visible across the accessible CVs, thesis materials, portfolio files, and project repositories: not only where I worked, but how I think, what motivates me, and what kinds of systems I build best.',
+      'This page is the fuller working portrait behind the site: a backend-first engineer with production discipline, systems awareness, and unusually strong communication for the experience level.',
     intro: [
-      'The strongest consistent identity is a backend-first engineer with production .NET experience, growing Python range, and an analytical mindset shaped by both software and mechatronics.',
-      'I do not come across as someone interested in technology for its own sake. The recurring pattern is practical software for real operations: inventory, reservations, integrations, reporting, automation, and systems that make business workflows less fragile.'
+      'The strongest stable reading across the evidence is not generic “developer.” It is production backend engineer, systems thinker, tutor, and builder of software tied to real operational problems.',
+      'That matters because the consulting positioning on this site is not invented marketing language. It is a compressed version of what the underlying material consistently supports.'
     ],
-    quickFactsTitle: 'At a glance',
+    quickFactsTitle: 'Reference Markers',
     quickFacts: [
-      'Based in Bydgoszcz, Poland, with repeated openness to relocation, hybrid work, and remote collaboration.',
-      'Commercial experience centered on Oponeo.pl from September 2021 to February 2024, in high-traffic backend and integration work.',
-      'B.Eng. in Computer Engineering & Mechatronics from the University of Economy in Bydgoszcz, completed in October 2025 with a final grade of 4.26/5.0.',
-      'Languages repeatedly present across the document set: English, French, Polish, Spanish, and Kinyarwanda.'
+      'Base location: Bydgoszcz, Poland, with repeated openness to relocation, hybrid work, and remote collaboration.',
+      'Commercial core: C#, .NET, ASP.NET Core, EF Core, SQL Server, REST APIs, integrations, and production support.',
+      'Expansion space: Python, FastAPI, Flask, Django, automation, embedded work, diagnostics, and tooling.',
+      'Differentiators: mechatronics, tutoring, multilingual communication, and systems thinking.'
     ],
     sections: [
       {
-        title: 'Who I Appear To Be',
+        title: 'Core Identity',
         paragraphs: [
-          'A technically serious, multilingual, self-improving engineer whose profile is built around three recurring strengths: production software engineering, education and mentoring, and structured systems thinking.',
-          'That combination matters because it suggests more than coding ability. It points to someone who can operate inside real business systems, reason carefully about architecture and data, and explain complexity clearly to other people.'
+          'The clearest one-line summary is this: Oreste looks like a backend engineer whose real strength is turning messy operational requirements into structured systems without losing clarity, maintainability, or human usefulness.',
+          'The profile is strongest where production software engineering, communication through teaching, and mechatronics-shaped systems thinking overlap.'
         ]
       },
       {
         title: 'Human Motivation',
         paragraphs: [
-          'The most personal thread in the source material comes from StockIT, the thesis project focused on inventory management for small businesses. It explains why operational software shows up so often across my work: I saw inventory problems directly, not only as abstract exercises.',
-          'That background created a durable interest in software that reduces manual work, improves visibility, supports decision-making, and turns everyday operational chaos into something structured and manageable.'
+          'The personal through-line is unusually clear because StockIT traces back to direct exposure to inventory and stock-control problems in small-business environments.',
+          'That is why business systems, workflow reliability, reporting, integrations, and automation appear so often: the recurring interest is software that makes chaotic processes more dependable.'
         ]
       },
       {
-        title: 'Professional Core',
+        title: 'Commercial Experience',
         paragraphs: [
-          'The most proven side of the profile is .NET backend work under production conditions: ASP.NET Core, EF Core, SQL Server, REST APIs, WCF-era integrations, Docker, CI/CD, and SQL optimization.',
-          'Across multiple CV variants, the same commercial claims repeat: better database performance, safer payment flows, work with Klarna and PayPal, work with DPD and GLS, legacy refactoring, Agile collaboration, and production support.'
+          'The commercial center of gravity is the Oponeo.pl period from approximately September 2021 to February 2024. Across the evidence, that work anchors the profile in real production backend engineering rather than only portfolio claims.',
+          'Repeated technical signals include ASP.NET Core APIs, EF Core, SQL Server, payment and logistics integrations, performance tuning, legacy refactoring, testing, Agile delivery, and production support.'
         ]
       },
       {
-        title: 'Broader Engineering Range',
+        title: 'Technical Identity',
         paragraphs: [
-          'Python expands the profile into microservices, automation, rule engines, tooling, networking, and embedded experiments. The portfolio points toward FastAPI, Flask, scripting, JSON processing, ADB automation, packet analysis, OpenCV-adjacent work, and MicroPython on ESP-class devices.',
-          'Mechatronics strengthens the systems mindset underneath that range. The academic foundation spans algorithms, databases, networking, embedded systems, control, IoT, and software engineering, which explains why the projects often feel more architecture-aware than purely tutorial-driven.'
+          'The .NET side is the most proven and mature: modern C#, ASP.NET Core, EF Core, SQL Server, WCF-era integrations, Docker, CI/CD, and maintainable layered structure.',
+          'Python is the expansion and experimentation space: FastAPI, Flask, Django, automation scripts, networking, ADB workflows, packet analysis, and MicroPython on ESP-class devices.'
         ]
       },
       {
-        title: 'Communication and Teaching',
+        title: 'Communication and Working Style',
         paragraphs: [
-          'Teaching is a real part of the profile, not a side note. Across the materials there is repeated evidence of programming tutoring, mentoring, and language instruction.',
-          'That affects the engineering style. It usually translates into clearer documentation, more patient collaboration, stronger decomposition of problems, and an ability to adapt explanations to different audiences.'
+          'Teaching is not a side note. Programming tutoring, language instruction, and multilingual communication all point toward a stronger-than-usual ability to explain technical systems clearly.',
+          'The likely team behavior is analytical, practical, adaptable, self-directed, quality-oriented, and unusually communicative for an early-career backend engineer.'
         ]
       }
     ],
     valuesTitle: 'Working Style',
     values: [
-      'Analytical: looks for structure, causes, dependencies, and failure modes rather than only feature output.',
-      'Practical: gravitates toward useful systems tied to operations, reporting, workflow, inventory, logistics, or automation.',
-      'Quality-oriented: repeatedly emphasizes clean architecture, SOLID, testing, maintainability, and CI/CD discipline.',
-      'Adaptable: can move between .NET, Python, business software, tutoring, automation, and embedded work without losing a stable technical identity.'
+      'Analytical: looks for causes, interactions, dependencies, and failure modes rather than only feature output.',
+      'Practical: gravitates toward workflows, reporting, inventory, reservations, integrations, and automation tied to real usage.',
+      'Quality-oriented: emphasizes clean architecture, SOLID, testing, documentation, and CI/CD discipline.',
+      'Adaptable: can move across .NET, Python, APIs, tutoring, automation, and embedded work without losing the same core identity.'
     ],
     directionTitle: 'Career Direction',
     direction: [
-      'Backend engineering in technically demanding product environments.',
-      'System integration and business-platform work where software affects real operations.',
-      'Python backend, automation, and AI/RAG-adjacent infrastructure roles that benefit from a strong architecture foundation.',
-      'Engineering cultures that value ownership, technical standards, and clear communication.'
+      'Backend engineering in stronger product or platform teams.',
+      'Business systems and operational platforms where software affects real workflows.',
+      'Python tooling, automation, and service-oriented backend work.',
+      'AI or RAG-adjacent backend infrastructure where architecture and data flow matter more than hype.'
     ],
     closing:
-      'The most convincing summary is simple: I am motivated by usefulness, structure, and improvement. The goal is not only to write code, but to turn complex systems into something dependable and workable for real people.'
+      'The center of the profile is not “I like coding.” It is closer to this: I want to make complicated things work reliably for real people.'
   },
   projectsPage: {
-    eyebrow: 'Selected Work',
-    title: 'Projects that show systems thinking, not just stack usage.',
+    eyebrow: 'Case Studies',
+    title: 'Selected work showing how I approach real operational software.',
     intro:
-      'The strongest portfolio pieces are tied to operational problems, clear backend boundaries, or logic-heavy tooling. The point is not to collect frameworks. It is to show how I structure systems around real requirements.',
+      'These are not presented as random portfolio pieces. They are consulting-style case studies that show how I think about context, system design, and outcome when the problem behind the code actually matters.',
     themes: [
       {
         title: 'Operational software',
         description:
-          'Inventory, reservations, workflows, and reporting appear repeatedly because they match the kind of problems I care about.'
+          'Inventory, reservations, platform workflows, and reporting appear repeatedly because they reflect the kind of problems I solve best.'
       },
       {
-        title: 'Backend architecture',
+        title: 'Architecture over feature lists',
         description:
-          'The projects are strongest when domain logic, service boundaries, and data flow matter more than surface-level UI polish.'
+          'The strongest work here is not about flashy UI. It is about system boundaries, domain logic, data shape, and backend reliability.'
       },
       {
-        title: 'Tooling and curiosity',
+        title: 'Evidence-backed range',
         description:
-          'Automation, networking, and device-adjacent work show a second instinct: exploring systems closer to the OS, protocol, or hardware layer.'
+          'The portfolio stretches from production .NET patterns to Python services, automation, and device-aware experiments without losing the same engineering discipline.'
       }
     ]
   },
   projects: [
     {
       title: 'StockIT',
-      problem:
-        'Small businesses often manage stock with manual, inconsistent processes that make visibility, reporting, and day-to-day decisions harder than they should be.',
-      system:
-        'Built a layered inventory management application with product and category handling, stock tracking, exportable reporting, and clear separation between presentation, business logic, and data access.',
-      impact:
-        'This is the clearest evidence of product ownership and practical empathy: a thesis-driven system based on real operational pain rather than a generic assignment brief.',
+      subtitle: 'Inventory System for Small Businesses',
+      context:
+        'Manual stock tracking creates errors, weak visibility, and operational friction for smaller businesses that depend on accurate inventory awareness.',
+      approach:
+        'Designed a layered .NET backend application for product and category management, stock tracking, reporting, and export workflows, with clear separation between presentation, business logic, and data access.',
+      outcome:
+        'A thesis-driven system tied directly to a real business problem, showing product ownership, practical empathy, and structured backend design grounded in operational use.',
       signals: [
-        'Inventory and reporting workflows',
+        'Inventory workflows',
         'Layered architecture',
-        'Thesis-level product ownership'
+        'Real-world business motivation'
       ],
       technologies: ['ASP.NET Core 8', 'Razor Pages', 'Entity Framework Core', 'SQL Server', 'Bootstrap', 'Docker', 'Azure'],
       repository: 'https://github.com/stere8/stockit'
     },
     {
       title: 'Stere8 EStore Platform',
-      problem:
-        'Retail operations need more than a storefront. They need role separation, vendor governance, stock awareness, and workflow control around reservations and pickup.',
-      system:
-        'Designed a reservation-first retail platform with separate customer, admin, and vendor experiences connected to one .NET backend source of truth and tenant-aware domain modeling.',
-      impact:
-        'Shows platform thinking, workflow orchestration, and the ability to model a business system with multiple actors instead of only a single web app shell.',
+      subtitle: 'Reservation-First Multi-Tenant Backend',
+      context:
+        'Retail platforms need more than a storefront. They need role separation, vendor governance, reservation logic, and a backend model that can support multiple actors cleanly.',
+      approach:
+        'Designed a tenant-aware retail platform with separate customer, admin, and vendor applications connected to one .NET backend source of truth and workflow-aware domain model.',
+      outcome:
+        'A platform-oriented system that demonstrates boundaries, reservation lifecycle logic, and structured operations rather than only product listing screens.',
       signals: [
-        'Platform boundaries',
+        'Platform thinking',
         'Reservation lifecycle logic',
-        'Tenant-aware domain modeling'
+        'Tenant-aware backend design'
       ],
       technologies: ['.NET 8', 'ASP.NET Minimal APIs', 'Entity Framework Core', 'SQL Server', 'Next.js', 'React', 'TypeScript'],
       repository: ''
     },
     {
       title: 'DreamNDine',
-      problem:
-        'Reservation-heavy domains break down when state transitions, availability, and business rules are treated like simple CRUD.',
-      system:
-        'Built a backend-oriented reservation project with structured API design, SQL-backed persistence, validation, and maintainable service boundaries around domain logic.',
-      impact:
-        'Signals comfort with workflow-driven systems where backend rules and state transitions matter more than endpoint volume.',
+      subtitle: 'Reservation and Business-Rule API',
+      context:
+        'Availability, booking state, pricing, and workflow coordination are difficult when they are treated like simple CRUD instead of a real domain problem.',
+      approach:
+        'Built a backend API around layered structure, SQL-backed persistence, domain logic, and maintainable service boundaries designed for reservation-oriented workflows.',
+      outcome:
+        'A stronger example of business-rule backend work, showing comfort with state transitions, backend structure, and workflow-heavy application logic.',
       signals: [
-        'Business-rule backend',
         'Reservation workflows',
+        'Business-rule backend',
         'Maintainable service structure'
       ],
       technologies: ['.NET 8', 'ASP.NET Core', 'Entity Framework Core', 'SQL Server', 'Swagger'],
@@ -226,138 +295,106 @@ const profileContent = {
     },
     {
       title: 'FaceAPI',
-      problem:
-        'Identity and verification workflows need explicit validation, modular service design, and a cleaner path from MVP to production readiness.',
-      system:
-        'Created a modular FastAPI backend with health, auth, registration, and verification routes, using Pydantic models, JWT-based flows, and a roadmap toward testing, packaging, CI, and Docker.',
-      impact:
-        'Represents the Python side of the profile at its best: API-first, validation-heavy, and organized around service evolution rather than quick scripts.',
+      subtitle: 'Python Backend Service',
+      context:
+        'Modern service work needs modular structure, explicit validation, and a path from MVP to production hygiene instead of quick one-off endpoints.',
+      approach:
+        'Built a FastAPI service with health, auth, registration, and verification routes using Pydantic models, JWT flows, and an explicit roadmap for tests, packaging, Docker, and CI.',
+      outcome:
+        'A solid foundation for Python backend consulting work where service design, validation, and future scalability matter.',
       signals: [
-        'Modern Python backend practice',
+        'Modern Python backend',
         'Validation and auth boundaries',
         'Production-hygiene roadmap'
       ],
       technologies: ['Python 3.12', 'FastAPI', 'Pydantic v2', 'JWT', 'Uvicorn', 'Docker roadmap'],
       repository: ''
-    },
-    {
-      title: 'Spanish Teacher Verb Engine',
-      problem:
-        'Language rules are messy when they stay implicit. Practice tools become shallow unless the grammar is modeled directly in code.',
-      system:
-        'Built a Flask-based rule engine that generates verb exercises from JSON data, supports regular and irregular patterns, and filters exercises by tense and verb type.',
-      impact:
-        'This project shows a different side of the profile: algorithmic modeling, explicit rule formalization, and a connection between teaching and software design.',
-      signals: [
-        'Rule-based logic',
-        'Domain modeling',
-        'Teaching-meets-engineering'
-      ],
-      technologies: ['Python', 'Flask', 'JSON processing'],
-      repository: ''
-    },
-    {
-      title: 'Systems, Device, and Network Tooling',
-      problem:
-        'A lot of useful engineering work happens outside polished product surfaces: device cleanup, service discovery, packet inspection, and small diagnostics that help you understand what systems are really doing.',
-      system:
-        'Built and experimented with ADB workflows, Nmap-driven discovery scripts, packet inspection using Scapy, and MQTT-based MicroPython work on ESP-class devices.',
-      impact:
-        'Together these projects show diagnostic curiosity, breadth close to the network and device layer, and a clear expansion path toward tooling and security-minded engineering.',
-      signals: [
-        'OS and network proximity',
-        'Automation and diagnostics',
-        'Embedded experimentation'
-      ],
-      technologies: ['Python', 'subprocess', 'ADB', 'Nmap', 'Scapy', 'MicroPython', 'MQTT', 'ESP32', 'ESP8266'],
-      repository: ''
     }
   ],
   expertise: {
-    eyebrow: 'Engineering Profile',
-    title: 'Backend depth, systems awareness, and clear communication.',
+    eyebrow: 'Consulting Services',
+    title: 'Consulting grounded in backend depth, system thinking, and real operational software.',
     intro:
-      'The profile is strongest where operational reality meets maintainable architecture: APIs, workflow state, data reliability, integrations, and tooling that reduces manual friction.',
-    skillGroups: [
+      'The offer is strongest where architecture, workflow logic, data reliability, and integrations matter more than surface-level feature churn.',
+    serviceGroups: [
       {
-        title: 'Backend Systems',
+        title: 'Backend Systems Development',
         description:
-          'The most proven area is production-oriented backend engineering under real business constraints.',
+          'Building APIs and backend systems that stay maintainable under real business requirements, not just demo traffic.',
         items: [
-          'C# and modern .NET',
-          'ASP.NET Core Web APIs and layered services',
-          'Entity Framework Core and relational data modeling',
-          'REST API design, validation, and integration work'
+          'ASP.NET Core APIs and layered backend architecture',
+          'Workflow-heavy domain logic',
+          'Validation, auth boundaries, and maintainable service structure',
+          'Relational data modeling with EF Core and SQL-backed systems'
         ]
       },
       {
-        title: 'Data and Performance',
+        title: 'System Optimization & Integration',
         description:
-          'A recurring thread is shaping data access so systems remain fast, inspectable, and dependable.',
+          'Improving existing applications where performance, reliability, or external integrations have become a bottleneck.',
         items: [
-          'SQL Server and query optimization',
-          'Indexing and database performance tuning',
-          'Workflow-aware data design',
-          'Reporting and export-oriented backend logic'
+          'SQL Server query tuning and indexing',
+          'Data-access and reporting flow improvements',
+          'Payment, logistics, and API integration awareness',
+          'Legacy backend refactoring toward clearer structure'
         ]
       },
       {
-        title: 'Python and Tooling',
+        title: 'Automation & Tooling',
         description:
-          'Python is the expansion space for APIs, automation, diagnostics, and smaller tools that support broader engineering work.',
+          'Creating targeted Python tools that reduce friction, automate repetitive work, and support deeper system visibility.',
         items: [
-          'FastAPI, Flask, and service-oriented Python',
-          'Automation scripts and OS-level workflows',
-          'Networking and packet analysis experiments',
-          'MicroPython and MQTT work on ESP-class devices'
+          'FastAPI and Flask-based supporting services',
+          'Automation scripts and internal utilities',
+          'Diagnostics, analysis, and OS-adjacent workflows',
+          'Network and device-aware scripting'
         ]
       },
       {
-        title: 'Engineering Practice',
+        title: 'Security-Oriented Engineering',
         description:
-          'The profile repeatedly points toward maintainability, clarity, and safe iteration rather than one-off shipping.',
+          'Extending backend consulting into safer system design, stronger validation habits, and more diagnostic engineering around how software behaves in practice.',
         items: [
-          'SOLID and clean architecture habits',
-          'Unit and integration testing',
-          'Docker and CI/CD workflows',
-          'Code review and Agile/Scrum collaboration'
+          'Security-aware API and backend thinking',
+          'Validation and data-integrity emphasis',
+          'Diagnostics and system investigation tooling',
+          'Network and system-level exploration as a growth path'
         ]
       }
     ],
-    highlightsTitle: 'What I Bring',
-    highlights: [
-      'Built and maintained production backend flows in a live e-commerce environment with real business consequences.',
-      'Improved SQL performance by roughly 25% through tuning, indexing, and data-access improvements repeated across CV evidence.',
-      'Worked on payments and logistics integrations involving Klarna, PayPal, DPD, and GLS.',
-      'Developed projects that extend beyond web CRUD into inventory systems, rule engines, APIs, device automation, networking, and embedded messaging.',
-      'Guided learners in programming and languages, which strengthened documentation, explanation, and mentoring ability.'
+    processTitle: 'How I Work',
+    process: [
+      'Understand the operational problem behind the request.',
+      'Map the system shape: data flow, constraints, integrations, and failure points.',
+      'Design a solution that is maintainable after the first implementation pass.',
+      'Implement with attention to reliability, readability, and long-term usability.'
     ],
-    workStyleTitle: 'How I Work',
-    workStyle: [
-      'I prefer clear architecture, maintainable boundaries, and code that remains understandable after the first implementation sprint.',
-      'I am most useful where the problem is operationally real: stock, reservations, integrations, workflow state, reporting, or automation.',
-      'I care about the system behind the feature: data shape, failure modes, diagnostics, transitions, and the long-term cost of poor structure.',
-      'I adapt quickly across stacks, but I do not try to fake the same depth everywhere; the strongest proven area remains .NET backend engineering.'
+    profileTitle: 'Engineering Profile',
+    profile: [
+      'Backend-first engineer with production-grade .NET experience and meaningful Python range.',
+      'Systems thinker shaped by computer engineering, mechatronics, and operational software problems.',
+      'Best fit for backend, platform, integration, reporting, reservation, and workflow-heavy environments.',
+      'Comfortable moving between business systems, tooling, APIs, automation, and device-adjacent experiments.'
     ],
-    communicationTitle: 'Communication and Teaching',
+    differentiatorsTitle: 'What Makes The Offer Different',
+    differentiators: [
+      'Real backend production experience, not just portfolio polish.',
+      'A serious thesis project tied to a real business problem.',
+      'Multilingual communication and teaching ability that improve collaboration.',
+      'A profile that combines .NET depth, Python range, and systems thinking.'
+    ],
+    communicationTitle: 'Communication & Teaching',
     communication: [
-      'Programming mentoring developed the habit of decomposing complex topics into concrete, teachable steps.',
-      'Language teaching reinforced patience, clarity, and the ability to switch tone and explanation depth for different audiences.',
-      'Multilingual work across English, French, Polish, Spanish, and Kinyarwanda supports collaboration across cultural and professional contexts.'
+      'Programming tutoring developed the habit of breaking difficult topics into structured, teachable steps.',
+      'Language teaching reinforced patience, clarity, and audience-aware explanation.',
+      'Multilingual communication across English, French, Polish, Spanish, and Kinyarwanda supports collaboration across contexts.'
     ],
-    domainsTitle: 'Domains and Workflows',
-    domains: [
-      'High-traffic e-commerce and transactional backend systems',
-      'Inventory, ordering, reservation, and operational reporting workflows',
-      'Payments, logistics integrations, and business-process automation',
-      'Educational/admin systems, embedded experimentation, and device-aware tooling'
-    ],
-    currentFocusTitle: 'Current Direction',
+    currentFocusTitle: 'Current Focus',
     currentFocus: [
-      'Backend engineering in technically demanding product environments.',
-      'System integration and business-platform work where software affects real operations.',
-      'Python tooling, automation, and security-minded backend work.',
-      'Engineering cultures that value ownership, technical standards, and clear communication.'
+      'Security-oriented backend systems',
+      'Automation for analysis and operational support',
+      'Network and system-level tooling',
+      'Technically demanding product and platform environments'
     ]
   }
 };

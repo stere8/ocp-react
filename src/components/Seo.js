@@ -1,9 +1,9 @@
 import { Helmet } from 'react-helmet-async';
 
 const Seo = () => {
-  const title = 'Oreste Twizeyimana | Backend Engineer | .NET, Python, Systems';
+  const title = 'Backend & Systems Engineering Consulting | Oreste Twizeyimana';
   const description =
-    'Backend engineer with 2.5+ years of commercial .NET experience, practical Python tooling work, and a systems mindset grounded in real operational software.';
+    'Backend and systems engineering consulting for APIs, integrations, data flows, SQL-backed systems, and workflow-heavy software, backed by 2.5+ years of production .NET experience.';
 
   return (
     <Helmet>
