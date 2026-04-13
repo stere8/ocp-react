@@ -1,47 +1,74 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import '../Styles/Projects.css';
+import profileContent from '../content/profileContent';
 
 const Projects = () => {
-  const { t } = useTranslation();
-  const projects = t('pages.projects.ProjectList', { returnObjects: true });
+  const { projectsPage, projects } = profileContent;
 
   return (
-    <div className="container">
-        <section className="hero-section">
-            <h1>{t('pages.projects.Title')}</h1>
-            <p>{t('pages.projects.Description')}</p>
-        </section>
-        <div className="projects-grid">
-            {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <h2>{project.Title}</h2>
-            <p>{project.Overview}</p>
-            <h4>{t('pages.projects.KeyFeatures')}</h4>
-            <ul>
-              {project.KeyFeatures.map((feature, i) => (
-                <li key={i}>{feature}</li>
-              ))}
-            </ul>
-            <h4>{t('pages.projects.Technologies')}:</h4>
-            <ul>
-              {project.Technologies.map((tech, i) => (
-                <li key={i}>{tech}</li>
-              ))}
-            </ul>
-            {project.Impact && (
-              <p>
-                <strong>{t('pages.projects.Impact')}:</strong> {project.Impact}
-              </p>
-            )}
-            {project.Repository && (
-              <a href={project.Repository} target="_blank" rel="noopener noreferrer">
-                {t('pages.projects.ViewOnGitHub')}
+    <div className="container projects-page">
+      <section className="hero-section projects-hero">
+        <span className="section-kicker">{projectsPage.eyebrow}</span>
+        <h1>{projectsPage.title}</h1>
+        <p>{projectsPage.intro}</p>
+      </section>
+
+      <section className="projects-themes">
+        {projectsPage.themes.map((theme) => (
+          <article key={theme.title} className="projects-theme-card">
+            <h2>{theme.title}</h2>
+            <p>{theme.description}</p>
+          </article>
+        ))}
+      </section>
+
+      <section className="projects-grid">
+        {projects.map((project) => (
+          <article key={project.title} className="project-card">
+            <div className="project-card-body">
+              <div className="project-card-header">
+                <h2>{project.title}</h2>
+                <div className="project-signals">
+                  {project.signals.map((signal) => (
+                    <span key={signal} className="project-signal">
+                      {signal}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="project-story-grid">
+                <div className="project-story-block">
+                  <h3>Problem</h3>
+                  <p>{project.problem}</p>
+                </div>
+                <div className="project-story-block">
+                  <h3>System</h3>
+                  <p>{project.system}</p>
+                </div>
+                <div className="project-story-block">
+                  <h3>Impact</h3>
+                  <p>{project.impact}</p>
+                </div>
+              </div>
+
+              <div className="project-tech-stack">
+                {project.technologies.map((tech) => (
+                  <span key={tech} className="project-tech-chip">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {project.repository && (
+              <a href={project.repository} target="_blank" rel="noopener noreferrer">
+                View on GitHub
               </a>
             )}
-          </div>
+          </article>
         ))}
-      </div>
+      </section>
     </div>
   );
 };

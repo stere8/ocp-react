@@ -6,6 +6,7 @@ const pages = [
   '/services', 
   '/contact',
   '/projects',
+  '/expertise',
   '/blog'
 ];
 

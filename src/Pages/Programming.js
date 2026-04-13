@@ -10,7 +10,7 @@ const Programming = () => {
     return (
         <div className="container hero-section-bis">
             <Helmet>
-                <title>Programming | Oracle Consults Portfolio</title>
+                <title>Programming | Oreste Twizeyimana</title>
                 <meta name="description" content="Discover the programming expertise of Oreste TWIZEYIMANA, including proficiency in C#, Angular, React, SQL, and more." />
             </Helmet>
             <div className="row">

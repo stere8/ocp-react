@@ -9,7 +9,7 @@ const Languages = () => {
   return (
     <div className="container hero-section-bis">
       <Helmet>
-        <title>Languages | Oracle Consults Portfolio</title>
+        <title>Languages | Oreste Twizeyimana</title>
         <meta name="description" content="Explore the language proficiency and tutoring services offered by Oreste TWIZEYIMANA, including English, French, Kinyarwanda, and Polish." />
       </Helmet>
       <h1>{t('LanguagesTitle')}</h1>

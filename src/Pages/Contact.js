@@ -42,8 +42,11 @@ const Contact = () => {
   return (
     <div className="container hero-section-bis">
       <Helmet>
-        <title>Contact | Oracle Consults Portfolio</title>
-        <meta name="description" content="Get in touch with Oreste TWIZEYIMANA through the contact form. I am available for collaboration, inquiries, and more." />
+        <title>Contact | Oreste Twizeyimana</title>
+        <meta
+          name="description"
+          content="Get in touch with Oreste Twizeyimana about backend engineering roles, collaborations, projects, or technical conversations."
+        />
       </Helmet>
       <div className="row">
         <div className="col-md-12">
@@ -56,11 +59,11 @@ const Contact = () => {
           <form onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name">{t('pages.ContactUs.ContactForm.YourNameLabel')}</label>
-              <input id="name" name="from_name" type="text" value={formData.user_name} onChange={handleChange} />
+              <input id="name" name="from_name" type="text" value={formData.from_name} onChange={handleChange} />
             </div>
             <div>
               <label htmlFor="email">{t('pages.ContactUs.ContactForm.EmailLabel')}</label>
-              <input id="email" name="from_email" type="email" value={formData.user_email} onChange={handleChange} />
+              <input id="email" name="from_email" type="email" value={formData.from_email} onChange={handleChange} />
             </div>
             <div>
               <label htmlFor="message">{t('pages.ContactUs.ContactForm.MessageLabel')}</label>

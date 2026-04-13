@@ -1,14 +1,16 @@
 import { Helmet } from 'react-helmet-async';
-import { useTranslation } from 'react-i18next';
 
 const Seo = () => {
-  const { t } = useTranslation();
+  const title = 'Oreste Twizeyimana | Backend Engineer | .NET, Python, Systems';
+  const description =
+    'Backend engineer with 2.5+ years of commercial .NET experience, practical Python tooling work, and a systems mindset grounded in real operational software.';
 
   return (
     <Helmet>
-      <title>{t('meta.ogTitle')}</title>
-      <meta name="description" content={t('meta.description')} />
-      <meta property="og:title" content={t('meta.ogTitle')} />
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
     </Helmet>
   );
 };

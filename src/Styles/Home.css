@@ -1,89 +1,268 @@
-/* Home Component Styles */
-.hero-section {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  text-align: center;
+.section-kicker {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #0b3d91;
 }
 
-.hero-section h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: #000000; /* Black text color */
-  word-wrap: break-word;
+.home-page {
+  padding-bottom: 3rem;
 }
 
-.hero-section p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  color: #000000; /* Black text color */
-  word-wrap: break-word;
+.home-page .hero-section.home-hero {
+  padding: 6.5rem 2rem 3rem;
+  margin-top: 80px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(11, 61, 145, 0.16), transparent 28%),
+    linear-gradient(135deg, #edf4ff 0%, #ffffff 52%, #dbeafe 100%);
+  border: 1px solid #dbe4ee;
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.12);
 }
 
-.skills-section {
+.home-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.95fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.home-hero-copy {
+  text-align: left;
+}
+
+.home-page .hero-section.home-hero h1 {
+  max-width: none;
+  padding: 0;
+  margin: 0 0 1.2rem;
+  font-size: clamp(2.45rem, 4vw, 4.25rem);
+  line-height: 1.05;
+  text-align: left;
+  color: #0f172a;
+}
+
+.home-page .hero-section.home-hero p {
+  max-width: none;
+  padding: 0;
+  text-align: left;
+}
+
+.home-page .hero-section.home-hero .lead {
+  margin: 0 0 1rem;
+  font-size: 1.22rem;
+  line-height: 1.75;
+  color: #1e293b;
+}
+
+.hero-support {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: #475569;
+}
+
+.hero-focus-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 30px;
+  gap: 0.75rem;
+  margin: 1.6rem 0 0;
 }
 
-.skill-box {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 10px;
-  width: calc(33.333% - 20px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  word-wrap: break-word;
-}
-
-.skill-box h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #000000; /* Black text color */
-}
-
-.skill-box ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.cv-download-container {
-  display: flex;
+.hero-focus-chip {
+  display: inline-flex;
   align-items: center;
+  border-radius: 999px;
+  padding: 0.65rem 0.95rem;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(11, 61, 145, 0.18);
+  color: #0f172a;
+  font-size: 0.92rem;
+  font-weight: 600;
 }
 
-.cv-download-container .form-control {
-  flex: 1;
-  margin-right: 10px; /* Adjust the spacing as needed */
+.hero-proof-card {
+  padding: 1.7rem;
+  border-radius: 24px;
+  background: rgba(15, 23, 42, 0.96);
+  color: #e2e8f0;
+  text-align: left;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.24);
 }
 
-.cv-download-container .cv-download-link {
-  margin-top: 0; /* Ensure there's no top margin on the link */
+.hero-proof-card .section-kicker {
+  color: #93c5fd;
 }
 
-.skill-box ul li {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 5px;
+.hero-proof-card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.hero-proof-card p {
+  margin: 0 0 1.2rem;
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: #cbd5e1;
+}
+
+.hero-proof-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-proof-card li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.85rem;
+  line-height: 1.6;
+  color: #dbeafe;
+}
+
+.hero-proof-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: #60a5fa;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.8rem;
+}
+
+.cta-buttons .btn {
+  min-width: 170px;
+}
+
+.section-heading {
+  margin-bottom: 1.3rem;
+  text-align: left;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.section-heading p {
+  margin: 0.85rem 0 0;
+  text-align: left;
+  color: #475569;
+  line-height: 1.75;
+}
+
+.profile-summary-section,
+.profile-story-section,
+.profile-pillars-section,
+.profile-focus-section {
+  margin-top: 3rem;
+}
+
+.profile-stats-grid,
+.profile-story-grid,
+.profile-pillars-grid,
+.profile-focus-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.profile-stats-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.profile-story-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.profile-pillars-grid,
+.profile-focus-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.profile-stat,
+.profile-story-card,
+.profile-pillar-card,
+.profile-focus-card {
+  background: #ffffff;
+  border: 1px solid #dbe4ee;
+  border-radius: 18px;
+  padding: 1.35rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  text-align: left;
+}
+
+.profile-stat strong {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-size: 1.35rem;
+  color: #0b3d91;
+}
+
+.profile-stat span,
+.profile-story-card p,
+.profile-pillar-card p,
+.profile-focus-card p {
+  color: #475569;
+  line-height: 1.7;
+}
+
+.profile-story-card h3,
+.profile-pillar-card h3,
+.profile-focus-card h3 {
+  margin-bottom: 0.8rem;
+  color: #0f172a;
+}
+
+@media (max-width: 1024px) {
+  .home-hero-grid,
+  .profile-stats-grid,
+  .profile-story-grid,
+  .profile-pillars-grid,
+  .profile-focus-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-hero-grid {
+    align-items: start;
+  }
 }
 
 @media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 2rem;
+  .home-page .hero-section.home-hero {
+    padding: 5.5rem 1.2rem 2rem;
+    margin-top: 60px;
+    border-radius: 22px;
   }
 
-  .hero-section p {
-    font-size: 1rem;
+  .home-page .hero-section.home-hero h1 {
+    font-size: 2.35rem;
   }
 
-  .skill-box {
-    width: calc(50% - 20px);
+  .home-page .hero-section.home-hero .lead {
+    font-size: 1.08rem;
   }
-}
 
+  .home-hero-grid,
+  .profile-stats-grid,
+  .profile-story-grid,
+  .profile-pillars-grid,
+  .profile-focus-grid {
+    grid-template-columns: 1fr;
+  }
 
-@media (max-width: 480px) {
-  .skill-box {
-    width: calc(100% - 20px);
+  .cta-buttons .btn {
+    width: 100%;
   }
 }

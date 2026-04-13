@@ -1,121 +1,178 @@
-/* General Styling for Projects Section */
-.container {
-  padding: 2rem;
+.projects-page {
+  padding-bottom: 3rem;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #000000;
-  text-align: center;
-  margin-bottom: 1rem;
+.projects-page .projects-hero {
+  margin-top: 80px;
+  padding: 6rem 2rem 2.75rem;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top left, rgba(11, 61, 145, 0.18), transparent 24%),
+    linear-gradient(135deg, #f8fbff 0%, #ffffff 52%, #e0ecff 100%);
+  border: 1px solid #dbe4ee;
 }
 
-p {
-  font-size: 1.2rem;
-  color: #666;
-  text-align: center;
-  margin-bottom: 2rem;
+.projects-page .projects-hero h1 {
+  margin: 0 0 1rem;
+  color: #0f172a;
 }
 
-/* Projects Grid */
-.projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.projects-page .projects-hero p {
+  max-width: 820px;
+  margin: 0 auto;
+  color: #475569;
+  line-height: 1.75;
+}
+
+.projects-themes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
   margin-top: 2rem;
 }
 
-/* Project Card */
+.projects-theme-card,
 .project-card {
   background: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  width: calc(33.333% - 20px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
+  border: 1px solid #dbe4ee;
+  border-radius: 20px;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.09);
+}
+
+.projects-theme-card {
+  padding: 1.35rem;
+  text-align: left;
+}
+
+.projects-theme-card h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  color: #0f172a;
+}
+
+.projects-theme-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.project-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+.project-card-body {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.project-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.2rem;
 }
 
 .project-card h2 {
-  font-size: 1.5rem;
-  margin: 1rem;
-  color: #000000;
+  margin: 0;
+  font-size: 1.55rem;
+  color: #0f172a;
 }
 
-.project-card p {
+.project-signals,
+.project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.project-signal,
+.project-tech-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.project-signal {
+  background: #eff6ff;
+  color: #0b3d91;
+  border: 1px solid rgba(11, 61, 145, 0.18);
+}
+
+.project-tech-chip {
+  background: #f8fafc;
+  color: #334155;
+  border: 1px solid #dbe4ee;
+}
+
+.project-story-grid {
+  display: grid;
+  gap: 0.95rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-story-block {
+  padding: 1rem;
+  border-radius: 16px;
+  background: #f8fbff;
+  border: 1px solid #dbe4ee;
+}
+
+.project-story-block h3 {
+  margin: 0 0 0.55rem;
   font-size: 1rem;
-  margin: 1rem;
-  color: #555;
-  line-height: 1.6;
+  color: #0b3d91;
 }
 
-/* Key Features & Technologies */
-.project-card h4 {
-  margin: 0 1rem;
-  font-size: 1.2rem;
-  color: #000000;
+.project-story-block p {
+  margin: 0;
+  font-size: 0.98rem;
+  color: #475569;
+  line-height: 1.75;
+  text-align: left;
 }
 
-.project-card ul {
-  padding: 0 1.5rem;
-  margin-bottom: 1rem;
-  list-style: none; /* Removes default bullet points */
-}
-
-.project-card ul li {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 5px;
-  position: relative;
-  padding-left: 30px; /* Adjust to ensure space for the bullet */
-}
-
-.project-card ul li::before {
-  content: "</>"; /* Custom bullet */
-  color: #0041c4;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding-right: 10px; /* Adds space between the bullet and the text */
-}
-
-/* GitHub Link Button */
 .project-card a {
   display: inline-block;
-  margin: 1rem;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
+  margin: 0 1.5rem 1.5rem;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  background: #0b3d91;
   color: #ffffff;
-  background-color: #0041c4;
-  border-radius: 4px;
   text-decoration: none;
   text-align: center;
-  transition: background-color 0.3s ease;
+  font-weight: 600;
 }
 
 .project-card a:hover {
-  background-color: #002f91;
+  background: #082c66;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .project-card {
-    width: calc(50% - 20px);
+@media (max-width: 1024px) {
+  .projects-themes,
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 480px) {
-  .project-card {
-    width: calc(100% - 20px);
+@media (max-width: 768px) {
+  .projects-page .projects-hero {
+    margin-top: 60px;
+    padding: 5.25rem 1.2rem 2rem;
+    border-radius: 22px;
   }
 }

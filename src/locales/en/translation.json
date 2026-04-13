@@ -1,8 +1,8 @@
 {
   "$schema": "../translation.schema.json",
   "meta": {
-    "description": "Oracle Cloud Consulting Services | Database Management, ERP Solutions, and Cloud Migration Experts",
-    "ogTitle": "OracleConsults | Certified Oracle Consulting"
+    "description": "Backend engineer portfolio focused on .NET systems, Python tooling, and practical software for real operations.",
+    "ogTitle": "Oreste Twizeyimana | Backend Engineer Portfolio"
   },
   "pages": {
     "loading": {
@@ -12,15 +12,16 @@
       "fallbackMessage": "Something went wrong. Please refresh the page."
     },
     "header": {
-      "BrandAlt": "Oreste TWIZEYIMANA - Technical Consultant",
+      "BrandAlt": "Oreste Twizeyimana - Backend Engineer",
       "NavLinks": {
-        "Services": "Services",
+        "Services": "Home",
+        "Profile": "Profile",
         "Projects": "Projects",
         "Expertise": "Expertise",
         "Schedule": "Schedule",
         "Contact": "Contact"
       },
-      "ScheduleButton": "Book a Consultation",
+      "ScheduleButton": "Book a Call",
       "DownloadDropDown": "Download CV",
       "CVOptions": {
         "CV_NET_EN": "CV .NET EN",
@@ -33,7 +34,7 @@
       "HeroSection": {
         "Title": "High-Performance .NET Backend Solutions (with Python Automation)",
         "Subtitle": "Building scalable APIs and backend systems using .NET 8, with Python automation for growth and innovation.",
-        "ScheduleButton": "Schedule Consultation",
+        "ScheduleButton": "Book a Call",
         "ContactButton": "Get in Touch"
       },
       "ServicesSection": {

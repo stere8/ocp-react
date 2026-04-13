@@ -10,6 +10,8 @@ import CVDropdown from "./CVDropdown";
 const Header = () => {
   const { t } = useTranslation();
   const navLinks = t('pages.header.NavLinks', { returnObjects: true });
+  const homeLabel = navLinks?.Services || 'Home';
+  const profileLabel = navLinks?.Profile || 'Profile';
 
   return (
     <header>
@@ -21,7 +23,8 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/">{navLinks.Services}</Nav.Link>
+              <Nav.Link as={Link} to="/">{homeLabel}</Nav.Link>
+              <Nav.Link as={Link} to="/about">{profileLabel}</Nav.Link>
               <Nav.Link as={Link} to="/projects">{navLinks.Projects}</Nav.Link>
               <Nav.Link as={Link} to="/expertise">{navLinks.Expertise}</Nav.Link>
               <Nav.Link href="https://cal.com/t.oreste?timezone=Europe%2FWarsaw" target="_blank">{navLinks.Schedule}</Nav.Link>

@@ -1,48 +1,91 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import '../Styles/Expertise.css';
+import profileContent from '../content/profileContent';
 
 const Expertise = () => {
-  const { t } = useTranslation();
-  const skills = t('pages.expertise.Skills', { returnObjects: true });
-  const industries = t('pages.expertise.Industries.Items', { returnObjects: true });
+  const profileExpertise = profileContent.expertise;
 
   return (
-    <div className="container">
-      <h1>{t('pages.expertise.Title')}</h1>
-      <p>{t('pages.expertise.Intro')}</p>
+    <div className="container expertise-page">
+      <section className="hero-section expertise-hero">
+        <span className="section-kicker">{profileExpertise.eyebrow}</span>
+        <h1>{profileExpertise.title}</h1>
+        <p>{profileExpertise.intro}</p>
+      </section>
 
-      <section className="skills-section">
-        {Object.keys(skills).map((category, index) => (
-          <div key={index} className="skill-box">
-            <h2>{skills[category].Title}</h2>
-            <p>{skills[category].Description}</p>
+      <section className="skills-section expertise-skills-grid">
+        {profileExpertise.skillGroups.map((group) => (
+          <article key={group.title} className="skill-box expertise-skill-box">
+            <h2>{group.title}</h2>
+            <p>{group.description}</p>
             <ul>
-              {skills[category].Items.map((item, i) => (
-                <li key={i}>
+              {group.items.map((item) => (
+                <li key={item}>
                   <span className="custom-bullet">&lt;/&gt;</span> {item}
                 </li>
               ))}
             </ul>
-          </div>
+          </article>
         ))}
       </section>
 
-      <section className="industries-section">
-        <h2>{t('pages.expertise.Industries.Title')}</h2>
-        <p>{t('pages.expertise.Industries.Description')}</p>
-        <ul>
-          {industries.map((industry, index) => (
-            <li key={index}>
-              <span className="custom-bullet">&lt;/&gt;</span> {industry}
-            </li>
-          ))}
-        </ul>
+      <section className="profile-extra-section">
+        <div className="profile-extra-card">
+          <h2>{profileExpertise.highlightsTitle}</h2>
+          <ul>
+            {profileExpertise.highlights.map((item) => (
+              <li key={item}>
+                <span className="custom-bullet">&lt;/&gt;</span> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="profile-extra-card">
+          <h2>{profileExpertise.workStyleTitle}</h2>
+          <ul>
+            {profileExpertise.workStyle.map((item) => (
+              <li key={item}>
+                <span className="custom-bullet">&lt;/&gt;</span> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="profile-extra-card">
+          <h2>{profileExpertise.communicationTitle}</h2>
+          <ul>
+            {profileExpertise.communication.map((item) => (
+              <li key={item}>
+                <span className="custom-bullet">&lt;/&gt;</span> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="profile-extra-card">
+          <h2>{profileExpertise.domainsTitle}</h2>
+          <ul>
+            {profileExpertise.domains.map((item) => (
+              <li key={item}>
+                <span className="custom-bullet">&lt;/&gt;</span> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
 
-      <section className="value-proposition">
-        <h2>{t('pages.expertise.ValueProposition.Title')}</h2>
-        <p>{t('pages.expertise.ValueProposition.Description')}</p>
+      <section className="direction-section">
+        <div className="profile-extra-card direction-card">
+          <h2>{profileExpertise.currentFocusTitle}</h2>
+          <ul>
+            {profileExpertise.currentFocus.map((item) => (
+              <li key={item}>
+                <span className="custom-bullet">&lt;/&gt;</span> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
     </div>
   );

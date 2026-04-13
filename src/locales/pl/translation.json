@@ -1,8 +1,8 @@
 {
   "$schema": "../translation.schema.json",
   "meta": {
-    "description": "Usługi Konsultingowe Oracle Cloud | Zarządzanie Bazami Danych, Rozwiązania ERP i Eksperci Migracji do Chmury",
-    "ogTitle": "OracleConsults | Certyfikowane Konsultacje Oracle"
+    "description": "Portfolio backendowe skupione na systemach .NET, narzędziach w Pythonie i praktycznym oprogramowaniu dla realnych procesów.",
+    "ogTitle": "Oreste Twizeyimana | Portfolio Backend Engineer"
   },
   "pages": {
     "loading": {
@@ -12,15 +12,16 @@
       "fallbackMessage": "Coś poszło nie tak. Proszę odświeżyć stronę."
     },
     "header": {
-      "BrandAlt": "Oreste TWIZEYIMANA - Konsultant Techniczny",
+      "BrandAlt": "Oreste Twizeyimana - Backend Engineer",
       "NavLinks": {
-        "Services": "Usługi",
+        "Services": "Start",
+        "Profile": "Profil",
         "Projects": "Projekty",
         "Expertise": "Ekspertyza",
-        "Schedule": "Zarezerwuj Konsultację",
+        "Schedule": "Umów rozmowę",
         "Contact": "Kontakt"
       },
-      "ScheduleButton": "Zarezerwuj Konsultację",
+      "ScheduleButton": "Umów rozmowę",
       "DownloadDropDown": "Pobierz CV",
       "CVOptions": {
         "CV_NET_EN": "CV .NET EN",

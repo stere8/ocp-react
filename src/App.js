@@ -3,13 +3,11 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga4';
 import './App.css';
 
-
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { useTranslation, withTranslation } from "react-i18next";
+import { useTranslation, withTranslation } from 'react-i18next';
 import ErrorBoundary from './components/ErrorBoundary';
-import Seo from "./components/Seo";
-
+import Seo from './components/Seo';
 
 const Home = lazy(() => import('./Pages/Home'));
 const Contact = lazy(() => import('./Pages/Contact'));
@@ -17,9 +15,9 @@ const Programming = lazy(() => import('./Pages/Programming'));
 const Languages = lazy(() => import('./Pages/Languages'));
 const BlogList = lazy(() => import('./components/BlogList'));
 const BlogPost = lazy(() => import('./components/BlogPost'));
-const Projects = lazy(() => import("./Pages/Projects"));
-const Expertise = lazy(() => import("./Pages/Expertise"));
-
+const AboutMe = lazy(() => import('./components/Aboutme'));
+const Projects = lazy(() => import('./Pages/Projects'));
+const Expertise = lazy(() => import('./Pages/Expertise'));
 
 const LoadingFallback = () => {
     const { t } = useTranslation();
@@ -31,11 +29,11 @@ const LoadingFallback = () => {
                 <div className="bounce3"></div>
             </div>
             <p className="loading-text">{t('pages.loading.message')}</p>
-        </div>);
+        </div>
+    );
 };
 
-
-function App({ t }) {
+function App() {
     const location = useLocation();
 
     useEffect(() => {
@@ -54,6 +52,8 @@ function App({ t }) {
                 <Suspense fallback={<LoadingFallback />}>
                     <Routes>
                         <Route path="/" exact element={<Home />} />
+                        <Route path="/services" element={<Home />} />
+                        <Route path="/about" element={<AboutMe />} />
                         <Route path="/programming" element={<Programming />} />
                         <Route path="/languages" element={<Languages />} />
                         <Route path="/contact" element={<Contact />} />
@@ -61,6 +61,7 @@ function App({ t }) {
                         <Route path="/blog" exact element={<BlogList />} />
                         <Route path="/blog/:id" element={<BlogPost />} />
                         <Route path="/Expertise" element={<Expertise />} />
+                        <Route path="/expertise" element={<Expertise />} />
                     </Routes>
                 </Suspense>
             </ErrorBoundary>
