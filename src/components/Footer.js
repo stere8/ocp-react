@@ -1,11 +1,19 @@
 import React from 'react';
 import '../Styles/Footer.css';
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
+import profileContent from '../content/profileContent';
 
-const Footer = () => (
+const Footer = () => {
+    const { site } = profileContent;
+
+    return (
     <footer className="border-top footer text-muted">
-        <div className="container">
-            <h6>&copy; 2026 - Oreste Twizeyimana | Backend & Systems Engineering Consulting</h6>
+        <div className="container footer-inner">
+            <div className="footer-copy">
+                <h6>&copy; 2026 - {site.brand}</h6>
+                <p>{site.tagline}</p>
+                <p>{site.location} | {site.availability}</p>
+            </div>
             <div className="social-links">
                 <a href="https://github.com/stere8/" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-github"></i> GitHub
@@ -23,6 +31,7 @@ const Footer = () => (
             </div>
         </div>
     </footer>
-);
+    );
+};
 
 export default Footer;

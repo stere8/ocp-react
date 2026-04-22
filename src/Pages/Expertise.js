@@ -3,71 +3,101 @@ import '../Styles/Expertise.css';
 import profileContent from '../content/profileContent';
 
 const Expertise = () => {
-  const profileExpertise = profileContent.expertise;
+  const { expertise } = profileContent;
 
   return (
     <div className="container expertise-page">
       <section className="hero-section expertise-hero">
-        <span className="section-kicker">{profileExpertise.eyebrow}</span>
-        <h1>{profileExpertise.title}</h1>
-        <p>{profileExpertise.intro}</p>
+        <span className="section-kicker">{expertise.eyebrow}</span>
+        <h1>{expertise.title}</h1>
+        <p>{expertise.intro}</p>
       </section>
 
-      <section className="skills-section expertise-services-grid">
-        {profileExpertise.serviceGroups.map((group) => (
-          <article key={group.title} className="expertise-service-card">
-            <h2>{group.title}</h2>
-            <p>{group.description}</p>
-            <ul>
-              {group.items.map((item) => (
-                <li key={item}>
-                  <span className="custom-bullet">&lt;/&gt;</span> {item}
-                </li>
-              ))}
-            </ul>
-          </article>
-        ))}
+      <section className="services-showcase-section">
+        <div className="expertise-services-grid">
+          {expertise.serviceGroups.map((group) => (
+            <article key={group.title} className="expertise-service-card">
+              <h2>{group.title}</h2>
+              <p>{group.description}</p>
+              <ul>
+                {group.items.map((item) => (
+                  <li key={item}>
+                    <span className="custom-bullet">&lt;/&gt;</span> {item}
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
       </section>
 
-      <section className="consulting-process-section">
-        <div className="process-list-card">
-          <span className="section-kicker">Delivery</span>
-          <h2>{profileExpertise.processTitle}</h2>
-          <ol>
-            {profileExpertise.process.map((item) => (
+      <section className="package-showcase-section">
+        <div className="section-heading">
+          <span className="section-kicker">Packages</span>
+          <h2>{expertise.packageTitle}</h2>
+          <p>{expertise.packageIntro}</p>
+        </div>
+        <div className="package-grid">
+          {expertise.packages.map((item) => (
+            <article key={item.title} className="package-card">
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+              <ul>
+                {item.bullets.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="metrics-section">
+        <div className="section-heading">
+          <span className="section-kicker">Metrics</span>
+          <h2>{expertise.metricsTitle}</h2>
+        </div>
+        <div className="metrics-grid">
+          {expertise.metrics.map((item) => (
+            <article key={item.title} className="metric-card">
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="fit-and-process-section">
+        <div className="fit-card">
+          <span className="section-kicker">Best Fit</span>
+          <h2>{expertise.whoIHelpTitle}</h2>
+          <ul>
+            {expertise.whoIHelp.map((item) => (
               <li key={item}>{item}</li>
             ))}
-          </ol>
+          </ul>
+        </div>
+
+        <div className="process-card-wrapper">
+          <span className="section-kicker">Approach</span>
+          <h2>{expertise.processTitle}</h2>
+          <div className="process-grid">
+            {expertise.process.map((item, index) => (
+              <article key={item.title} className="process-card">
+                <span className="process-step">0{index + 1}</span>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
       <section className="profile-extra-section">
         <div className="profile-extra-card">
-          <h2>{profileExpertise.profileTitle}</h2>
+          <h2>{expertise.differentiatorsTitle}</h2>
           <ul>
-            {profileExpertise.profile.map((item) => (
-              <li key={item}>
-                <span className="custom-bullet">&lt;/&gt;</span> {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="profile-extra-card">
-          <h2>{profileExpertise.differentiatorsTitle}</h2>
-          <ul>
-            {profileExpertise.differentiators.map((item) => (
-              <li key={item}>
-                <span className="custom-bullet">&lt;/&gt;</span> {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="profile-extra-card">
-          <h2>{profileExpertise.communicationTitle}</h2>
-          <ul>
-            {profileExpertise.communication.map((item) => (
+            {expertise.differentiators.map((item) => (
               <li key={item}>
                 <span className="custom-bullet">&lt;/&gt;</span> {item}
               </li>
@@ -76,9 +106,9 @@ const Expertise = () => {
         </div>
 
         <div className="profile-extra-card direction-card">
-          <h2>{profileExpertise.currentFocusTitle}</h2>
+          <h2>{expertise.focusTitle}</h2>
           <ul>
-            {profileExpertise.currentFocus.map((item) => (
+            {expertise.focus.map((item) => (
               <li key={item}>
                 <span className="custom-bullet">&lt;/&gt;</span> {item}
               </li>

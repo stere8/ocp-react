@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom';
 import profileContent from '../content/profileContent';
 
 const Home = () => {
-  const profile = profileContent.home;
+  const { site, home } = profileContent;
 
   return (
     <div className="container home-page">
       <section className="hero-section home-hero">
         <div className="home-hero-grid">
           <div className="home-hero-copy">
-            <span className="section-kicker">{profile.eyebrow}</span>
-            <h1>{profile.title}</h1>
-            <p className="lead">{profile.intro}</p>
-            <p className="hero-support">{profile.heroSupport}</p>
+            <span className="section-kicker">{home.eyebrow}</span>
+            <h1>{home.title}</h1>
+            <p className="lead">{home.intro}</p>
+            <p className="hero-support">{home.heroSupport}</p>
 
             <div className="hero-focus-list">
-              {profile.focusAreas.map((item) => (
+              {home.focusAreas.map((item) => (
                 <span key={item} className="hero-focus-chip">
                   {item}
                 </span>
@@ -25,25 +25,21 @@ const Home = () => {
             </div>
 
             <div className="cta-buttons">
-              <Button
-                href="https://cal.com/t.oreste?timezone=Europe%2FWarsaw"
-                target="_blank"
-                className="primary-cta"
-              >
-                {profile.ctaLabel}
+              <Button href={site.calLink} target="_blank" className="primary-cta">
+                {home.ctaLabel}
               </Button>
               <Button as={Link} to="/projects" variant="outline-primary">
-                {profile.secondaryCtaLabel}
+                {home.secondaryCtaLabel}
               </Button>
             </div>
           </div>
 
           <aside className="hero-proof-card">
             <span className="section-kicker">Credibility</span>
-            <h2>{profile.trustTitle}</h2>
-            <p>{profile.trustSummary}</p>
+            <h2>{home.trustTitle}</h2>
+            <p>{home.trustSummary}</p>
             <ul>
-              {profile.trustPoints.map((item) => (
+              {home.trustPoints.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
@@ -51,36 +47,26 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="profile-summary-section">
-        <div className="section-heading">
-          <span className="section-kicker">Proof</span>
-          <h2>Reference points behind the consulting offer</h2>
-          <p>
-            The offer is anchored in production backend work, operationally grounded
-            projects, and a systems mindset that has been consistent across both
-            commercial experience and independent builds.
-          </p>
-        </div>
-
-        <div className="profile-stats-grid">
-          {profile.stats.map((item) => (
-            <div key={item.label} className="profile-stat">
+      <section className="proof-bar-section">
+        <div className="proof-bar-grid">
+          {home.proofBar.map((item) => (
+            <article key={item.label} className="proof-bar-card">
               <strong>{item.value}</strong>
               <span>{item.label}</span>
-            </div>
+            </article>
           ))}
         </div>
       </section>
 
-      <section className="value-section">
+      <section className="problem-section">
         <div className="section-heading">
-          <span className="section-kicker">Value</span>
-          <h2>{profile.valueTitle}</h2>
-          <p>{profile.valueIntro}</p>
+          <span className="section-kicker">Problems Solved</span>
+          <h2>{home.problemTitle}</h2>
+          <p>{home.problemIntro}</p>
         </div>
-        <div className="value-grid">
-          {profile.valuePoints.map((item) => (
-            <article key={item.title} className="value-card">
+        <div className="problem-grid">
+          {home.problems.map((item) => (
+            <article key={item.title} className="problem-card">
               <h3>{item.title}</h3>
               <p>{item.description}</p>
             </article>
@@ -88,65 +74,77 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="why-section">
+      <section className="story-section">
         <div className="section-heading">
-          <span className="section-kicker">Positioning</span>
-          <h2>{profile.whyTitle}</h2>
+          <span className="section-kicker">Story</span>
+          <h2>{home.storyTitle}</h2>
         </div>
-        <div className="why-grid">
-          {profile.whyParagraphs.map((paragraph, index) => (
-            <article key={index} className="why-card">
-              <p>{paragraph}</p>
+        <div className="story-grid">
+          {home.storyCards.map((item) => (
+            <article key={item.title} className="story-card">
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="services-section">
+      <section className="package-section">
         <div className="section-heading">
-          <span className="section-kicker">Offer</span>
-          <h2>{profile.servicesTitle}</h2>
+          <span className="section-kicker">Packages</span>
+          <h2>{home.packageTitle}</h2>
+          <p>{home.packageIntro}</p>
         </div>
-        <div className="services-grid">
-          {profile.services.map((service) => (
-            <article key={service.title} className="service-card">
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
+        <div className="package-grid">
+          {home.packages.map((item) => (
+            <article key={item.title} className="package-card">
+              <div className="package-card-header">
+                <h3>{item.title}</h3>
+                <span>{item.format}</span>
+              </div>
+              <p className="package-ideal">
+                <strong>Best for:</strong> {item.idealFor}
+              </p>
               <ul>
-                {service.bullets.map((bullet) => (
-                  <li key={bullet}>{bullet}</li>
+                {item.deliverables.map((deliverable) => (
+                  <li key={deliverable}>{deliverable}</li>
                 ))}
               </ul>
+              <p className="package-outcome">
+                <strong>Outcome:</strong> {item.outcome}
+              </p>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="process-section">
+      <section className="featured-section">
         <div className="section-heading">
-          <span className="section-kicker">Approach</span>
-          <h2>{profile.processTitle}</h2>
+          <span className="section-kicker">Proof</span>
+          <h2>{home.featuredTitle}</h2>
+          <p>{home.featuredIntro}</p>
         </div>
-        <div className="process-grid">
-          {profile.process.map((step, index) => (
-            <article key={step.title} className="process-card">
-              <span className="process-step">0{index + 1}</span>
-              <h3>{step.title}</h3>
-              <p>{step.description}</p>
+        <div className="featured-grid">
+          {home.featuredProof.map((item) => (
+            <article key={item.title} className="featured-card">
+              <h3>{item.title}</h3>
+              <p>{item.summary}</p>
+              <Button as={Link} to={item.link} variant="outline-primary">
+                {item.linkLabel}
+              </Button>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="profile-focus-section">
+      <section className="metrics-section">
         <div className="section-heading">
-          <span className="section-kicker">Direction</span>
-          <h2>{profile.currentFocusTitle}</h2>
-          <p>{profile.currentFocusIntro}</p>
+          <span className="section-kicker">Metrics</span>
+          <h2>{home.metricsTitle}</h2>
         </div>
-        <div className="profile-focus-grid">
-          {profile.currentFocus.map((item) => (
-            <article key={item.title} className="profile-focus-card">
+        <div className="metrics-grid">
+          {home.metrics.map((item) => (
+            <article key={item.title} className="metric-card">
               <h3>{item.title}</h3>
               <p>{item.description}</p>
             </article>
@@ -157,8 +155,8 @@ const Home = () => {
       <section className="communication-section">
         <div className="communication-card">
           <span className="section-kicker">Communication</span>
-          <h2>{profile.communicationTitle}</h2>
-          <p>{profile.communication}</p>
+          <h2>{home.communicationTitle}</h2>
+          <p>{home.communication}</p>
         </div>
       </section>
 
@@ -166,19 +164,15 @@ const Home = () => {
         <div className="contact-cta-card">
           <div>
             <span className="section-kicker">Contact</span>
-            <h2>{profile.contactTitle}</h2>
-            <p>{profile.contactText}</p>
+            <h2>{home.contactTitle}</h2>
+            <p>{home.contactText}</p>
           </div>
           <div className="contact-cta-actions">
             <Button as={Link} to="/contact" className="primary-cta">
               Contact me
             </Button>
-            <Button
-              href="https://cal.com/t.oreste?timezone=Europe%2FWarsaw"
-              target="_blank"
-              variant="outline-primary"
-            >
-              Schedule a call
+            <Button href={site.calLink} target="_blank" variant="outline-primary">
+              Schedule a discovery call
             </Button>
           </div>
         </div>

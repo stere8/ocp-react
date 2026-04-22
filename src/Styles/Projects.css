@@ -8,7 +8,7 @@
   border-radius: 28px;
   background:
     radial-gradient(circle at top left, rgba(11, 61, 145, 0.16), transparent 25%),
-    linear-gradient(135deg, #f8fbff 0%, #ffffff 50%, #dfebff 100%);
+    linear-gradient(135deg, #f8fbff 0%, #ffffff 52%, #e2ecff 100%);
   border: 1px solid #d7e3f4;
   box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
 }
@@ -25,19 +25,69 @@
   line-height: 1.75;
 }
 
-.projects-themes {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+.commercial-anchor-section,
+.projects-themes,
+.projects-grid {
   margin-top: 2rem;
 }
 
+.commercial-anchor-card,
 .projects-theme-card,
-.project-card {
+.project-card,
+.project-story-block,
+.project-why-card {
   background: #ffffff;
   border: 1px solid #d7e3f4;
   border-radius: 20px;
   box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+.commercial-anchor-card {
+  padding: 1.6rem;
+  text-align: left;
+}
+
+.commercial-anchor-card h2 {
+  margin-bottom: 0.9rem;
+  color: #0f172a;
+}
+
+.commercial-anchor-card p {
+  margin: 0 0 1rem;
+  color: #475569;
+  line-height: 1.72;
+  text-align: left;
+}
+
+.commercial-anchor-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.commercial-anchor-card li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #475569;
+  line-height: 1.62;
+}
+
+.commercial-anchor-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.68rem;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 999px;
+  background: #0b3d91;
+}
+
+.projects-themes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 .projects-theme-card {
@@ -47,7 +97,7 @@
 
 .projects-theme-card h2 {
   margin-bottom: 0.75rem;
-  font-size: 1.22rem;
+  font-size: 1.2rem;
   color: #0f172a;
 }
 
@@ -60,9 +110,8 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 1.25rem;
-  margin-top: 2rem;
 }
 
 .project-card {
@@ -73,7 +122,7 @@
 }
 
 .project-card-body {
-  padding: 1.5rem;
+  padding: 1.6rem;
   text-align: left;
 }
 
@@ -86,14 +135,14 @@
 
 .project-card h2 {
   margin: 0;
-  font-size: 1.55rem;
+  font-size: 1.7rem;
   color: #0f172a;
 }
 
 .project-subtitle {
   margin: 0.4rem 0 0;
   color: #0b3d91;
-  font-size: 0.98rem;
+  font-size: 1rem;
   font-weight: 600;
   text-align: left;
 }
@@ -129,24 +178,25 @@
 
 .project-story-grid {
   display: grid;
-  gap: 0.95rem;
-  margin-bottom: 1.2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .project-story-block {
   padding: 1rem;
-  border-radius: 16px;
   background: linear-gradient(160deg, #f8fbff 0%, #ffffff 100%);
-  border: 1px solid #d7e3f4;
 }
 
-.project-story-block h3 {
+.project-story-block h3,
+.project-why-card h3 {
   margin: 0 0 0.55rem;
   font-size: 1rem;
   color: #0b3d91;
 }
 
-.project-story-block p {
+.project-story-block p,
+.project-why-card p {
   margin: 0;
   font-size: 0.98rem;
   color: #475569;
@@ -154,9 +204,17 @@
   text-align: left;
 }
 
+.project-why-card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background:
+    radial-gradient(circle at top right, rgba(11, 61, 145, 0.08), transparent 24%),
+    linear-gradient(160deg, #eef6ff 0%, #ffffff 100%);
+}
+
 .project-card a {
   display: inline-block;
-  margin: 0 1.5rem 1.5rem;
+  margin: 0 1.6rem 1.6rem;
   padding: 0.85rem 1rem;
   border-radius: 12px;
   background: #0b3d91;
@@ -172,7 +230,7 @@
 
 @media (max-width: 1024px) {
   .projects-themes,
-  .projects-grid {
+  .project-story-grid {
     grid-template-columns: 1fr;
   }
 }

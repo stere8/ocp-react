@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://oracleconsults.com/translation.schema.json",
+  "$id": "https://twizeyimana.systems/translation.schema.json",
   "title": "Translation Schema",
   "description": "Schema for validating i18n translation files",
   "type": "object",
