@@ -1,9 +1,11 @@
 import { Helmet } from 'react-helmet-async';
+import profileContent from '../content/profileContent';
 
 const Seo = () => {
-  const title = 'Backend & Systems Engineering Consulting | Oreste Twizeyimana';
+  const { site } = profileContent;
+  const title = `${site.brand} | Backend systems consulting by ${site.founder}`;
   const description =
-    'Backend and systems engineering consulting for APIs, integrations, data flows, SQL-backed systems, and workflow-heavy software, backed by 2.5+ years of production .NET experience.';
+    'Founder-led backend systems consulting for inventory, reservation, integration, reporting, and workflow-heavy software, backed by production .NET experience and systems thinking.';
 
   return (
     <Helmet>

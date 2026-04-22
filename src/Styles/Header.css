@@ -1,5 +1,28 @@
 .logo {
-  height: 40px;
+  height: 42px;
+}
+
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-copy strong {
+  color: #ffffff;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.brand-copy small {
+  color: #cbd5e1;
+  font-size: 0.72rem;
 }
 
 .navbar-nav .nav-link {
@@ -20,9 +43,15 @@
 }
 
 .dropdown-small .dropdown-menu {
-  width: 100px !important; /* Adjust this value as needed */
+  width: 100px !important;
 }
 
-.container-100{
+.container-100 {
   width: 100px;
+}
+
+@media (max-width: 992px) {
+  .brand-copy {
+    display: none;
+  }
 }

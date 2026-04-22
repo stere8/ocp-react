@@ -6,10 +6,12 @@ import logo from '../img/logo.png';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import Dropdown from "./Dropdown";
 import CVDropdown from "./CVDropdown";
+import profileContent from '../content/profileContent';
 
 const Header = () => {
   const { t } = useTranslation();
   const navLinks = t('pages.header.NavLinks', { returnObjects: true });
+  const { site } = profileContent;
   const homeLabel = navLinks?.Services || 'Home';
   const profileLabel = navLinks?.Profile || 'Profile';
 
@@ -18,7 +20,13 @@ const Header = () => {
       <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
         <Container>
           <Navbar.Brand as={Link} to="/">
-            <img src={logo} alt={t('pages.header.BrandAlt')} className="logo" />
+            <span className="brand-lockup">
+              <img src={logo} alt={t('pages.header.BrandAlt')} className="logo" />
+              <span className="brand-copy">
+                <strong>{site.brand}</strong>
+                <small>{site.tagline}</small>
+              </span>
+            </span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -34,7 +42,7 @@ const Header = () => {
             <Dropdown/>
             <Button
               variant="primary"
-              href="https://cal.com/t.oreste?timezone=Europe%2FWarsaw"
+              href={site.calLink}
               target="_blank"
               className="schedule-btn"
             >

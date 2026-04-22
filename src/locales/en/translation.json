@@ -1,8 +1,8 @@
 {
   "$schema": "../translation.schema.json",
   "meta": {
-    "description": "Backend and systems engineering consulting for APIs, integrations, SQL-backed systems, automation, and workflow-heavy software.",
-    "ogTitle": "Backend & Systems Engineering Consulting | Oreste Twizeyimana"
+    "description": "Founder-led backend consulting for inventory, reservations, integrations, reporting, automation, and workflow-heavy software.",
+    "ogTitle": "Twizeyimana Systems Engineering | Backend consulting by Oreste Twizeyimana"
   },
   "pages": {
     "loading": {
@@ -12,7 +12,7 @@
       "fallbackMessage": "Something went wrong. Please refresh the page."
     },
     "header": {
-      "BrandAlt": "Oreste Twizeyimana - Backend & Systems Consultant",
+      "BrandAlt": "Twizeyimana Systems Engineering logo",
       "NavLinks": {
         "Services": "Consulting",
         "Profile": "Profile",
@@ -21,7 +21,7 @@
         "Schedule": "Book Call",
         "Contact": "Contact"
       },
-      "ScheduleButton": "Book Intro Call",
+      "ScheduleButton": "Book Discovery Call",
       "DownloadDropDown": "Download CV",
       "CVOptions": {
         "CV_NET_EN": "CV .NET EN",
@@ -255,9 +255,9 @@
       }
     },
     "ContactUs": {
-      "LetsConnectHeading": "Let's Talk",
-      "ContactFormDescription": "Tell me about the backend, integration, automation, or system problem you want to solve.",
-      "contactMessage": "I am open to consulting work, engineering roles, collaborations, and technically serious conversations.",
+      "LetsConnectHeading": "Start With The Problem",
+      "ContactFormDescription": "Tell me what is slow, brittle, hard to scale, or hard to trust in the current system.",
+      "contactMessage": "Useful context includes the workflow involved, what the system should do, the biggest pain point today, and your preferred timeline.",
       "ContactForm": {
         "YourNameLabel": "Your Name",
         "EmailLabel": "Email",

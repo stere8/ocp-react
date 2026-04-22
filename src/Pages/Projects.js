@@ -13,6 +13,19 @@ const Projects = () => {
         <p>{projectsPage.intro}</p>
       </section>
 
+      <section className="commercial-anchor-section">
+        <article className="commercial-anchor-card">
+          <span className="section-kicker">{projectsPage.commercialAnchor.eyebrow}</span>
+          <h2>{projectsPage.commercialAnchor.title}</h2>
+          <p>{projectsPage.commercialAnchor.summary}</p>
+          <ul>
+            {projectsPage.commercialAnchor.points.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </article>
+      </section>
+
       <section className="projects-themes">
         {projectsPage.themes.map((theme) => (
           <article key={theme.title} className="projects-theme-card">
@@ -46,13 +59,22 @@ const Projects = () => {
                   <p>{project.context}</p>
                 </div>
                 <div className="project-story-block">
-                  <h3>Approach</h3>
-                  <p>{project.approach}</p>
+                  <h3>Constraints</h3>
+                  <p>{project.constraints}</p>
+                </div>
+                <div className="project-story-block">
+                  <h3>System</h3>
+                  <p>{project.system}</p>
                 </div>
                 <div className="project-story-block">
                   <h3>Outcome</h3>
                   <p>{project.outcome}</p>
                 </div>
+              </div>
+
+              <div className="project-why-card">
+                <h3>Why it matters</h3>
+                <p>{project.whyItMatters}</p>
               </div>
 
               <div className="project-tech-stack">
