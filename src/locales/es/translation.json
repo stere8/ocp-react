@@ -1,7 +1,7 @@
 {
   "$schema": "../translation.schema.json",
   "meta": {
-    "description": "Servicios de Consultoría en Oracle Cloud | Gestión de Bases de Datos, Soluciones ERP y Expertos en Migración a la Nube",
+    "description": "Consultoría liderada por el fundador para sistemas backend, integraciones, automatización y software operativo basado en .NET y Python.",
     "ogTitle": "OT Systems Engineering | Consultoría de backend y sistemas"
   },
   "pages": {
@@ -10,15 +10,16 @@
  "error": {
     "fallbackMessage": "Algo salió mal. Por favor actualice la página."
   },    "header": {
-      "BrandAlt": "Oreste TWIZEYIMANA - Consultor Técnico",
+      "BrandAlt": "Logotipo de OT Systems Engineering",
       "NavLinks": {
-        "Services": "Servicios",
-        "Projects": "Proyectos",
-        "Expertise": "Experiencia",
-        "Schedule": "Agenda",
+        "Services": "Consultoría",
+        "Profile": "Perfil",
+        "Projects": "Casos",
+        "Expertise": "Servicios",
+        "Schedule": "Reservar llamada",
         "Contact": "Contacto"
       },
-      "ScheduleButton": "Reserva una Consulta",
+      "ScheduleButton": "Reservar llamada de descubrimiento",
       "DownloadDropDown": "Descargar CV",
       "CVOptions": {
         "CV_NET_EN": "CV .NET EN",
@@ -252,9 +253,9 @@
       }
     },
     "ContactUs": {
-      "LetsConnectHeading": "Conectemos",
-      "ContactFormDescription": "No dudes en ponerte en contacto conmigo usando el formulario a continuación.",
-      "contactMessage": "Siempre estoy interesado en conocer nuevas oportunidades, proyectos o simplemente tener una conversación amistosa.",
+      "LetsConnectHeading": "Empieza por el problema",
+      "ContactFormDescription": "Cuéntame qué parte del sistema es lenta, frágil, difícil de escalar o difícil de confiar.",
+      "contactMessage": "El mejor contexto incluye el flujo afectado, lo que el sistema debería hacer, el mayor problema actual y tu plazo ideal.",
       "ContactForm": {
         "YourNameLabel": "Tu Nombre",
         "EmailLabel": "Correo Electrónico",
