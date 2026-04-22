@@ -48,7 +48,7 @@ const Contact = () => {
         <title>Contact | {site.brand}</title>
         <meta
           name="description"
-          content="Contact Twizeyimana Systems Engineering about backend consulting, system reviews, integration cleanup, and workflow-heavy software projects."
+          content="Contact OT Systems Engineering about backend consulting, system reviews, integration cleanup, and workflow-heavy software projects."
         />
       </Helmet>
 

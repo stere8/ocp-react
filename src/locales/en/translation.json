@@ -2,7 +2,7 @@
   "$schema": "../translation.schema.json",
   "meta": {
     "description": "Founder-led backend consulting for inventory, reservations, integrations, reporting, automation, and workflow-heavy software.",
-    "ogTitle": "Twizeyimana Systems Engineering | Backend consulting by Oreste Twizeyimana"
+    "ogTitle": "OT Systems Engineering | Backend consulting by Oreste Twizeyimana"
   },
   "pages": {
     "loading": {
@@ -12,7 +12,7 @@
       "fallbackMessage": "Something went wrong. Please refresh the page."
     },
     "header": {
-      "BrandAlt": "Twizeyimana Systems Engineering logo",
+      "BrandAlt": "OT Systems Engineering logo",
       "NavLinks": {
         "Services": "Consulting",
         "Profile": "Profile",

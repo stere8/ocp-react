@@ -1,6 +1,6 @@
 const profileContent = {
   site: {
-    brand: 'Twizeyimana Systems Engineering',
+    brand: 'OT Systems Engineering',
     founder: 'Oreste Twizeyimana',
     tagline: 'Founder-led backend consulting for operational software',
     location: 'Bydgoszcz, Poland',
@@ -8,7 +8,7 @@ const profileContent = {
     calLink: 'https://cal.com/t.oreste?timezone=Europe%2FWarsaw'
   },
   home: {
-    eyebrow: 'Twizeyimana Systems Engineering',
+    eyebrow: 'OT Systems Engineering',
     title: 'I build backend systems that make operations reliable.',
     intro:
       'Founder-led consulting for inventory, order, reservation, reporting, integration, and internal workflow software that businesses actually depend on.',
@@ -177,7 +177,7 @@ const profileContent = {
   },
   about: {
     eyebrow: 'Founder Profile',
-    title: 'The engineer behind Twizeyimana Systems Engineering',
+    title: 'The engineer behind OT Systems Engineering',
     lead:
       'This practice is founder-led because the strongest asset behind it is not a broad agency identity. It is a specific combination of production backend delivery, systems thinking, and clear communication built over real work.',
     intro: [
