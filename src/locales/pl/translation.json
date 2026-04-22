@@ -1,8 +1,8 @@
 {
   "$schema": "../translation.schema.json",
   "meta": {
-    "description": "Portfolio backendowe skupione na systemach .NET, narzędziach w Pythonie i praktycznym oprogramowaniu dla realnych procesów.",
-    "ogTitle": "Oreste Twizeyimana | Portfolio Backend Engineer"
+    "description": "Konsulting backendowy prowadzony przez założyciela dla systemów operacyjnych, integracji, automatyzacji i oprogramowania .NET oraz Python.",
+    "ogTitle": "OT Systems Engineering | Konsulting backendowy i systemowy"
   },
   "pages": {
     "loading": {
@@ -12,16 +12,16 @@
       "fallbackMessage": "Coś poszło nie tak. Proszę odświeżyć stronę."
     },
     "header": {
-      "BrandAlt": "Oreste Twizeyimana - Backend Engineer",
+      "BrandAlt": "Logo OT Systems Engineering",
       "NavLinks": {
-        "Services": "Start",
+        "Services": "Konsulting",
         "Profile": "Profil",
-        "Projects": "Projekty",
-        "Expertise": "Ekspertyza",
+        "Projects": "Studia przypadków",
+        "Expertise": "Usługi",
         "Schedule": "Umów rozmowę",
         "Contact": "Kontakt"
       },
-      "ScheduleButton": "Umów rozmowę",
+      "ScheduleButton": "Umów rozmowę wstępną",
       "DownloadDropDown": "Pobierz CV",
       "CVOptions": {
         "CV_NET_EN": "CV .NET EN",
@@ -255,9 +255,9 @@
       }
     },
     "ContactUs": {
-      "LetsConnectHeading": "Skontaktujmy się",
-      "ContactFormDescription": "Skontaktuj się ze mną za pomocą poniższego formularza",
-      "contactMessage": "Zawsze jestem zainteresowany nowymi możliwościami, projektami lub po prostu rozmową",
+      "LetsConnectHeading": "Zacznij od problemu",
+      "ContactFormDescription": "Opisz, co w obecnym systemie jest wolne, kruche, trudne do skalowania albo trudne do zaufania.",
+      "contactMessage": "Przydatny kontekst to dany workflow, oczekiwane działanie systemu, największy obecny problem oraz preferowany termin.",
       "ContactForm": {
         "YourNameLabel": "Twoje Imię",
         "EmailLabel": "Email",

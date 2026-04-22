@@ -38,6 +38,7 @@
     "svgo": "^3.3.2"
   },
   "scripts": {
+    "check:translations": "node scripts/check-translations.js",
     "generate-sitemap": "node scripts/generate-sitemap.js",
     "start": "react-scripts start",
     "build": "npm run generate-sitemap && react-scripts build",

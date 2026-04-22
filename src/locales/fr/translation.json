@@ -1,8 +1,8 @@
 {
   "$schema": "../translation.schema.json",
   "meta": {
-    "description": "Portfolio d'ingénierie backend centré sur les systèmes .NET, l'outillage Python et les logiciels utiles pour des opérations réelles.",
-    "ogTitle": "Oreste Twizeyimana | Portfolio Backend Engineer"
+    "description": "Conseil backend mené par le fondateur pour les systèmes opérationnels, les intégrations, l'automatisation et les logiciels métier en .NET et Python.",
+    "ogTitle": "OT Systems Engineering | Conseil backend et systèmes"
   },
   "pages": {
     "loading": {
@@ -12,16 +12,16 @@
       "fallbackMessage": "Quelque chose s'est mal passé. Veuillez actualiser la page."
     },
     "header": {
-      "BrandAlt": "Oreste Twizeyimana - Backend Engineer",
+      "BrandAlt": "Logo OT Systems Engineering",
       "NavLinks": {
-        "Services": "Accueil",
+        "Services": "Conseil",
         "Profile": "Profil",
-        "Projects": "Projets",
-        "Expertise": "Expertise",
-        "Schedule": "Planifier un appel",
+        "Projects": "Études de cas",
+        "Expertise": "Services",
+        "Schedule": "Réserver un appel",
         "Contact": "Contact"
       },
-      "ScheduleButton": "Réserver un appel",
+      "ScheduleButton": "Réserver un appel découverte",
       "DownloadDropDown": "Télécharger le CV",
       "CVOptions": {
         "CV_NET_EN": "CV .NET EN",
@@ -255,9 +255,9 @@
       }
     },
     "ContactUs": {
-      "LetsConnectHeading": "Entrons en contact",
-      "ContactFormDescription": "N'hésitez pas à me contacter en utilisant le formulaire ci-dessous",
-      "contactMessage": "Je suis toujours intéressé par de nouvelles opportunités, projets, ou même une conversation amicale",
+      "LetsConnectHeading": "Commencez par le problème",
+      "ContactFormDescription": "Décrivez-moi ce qui est lent, fragile, difficile à faire évoluer ou difficile à fiabiliser dans le système actuel.",
+      "contactMessage": "Le contexte utile inclut le workflow concerné, ce que le système devrait faire, le principal point de douleur aujourd'hui et votre délai souhaité.",
       "ContactForm": {
         "YourNameLabel": "Votre nom",
         "EmailLabel": "Email",
