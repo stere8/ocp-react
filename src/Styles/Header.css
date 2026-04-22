@@ -1,8 +1,28 @@
 .site-navbar {
+  position: relative;
+  width: 100%;
   background: var(--nav-bg);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--nav-border);
   box-shadow: 0 18px 40px rgba(2, 6, 23, 0.18);
+  overflow: hidden;
+}
+
+.site-navbar::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../img/logo.png');
+  background-size: 220px;
+  background-repeat: no-repeat;
+  background-position: left 1rem center;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.site-navbar-container {
+  padding-left: clamp(0.75rem, 2vw, 1.5rem);
+  padding-right: clamp(0.75rem, 2vw, 1.5rem);
 }
 
 .logo {
@@ -10,15 +30,35 @@
 }
 
 .brand-lockup {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
+  padding: 0.35rem 0.6rem 0.35rem 0.35rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.brand-lockup::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../img/logo.png');
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  opacity: 0.09;
+  pointer-events: none;
 }
 
 .brand-copy {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   line-height: 1.1;
+  white-space: nowrap;
+  max-width: min(42vw, 420px);
 }
 
 .brand-copy strong {
@@ -30,11 +70,16 @@
 .brand-copy small {
   color: var(--nav-muted);
   font-size: 0.72rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .navbar-nav .nav-link {
   color: var(--nav-text);
-  margin-right: 10px;
+  margin-right: 0.35rem;
+  padding-left: 0.45rem;
+  padding-right: 0.45rem;
+  white-space: nowrap;
 }
 
 .navbar-nav .nav-link-button {
@@ -71,6 +116,17 @@
 
 .schedule-btn {
   margin-left: 0.25rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+  .site-navbar::after {
+    background-size: 170px;
+  }
+
+  .brand-copy small {
+    display: none;
+  }
 }
 
 @media (max-width: 992px) {
