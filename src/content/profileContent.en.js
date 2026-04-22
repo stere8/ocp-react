@@ -6,6 +6,21 @@ const profileContentEn = {
     location: 'Bydgoszcz, Poland',
     availability: 'Available remotely across Europe and internationally',
     calLink: 'https://cal.com/t.oreste?timezone=Europe%2FWarsaw',
+    booking: {
+      title: 'Book a discovery call',
+      intro:
+        'This short call is meant to reduce ambiguity early. We look at the real backend problem, the workflow it affects, and whether the next step should be an audit, a focused sprint, or a larger build.',
+      highlights: [
+        'We focus on the system pain point, not a generic sales script.',
+        'You can bring a messy workflow, a slow backend, or an integration issue.',
+        'If there is a fit, you leave with a clearer next step.'
+      ],
+      iframeTitle: 'OT Systems Engineering booking calendar',
+      footerNote: 'Prefer the scheduler in a separate tab? Use the direct booking link instead.',
+      directLinkLabel: 'Open scheduler in a new tab',
+      stickyEyebrow: 'Need clarity fast?',
+      stickyLabel: 'Book a discovery call'
+    },
     seoTitle: 'Backend systems consulting',
     seoDescription:
       'Founder-led backend systems consulting for inventory, reservation, integration, reporting, and workflow-heavy software, backed by production .NET experience and systems thinking.'
@@ -29,6 +44,8 @@ const profileContentEn = {
     ],
     ctaLabel: 'Book a 15-min discovery call',
     secondaryCtaLabel: 'See case studies',
+    bookingHint:
+      'The call is short, practical, and low-pressure: we map the operational problem, the constraints around it, and the best next step.',
     sectionLabels: {
       credibility: 'Credibility',
       problemsSolved: 'Problems Solved',
@@ -604,6 +621,14 @@ const profileContentEn = {
       { label: 'LinkedIn', value: 'twizeyimana-o-2302a410a', href: 'https://www.linkedin.com/in/twizeyimana-o-2302a410a' }
     ],
     directContactTitle: 'Direct contact',
+    discoveryTitle: 'What happens on the call',
+    discoveryIntro:
+      'If booking is easier than writing a long message, the discovery call is the fastest way to turn a vague backend problem into a sharper plan.',
+    discoveryBullets: [
+      'We identify the workflow, system pressure point, and urgency.',
+      'I explain what I would inspect first and what kind of engagement fits.',
+      'You leave with practical clarity, even if the next step is small.'
+    ],
     scheduleButtonLabel: 'Schedule a discovery call',
     closing:
       'If a short call is easier than a long message, book directly and I will come prepared to talk about the system, the bottlenecks, and the best next step.'

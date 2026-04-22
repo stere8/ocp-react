@@ -4,6 +4,22 @@ const profileContentFr = {
   ...en,
   site: {
     ...en.site,
+    booking: {
+      ...en.site.booking,
+      title: 'Réserver un appel découverte',
+      intro:
+        'Cet appel court sert à réduire l’ambiguïté dès le départ. Nous examinons le vrai problème backend, le workflow touché et si la meilleure suite est un audit, un sprint ciblé ou un projet plus large.',
+      highlights: [
+        'Nous parlons du vrai point de friction du système, pas d’un script commercial générique.',
+        'Vous pouvez venir avec un workflow chaotique, un backend lent ou une intégration fragile.',
+        'S’il y a adéquation, vous repartez avec une suite beaucoup plus claire.'
+      ],
+      iframeTitle: 'Calendrier de réservation OT Systems Engineering',
+      footerNote: 'Si vous préférez ouvrir le calendrier dans un autre onglet, utilisez le lien direct.',
+      directLinkLabel: 'Ouvrir le calendrier dans un nouvel onglet',
+      stickyEyebrow: 'Besoin de clarté rapidement ?',
+      stickyLabel: 'Réserver un appel'
+    },
     tagline: 'Conseil backend mené par le fondateur pour les logiciels opérationnels',
     location: 'Bydgoszcz, Pologne',
     availability: 'Disponible à distance en Europe et à l’international',
@@ -31,6 +47,8 @@ const profileContentFr = {
     ],
     ctaLabel: 'Réserver un appel de 15 min',
     secondaryCtaLabel: 'Voir les études de cas',
+    bookingHint:
+      'L’appel est court, concret et sans pression : nous clarifions le problème opérationnel, les contraintes et la meilleure prochaine étape.',
     sectionLabels: {
       credibility: 'Crédibilité',
       problemsSolved: 'Problèmes traités',
@@ -583,6 +601,14 @@ const profileContentFr = {
       { label: 'LinkedIn', value: 'twizeyimana-o-2302a410a', href: 'https://www.linkedin.com/in/twizeyimana-o-2302a410a' }
     ],
     directContactTitle: 'Contact direct',
+    discoveryTitle: 'Ce qui se passe pendant l’appel',
+    discoveryIntro:
+      'Si réserver est plus simple que rédiger un long message, l’appel découverte est le moyen le plus rapide de transformer un problème backend flou en plan plus net.',
+    discoveryBullets: [
+      'Nous identifions le workflow touché, le point de pression du système et le niveau d’urgence.',
+      'J’explique ce que j’examinerais d’abord et le type d’intervention le plus pertinent.',
+      'Vous repartez avec une clarté concrète, même si la prochaine étape reste modeste.'
+    ],
     scheduleButtonLabel: 'Réserver un appel découverte',
     closing:
       'Si un court appel est plus simple qu’un long message, réservez directement et je viendrai préparé pour parler du système, des goulets d’étranglement et du meilleur prochain pas.'

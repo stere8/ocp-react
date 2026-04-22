@@ -4,6 +4,22 @@ const profileContentEs = {
   ...en,
   site: {
     ...en.site,
+    booking: {
+      ...en.site.booking,
+      title: 'Reserva una llamada de descubrimiento',
+      intro:
+        'Esta llamada breve está pensada para reducir la ambigüedad desde el inicio. Revisamos el problema real del backend, el flujo operativo que afecta y si el siguiente paso debe ser una auditoría, un sprint enfocado o una implementación mayor.',
+      highlights: [
+        'Nos centramos en el dolor real del sistema, no en un guion de ventas genérico.',
+        'Puedes traer un workflow desordenado, un backend lento o una integración inestable.',
+        'Si hay encaje, sales con un siguiente paso mucho más claro.'
+      ],
+      iframeTitle: 'Calendario de reservas de OT Systems Engineering',
+      footerNote: 'Si prefieres abrir el calendario en otra pestaña, usa el enlace directo.',
+      directLinkLabel: 'Abrir calendario en una nueva pestaña',
+      stickyEyebrow: '¿Necesitas claridad rápida?',
+      stickyLabel: 'Reservar llamada'
+    },
     tagline: 'Consultoría backend liderada por el fundador para software operativo',
     location: 'Bydgoszcz, Polonia',
     availability: 'Disponible de forma remota en Europa e internacionalmente',
@@ -31,6 +47,8 @@ const profileContentEs = {
     ],
     ctaLabel: 'Reservar una llamada de 15 min',
     secondaryCtaLabel: 'Ver casos',
+    bookingHint:
+      'La llamada es breve, práctica y sin presión: aclaramos el problema operativo, las restricciones y el mejor siguiente paso.',
     sectionLabels: {
       credibility: 'Credibilidad',
       problemsSolved: 'Problemas que resuelvo',
@@ -583,6 +601,14 @@ const profileContentEs = {
       { label: 'LinkedIn', value: 'twizeyimana-o-2302a410a', href: 'https://www.linkedin.com/in/twizeyimana-o-2302a410a' }
     ],
     directContactTitle: 'Contacto directo',
+    discoveryTitle: 'Qué ocurre en la llamada',
+    discoveryIntro:
+      'Si reservar es más fácil que escribir un mensaje largo, la llamada de descubrimiento es la vía más rápida para convertir un problema difuso del backend en un plan más claro.',
+    discoveryBullets: [
+      'Identificamos el flujo afectado, el punto de presión del sistema y la urgencia.',
+      'Te explico qué revisaría primero y qué tipo de colaboración encaja mejor.',
+      'Sales con claridad práctica, incluso si el siguiente paso es pequeño.'
+    ],
     scheduleButtonLabel: 'Agendar llamada de descubrimiento',
     closing:
       'Si una llamada corta es más fácil que un mensaje largo, reserva directamente y llegaré preparado para hablar del sistema, los cuellos de botella y el mejor siguiente paso.'

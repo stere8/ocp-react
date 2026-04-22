@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import { useTranslation, withTranslation } from 'react-i18next';
 import ErrorBoundary from './components/ErrorBoundary';
 import Seo from './components/Seo';
+import { BookingModalProvider } from './context/BookingModalContext';
 
 const Home = lazy(() => import('./Pages/Home'));
 const Contact = lazy(() => import('./Pages/Contact'));
@@ -45,28 +46,30 @@ function App() {
     }, [location]);
 
     return (
-        <div className="App">
-            <Seo />
-            <Header />
-            <ErrorBoundary>
-                <Suspense fallback={<LoadingFallback />}>
-                    <Routes>
-                        <Route path="/" exact element={<Home />} />
-                        <Route path="/services" element={<Home />} />
-                        <Route path="/about" element={<AboutMe />} />
-                        <Route path="/programming" element={<Programming />} />
-                        <Route path="/languages" element={<Languages />} />
-                        <Route path="/contact" element={<Contact />} />
-                        <Route path="/projects" element={<Projects />} />
-                        <Route path="/blog" exact element={<BlogList />} />
-                        <Route path="/blog/:id" element={<BlogPost />} />
-                        <Route path="/Expertise" element={<Expertise />} />
-                        <Route path="/expertise" element={<Expertise />} />
-                    </Routes>
-                </Suspense>
-            </ErrorBoundary>
-            <Footer />
-        </div>
+        <BookingModalProvider>
+            <div className="App">
+                <Seo />
+                <Header />
+                <ErrorBoundary>
+                    <Suspense fallback={<LoadingFallback />}>
+                        <Routes>
+                            <Route path="/" exact element={<Home />} />
+                            <Route path="/services" element={<Home />} />
+                            <Route path="/about" element={<AboutMe />} />
+                            <Route path="/programming" element={<Programming />} />
+                            <Route path="/languages" element={<Languages />} />
+                            <Route path="/contact" element={<Contact />} />
+                            <Route path="/projects" element={<Projects />} />
+                            <Route path="/blog" exact element={<BlogList />} />
+                            <Route path="/blog/:id" element={<BlogPost />} />
+                            <Route path="/Expertise" element={<Expertise />} />
+                            <Route path="/expertise" element={<Expertise />} />
+                        </Routes>
+                    </Suspense>
+                </ErrorBoundary>
+                <Footer />
+            </div>
+        </BookingModalProvider>
     );
 }
 

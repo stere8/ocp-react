@@ -5,10 +5,12 @@ import '../Styles/Contact.css';
 import { Helmet } from 'react-helmet';
 import { Button } from 'react-bootstrap';
 import { useProfileContent } from '../content/profileContent';
+import { useBookingModal } from '../context/BookingModalContext';
 
 const Contact = () => {
   const { t } = useTranslation();
   const { site, contact } = useProfileContent();
+  const { openBookingModal } = useBookingModal();
   const [formData, setFormData] = useState({
     from_name: '',
     from_email: '',
@@ -54,7 +56,7 @@ const Contact = () => {
         <h1>{contact.title}</h1>
         <p>{contact.lead}</p>
         <div className="contact-hero-actions">
-          <Button href={site.calLink} target="_blank" className="primary-cta">
+          <Button onClick={openBookingModal} className="primary-cta">
             {contact.scheduleButtonLabel}
           </Button>
         </div>
@@ -84,6 +86,19 @@ const Contact = () => {
               ))}
             </ul>
             <p>{contact.closing}</p>
+          </div>
+
+          <div className="contact-scheduler-card">
+            <h2>{contact.discoveryTitle}</h2>
+            <p>{contact.discoveryIntro}</p>
+            <ul>
+              {contact.discoveryBullets.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <Button onClick={openBookingModal} className="primary-cta">
+              {contact.scheduleButtonLabel}
+            </Button>
           </div>
         </div>
 

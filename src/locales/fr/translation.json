@@ -14,9 +14,9 @@
     "header": {
       "BrandAlt": "Logo OT Systems Engineering",
       "NavLinks": {
-        "Services": "Conseil",
-        "Profile": "Profil",
-        "Projects": "Études de cas",
+        "Services": "Accueil",
+        "Profile": "À propos",
+        "Projects": "Preuves",
         "Expertise": "Services",
         "Schedule": "Réserver un appel",
         "Contact": "Contact"

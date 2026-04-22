@@ -2,9 +2,11 @@ import '../Styles/Home.css';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useProfileContent } from '../content/profileContent';
+import { useBookingModal } from '../context/BookingModalContext';
 
 const Home = () => {
-  const { site, home } = useProfileContent();
+  const { home } = useProfileContent();
+  const { openBookingModal } = useBookingModal();
 
   return (
     <div className="container home-page">
@@ -25,13 +27,14 @@ const Home = () => {
             </div>
 
             <div className="cta-buttons">
-              <Button href={site.calLink} target="_blank" className="primary-cta">
+              <Button onClick={openBookingModal} className="primary-cta">
                 {home.ctaLabel}
               </Button>
               <Button as={Link} to="/projects" variant="outline-primary">
                 {home.secondaryCtaLabel}
               </Button>
             </div>
+            <p className="hero-booking-note">{home.bookingHint}</p>
           </div>
 
           <aside className="hero-proof-card">
@@ -171,7 +174,7 @@ const Home = () => {
             <Button as={Link} to="/contact" className="primary-cta">
               {home.contactPrimaryLabel}
             </Button>
-            <Button href={site.calLink} target="_blank" variant="outline-primary">
+            <Button onClick={openBookingModal} variant="outline-primary">
               {home.contactSecondaryLabel}
             </Button>
           </div>

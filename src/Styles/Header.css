@@ -29,6 +29,17 @@
   margin-right: 10px;
 }
 
+.navbar-nav .nav-link-button {
+  background: transparent;
+  border: 0;
+  padding: 0.5rem 0.75rem;
+}
+
+.navbar-nav .nav-link-button:hover,
+.navbar-nav .nav-link-button:focus-visible {
+  color: #ffffff;
+}
+
 .navbar-nav .nav-item .dropdown-menu {
   background-color: #343a40;
   border: none;
@@ -50,8 +61,18 @@
   width: 100px;
 }
 
+.schedule-btn {
+  margin-left: 0.25rem;
+}
+
 @media (max-width: 992px) {
   .brand-copy {
     display: none;
+  }
+
+  .schedule-btn {
+    margin-left: 0;
+    margin-top: 0.75rem;
+    width: 100%;
   }
 }

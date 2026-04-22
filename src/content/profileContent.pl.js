@@ -4,6 +4,22 @@ const profileContentPl = {
   ...en,
   site: {
     ...en.site,
+    booking: {
+      ...en.site.booking,
+      title: 'Umów rozmowę wstępną',
+      intro:
+        'Ta krótka rozmowa ma szybko zmniejszyć niejasność. Patrzymy na realny problem backendowy, workflow, którego dotyczy, oraz na to, czy następnym krokiem powinien być audyt, krótki sprint czy większa implementacja.',
+      highlights: [
+        'Skupiamy się na realnym bólu systemu, a nie na generycznym skrypcie sprzedażowym.',
+        'Możesz przyjść z chaotycznym workflowem, wolnym backendem albo kruchą integracją.',
+        'Jeśli jest dopasowanie, wychodzisz z dużo jaśniejszym następnym krokiem.'
+      ],
+      iframeTitle: 'Kalendarz rezerwacji OT Systems Engineering',
+      footerNote: 'Jeśli wolisz otworzyć kalendarz w osobnej karcie, użyj bezpośredniego linku.',
+      directLinkLabel: 'Otwórz kalendarz w nowej karcie',
+      stickyEyebrow: 'Potrzebujesz szybkiej jasności?',
+      stickyLabel: 'Umów rozmowę'
+    },
     tagline: 'Konsulting backendowy prowadzony przez założyciela dla oprogramowania operacyjnego',
     location: 'Bydgoszcz, Polska',
     availability: 'Dostępny zdalnie w Europie i międzynarodowo',
@@ -31,6 +47,8 @@ const profileContentPl = {
     ],
     ctaLabel: 'Umów 15-minutową rozmowę',
     secondaryCtaLabel: 'Zobacz case studies',
+    bookingHint:
+      'Rozmowa jest krótka, praktyczna i bez presji: porządkujemy problem operacyjny, ograniczenia i najlepszy następny krok.',
     sectionLabels: {
       credibility: 'Wiarygodność',
       problemsSolved: 'Jakie problemy rozwiązuję',
@@ -583,6 +601,14 @@ const profileContentPl = {
       { label: 'LinkedIn', value: 'twizeyimana-o-2302a410a', href: 'https://www.linkedin.com/in/twizeyimana-o-2302a410a' }
     ],
     directContactTitle: 'Kontakt bezpośredni',
+    discoveryTitle: 'Co dzieje się podczas rozmowy',
+    discoveryIntro:
+      'Jeśli łatwiej umówić rozmowę niż pisać długą wiadomość, rozmowa wstępna to najszybszy sposób, by zamienić mglisty problem backendowy w bardziej konkretny plan.',
+    discoveryBullets: [
+      'Identyfikujemy workflow, punkt nacisku w systemie i pilność problemu.',
+      'Wyjaśniam, co sprawdziłbym najpierw i jaki typ współpracy ma największy sens.',
+      'Wychodzisz z praktyczną jasnością, nawet jeśli kolejny krok jest niewielki.'
+    ],
     scheduleButtonLabel: 'Umów rozmowę wstępną',
     closing:
       'Jeśli krótka rozmowa jest wygodniejsza niż długi opis, umów ją bezpośrednio, a przyjdę przygotowany do rozmowy o systemie, wąskich gardłach i najlepszym następnym kroku.'

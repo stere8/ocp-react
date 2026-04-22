@@ -12,9 +12,9 @@
   },    "header": {
       "BrandAlt": "Logotipo de OT Systems Engineering",
       "NavLinks": {
-        "Services": "Consultoría",
-        "Profile": "Perfil",
-        "Projects": "Casos",
+        "Services": "Inicio",
+        "Profile": "Acerca de",
+        "Projects": "Pruebas",
         "Expertise": "Servicios",
         "Schedule": "Reservar llamada",
         "Contact": "Contacto"

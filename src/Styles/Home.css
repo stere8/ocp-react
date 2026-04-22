@@ -144,6 +144,14 @@
   margin-top: 1.8rem;
 }
 
+.hero-booking-note {
+  margin-top: 1rem;
+  max-width: 680px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #64748b;
+}
+
 .cta-buttons .btn,
 .contact-cta-actions .btn {
   min-width: 190px;

@@ -33,6 +33,7 @@
 
 .contact-fit-card,
 .contact-methods-card,
+.contact-scheduler-card,
 .contact-form-card {
   background: #ffffff;
   border: 1px solid #d7e3f4;
@@ -43,25 +44,29 @@
 
 .contact-fit-card,
 .contact-methods-card,
+.contact-scheduler-card,
 .contact-form-card {
   padding: 1.5rem;
 }
 
 .contact-fit-card h2,
 .contact-methods-card h2,
+.contact-scheduler-card h2,
 .contact-form-card h2 {
   color: #0f172a;
   margin-bottom: 1rem;
 }
 
 .contact-fit-card ul,
-.contact-methods-card ul {
+.contact-methods-card ul,
+.contact-scheduler-card ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.contact-fit-card li {
+.contact-fit-card li,
+.contact-scheduler-card li {
   color: #475569;
   position: relative;
   padding-left: 1.2rem;
@@ -69,7 +74,8 @@
   line-height: 1.62;
 }
 
-.contact-fit-card li::before {
+.contact-fit-card li::before,
+.contact-scheduler-card li::before {
   content: '';
   position: absolute;
   left: 0;
@@ -92,9 +98,22 @@
 
 .contact-methods-card a,
 .contact-methods-card p,
+.contact-scheduler-card p,
 .contact-form-card p,
 .contact-form-card label {
   color: #475569;
+}
+
+.contact-scheduler-card {
+  display: grid;
+  gap: 1rem;
+  background:
+    radial-gradient(circle at top right, rgba(11, 61, 145, 0.08), transparent 28%),
+    linear-gradient(160deg, #f8fbff 0%, #ffffff 100%);
+}
+
+.contact-scheduler-card .btn {
+  width: 100%;
 }
 
 .contact-form-card p {

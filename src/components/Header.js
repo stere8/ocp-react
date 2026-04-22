@@ -7,11 +7,13 @@ import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import Dropdown from "./Dropdown";
 import CVDropdown from "./CVDropdown";
 import { useProfileContent } from '../content/profileContent';
+import { useBookingModal } from '../context/BookingModalContext';
 
 const Header = () => {
   const { t } = useTranslation();
   const navLinks = t('pages.header.NavLinks', { returnObjects: true });
   const { site } = useProfileContent();
+  const { openBookingModal } = useBookingModal();
   const homeLabel = navLinks?.Services || 'Home';
   const profileLabel = navLinks?.Profile || 'Profile';
 
@@ -35,15 +37,16 @@ const Header = () => {
               <Nav.Link as={Link} to="/about">{profileLabel}</Nav.Link>
               <Nav.Link as={Link} to="/projects">{navLinks.Projects}</Nav.Link>
               <Nav.Link as={Link} to="/expertise">{navLinks.Expertise}</Nav.Link>
-              <Nav.Link href="https://cal.com/t.oreste?timezone=Europe%2FWarsaw" target="_blank">{navLinks.Schedule}</Nav.Link>
+              <Nav.Link as="button" className="nav-link nav-link-button" onClick={openBookingModal}>
+                {navLinks.Schedule}
+              </Nav.Link>
               <Nav.Link as={Link} to="/contact">{navLinks.Contact}</Nav.Link>
             </Nav>
             <CVDropdown/>
             <Dropdown/>
             <Button
               variant="primary"
-              href={site.calLink}
-              target="_blank"
+              onClick={openBookingModal}
               className="schedule-btn"
             >
               {t('pages.header.ScheduleButton')}
