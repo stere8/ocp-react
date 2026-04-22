@@ -44,31 +44,38 @@ const Projects = () => {
                   <h2>{project.title}</h2>
                   <p className="project-subtitle">{project.subtitle}</p>
                 </div>
-                <div className="project-signals">
-                  {project.signals.map((signal) => (
-                    <span key={signal} className="project-signal">
-                      {signal}
-                    </span>
-                  ))}
-                </div>
               </div>
 
-              <div className="project-story-grid">
-                <div className="project-story-block">
-                  <h3>{projectsPage.labels.context}</h3>
+              <div className="project-visual-flow" aria-label={`${project.title} flow`}>
+                <article className="project-visual-node">
+                  <span className="project-visual-label">{projectsPage.labels.context}</span>
                   <p>{project.context}</p>
-                </div>
+                </article>
+                <span className="project-visual-arrow" aria-hidden="true" />
+                <article className="project-visual-node project-visual-node--accent">
+                  <span className="project-visual-label">{projectsPage.labels.system}</span>
+                  <p>{project.system}</p>
+                </article>
+                <span className="project-visual-arrow" aria-hidden="true" />
+                <article className="project-visual-node">
+                  <span className="project-visual-label">{projectsPage.labels.outcome}</span>
+                  <p>{project.outcome}</p>
+                </article>
+              </div>
+
+              <div className="project-detail-grid">
                 <div className="project-story-block">
                   <h3>{projectsPage.labels.constraints}</h3>
                   <p>{project.constraints}</p>
                 </div>
-                <div className="project-story-block">
-                  <h3>{projectsPage.labels.system}</h3>
-                  <p>{project.system}</p>
-                </div>
-                <div className="project-story-block">
-                  <h3>{projectsPage.labels.outcome}</h3>
-                  <p>{project.outcome}</p>
+
+                <div className="project-signals-panel">
+                  {project.signals.map((signal) => (
+                    <article key={signal} className="project-signal-card">
+                      <span className="project-signal-card__eyebrow">{project.subtitle}</span>
+                      <strong>{signal}</strong>
+                    </article>
+                  ))}
                 </div>
               </div>
 
