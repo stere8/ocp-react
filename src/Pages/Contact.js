@@ -4,11 +4,11 @@ import emailjs from 'emailjs-com';
 import '../Styles/Contact.css';
 import { Helmet } from 'react-helmet';
 import { Button } from 'react-bootstrap';
-import profileContent from '../content/profileContent';
+import { useProfileContent } from '../content/profileContent';
 
 const Contact = () => {
   const { t } = useTranslation();
-  const { site, contact } = profileContent;
+  const { site, contact } = useProfileContent();
   const [formData, setFormData] = useState({
     from_name: '',
     from_email: '',
@@ -45,11 +45,8 @@ const Contact = () => {
   return (
     <div className="container hero-section-bis">
       <Helmet>
-        <title>Contact | {site.brand}</title>
-        <meta
-          name="description"
-          content="Contact OT Systems Engineering about backend consulting, system reviews, integration cleanup, and workflow-heavy software projects."
-        />
+        <title>{contact.metaTitle} | {site.brand}</title>
+        <meta name="description" content={contact.metaDescription} />
       </Helmet>
 
       <section className="hero-section contact-hero">
@@ -58,7 +55,7 @@ const Contact = () => {
         <p>{contact.lead}</p>
         <div className="contact-hero-actions">
           <Button href={site.calLink} target="_blank" className="primary-cta">
-            Schedule a discovery call
+            {contact.scheduleButtonLabel}
           </Button>
         </div>
       </section>
@@ -75,7 +72,7 @@ const Contact = () => {
           </div>
 
           <div className="contact-methods-card">
-            <h2>Direct contact</h2>
+            <h2>{contact.directContactTitle}</h2>
             <ul>
               {contact.contactMethods.map((item) => (
                 <li key={item.label}>

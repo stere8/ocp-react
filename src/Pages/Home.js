@@ -1,10 +1,10 @@
 import '../Styles/Home.css';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import profileContent from '../content/profileContent';
+import { useProfileContent } from '../content/profileContent';
 
 const Home = () => {
-  const { site, home } = profileContent;
+  const { site, home } = useProfileContent();
 
   return (
     <div className="container home-page">
@@ -35,7 +35,7 @@ const Home = () => {
           </div>
 
           <aside className="hero-proof-card">
-            <span className="section-kicker">Credibility</span>
+            <span className="section-kicker">{home.sectionLabels.credibility}</span>
             <h2>{home.trustTitle}</h2>
             <p>{home.trustSummary}</p>
             <ul>
@@ -60,7 +60,7 @@ const Home = () => {
 
       <section className="problem-section">
         <div className="section-heading">
-          <span className="section-kicker">Problems Solved</span>
+          <span className="section-kicker">{home.sectionLabels.problemsSolved}</span>
           <h2>{home.problemTitle}</h2>
           <p>{home.problemIntro}</p>
         </div>
@@ -76,7 +76,7 @@ const Home = () => {
 
       <section className="story-section">
         <div className="section-heading">
-          <span className="section-kicker">Story</span>
+          <span className="section-kicker">{home.sectionLabels.story}</span>
           <h2>{home.storyTitle}</h2>
         </div>
         <div className="story-grid">
@@ -91,7 +91,7 @@ const Home = () => {
 
       <section className="package-section">
         <div className="section-heading">
-          <span className="section-kicker">Packages</span>
+          <span className="section-kicker">{home.sectionLabels.packages}</span>
           <h2>{home.packageTitle}</h2>
           <p>{home.packageIntro}</p>
         </div>
@@ -103,7 +103,7 @@ const Home = () => {
                 <span>{item.format}</span>
               </div>
               <p className="package-ideal">
-                <strong>Best for:</strong> {item.idealFor}
+                <strong>{home.sectionLabels.bestFor}:</strong> {item.idealFor}
               </p>
               <ul>
                 {item.deliverables.map((deliverable) => (
@@ -111,7 +111,7 @@ const Home = () => {
                 ))}
               </ul>
               <p className="package-outcome">
-                <strong>Outcome:</strong> {item.outcome}
+                <strong>{home.sectionLabels.outcome}:</strong> {item.outcome}
               </p>
             </article>
           ))}
@@ -120,7 +120,7 @@ const Home = () => {
 
       <section className="featured-section">
         <div className="section-heading">
-          <span className="section-kicker">Proof</span>
+          <span className="section-kicker">{home.sectionLabels.proof}</span>
           <h2>{home.featuredTitle}</h2>
           <p>{home.featuredIntro}</p>
         </div>
@@ -139,7 +139,7 @@ const Home = () => {
 
       <section className="metrics-section">
         <div className="section-heading">
-          <span className="section-kicker">Metrics</span>
+          <span className="section-kicker">{home.sectionLabels.metrics}</span>
           <h2>{home.metricsTitle}</h2>
         </div>
         <div className="metrics-grid">
@@ -154,7 +154,7 @@ const Home = () => {
 
       <section className="communication-section">
         <div className="communication-card">
-          <span className="section-kicker">Communication</span>
+          <span className="section-kicker">{home.sectionLabels.communication}</span>
           <h2>{home.communicationTitle}</h2>
           <p>{home.communication}</p>
         </div>
@@ -163,16 +163,16 @@ const Home = () => {
       <section className="contact-cta-section">
         <div className="contact-cta-card">
           <div>
-            <span className="section-kicker">Contact</span>
+            <span className="section-kicker">{home.sectionLabels.contact}</span>
             <h2>{home.contactTitle}</h2>
             <p>{home.contactText}</p>
           </div>
           <div className="contact-cta-actions">
             <Button as={Link} to="/contact" className="primary-cta">
-              Contact me
+              {home.contactPrimaryLabel}
             </Button>
             <Button href={site.calLink} target="_blank" variant="outline-primary">
-              Schedule a discovery call
+              {home.contactSecondaryLabel}
             </Button>
           </div>
         </div>

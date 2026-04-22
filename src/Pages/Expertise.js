@@ -1,9 +1,9 @@
 import React from 'react';
 import '../Styles/Expertise.css';
-import profileContent from '../content/profileContent';
+import { useProfileContent } from '../content/profileContent';
 
 const Expertise = () => {
-  const { expertise } = profileContent;
+  const { expertise } = useProfileContent();
 
   return (
     <div className="container expertise-page">
@@ -33,7 +33,7 @@ const Expertise = () => {
 
       <section className="package-showcase-section">
         <div className="section-heading">
-          <span className="section-kicker">Packages</span>
+          <span className="section-kicker">{expertise.sectionLabels.packages}</span>
           <h2>{expertise.packageTitle}</h2>
           <p>{expertise.packageIntro}</p>
         </div>
@@ -54,7 +54,7 @@ const Expertise = () => {
 
       <section className="metrics-section">
         <div className="section-heading">
-          <span className="section-kicker">Metrics</span>
+          <span className="section-kicker">{expertise.sectionLabels.metrics}</span>
           <h2>{expertise.metricsTitle}</h2>
         </div>
         <div className="metrics-grid">
@@ -69,7 +69,7 @@ const Expertise = () => {
 
       <section className="fit-and-process-section">
         <div className="fit-card">
-          <span className="section-kicker">Best Fit</span>
+          <span className="section-kicker">{expertise.sectionLabels.bestFit}</span>
           <h2>{expertise.whoIHelpTitle}</h2>
           <ul>
             {expertise.whoIHelp.map((item) => (
@@ -79,7 +79,7 @@ const Expertise = () => {
         </div>
 
         <div className="process-card-wrapper">
-          <span className="section-kicker">Approach</span>
+          <span className="section-kicker">{expertise.sectionLabels.approach}</span>
           <h2>{expertise.processTitle}</h2>
           <div className="process-grid">
             {expertise.process.map((item, index) => (
