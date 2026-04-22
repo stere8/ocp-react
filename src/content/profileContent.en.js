@@ -54,6 +54,7 @@ const profileContentEn = {
       proof: 'Proof',
       metrics: 'Metrics',
       communication: 'Communication',
+      resources: 'Resources',
       contact: 'Contact',
       bestFor: 'Best for',
       outcome: 'Outcome'
@@ -207,6 +208,39 @@ const profileContentEn = {
     communicationTitle: 'Communication and delivery style',
     communication:
       'I do not only build software. I teach programming and languages as well, which strengthened my ability to explain complex systems clearly, document decisions, and adjust communication for different technical levels and cultures.',
+    resourcesTitle: 'Useful next steps for cautious buyers',
+    resourcesIntro:
+      'Not everyone is ready to start with a project immediately. These resources help you evaluate fit, understand the work more clearly, and start with lower-friction material first.',
+    resources: [
+      {
+        kicker: 'Insights',
+        title: 'Read backend notes and engineering posts',
+        summary:
+          'Browse practical notes on backend performance, integrations, automation, diagnostics, and operational software design.',
+        link: '/blog',
+        linkLabel: 'Open insights',
+        external: false
+      },
+      {
+        kicker: 'Checklist',
+        title: 'Download the backend health audit checklist',
+        summary:
+          'A concise checklist for spotting brittle workflows, slow data paths, risky integrations, and architecture issues before they get more expensive.',
+        link: '/doc/backend-health-audit-checklist.md',
+        linkLabel: 'Download checklist',
+        external: true,
+        download: true
+      },
+      {
+        kicker: 'Engagement fit',
+        title: 'See the service formats and best-fit projects',
+        summary:
+          'Review the package structure, the kinds of teams I help most, and how an audit or focused sprint usually starts.',
+        link: '/expertise',
+        linkLabel: 'Review services',
+        external: false
+      }
+    ],
     contactTitle: 'Tell me what is slow, brittle, or hard to trust',
     contactText:
       'Good fit projects include workflow-heavy backends, internal tools, inventory or reservation systems, integrations, SQL tuning, and architecture reviews for product teams that need cleaner backend direction.',

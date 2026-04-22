@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import { useProfileContent } from '../content/profileContent';
 import '../Styles/BlogList.css'; // Ensure you have this CSS
 
 const BlogList = () => {
+  const { site } = useProfileContent();
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -28,7 +31,21 @@ const BlogList = () => {
 
   return (
     <div className="blogList container">
-      <h1>OC Blog Posts</h1>
+      <Helmet>
+        <title>Insights | {site.brand}</title>
+        <meta
+          name="description"
+          content="Notes on backend systems, performance, integrations, diagnostics, and operational software engineering."
+        />
+      </Helmet>
+      <section className="hero-section blog-list-hero">
+        <span className="section-kicker">Insights</span>
+        <h1>Engineering notes from operational backend work</h1>
+        <p>
+          Short writeups on backend reliability, data flow, integrations, automation, and the kinds of
+          system decisions that matter once software is carrying real operational weight.
+        </p>
+      </section>
       {loading ? (
         <div className="text-center">
           <div className="spinner-border" role="status">
@@ -39,7 +56,7 @@ const BlogList = () => {
         <div className="row">
           {Array.isArray(posts) && posts.map((post) => (
             <div key={post.id} className="col-md-4 mb-4">
-              <div className="card">
+              <div className="card blog-list-card">
                 <div className="card-body">
                   <Link to={`/blog/${post.id}`}>
                     <h5 className="card-title">{post.title}</h5>

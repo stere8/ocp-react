@@ -57,6 +57,7 @@ const profileContentEs = {
       proof: 'Pruebas',
       metrics: 'Métricas',
       communication: 'Comunicación',
+      resources: 'Recursos',
       contact: 'Contacto',
       bestFor: 'Ideal para',
       outcome: 'Resultado'
@@ -213,6 +214,39 @@ const profileContentEs = {
     communicationTitle: 'Estilo de comunicación y entrega',
     communication:
       'No solo construyo software. También enseño programación e idiomas, lo que fortaleció mi capacidad para explicar sistemas complejos, documentar decisiones y adaptar la comunicación a distintos niveles técnicos y culturales.',
+    resourcesTitle: 'Siguientes pasos útiles para compradores prudentes',
+    resourcesIntro:
+      'No todo el mundo quiere empezar un proyecto de inmediato. Estos recursos ayudan a evaluar el encaje, entender mejor el trabajo y empezar con materiales de menor fricción.',
+    resources: [
+      {
+        kicker: 'Insights',
+        title: 'Leer notas de backend y artículos técnicos',
+        summary:
+          'Explora notas prácticas sobre rendimiento backend, integraciones, automatización, diagnóstico y diseño de software operativo.',
+        link: '/blog',
+        linkLabel: 'Abrir insights',
+        external: false
+      },
+      {
+        kicker: 'Checklist',
+        title: 'Descargar la checklist de auditoría backend',
+        summary:
+          'Una checklist breve para detectar workflows frágiles, flujos de datos lentos, integraciones riesgosas y problemas de arquitectura antes de que cuesten más.',
+        link: '/doc/backend-health-audit-checklist.md',
+        linkLabel: 'Descargar checklist',
+        external: true,
+        download: true
+      },
+      {
+        kicker: 'Encaje',
+        title: 'Ver los formatos de servicio y proyectos ideales',
+        summary:
+          'Revisa la estructura de los paquetes, los equipos a los que más ayudo y cómo suele empezar una auditoría o un sprint enfocado.',
+        link: '/expertise',
+        linkLabel: 'Revisar servicios',
+        external: false
+      }
+    ],
     contactTitle: 'Cuéntame qué es lento, frágil o difícil de confiar',
     contactText:
       'Los proyectos ideales incluyen backends con workflows complejos, herramientas internas, sistemas de inventario o reservas, integraciones, tuning SQL y revisiones de arquitectura para equipos que necesitan una dirección backend más clara.',

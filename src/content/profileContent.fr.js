@@ -57,6 +57,7 @@ const profileContentFr = {
       proof: 'Preuves',
       metrics: 'Indicateurs',
       communication: 'Communication',
+      resources: 'Ressources',
       contact: 'Contact',
       bestFor: 'Idéal pour',
       outcome: 'Résultat'
@@ -213,6 +214,39 @@ const profileContentFr = {
     communicationTitle: 'Style de communication et de delivery',
     communication:
       'Je ne fais pas que construire du logiciel. J’enseigne aussi la programmation et les langues, ce qui a renforcé ma capacité à expliquer des systèmes complexes, documenter les décisions et adapter ma communication à différents niveaux techniques et culturels.',
+    resourcesTitle: 'Des prochaines étapes utiles pour les acheteurs prudents',
+    resourcesIntro:
+      'Tout le monde ne veut pas démarrer un projet immédiatement. Ces ressources aident à juger l’adéquation, à mieux comprendre le travail et à commencer par des éléments à faible friction.',
+    resources: [
+      {
+        kicker: 'Insights',
+        title: 'Lire des notes backend et des articles techniques',
+        summary:
+          'Parcourez des notes pratiques sur la performance backend, les intégrations, l’automatisation, le diagnostic et la conception de logiciels opérationnels.',
+        link: '/blog',
+        linkLabel: 'Ouvrir les insights',
+        external: false
+      },
+      {
+        kicker: 'Checklist',
+        title: 'Télécharger la checklist d’audit backend',
+        summary:
+          'Une checklist concise pour repérer les workflows fragiles, les flux de données lents, les intégrations risquées et les problèmes d’architecture avant qu’ils ne coûtent plus cher.',
+        link: '/doc/backend-health-audit-checklist.md',
+        linkLabel: 'Télécharger la checklist',
+        external: true,
+        download: true
+      },
+      {
+        kicker: 'Adéquation',
+        title: 'Voir les formats d’intervention et les projets les plus adaptés',
+        summary:
+          'Consultez la structure des offres, les types d’équipes que j’aide le plus et la façon dont un audit ou un sprint ciblé commence généralement.',
+        link: '/expertise',
+        linkLabel: 'Voir les services',
+        external: false
+      }
+    ],
     contactTitle: 'Dites-moi ce qui est lent, fragile ou difficile à fiabiliser',
     contactText:
       'Les bons projets incluent les backends riches en workflows, les outils internes, les systèmes d’inventaire ou de réservation, les intégrations, le tuning SQL et les revues d’architecture pour les équipes qui ont besoin d’une direction backend plus claire.',

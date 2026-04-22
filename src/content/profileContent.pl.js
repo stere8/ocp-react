@@ -57,6 +57,7 @@ const profileContentPl = {
       proof: 'Dowody',
       metrics: 'Metryki',
       communication: 'Komunikacja',
+      resources: 'Materiały',
       contact: 'Kontakt',
       bestFor: 'Najlepsze dla',
       outcome: 'Efekt'
@@ -213,6 +214,39 @@ const profileContentPl = {
     communicationTitle: 'Styl komunikacji i delivery',
     communication:
       'Nie tylko buduję oprogramowanie. Uczę też programowania i języków, co wzmocniło moją zdolność tłumaczenia złożonych systemów, dokumentowania decyzji i dopasowywania komunikacji do różnych poziomów technicznych i kulturowych.',
+    resourcesTitle: 'Przydatne następne kroki dla ostrożnych klientów',
+    resourcesIntro:
+      'Nie każdy chce zaczynać od projektu od razu. Te materiały pomagają ocenić dopasowanie, lepiej zrozumieć charakter pracy i zacząć od niższego progu wejścia.',
+    resources: [
+      {
+        kicker: 'Insights',
+        title: 'Przeczytaj notatki backendowe i wpisy techniczne',
+        summary:
+          'Przejrzyj praktyczne materiały o wydajności backendu, integracjach, automatyzacji, diagnostyce i projektowaniu oprogramowania operacyjnego.',
+        link: '/blog',
+        linkLabel: 'Otwórz materiały',
+        external: false
+      },
+      {
+        kicker: 'Checklist',
+        title: 'Pobierz checklistę audytu backendu',
+        summary:
+          'Krótka checklista do wychwytywania kruchych workflowów, wolnych przepływów danych, ryzykownych integracji i problemów architektonicznych zanim staną się droższe.',
+        link: '/doc/backend-health-audit-checklist.md',
+        linkLabel: 'Pobierz checklistę',
+        external: true,
+        download: true
+      },
+      {
+        kicker: 'Dopasowanie',
+        title: 'Zobacz formaty współpracy i najlepiej dopasowane projekty',
+        summary:
+          'Sprawdź strukturę pakietów, typy zespołów, którym pomagam najczęściej, oraz jak zwykle zaczyna się audyt lub sprint skoncentrowany na jednym problemie.',
+        link: '/expertise',
+        linkLabel: 'Przejrzyj usługi',
+        external: false
+      }
+    ],
     contactTitle: 'Powiedz mi, co jest wolne, kruche albo trudne do zaufania',
     contactText:
       'Najlepiej dopasowane projekty obejmują backendy złożone z workflowów, narzędzia wewnętrzne, systemy magazynowe lub rezerwacyjne, integracje, tuning SQL i przeglądy architektoniczne dla zespołów potrzebujących wyraźniejszego kierunku backendowego.',

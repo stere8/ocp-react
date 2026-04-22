@@ -5,7 +5,7 @@ import { useProfileContent } from '../content/profileContent';
 import { useBookingModal } from '../context/BookingModalContext';
 
 const Home = () => {
-  const { home } = useProfileContent();
+  const { site, home, about } = useProfileContent();
   const { openBookingModal } = useBookingModal();
 
   return (
@@ -160,6 +160,62 @@ const Home = () => {
           <span className="section-kicker">{home.sectionLabels.communication}</span>
           <h2>{home.communicationTitle}</h2>
           <p>{home.communication}</p>
+        </div>
+      </section>
+
+      <section className="founder-section">
+        <div className="founder-card">
+          <div className="founder-avatar" aria-hidden="true">
+            OT
+          </div>
+
+          <div className="founder-copy">
+            <span className="section-kicker">{about.eyebrow}</span>
+            <h2>{site.founder}</h2>
+            <p className="founder-lead">{about.lead}</p>
+            <div className="founder-facts-grid">
+              {about.quickFacts.map((fact) => (
+                <article key={fact} className="founder-fact-card">
+                  <p>{fact}</p>
+                </article>
+              ))}
+            </div>
+            <Button as={Link} to="/about" variant="outline-primary">
+              {about.metaTitle}
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <section className="resources-section">
+        <div className="section-heading">
+          <span className="section-kicker">{home.sectionLabels.resources}</span>
+          <h2>{home.resourcesTitle}</h2>
+          <p>{home.resourcesIntro}</p>
+        </div>
+        <div className="resources-grid">
+          {home.resources.map((item) => (
+            <article key={item.title} className="resource-card">
+              <span className="resource-card__kicker">{item.kicker}</span>
+              <h3>{item.title}</h3>
+              <p>{item.summary}</p>
+              {item.external ? (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download={item.download ? true : undefined}
+                  className="resource-card__link"
+                >
+                  {item.linkLabel}
+                </a>
+              ) : (
+                <Button as={Link} to={item.link} variant="outline-primary">
+                  {item.linkLabel}
+                </Button>
+              )}
+            </article>
+          ))}
         </div>
       </section>
 
