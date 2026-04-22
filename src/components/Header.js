@@ -20,8 +20,8 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar expand="lg" fixed="top" className="site-navbar">
-        <Container>
+      <Navbar expand="xxl" fixed="top" className="site-navbar">
+        <Container fluid className="site-navbar-container">
           <Navbar.Brand as={Link} to="/">
             <span className="brand-lockup">
               <img src={logo} alt={t('pages.header.BrandAlt')} className="logo" />
