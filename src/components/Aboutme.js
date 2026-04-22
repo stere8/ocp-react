@@ -4,15 +4,15 @@ import profileContent from '../content/profileContent';
 import '../Styles/Aboutme.css';
 
 const AboutMe = () => {
-  const about = profileContent.about;
+  const { site, about } = profileContent;
 
   return (
     <div className="container profile-page">
       <Helmet>
-        <title>Profile | Oreste Twizeyimana</title>
+        <title>About | {site.brand}</title>
         <meta
           name="description"
-          content="Detailed profile of Oreste Twizeyimana: backend engineer with production .NET experience, Python backend range, mechatronics background, and strong mentoring skills."
+          content="Founder-led profile of Oreste Twizeyimana: backend engineer with production .NET experience, mechatronics-shaped systems thinking, and strong communication skills."
         />
       </Helmet>
 
@@ -20,6 +20,13 @@ const AboutMe = () => {
         <p className="lead">{about.eyebrow}</p>
         <h1>{about.title}</h1>
         <p>{about.lead}</p>
+      </section>
+
+      <section className="profile-practice-note">
+        <span className="section-kicker">{site.brand}</span>
+        <p>
+          {site.tagline}. Based in {site.location}. {site.availability}.
+        </p>
       </section>
 
       <section className="profile-intro">
