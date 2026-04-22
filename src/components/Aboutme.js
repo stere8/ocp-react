@@ -1,19 +1,16 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import profileContent from '../content/profileContent';
+import { useProfileContent } from '../content/profileContent';
 import '../Styles/Aboutme.css';
 
 const AboutMe = () => {
-  const { site, about } = profileContent;
+  const { site, about } = useProfileContent();
 
   return (
     <div className="container profile-page">
       <Helmet>
-        <title>About | {site.brand}</title>
-        <meta
-          name="description"
-          content="Founder-led profile of Oreste Twizeyimana: backend engineer with production .NET experience, mechatronics-shaped systems thinking, and strong communication skills."
-        />
+        <title>{about.metaTitle} | {site.brand}</title>
+        <meta name="description" content={about.metaDescription} />
       </Helmet>
 
       <section className="hero-section">
@@ -24,9 +21,7 @@ const AboutMe = () => {
 
       <section className="profile-practice-note">
         <span className="section-kicker">{site.brand}</span>
-        <p>
-          {site.tagline}. Based in {site.location}. {site.availability}.
-        </p>
+        <p>{about.practiceNote}</p>
       </section>
 
       <section className="profile-intro">

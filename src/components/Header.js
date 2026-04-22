@@ -6,12 +6,12 @@ import logo from '../img/logo.png';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import Dropdown from "./Dropdown";
 import CVDropdown from "./CVDropdown";
-import profileContent from '../content/profileContent';
+import { useProfileContent } from '../content/profileContent';
 
 const Header = () => {
   const { t } = useTranslation();
   const navLinks = t('pages.header.NavLinks', { returnObjects: true });
-  const { site } = profileContent;
+  const { site } = useProfileContent();
   const homeLabel = navLinks?.Services || 'Home';
   const profileLabel = navLinks?.Profile || 'Profile';
 
