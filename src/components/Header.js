@@ -8,6 +8,7 @@ import Dropdown from "./Dropdown";
 import CVDropdown from "./CVDropdown";
 import { useProfileContent } from '../content/profileContent';
 import { useBookingModal } from '../context/BookingModalContext';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const { t } = useTranslation();
@@ -19,7 +20,7 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+      <Navbar expand="lg" fixed="top" className="site-navbar">
         <Container>
           <Navbar.Brand as={Link} to="/">
             <span className="brand-lockup">
@@ -42,6 +43,7 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link as={Link} to="/contact">{navLinks.Contact}</Nav.Link>
             </Nav>
+            <ThemeToggle />
             <CVDropdown/>
             <Dropdown/>
             <Button

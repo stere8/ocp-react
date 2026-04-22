@@ -21,6 +21,10 @@
         "Schedule": "Book Call",
         "Contact": "Contact"
       },
+      "ThemeToggleLabel": "Toggle site theme",
+      "ThemeLabel": "Theme",
+      "ThemeLight": "Light",
+      "ThemeDark": "Dark",
       "ScheduleButton": "Book Discovery Call",
       "DownloadDropDown": "Download CV",
       "CVOptions": {

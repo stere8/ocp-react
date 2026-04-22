@@ -10,9 +10,9 @@
   gap: 0.85rem;
   min-width: 150px;
   padding: 0.6rem 0.85rem;
-  background: #0b3a8f;
-  color: #ffffff;
-  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: var(--nav-chip-bg);
+  color: var(--nav-text);
+  border: 1px solid var(--nav-border);
   border-radius: 0.55rem;
   font-size: 0.98rem;
   line-height: 1;
@@ -22,13 +22,13 @@
 
 .language-dropdown__toggle:hover,
 .language-dropdown__toggle.is-open {
-  background: #0f4ec0;
-  border-color: rgba(191, 219, 254, 0.6);
+  background: var(--nav-chip-hover);
+  border-color: var(--brand);
 }
 
 .language-dropdown__toggle:focus-visible,
 .language-dropdown__option:focus-visible {
-  outline: 2px solid #93c5fd;
+  outline: 2px solid var(--brand);
   outline-offset: 2px;
 }
 
@@ -53,8 +53,8 @@
   margin: 0;
   padding: 0.45rem;
   list-style: none;
-  background: #0f172a;
-  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: var(--surface);
+  border: 1px solid var(--border-color);
   border-radius: 0.85rem;
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.45);
   z-index: 1200;
@@ -67,7 +67,7 @@
   width: 100%;
   padding: 0.7rem 0.8rem;
   background: transparent;
-  color: #e2e8f0;
+  color: var(--text-primary);
   border: 0;
   border-radius: 0.65rem;
   text-align: left;
@@ -77,12 +77,12 @@
 
 .language-dropdown__option:hover,
 .language-dropdown__option.is-active {
-  background: rgba(59, 130, 246, 0.22);
-  color: #ffffff;
+  background: var(--brand-soft);
+  color: var(--text-primary);
 }
 
 .language-dropdown__check {
-  color: #93c5fd;
+  color: var(--brand);
   font-weight: 700;
 }
 

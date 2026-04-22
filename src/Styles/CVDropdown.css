@@ -3,19 +3,19 @@
 }
 
 .cv-dropdown {
-    background-color: #343a40;
-    color: white;
-    border: 1px solid #495057;
+    background-color: var(--nav-chip-bg);
+    color: var(--nav-text);
+    border: 1px solid var(--nav-border);
     border-radius: 4px;
     padding: 6px 12px;
     cursor: pointer;
 }
 
 .cv-dropdown:hover {
-    background-color: #495057;
+    background-color: var(--nav-chip-hover);
 }
 
 .cv-dropdown option {
-    background-color: #343a40;
-    color: white;
+    background-color: var(--surface);
+    color: var(--text-primary);
 }

@@ -21,6 +21,10 @@
         "Schedule": "Umów rozmowę",
         "Contact": "Kontakt"
       },
+      "ThemeToggleLabel": "Przełącz motyw strony",
+      "ThemeLabel": "Motyw",
+      "ThemeLight": "Jasny",
+      "ThemeDark": "Ciemny",
       "ScheduleButton": "Umów rozmowę wstępną",
       "DownloadDropDown": "Pobierz CV",
       "CVOptions": {

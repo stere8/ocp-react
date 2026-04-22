@@ -1,6 +1,6 @@
 footer {
-  background-color: #001f3f;
-  color: #fff;
+  background-color: var(--footer-bg);
+  color: var(--nav-text);
   padding: 28px 0;
   text-align: center;
 }
@@ -16,12 +16,12 @@ footer {
 }
 
 .footer-copy p {
-  color: #cbd5e1;
+  color: var(--nav-muted);
   line-height: 1.6;
 }
 
 footer a {
-  color: #61dafb;
+  color: var(--footer-link);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -44,7 +44,7 @@ footer a:hover {
 }
 
 .social-links a {
-  color: #61dafb;
+  color: var(--footer-link);
   word-wrap: break-word;
 }
 

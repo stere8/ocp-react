@@ -3,7 +3,7 @@
 .App {
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  color: #333;
+  color: var(--text-primary);
   scroll-padding-top: 80px;
 }
 
@@ -13,8 +13,8 @@ header {
   top: 0;
   width: 100%;
   z-index: 999;
-  background: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: transparent;
+  box-shadow: none;
 }
 
 /* Logo Animation */
@@ -36,7 +36,7 @@ header {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: var(--hero-gradient);
   padding: 100px 0 60px 0;
   margin-top: 80px;
 }
@@ -48,7 +48,7 @@ header {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #0b3d91;
+  color: var(--brand);
 }
 
 .hero-section h1 {
@@ -102,7 +102,7 @@ header {
   position: relative;
   z-index: 1000;
   padding-top: 80px;
-  background: white;
+  background: var(--page-bg);
   min-height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
@@ -121,7 +121,7 @@ header {
   width: 12px;
   height: 12px;
   margin: 0 4px;
-  background: #3b82f6;
+  background: var(--brand);
   border-radius: 50%;
   animation: bounce 1.4s infinite ease-in-out;
   transform: translateY(0);
@@ -136,7 +136,7 @@ header {
 }
 
 .loading-text {
-  color: #64748b;
+  color: var(--text-muted);
   font-size: 0.9rem;
   animation: fade 1.5s ease-in-out infinite;
 }
@@ -148,14 +148,14 @@ header {
 
 /* Footer Styles */
 footer {
-  background: #282c34;
-  color: #fff;
+  background: var(--footer-bg);
+  color: var(--nav-text);
   padding: 20px 0;
   text-align: center;
 }
 
 footer a {
-  color: #61dafb;
+  color: var(--footer-link);
   text-decoration: none;
 }
 
@@ -198,4 +198,155 @@ footer a:hover {
   .skill-box {
     width: calc(100% - 20px);
   }
+}
+
+:root[data-theme='dark'] .hero-section,
+:root[data-theme='dark'] .home-page .home-hero,
+:root[data-theme='dark'] .projects-page .projects-hero,
+:root[data-theme='dark'] .expertise-page .expertise-hero,
+:root[data-theme='dark'] .contact-hero,
+:root[data-theme='dark'] .blog-list-hero {
+  background: var(--hero-gradient) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: var(--shadow-strong) !important;
+}
+
+:root[data-theme='dark'] .proof-bar-card,
+:root[data-theme='dark'] .problem-card,
+:root[data-theme='dark'] .story-card,
+:root[data-theme='dark'] .package-card,
+:root[data-theme='dark'] .featured-card,
+:root[data-theme='dark'] .metric-card,
+:root[data-theme='dark'] .communication-card,
+:root[data-theme='dark'] .contact-cta-card,
+:root[data-theme='dark'] .founder-card,
+:root[data-theme='dark'] .founder-fact-card,
+:root[data-theme='dark'] .resource-card,
+:root[data-theme='dark'] .project-card,
+:root[data-theme='dark'] .project-story-block,
+:root[data-theme='dark'] .project-why-card,
+:root[data-theme='dark'] .project-visual-node,
+:root[data-theme='dark'] .project-signal-card,
+:root[data-theme='dark'] .commercial-anchor-card,
+:root[data-theme='dark'] .projects-theme-card,
+:root[data-theme='dark'] .expertise-service-card,
+:root[data-theme='dark'] .fit-card,
+:root[data-theme='dark'] .process-card,
+:root[data-theme='dark'] .profile-extra-card,
+:root[data-theme='dark'] .profile-practice-note,
+:root[data-theme='dark'] .profile-section-card,
+:root[data-theme='dark'] .profile-list-card,
+:root[data-theme='dark'] .profile-closing,
+:root[data-theme='dark'] .contact-fit-card,
+:root[data-theme='dark'] .contact-methods-card,
+:root[data-theme='dark'] .contact-scheduler-card,
+:root[data-theme='dark'] .contact-form-card,
+:root[data-theme='dark'] .booking-modal .modal-content,
+:root[data-theme='dark'] .blog-list-card {
+  background: var(--surface) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: var(--shadow-soft) !important;
+}
+
+:root[data-theme='dark'] .problem-card,
+:root[data-theme='dark'] .metric-card,
+:root[data-theme='dark'] .package-card,
+:root[data-theme='dark'] .project-story-block,
+:root[data-theme='dark'] .project-visual-node {
+  background: var(--card-gradient) !important;
+}
+
+:root[data-theme='dark'] .story-card,
+:root[data-theme='dark'] .communication-card,
+:root[data-theme='dark'] .founder-card,
+:root[data-theme='dark'] .resource-card,
+:root[data-theme='dark'] .project-why-card,
+:root[data-theme='dark'] .project-signal-card,
+:root[data-theme='dark'] .metrics-grid .metric-card,
+:root[data-theme='dark'] .direction-card,
+:root[data-theme='dark'] .contact-scheduler-card,
+:root[data-theme='dark'] .profile-practice-note,
+:root[data-theme='dark'] .profile-closing {
+  background: var(--panel-gradient) !important;
+}
+
+:root[data-theme='dark'] .home-page h1,
+:root[data-theme='dark'] .projects-page h1,
+:root[data-theme='dark'] .projects-page h2,
+:root[data-theme='dark'] .expertise-page h1,
+:root[data-theme='dark'] .expertise-page h2,
+:root[data-theme='dark'] .expertise-page h3,
+:root[data-theme='dark'] .profile-page h1,
+:root[data-theme='dark'] .profile-page h2,
+:root[data-theme='dark'] .contact-hero h1,
+:root[data-theme='dark'] .contact-fit-card h2,
+:root[data-theme='dark'] .contact-methods-card h2,
+:root[data-theme='dark'] .contact-scheduler-card h2,
+:root[data-theme='dark'] .contact-form-card h2,
+:root[data-theme='dark'] .blogList h1,
+:root[data-theme='dark'] .card-title,
+:root[data-theme='dark'] .booking-modal .modal-title {
+  color: var(--text-primary) !important;
+}
+
+:root[data-theme='dark'] .home-page p,
+:root[data-theme='dark'] .projects-page p,
+:root[data-theme='dark'] .expertise-page p,
+:root[data-theme='dark'] .expertise-page li,
+:root[data-theme='dark'] .profile-page p,
+:root[data-theme='dark'] .profile-page li,
+:root[data-theme='dark'] .contact-layout p,
+:root[data-theme='dark'] .contact-layout li,
+:root[data-theme='dark'] .contact-layout label,
+:root[data-theme='dark'] .blogList .card-text,
+:root[data-theme='dark'] .booking-modal__intro p,
+:root[data-theme='dark'] .booking-modal__intro li,
+:root[data-theme='dark'] .booking-modal .modal-footer small {
+  color: var(--text-secondary) !important;
+}
+
+:root[data-theme='dark'] .section-kicker,
+:root[data-theme='dark'] .process-step,
+:root[data-theme='dark'] .resource-card__kicker,
+:root[data-theme='dark'] .project-visual-label,
+:root[data-theme='dark'] .package-card-header span,
+:root[data-theme='dark'] .proof-bar-card strong {
+  color: var(--brand) !important;
+}
+
+:root[data-theme='dark'] .hero-focus-chip,
+:root[data-theme='dark'] .project-signal,
+:root[data-theme='dark'] .project-tech-chip,
+:root[data-theme='dark'] .language-dropdown__option.is-active,
+:root[data-theme='dark'] .language-dropdown__option:hover,
+:root[data-theme='dark'] .package-card-header span {
+  background: var(--brand-soft) !important;
+  border-color: var(--border-color) !important;
+}
+
+:root[data-theme='dark'] .hero-focus-chip,
+:root[data-theme='dark'] .project-signal,
+:root[data-theme='dark'] .project-tech-chip,
+:root[data-theme='dark'] .package-card-header span {
+  color: var(--text-primary) !important;
+}
+
+:root[data-theme='dark'] input,
+:root[data-theme='dark'] textarea,
+:root[data-theme='dark'] select {
+  background: var(--input-bg) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+:root[data-theme='dark'] .resource-card__link,
+:root[data-theme='dark'] .project-card a,
+:root[data-theme='dark'] .btn {
+  background: var(--brand) !important;
+}
+
+:root[data-theme='dark'] .resource-card__link:hover,
+:root[data-theme='dark'] .project-card a:hover,
+:root[data-theme='dark'] .btn:hover {
+  background: var(--brand-strong) !important;
 }

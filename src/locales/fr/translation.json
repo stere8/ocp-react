@@ -21,6 +21,10 @@
         "Schedule": "Réserver un appel",
         "Contact": "Contact"
       },
+      "ThemeToggleLabel": "Changer le thème du site",
+      "ThemeLabel": "Thème",
+      "ThemeLight": "Clair",
+      "ThemeDark": "Sombre",
       "ScheduleButton": "Réserver un appel découverte",
       "DownloadDropDown": "Télécharger le CV",
       "CVOptions": {
