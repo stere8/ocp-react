@@ -36,13 +36,20 @@
 
 .logo {
   height: 42px;
+  flex-shrink: 0;
+}
+
+.site-navbar .navbar-brand {
+  margin-right: 0;
+  width: 100%;
 }
 
 .brand-lockup {
   position: relative;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.8rem;
+  width: 100%;
   padding: 0.35rem 0.6rem 0.35rem 0.35rem;
   border-radius: 0.9rem;
   overflow: hidden;
@@ -66,19 +73,24 @@
   position: relative;
   z-index: 1;
   display: flex;
+  flex: 1;
   flex-direction: column;
   line-height: 1.1;
-  white-space: nowrap;
-  max-width: min(42vw, 420px);
+  min-width: 0;
 }
 
 .brand-copy strong {
+  display: block;
   color: var(--nav-text);
   font-size: 0.95rem;
   letter-spacing: 0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .brand-copy small {
+  white-space: nowrap;
   color: var(--nav-muted);
   font-size: 0.72rem;
   overflow: hidden;
@@ -138,6 +150,18 @@
   display: flex;
   flex-direction: column;
   margin: 0.35rem 0 0;
+  width: 100%;
+}
+
+.site-navbar .navbar-collapse {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.site-navbar .site-nav-links.navbar-nav {
+  flex-direction: column;
 }
 
 .site-nav-actions {
