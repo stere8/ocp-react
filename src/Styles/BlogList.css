@@ -3,7 +3,7 @@
 }
 
 .blog-list-hero {
-  margin-top: 80px;
+  margin-top: var(--layout-top-offset, 0px);
   margin-bottom: 2rem;
   border-radius: 28px;
   background:
@@ -34,7 +34,7 @@
 
 @media (max-width: 768px) {
   .blog-list-hero {
-    margin-top: 60px;
+    margin-top: var(--layout-top-offset, 60px);
     border-radius: 22px;
   }
 }

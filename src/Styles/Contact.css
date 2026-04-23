@@ -3,7 +3,7 @@
 }
 
 .contact-hero {
-  margin-top: 80px;
+  margin-top: var(--layout-top-offset, 0px);
   border-radius: 28px;
   background:
     radial-gradient(circle at top right, rgba(11, 61, 145, 0.14), transparent 24%),
@@ -166,7 +166,7 @@
 
 @media (max-width: 768px) {
   .contact-hero {
-    margin-top: 60px;
+    margin-top: var(--layout-top-offset, 60px);
     border-radius: 22px;
   }
 

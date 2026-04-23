@@ -4,7 +4,7 @@
 
 .home-page .home-hero {
   padding: 6.5rem 2rem 3rem;
-  margin-top: 80px;
+  margin-top: var(--layout-top-offset, 0px);
   border-radius: 28px;
   background:
     radial-gradient(circle at top right, rgba(14, 165, 233, 0.12), transparent 26%),
@@ -430,7 +430,7 @@
 @media (max-width: 768px) {
   .home-page .home-hero {
     padding: 5.5rem 1.2rem 2rem;
-    margin-top: 60px;
+    margin-top: var(--layout-top-offset, 60px);
     border-radius: 22px;
   }
 
