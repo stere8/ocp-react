@@ -4,7 +4,8 @@
   text-align: center;
   font-family: 'Poppins', sans-serif;
   color: var(--text-primary);
-  scroll-padding-top: 80px;
+  --layout-top-offset: 0px;
+  scroll-padding-top: var(--layout-top-offset);
   padding-left: clamp(270px, 23vw, 350px);
   transition: padding-left 0.2s ease;
 }
@@ -39,7 +40,7 @@ header {
 .hero-section {
   background: var(--hero-gradient);
   padding: 100px 0 60px 0;
-  margin-top: 80px;
+  margin-top: var(--layout-top-offset);
 }
 
 .section-kicker {
@@ -102,9 +103,9 @@ header {
 .loading-container {
   position: relative;
   z-index: 1000;
-  padding-top: 80px;
+  padding-top: calc(var(--layout-top-offset) + 1rem);
   background: var(--page-bg);
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - var(--layout-top-offset));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,6 +167,7 @@ footer a:hover {
 
 @media (max-width: 992px) {
   .App {
+    --layout-top-offset: 60px;
     padding-left: 0;
   }
 }
@@ -173,13 +175,13 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   .loading-container {
-    padding-top: 60px;
-    min-height: calc(100vh - 60px);
+    padding-top: calc(var(--layout-top-offset) + 0.5rem);
+    min-height: calc(100vh - var(--layout-top-offset));
   }
 
   .hero-section {
     padding: 60px 0 40px 0;
-    margin-top: 60px;
+    margin-top: var(--layout-top-offset);
   }
 
   .hero-section h1 {

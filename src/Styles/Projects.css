@@ -3,7 +3,7 @@
 }
 
 .projects-page .projects-hero {
-  margin-top: 80px;
+  margin-top: var(--layout-top-offset, 0px);
   padding: 6rem 2rem 2.75rem;
   border-radius: 28px;
   background:
@@ -330,7 +330,7 @@
 
 @media (max-width: 768px) {
   .projects-page .projects-hero {
-    margin-top: 60px;
+    margin-top: var(--layout-top-offset, 60px);
     padding: 5.25rem 1.2rem 2rem;
     border-radius: 22px;
   }
