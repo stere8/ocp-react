@@ -5,13 +5,14 @@
   font-family: 'Poppins', sans-serif;
   color: var(--text-primary);
   scroll-padding-top: 80px;
+  padding-left: clamp(270px, 23vw, 350px);
+  transition: padding-left 0.2s ease;
 }
 
 /* Header/Navbar Styles */
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
+  position: static;
+  width: 0;
   z-index: 999;
   background: transparent;
   box-shadow: none;
@@ -161,6 +162,12 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .App {
+    padding-left: 0;
+  }
 }
 
 /* Responsive Design */

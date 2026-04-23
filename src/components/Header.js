@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar expand="xxl" fixed="top" className="site-navbar">
+      <Navbar expand="lg" className="site-navbar">
         <Container fluid className="site-navbar-container">
           <Navbar.Brand as={Link} to="/">
             <span className="brand-lockup">
@@ -33,7 +33,7 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="site-nav-links">
               <Nav.Link as={Link} to="/">{homeLabel}</Nav.Link>
               <Nav.Link as={Link} to="/about">{profileLabel}</Nav.Link>
               <Nav.Link as={Link} to="/projects">{navLinks.Projects}</Nav.Link>
@@ -43,16 +43,18 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link as={Link} to="/contact">{navLinks.Contact}</Nav.Link>
             </Nav>
-            <ThemeToggle />
-            <CVDropdown/>
-            <Dropdown/>
-            <Button
-              variant="primary"
-              onClick={openBookingModal}
-              className="schedule-btn"
-            >
-              {t('pages.header.ScheduleButton')}
-            </Button>
+            <div className="site-nav-actions">
+              <ThemeToggle />
+              <CVDropdown/>
+              <Dropdown/>
+              <Button
+                variant="primary"
+                onClick={openBookingModal}
+                className="schedule-btn"
+              >
+                {t('pages.header.ScheduleButton')}
+              </Button>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
