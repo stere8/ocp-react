@@ -4,7 +4,7 @@
 
 .projects-page .projects-hero {
   margin-top: var(--layout-top-offset, 0px);
-  padding: 6rem 2rem 2.75rem;
+  padding: 3.5rem 2rem 2.75rem;
   border-radius: 28px;
   background:
     radial-gradient(circle at top left, rgba(11, 61, 145, 0.16), transparent 25%),
