@@ -14,13 +14,29 @@ const ThemeToggle = () => {
       onClick={toggleTheme}
       aria-label={t('pages.header.ThemeToggleLabel')}
     >
+      <span className="theme-toggle__meta">
+        <span className="theme-toggle__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M20.25 14.25A8.25 8.25 0 0 1 9.75 3.75a8.25 8.25 0 1 0 10.5 10.5Z"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </span>
+        <span className="theme-toggle__copy">
+          <span className="theme-toggle__label">{t('pages.header.ThemeLabel')}</span>
+          <span className="theme-toggle__value">
+            {theme === 'dark'
+              ? t('pages.header.ThemeDark')
+              : t('pages.header.ThemeLight')}
+          </span>
+        </span>
+      </span>
       <span className="theme-toggle__track" aria-hidden="true">
         <span className="theme-toggle__thumb" />
-      </span>
-      <span className="theme-toggle__text">
-        {t('pages.header.ThemeLabel')}: {theme === 'dark'
-          ? t('pages.header.ThemeDark')
-          : t('pages.header.ThemeLight')}
       </span>
     </button>
   );

@@ -26,6 +26,7 @@
       "ThemeLight": "Jasny",
       "ThemeDark": "Ciemny",
       "ScheduleButton": "Umów rozmowę wstępną",
+      "LanguageLabel": "Język",
       "DownloadDropDown": "Pobierz CV",
       "CVOptions": {
         "CV_NET_EN": "CV .NET EN",

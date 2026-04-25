@@ -26,6 +26,7 @@
       "ThemeLight": "Light",
       "ThemeDark": "Dark",
       "ScheduleButton": "Book Discovery Call",
+      "LanguageLabel": "Language",
       "DownloadDropDown": "Download CV",
       "CVOptions": {
         "CV_NET_EN": "CV .NET EN",

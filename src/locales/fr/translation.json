@@ -26,6 +26,7 @@
       "ThemeLight": "Clair",
       "ThemeDark": "Sombre",
       "ScheduleButton": "Réserver un appel découverte",
+      "LanguageLabel": "Langue",
       "DownloadDropDown": "Télécharger le CV",
       "CVOptions": {
         "CV_NET_EN": "CV .NET EN",

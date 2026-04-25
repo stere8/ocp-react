@@ -1,19 +1,21 @@
 .theme-toggle {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 0.75rem;
-  margin-right: 0.75rem;
-  padding: 0.45rem 0.75rem;
-  border: 1px solid var(--nav-border);
-  border-radius: 999px;
-  background: var(--nav-chip-bg);
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  margin: 0;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 1rem;
+  background: rgba(12, 20, 34, 0.82);
   color: var(--nav-text);
   transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 .theme-toggle:hover {
-  transform: translateY(-1px);
-  background: var(--nav-chip-hover);
+  background: rgba(22, 35, 58, 0.92);
+  border-color: rgba(96, 165, 250, 0.22);
 }
 
 .theme-toggle:focus-visible {
@@ -21,20 +23,65 @@
   outline-offset: 2px;
 }
 
+.theme-toggle__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 0;
+}
+
+.theme-toggle__icon {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.04);
+  color: #dbeafe;
+}
+
+.theme-toggle__icon svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.theme-toggle__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.theme-toggle__label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--nav-muted);
+}
+
+.theme-toggle__value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--nav-text);
+}
+
 .theme-toggle__track {
   position: relative;
-  width: 46px;
-  height: 24px;
+  width: 52px;
+  height: 28px;
+  flex-shrink: 0;
   border-radius: 999px;
   background: rgba(148, 163, 184, 0.3);
 }
 
 .theme-toggle__thumb {
   position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 18px;
-  height: 18px;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
   border-radius: 999px;
   background: #ffffff;
   box-shadow: 0 6px 12px rgba(15, 23, 42, 0.2);
@@ -46,19 +93,6 @@
 }
 
 .theme-toggle.is-dark .theme-toggle__thumb {
-  transform: translateX(22px);
+  transform: translateX(24px);
   background: #0f172a;
-}
-
-.theme-toggle__text {
-  font-size: 0.92rem;
-  font-weight: 600;
-}
-
-@media (max-width: 991px) {
-  .theme-toggle {
-    width: 100%;
-    justify-content: space-between;
-    margin: 0.75rem 0 0;
-  }
 }

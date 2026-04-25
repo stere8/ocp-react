@@ -12,7 +12,7 @@ const LANGUAGE_OPTIONS = [
 const getLanguageCode = (language) => (language || 'en').split('-')[0].toLowerCase();
 
 const Dropdown = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef(null);
   const currentLanguageCode = getLanguageCode(i18n.resolvedLanguage || i18n.language);
@@ -61,14 +61,26 @@ const Dropdown = () => {
         onClick={() => setIsOpen((previous) => !previous)}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
-        aria-label="Choose language"
+        aria-label={t('pages.header.LanguageLabel')}
       >
-        <span>{currentLanguage.label}</span>
+        <span className="language-dropdown__meta">
+          <span className="language-dropdown__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 3.75a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5Z" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M3.75 12h16.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M12 3.75c2.07 2.26 3.14 5.24 3 8.25.14 3.01-.93 5.99-3 8.25-2.07-2.26-3.14-5.24-3-8.25-.14-3.01.93-5.99 3-8.25Z" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </span>
+          <span className="language-dropdown__copy">
+            <span className="language-dropdown__label">{t('pages.header.LanguageLabel')}</span>
+            <span className="language-dropdown__value">{currentLanguage.label}</span>
+          </span>
+        </span>
         <span className="language-dropdown__chevron" aria-hidden="true" />
       </button>
 
       {isOpen && (
-        <ul className="language-dropdown__menu" role="listbox" aria-label="Available languages">
+        <ul className="language-dropdown__menu" role="listbox" aria-label={t('pages.header.LanguageLabel')}>
           {LANGUAGE_OPTIONS.map((option) => (
             <li key={option.code}>
               <button
@@ -84,7 +96,9 @@ const Dropdown = () => {
                 <span>{option.label}</span>
                 {option.code === currentLanguageCode && (
                   <span className="language-dropdown__check" aria-hidden="true">
-                    ✓
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="m5.25 12.75 4.5 4.5 9-10.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
                   </span>
                 )}
               </button>
