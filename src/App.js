@@ -20,6 +20,7 @@ const BlogPost = lazy(() => import('./components/BlogPost'));
 const AboutMe = lazy(() => import('./components/Aboutme'));
 const Projects = lazy(() => import('./Pages/Projects'));
 const Expertise = lazy(() => import('./Pages/Expertise'));
+const NotFound = lazy(() => import('./Pages/NotFound'));
 
 const LoadingFallback = () => {
     const { t } = useTranslation();
@@ -73,6 +74,7 @@ function App() {
                                             <Route path="/blog/:id" element={<BlogPost />} />
                                             <Route path="/Expertise" element={<Expertise />} />
                                             <Route path="/expertise" element={<Expertise />} />
+                                            <Route path="*" element={<NotFound />} />
                                         </Routes>
                                     </Suspense>
                                 </ErrorBoundary>

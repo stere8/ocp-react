@@ -9,7 +9,15 @@
       "message": "Chargement de l'expertise..."
     },
     "error": {
-      "fallbackMessage": "Quelque chose s'est mal passé. Veuillez actualiser la page."
+      "fallbackMessage": "Quelque chose s'est mal pass?. Veuillez actualiser la page.",
+      "eyebrow": "Oracle Consults",
+      "runtimeTitle": "Une erreur s'est produite.",
+      "runtimeMessage": "La page a rencontr? une erreur inattendue. Rechargez la page ou revenez ? l'accueil pour r?essayer.",
+      "notFoundTitle": "Page introuvable.",
+      "notFoundMessage": "La page demand?e n'existe pas ou le lien est obsol?te. Revenez ? l'accueil ou ouvrez la page de contact.",
+      "homeCta": "Retour ? l'accueil",
+      "contactCta": "Ouvrir la page contact",
+      "reloadCta": "Recharger la page"
     },
     "header": {
       "BrandAlt": "Logo Oracle Consults",

@@ -5,11 +5,21 @@
     "ogTitle": "Oracle Consults | Consultoría de backend y sistemas"
   },
   "pages": {
-"loading": {
-    "message": "Cargando experiencia..."},
- "error": {
-    "fallbackMessage": "Algo salió mal. Por favor actualice la página."
-  },    "header": {
+    "loading": {
+      "message": "Cargando experiencia..."
+    },
+    "error": {
+      "fallbackMessage": "Algo sali? mal. Por favor actualice la p?gina.",
+      "eyebrow": "Oracle Consults",
+      "runtimeTitle": "Algo sali? mal.",
+      "runtimeMessage": "La p?gina encontr? un error inesperado. Rec?rguela o vuelva al inicio para intentarlo de nuevo.",
+      "notFoundTitle": "P?gina no encontrada.",
+      "notFoundMessage": "La p?gina solicitada no existe o el enlace est? desactualizado. Vuelva al inicio o abra la p?gina de contacto.",
+      "homeCta": "Ir al inicio",
+      "contactCta": "Abrir contacto",
+      "reloadCta": "Recargar p?gina"
+    },
+    "header": {
       "BrandAlt": "Logotipo de Oracle Consults",
       "NavLinks": {
         "Services": "Inicio",

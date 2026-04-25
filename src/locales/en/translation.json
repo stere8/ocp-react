@@ -9,7 +9,15 @@
       "message": "Loading expertise..."
     },
     "error": {
-      "fallbackMessage": "Something went wrong. Please refresh the page."
+      "fallbackMessage": "Something went wrong. Please refresh the page.",
+      "eyebrow": "Oracle Consults",
+      "runtimeTitle": "Something went wrong.",
+      "runtimeMessage": "The page hit an unexpected error. Reload the page or return to the homepage and try again.",
+      "notFoundTitle": "Page not found.",
+      "notFoundMessage": "The page you requested does not exist or the link is outdated. Return to the homepage or open the contact page.",
+      "homeCta": "Go to homepage",
+      "contactCta": "Open contact page",
+      "reloadCta": "Reload page"
     },
     "header": {
       "BrandAlt": "Oracle Consults logo",

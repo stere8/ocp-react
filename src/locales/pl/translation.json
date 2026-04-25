@@ -9,7 +9,15 @@
       "message": "Ładowanie ekspertyzy..."
     },
     "error": {
-      "fallbackMessage": "Coś poszło nie tak. Proszę odświeżyć stronę."
+      "fallbackMessage": "Co? posz?o nie tak. Prosz? od?wie?y? stron?.",
+      "eyebrow": "Oracle Consults",
+      "runtimeTitle": "Wyst?pi? b??d.",
+      "runtimeMessage": "Na stronie pojawi? si? nieoczekiwany b??d. Od?wie? stron? albo wr?? do strony g??wnej i spr?buj ponownie.",
+      "notFoundTitle": "Nie znaleziono strony.",
+      "notFoundMessage": "??dana strona nie istnieje albo link jest nieaktualny. Wr?? do strony g??wnej lub otw?rz stron? kontaktow?.",
+      "homeCta": "Przejd? do strony g??wnej",
+      "contactCta": "Otw?rz kontakt",
+      "reloadCta": "Od?wie? stron?"
     },
     "header": {
       "BrandAlt": "Logo Oracle Consults",
