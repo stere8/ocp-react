@@ -19,7 +19,8 @@ const profileContentEn = {
       footerNote: 'Prefer the scheduler in a separate tab? Use the direct booking link instead.',
       directLinkLabel: 'Open scheduler in a new tab',
       stickyEyebrow: 'Need clarity fast?',
-      stickyLabel: 'Book a discovery call'
+      stickyLabel: 'Book a discovery call',
+      dismissLabel: 'Dismiss booking prompt'
     },
     seoTitle: 'Backend systems consulting',
     seoDescription:
