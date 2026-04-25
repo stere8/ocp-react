@@ -2,7 +2,7 @@
   "$schema": "../translation.schema.json",
   "meta": {
     "description": "Konsulting backendowy prowadzony przez założyciela dla systemów operacyjnych, integracji, automatyzacji i oprogramowania .NET oraz Python.",
-    "ogTitle": "OT Systems Engineering | Konsulting backendowy i systemowy"
+    "ogTitle": "Oracle Consults | Konsulting backendowy i systemowy"
   },
   "pages": {
     "loading": {
@@ -12,7 +12,7 @@
       "fallbackMessage": "Coś poszło nie tak. Proszę odświeżyć stronę."
     },
     "header": {
-      "BrandAlt": "Logo OT Systems Engineering",
+      "BrandAlt": "Logo Oracle Consults",
       "NavLinks": {
         "Services": "Start",
         "Profile": "O mnie",
