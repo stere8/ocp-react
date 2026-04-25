@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { useProfileContent } from '../content/profileContent';
 import '../Styles/Aboutme.css';
 
@@ -8,11 +7,6 @@ const AboutMe = () => {
 
   return (
     <div className="container profile-page">
-      <Helmet>
-        <title>{about.metaTitle} | {site.brand}</title>
-        <meta name="description" content={about.metaDescription} />
-      </Helmet>
-
       <section className="hero-section">
         <p className="lead">{about.eyebrow}</p>
         <h1>{about.title}</h1>
