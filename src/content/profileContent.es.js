@@ -14,7 +14,7 @@ const profileContentEs = {
         'Puedes traer un workflow desordenado, un backend lento o una integración inestable.',
         'Si hay encaje, sales con un siguiente paso mucho más claro.'
       ],
-      iframeTitle: 'Calendario de reservas de OT Systems Engineering',
+      iframeTitle: 'Calendario de reservas de Oracle Consults',
       footerNote: 'Si prefieres abrir el calendario en otra pestaña, usa el enlace directo.',
       directLinkLabel: 'Abrir calendario en una nueva pestaña',
       stickyEyebrow: '¿Necesitas claridad rápida?',
@@ -259,7 +259,7 @@ const profileContentEs = {
     metaDescription:
       'Perfil liderado por el fundador de Oreste Twizeyimana: ingeniero backend con experiencia real en .NET, pensamiento sistémico influido por mecatrónica y comunicación fuerte.',
     eyebrow: 'Perfil del fundador',
-    title: 'El ingeniero detrás de OT Systems Engineering',
+    title: 'El ingeniero detrás de Oracle Consults',
     lead:
       'Esta práctica es liderada por el fundador porque el activo más fuerte detrás de ella no es una identidad de agencia amplia. Es una combinación concreta de delivery backend en producción, pensamiento sistémico y comunicación clara construida sobre trabajo real.',
     intro: [
@@ -616,7 +616,7 @@ const profileContentEs = {
     ...en.contact,
     metaTitle: 'Contacto',
     metaDescription:
-      'Contacta con OT Systems Engineering sobre consultoría backend, revisiones de sistemas, limpieza de integraciones y software con workflows complejos.',
+      'Contacta con Oracle Consults sobre consultoría backend, revisiones de sistemas, limpieza de integraciones y software con workflows complejos.',
     eyebrow: 'Inicia la conversación',
     title: 'Cuéntame qué se rompe, qué va lento o qué es difícil de confiar.',
     lead:

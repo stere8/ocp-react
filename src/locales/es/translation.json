@@ -2,7 +2,7 @@
   "$schema": "../translation.schema.json",
   "meta": {
     "description": "Consultoría liderada por el fundador para sistemas backend, integraciones, automatización y software operativo basado en .NET y Python.",
-    "ogTitle": "OT Systems Engineering | Consultoría de backend y sistemas"
+    "ogTitle": "Oracle Consults | Consultoría de backend y sistemas"
   },
   "pages": {
 "loading": {
@@ -10,7 +10,7 @@
  "error": {
     "fallbackMessage": "Algo salió mal. Por favor actualice la página."
   },    "header": {
-      "BrandAlt": "Logotipo de OT Systems Engineering",
+      "BrandAlt": "Logotipo de Oracle Consults",
       "NavLinks": {
         "Services": "Inicio",
         "Profile": "Acerca de",

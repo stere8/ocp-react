@@ -2,7 +2,7 @@
   "$schema": "../translation.schema.json",
   "meta": {
     "description": "Conseil backend mené par le fondateur pour les systèmes opérationnels, les intégrations, l'automatisation et les logiciels métier en .NET et Python.",
-    "ogTitle": "OT Systems Engineering | Conseil backend et systèmes"
+    "ogTitle": "Oracle Consults | Conseil backend et systèmes"
   },
   "pages": {
     "loading": {
@@ -12,7 +12,7 @@
       "fallbackMessage": "Quelque chose s'est mal passé. Veuillez actualiser la page."
     },
     "header": {
-      "BrandAlt": "Logo OT Systems Engineering",
+      "BrandAlt": "Logo Oracle Consults",
       "NavLinks": {
         "Services": "Accueil",
         "Profile": "À propos",

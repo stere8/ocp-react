@@ -1,6 +1,6 @@
 const profileContentEn = {
   site: {
-    brand: 'OT Systems Engineering',
+    brand: 'Oracle Consults',
     founder: 'Oreste Twizeyimana',
     tagline: 'Founder-led backend consulting for operational software',
     location: 'Bydgoszcz, Poland',
@@ -15,7 +15,7 @@ const profileContentEn = {
         'You can bring a messy workflow, a slow backend, or an integration issue.',
         'If there is a fit, you leave with a clearer next step.'
       ],
-      iframeTitle: 'OT Systems Engineering booking calendar',
+      iframeTitle: 'Oracle Consults booking calendar',
       footerNote: 'Prefer the scheduler in a separate tab? Use the direct booking link instead.',
       directLinkLabel: 'Open scheduler in a new tab',
       stickyEyebrow: 'Need clarity fast?',
@@ -30,7 +30,7 @@ const profileContentEn = {
     emailLabel: 'Email'
   },
   home: {
-    eyebrow: 'OT Systems Engineering',
+    eyebrow: 'Oracle Consults',
     title: 'I build backend systems that make operations reliable.',
     intro:
       'Founder-led consulting for inventory, order, reservation, reporting, integration, and internal workflow software that businesses actually depend on.',
@@ -252,7 +252,7 @@ const profileContentEn = {
     metaDescription:
       'Founder-led profile of Oreste Twizeyimana: backend engineer with production .NET experience, mechatronics-shaped systems thinking, and strong communication skills.',
     eyebrow: 'Founder Profile',
-    title: 'The engineer behind OT Systems Engineering',
+    title: 'The engineer behind Oracle Consults',
     lead:
       'This practice is founder-led because the strongest asset behind it is not a broad agency identity. It is a specific combination of production backend delivery, systems thinking, and clear communication built over real work.',
     intro: [
@@ -636,7 +636,7 @@ const profileContentEn = {
   contact: {
     metaTitle: 'Contact',
     metaDescription:
-      'Contact OT Systems Engineering about backend consulting, system reviews, integration cleanup, and workflow-heavy software projects.',
+      'Contact Oracle Consults about backend consulting, system reviews, integration cleanup, and workflow-heavy software projects.',
     eyebrow: 'Start the conversation',
     title: 'Tell me what is breaking, slow, or hard to trust.',
     lead:
