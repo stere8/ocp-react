@@ -5,11 +5,13 @@
     "ogTitle": "Oracle Consults | Consultoría de backend y sistemas"
   },
   "pages": {
-"loading": {
-    "message": "Cargando experiencia..."},
- "error": {
-    "fallbackMessage": "Algo salió mal. Por favor actualice la página."
-  },    "header": {
+    "loading": {
+      "message": "Cargando experiencia..."
+    },
+    "error": {
+      "fallbackMessage": "Algo salió mal. Por favor actualice la página."
+    },
+    "header": {
       "BrandAlt": "Logotipo de Oracle Consults",
       "NavLinks": {
         "Services": "Inicio",
@@ -31,7 +33,10 @@
         "CV_NET_PL": "CV .NET PL",
         "CV_PYTHON_EN": "CV Python EN",
         "CV_PYTHON_PL": "CV Python PL"
-      }
+      },
+      "MenuToggleLabel": "Abrir men? de navegaci?n",
+      "SidebarCloseLabel": "Cerrar men? de navegaci?n",
+      "BookingDialogCloseLabel": "Cerrar di?logo de reserva"
     },
     "home": {
       "HeroSection": {
