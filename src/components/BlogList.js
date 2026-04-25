@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { useProfileContent } from '../content/profileContent';
+import { fetchBlogPosts } from './blogService';
 import '../Styles/BlogList.css'; // Ensure you have this CSS
 
 const BlogList = () => {
@@ -13,8 +13,8 @@ const BlogList = () => {
   useEffect(() => {
     const getPosts = async () => {
       try {
-        const response = await axios.get('https://ocp-blog.onrender.com/api/blogposts');
-        setPosts(response.data);
+        const data = await fetchBlogPosts();
+        setPosts(data);
         setLoading(false);
       } catch (error) {
         console.error('Error fetching blog posts:', error);

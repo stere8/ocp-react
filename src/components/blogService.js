@@ -1,11 +1,24 @@
-// src/services/blogService.js
-const API_URL = 'https://ocp-blog.onrender.com/api/blogposts/'; // Replace with your actual API URL
+import runtimeConfig from '../config/runtimeConfig';
+
+const API_URL = runtimeConfig.blogApiUrl;
+
+const fetchJson = async (url, errorMessage) => {
+  if (!API_URL) {
+    throw new Error('REACT_APP_BLOG_API_URL is not configured');
+  }
+
+  const response = await fetch(url);
+
+  if (!response.ok) {
+    throw new Error(errorMessage);
+  }
+
+  return response.json();
+};
 
 export const fetchBlogPosts = async () => {
   try {
-    const response = await fetch(API_URL);
-    const data = await response.json();
-    return data;
+    return await fetchJson(API_URL, 'Error fetching blog posts');
   } catch (error) {
     console.error('Error fetching blog posts:', error);
     throw error;
@@ -14,9 +27,7 @@ export const fetchBlogPosts = async () => {
 
 export const fetchBlogPostById = async (id) => {
   try {
-    const response = await fetch(`${API_URL}/${id}`);
-    const data = await response.json();
-    return data;
+    return await fetchJson(`${API_URL}/${encodeURIComponent(id)}`, 'Error fetching blog post');
   } catch (error) {
     console.error('Error fetching blog post:', error);
     throw error;

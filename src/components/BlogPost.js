@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import { fetchBlogPostById } from './blogService';
 import '../Styles/BlogPost.css'; // Ensure you have this CSS
 
 const BlogPost = () => {
@@ -12,8 +12,8 @@ const BlogPost = () => {
   useEffect(() => {
     const getPost = async () => {
       try {
-        const response = await axios.get(`https://ocp-blog.onrender.com/api/blogposts/${id}`);
-        setPost(response.data);
+        const data = await fetchBlogPostById(id);
+        setPost(data);
         setLoading(false);
       } catch (error) {
         console.error('Error fetching blog post:', error);
