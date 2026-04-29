@@ -1,19 +1,29 @@
 import React from 'react';
 import '../Styles/Expertise.css';
 import { useProfileContent } from '../content/profileContent';
+import PageSectionNav from '../components/PageSectionNav';
 
 const Expertise = () => {
   const { expertise } = useProfileContent();
+  const sectionNavItems = [
+    { id: 'expertise-services', label: expertise.eyebrow },
+    { id: 'expertise-packages', label: expertise.sectionLabels.packages },
+    { id: 'expertise-metrics', label: expertise.sectionLabels.metrics },
+    { id: 'expertise-fit', label: expertise.sectionLabels.bestFit },
+    { id: 'expertise-approach', label: expertise.sectionLabels.approach }
+  ];
 
   return (
     <div className="container expertise-page">
-      <section className="hero-section expertise-hero">
+      <section id="expertise-top" className="hero-section expertise-hero page-section-anchor">
         <span className="section-kicker">{expertise.eyebrow}</span>
         <h1>{expertise.title}</h1>
         <p>{expertise.intro}</p>
       </section>
 
-      <section className="services-showcase-section">
+      <PageSectionNav items={sectionNavItems} topId="expertise-top" />
+
+      <section id="expertise-services" className="services-showcase-section page-section-anchor">
         <div className="expertise-services-grid">
           {expertise.serviceGroups.map((group) => (
             <article key={group.title} className="expertise-service-card">
@@ -31,7 +41,7 @@ const Expertise = () => {
         </div>
       </section>
 
-      <section className="package-showcase-section">
+      <section id="expertise-packages" className="package-showcase-section page-section-anchor">
         <div className="section-heading">
           <span className="section-kicker">{expertise.sectionLabels.packages}</span>
           <h2>{expertise.packageTitle}</h2>
@@ -52,7 +62,7 @@ const Expertise = () => {
         </div>
       </section>
 
-      <section className="metrics-section">
+      <section id="expertise-metrics" className="metrics-section page-section-anchor">
         <div className="section-heading">
           <span className="section-kicker">{expertise.sectionLabels.metrics}</span>
           <h2>{expertise.metricsTitle}</h2>
@@ -67,8 +77,8 @@ const Expertise = () => {
         </div>
       </section>
 
-      <section className="fit-and-process-section">
-        <div className="fit-card">
+      <section className="fit-and-process-section page-section-anchor">
+        <div id="expertise-fit" className="fit-card page-section-anchor">
           <span className="section-kicker">{expertise.sectionLabels.bestFit}</span>
           <h2>{expertise.whoIHelpTitle}</h2>
           <ul>
@@ -78,7 +88,7 @@ const Expertise = () => {
           </ul>
         </div>
 
-        <div className="process-card-wrapper">
+        <div id="expertise-approach" className="process-card-wrapper page-section-anchor">
           <span className="section-kicker">{expertise.sectionLabels.approach}</span>
           <h2>{expertise.processTitle}</h2>
           <div className="process-grid">
@@ -93,7 +103,7 @@ const Expertise = () => {
         </div>
       </section>
 
-      <section className="profile-extra-section">
+      <section className="profile-extra-section page-section-anchor">
         <div className="profile-extra-card">
           <h2>{expertise.differentiatorsTitle}</h2>
           <ul>

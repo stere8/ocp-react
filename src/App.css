@@ -11,6 +11,10 @@
   scroll-padding-top: var(--layout-top-offset);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .app-layout {
   display: grid;
   grid-template-columns: minmax(250px, var(--sidebar-width)) minmax(0, 1fr);
@@ -95,6 +99,10 @@ header {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--brand);
+}
+
+.page-section-anchor {
+  scroll-margin-top: calc(var(--layout-top-offset) + 6.25rem);
 }
 
 .hero-section h1 {

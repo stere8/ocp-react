@@ -3,14 +3,23 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useProfileContent } from '../content/profileContent';
 import { useBookingModal } from '../context/BookingModalContext';
+import PageSectionNav from '../components/PageSectionNav';
 
 const Home = () => {
   const { site, home, about } = useProfileContent();
   const { openBookingModal } = useBookingModal();
+  const sectionNavItems = [
+    { id: 'home-problems', label: home.sectionLabels.problemsSolved },
+    { id: 'home-packages', label: home.sectionLabels.packages },
+    { id: 'home-proof', label: home.sectionLabels.proof },
+    { id: 'home-metrics', label: home.sectionLabels.metrics },
+    { id: 'home-resources', label: home.sectionLabels.resources },
+    { id: 'home-contact', label: home.sectionLabels.contact }
+  ];
 
   return (
     <div className="container home-page">
-      <section className="hero-section home-hero">
+      <section id="home-top" className="hero-section home-hero page-section-anchor">
         <div className="home-hero-grid">
           <div className="home-hero-copy">
             <span className="section-kicker">{home.eyebrow}</span>
@@ -50,7 +59,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="proof-bar-section">
+      <PageSectionNav items={sectionNavItems} topId="home-top" />
+
+      <section className="proof-bar-section page-section-anchor">
         <div className="proof-bar-grid">
           {home.proofBar.map((item) => (
             <article key={item.label} className="proof-bar-card">
@@ -61,7 +72,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="problem-section">
+      <section id="home-problems" className="problem-section page-section-anchor">
         <div className="section-heading">
           <span className="section-kicker">{home.sectionLabels.problemsSolved}</span>
           <h2>{home.problemTitle}</h2>
@@ -77,7 +88,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="story-section">
+      <section className="story-section page-section-anchor">
         <div className="section-heading">
           <span className="section-kicker">{home.sectionLabels.story}</span>
           <h2>{home.storyTitle}</h2>
@@ -92,7 +103,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="package-section">
+      <section id="home-packages" className="package-section page-section-anchor">
         <div className="section-heading">
           <span className="section-kicker">{home.sectionLabels.packages}</span>
           <h2>{home.packageTitle}</h2>
@@ -121,7 +132,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="featured-section">
+      <section id="home-proof" className="featured-section page-section-anchor">
         <div className="section-heading">
           <span className="section-kicker">{home.sectionLabels.proof}</span>
           <h2>{home.featuredTitle}</h2>
@@ -140,7 +151,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="metrics-section">
+      <section id="home-metrics" className="metrics-section page-section-anchor">
         <div className="section-heading">
           <span className="section-kicker">{home.sectionLabels.metrics}</span>
           <h2>{home.metricsTitle}</h2>
@@ -155,7 +166,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="communication-section">
+      <section className="communication-section page-section-anchor">
         <div className="communication-card">
           <span className="section-kicker">{home.sectionLabels.communication}</span>
           <h2>{home.communicationTitle}</h2>
@@ -163,7 +174,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="founder-section">
+      <section className="founder-section page-section-anchor">
         <div className="founder-card">
           <div className="founder-avatar" aria-hidden="true">
             OT
@@ -187,7 +198,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="resources-section">
+      <section id="home-resources" className="resources-section page-section-anchor">
         <div className="section-heading">
           <span className="section-kicker">{home.sectionLabels.resources}</span>
           <h2>{home.resourcesTitle}</h2>
@@ -219,7 +230,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="contact-cta-section">
+      <section id="home-contact" className="contact-cta-section page-section-anchor">
         <div className="contact-cta-card">
           <div>
             <span className="section-kicker">{home.sectionLabels.contact}</span>
