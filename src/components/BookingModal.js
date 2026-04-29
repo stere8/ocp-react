@@ -25,22 +25,24 @@ const BookingModal = () => {
         <Modal.Title id="booking-modal-title">{booking.title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div className="booking-modal__intro">
-          <p id="booking-modal-description">{booking.intro}</p>
-          <ul>
-            {booking.highlights.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
+        <div className="booking-modal__layout">
+          <div className="booking-modal__frame-shell">
+            <iframe
+              className="booking-modal__frame"
+              src={site.calLink}
+              title={booking.iframeTitle}
+              loading="lazy"
+            />
+          </div>
 
-        <div className="booking-modal__frame-shell">
-          <iframe
-            className="booking-modal__frame"
-            src={site.calLink}
-            title={booking.iframeTitle}
-            loading="lazy"
-          />
+          <div className="booking-modal__intro">
+            <p id="booking-modal-description">{booking.intro}</p>
+            <ul>
+              {booking.highlights.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </Modal.Body>
       <Modal.Footer>
