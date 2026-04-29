@@ -477,10 +477,202 @@ footer a:hover {
 :root[data-theme='dark'] .project-card a,
 :root[data-theme='dark'] .btn {
   background: var(--brand) !important;
+  color: var(--on-brand) !important;
 }
 
 :root[data-theme='dark'] .resource-card__link:hover,
 :root[data-theme='dark'] .project-card a:hover,
 :root[data-theme='dark'] .btn:hover {
+  background: var(--brand-strong) !important;
+  color: var(--on-brand) !important;
+}
+
+:root[data-theme='dark'] .App,
+:root[data-theme='dark'] .app-layout,
+:root[data-theme='dark'] .app-shell,
+:root[data-theme='dark'] .app-main {
+  background: var(--page-bg);
+  color: var(--text-primary);
+}
+
+:root[data-theme='dark'] .home-page,
+:root[data-theme='dark'] .projects-page,
+:root[data-theme='dark'] .expertise-page,
+:root[data-theme='dark'] .profile-page,
+:root[data-theme='dark'] .blogList,
+:root[data-theme='dark'] .blogPost,
+:root[data-theme='dark'] .hero-section-bis {
+  background: var(--page-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+:root[data-theme='dark'] .app-main h1,
+:root[data-theme='dark'] .app-main h2,
+:root[data-theme='dark'] .app-main h3,
+:root[data-theme='dark'] .app-main h4,
+:root[data-theme='dark'] .app-main h5,
+:root[data-theme='dark'] .app-main h6,
+:root[data-theme='dark'] .app-main .card-title,
+:root[data-theme='dark'] .contact-methods-card strong,
+:root[data-theme='dark'] .project-signal-card strong {
+  color: var(--text-primary) !important;
+}
+
+:root[data-theme='dark'] .app-main p,
+:root[data-theme='dark'] .app-main li,
+:root[data-theme='dark'] .app-main blockquote,
+:root[data-theme='dark'] .app-main label,
+:root[data-theme='dark'] .app-main small,
+:root[data-theme='dark'] .app-main .card-text,
+:root[data-theme='dark'] .app-main .text-muted,
+:root[data-theme='dark'] .project-signal-card__eyebrow {
+  color: var(--text-secondary) !important;
+}
+
+:root[data-theme='dark'] .proof-bar-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .problem-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .story-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .package-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .featured-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .metric-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .resource-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .communication-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .contact-cta-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .founder-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .founder-fact-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .project-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .project-story-block :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .project-why-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .project-visual-node :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .project-signal-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .commercial-anchor-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .projects-theme-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .expertise-service-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .fit-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .process-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .profile-extra-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .profile-practice-note :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .profile-section-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .profile-list-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .profile-closing :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .contact-fit-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .contact-methods-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .contact-scheduler-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .contact-form-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .blog-list-card :where(h1, h2, h3, h4, h5, h6, strong),
+:root[data-theme='dark'] .skill-box :where(h1, h2, h3, h4, h5, h6, strong) {
+  color: var(--text-primary) !important;
+}
+
+:root[data-theme='dark'] .proof-bar-card :where(p, li, span),
+:root[data-theme='dark'] .problem-card :where(p, li, span),
+:root[data-theme='dark'] .story-card :where(p, li, span),
+:root[data-theme='dark'] .package-card :where(p, li, span),
+:root[data-theme='dark'] .featured-card :where(p, li, span),
+:root[data-theme='dark'] .metric-card :where(p, li, span),
+:root[data-theme='dark'] .resource-card :where(p, li, span),
+:root[data-theme='dark'] .communication-card :where(p, li, span),
+:root[data-theme='dark'] .contact-cta-card :where(p, li, span),
+:root[data-theme='dark'] .founder-card :where(p, li, span),
+:root[data-theme='dark'] .founder-fact-card :where(p, li, span),
+:root[data-theme='dark'] .project-card :where(p, li, span),
+:root[data-theme='dark'] .project-story-block :where(p, li, span),
+:root[data-theme='dark'] .project-why-card :where(p, li, span),
+:root[data-theme='dark'] .project-visual-node :where(p, li, span),
+:root[data-theme='dark'] .project-signal-card :where(p, li, span),
+:root[data-theme='dark'] .commercial-anchor-card :where(p, li, span),
+:root[data-theme='dark'] .projects-theme-card :where(p, li, span),
+:root[data-theme='dark'] .expertise-service-card :where(p, li, span),
+:root[data-theme='dark'] .fit-card :where(p, li, span),
+:root[data-theme='dark'] .process-card :where(p, li, span),
+:root[data-theme='dark'] .profile-extra-card :where(p, li, span),
+:root[data-theme='dark'] .profile-practice-note :where(p, li, span),
+:root[data-theme='dark'] .profile-section-card :where(p, li, span),
+:root[data-theme='dark'] .profile-list-card :where(p, li, span),
+:root[data-theme='dark'] .profile-closing :where(p, li, span),
+:root[data-theme='dark'] .contact-fit-card :where(p, li, span),
+:root[data-theme='dark'] .contact-methods-card :where(p, li, span),
+:root[data-theme='dark'] .contact-scheduler-card :where(p, li, span),
+:root[data-theme='dark'] .contact-form-card :where(p, li, span),
+:root[data-theme='dark'] .blog-list-card :where(p, li, span),
+:root[data-theme='dark'] .skill-box :where(p, li, span) {
+  color: var(--text-secondary) !important;
+}
+
+:root[data-theme='dark'] .card,
+:root[data-theme='dark'] .card-body,
+:root[data-theme='dark'] .skill-box,
+:root[data-theme='dark'] .hero-section-bis blockquote,
+:root[data-theme='dark'] .dropdown-menu {
+  background: var(--surface) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+:root[data-theme='dark'] .section-heading,
+:root[data-theme='dark'] .section-heading h2,
+:root[data-theme='dark'] .section-heading p {
+  background: transparent !important;
+}
+
+:root[data-theme='dark'] .section-kicker,
+:root[data-theme='dark'] .custom-bullet,
+:root[data-theme='dark'] .technology,
+:root[data-theme='dark'] .app-main .project-subtitle,
+:root[data-theme='dark'] .resource-card__kicker,
+:root[data-theme='dark'] .process-step,
+:root[data-theme='dark'] .proof-bar-card strong {
+  color: var(--brand) !important;
+}
+
+:root[data-theme='dark'] .project-visual-label,
+:root[data-theme='dark'] .hero-focus-chip,
+:root[data-theme='dark'] .project-signal,
+:root[data-theme='dark'] .project-tech-chip,
+:root[data-theme='dark'] .package-card-header span {
+  background: var(--brand-soft) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+:root[data-theme='dark'] .project-visual-arrow {
+  border-color: rgba(159, 203, 255, 0.42) !important;
+}
+
+:root[data-theme='dark'] .contact-form-card input::placeholder,
+:root[data-theme='dark'] .contact-form-card textarea::placeholder {
+  color: var(--text-muted) !important;
+}
+
+:root[data-theme='dark'] .app-main .contact-form-status {
+  background: var(--surface-muted) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-secondary) !important;
+}
+
+:root[data-theme='dark'] .app-main .contact-form-status--success {
+  background: rgba(20, 83, 45, 0.32) !important;
+  border-color: rgba(74, 222, 128, 0.32) !important;
+  color: #bbf7d0 !important;
+}
+
+:root[data-theme='dark'] .app-main .contact-form-status--error {
+  background: rgba(127, 29, 29, 0.34) !important;
+  border-color: rgba(248, 113, 113, 0.34) !important;
+  color: #fecaca !important;
+}
+
+:root[data-theme='dark'] .app-main .contact-form-status--loading {
+  background: rgba(30, 64, 175, 0.3) !important;
+  border-color: rgba(96, 165, 250, 0.34) !important;
+  color: #bfdbfe !important;
+}
+
+:root[data-theme='dark'] .contact-form-card button {
+  background: var(--brand) !important;
+  color: var(--on-brand) !important;
+}
+
+:root[data-theme='dark'] .contact-form-card button:hover {
   background: var(--brand-strong) !important;
 }

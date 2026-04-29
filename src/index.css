@@ -12,6 +12,7 @@
   --brand: #0b3d91;
   --brand-strong: #082c66;
   --brand-soft: #eff6ff;
+  --on-brand: #ffffff;
   --nav-bg: rgba(15, 23, 42, 0.96);
   --nav-border: rgba(148, 163, 184, 0.24);
   --nav-text: #ffffff;
@@ -48,6 +49,7 @@
   --brand: #7cb7ff;
   --brand-strong: #9fcbff;
   --brand-soft: rgba(124, 183, 255, 0.18);
+  --on-brand: #03152f;
   --nav-bg: rgba(2, 6, 23, 0.96);
   --nav-border: rgba(119, 138, 163, 0.48);
   --nav-text: #f8fafc;
@@ -114,7 +116,7 @@ a {
 /* Button Styles */
 .btn {
   background-color: var(--brand);
-  color: #fff;
+  color: var(--on-brand);
   border: none;
   min-height: 46px;
   padding: 0.8rem 1.35rem;
@@ -130,6 +132,7 @@ a {
 
 .btn:hover {
   background-color: var(--brand-strong);
+  color: var(--on-brand);
   transform: translateY(-1px);
   box-shadow: 0 16px 30px rgba(11, 61, 145, 0.24);
 }
