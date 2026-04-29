@@ -1,16 +1,16 @@
 .expertise-page {
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 }
 
 .expertise-page .expertise-hero {
   margin-top: var(--layout-top-offset, 0px);
-  padding: 3.5rem 2rem 2.75rem;
+  padding: 3.85rem 2.25rem 3rem;
   border-radius: 28px;
   background:
     radial-gradient(circle at bottom right, rgba(11, 61, 145, 0.14), transparent 24%),
     linear-gradient(135deg, #f7fbff 0%, #ffffff 52%, #e7efff 100%);
   border: 1px solid #d7e3f4;
-  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 24px 56px rgba(15, 23, 42, 0.09);
 }
 
 .expertise-page .expertise-hero h1 {
@@ -30,11 +30,11 @@
 .metrics-section,
 .fit-and-process-section,
 .profile-extra-section {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .section-heading {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   text-align: left;
 }
 
@@ -55,7 +55,7 @@
 .metrics-grid,
 .profile-extra-section {
   display: grid;
-  gap: 1rem;
+  gap: 1.15rem;
 }
 
 .expertise-services-grid,
@@ -82,7 +82,7 @@
 .metric-card,
 .fit-card,
 .profile-extra-card {
-  padding: 1.5rem;
+  padding: 1.65rem;
   text-align: left;
 }
 
@@ -154,7 +154,7 @@
 .fit-and-process-section {
   display: grid;
   grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.4fr);
-  gap: 1rem;
+  gap: 1.2rem;
   align-items: start;
 }
 
@@ -165,13 +165,13 @@
 .process-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 1.15rem;
+  margin-top: 1.15rem;
 }
 
 .process-card {
   position: relative;
-  padding: 3.2rem 1.3rem 1.3rem;
+  padding: 3.35rem 1.45rem 1.45rem;
   text-align: left;
 }
 
