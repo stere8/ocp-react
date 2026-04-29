@@ -1,17 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import '../Styles/Languages.css'
-import { Helmet } from 'react-helmet';
 
 const Languages = () => {
   const { t } = useTranslation();
 
   return (
     <div className="container hero-section-bis">
-      <Helmet>
-        <title>Languages | Oreste Twizeyimana</title>
-        <meta name="description" content="Explore the language proficiency and tutoring services offered by Oreste TWIZEYIMANA, including English, French, Kinyarwanda, and Polish." />
-      </Helmet>
       <h1>{t('LanguagesTitle')}</h1>
       <p>{t('LanguagesDescription')}</p>
       <h2>{t('LanguageProficiencyHeading')}</h2>

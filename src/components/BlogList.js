@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
-import { useProfileContent } from '../content/profileContent';
 import { fetchBlogPosts } from './blogService';
 import '../Styles/BlogList.css'; // Ensure you have this CSS
 
 const BlogList = () => {
-  const { site } = useProfileContent();
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -31,13 +28,6 @@ const BlogList = () => {
 
   return (
     <div className="blogList container">
-      <Helmet>
-        <title>Insights | {site.brand}</title>
-        <meta
-          name="description"
-          content="Notes on backend systems, performance, integrations, diagnostics, and operational software engineering."
-        />
-      </Helmet>
       <section className="hero-section blog-list-hero">
         <span className="section-kicker">Insights</span>
         <h1>Engineering notes from operational backend work</h1>

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import emailjs from 'emailjs-com';
 import '../Styles/Contact.css';
-import { Helmet } from 'react-helmet';
 import { Button } from 'react-bootstrap';
 import { useProfileContent } from '../content/profileContent';
 import { useBookingModal } from '../context/BookingModalContext';
@@ -10,7 +9,7 @@ import runtimeConfig, { hasEmailJsConfig } from '../config/runtimeConfig';
 
 const Contact = () => {
   const { t } = useTranslation();
-  const { site, contact } = useProfileContent();
+  const { contact } = useProfileContent();
   const { openBookingModal } = useBookingModal();
   const [formData, setFormData] = useState({
     from_name: '',
@@ -73,11 +72,6 @@ const Contact = () => {
 
   return (
     <div className="container hero-section-bis">
-      <Helmet>
-        <title>{contact.metaTitle} | {site.brand}</title>
-        <meta name="description" content={contact.metaDescription} />
-      </Helmet>
-
       <section className="hero-section contact-hero">
         <span className="section-kicker">{contact.eyebrow}</span>
         <h1>{contact.title}</h1>
