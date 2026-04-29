@@ -13,6 +13,7 @@ const ThemeToggle = () => {
       className={`theme-toggle${isDarkTheme ? ' is-dark' : ''}`}
       onClick={toggleTheme}
       aria-label={t('pages.header.ThemeToggleLabel')}
+      aria-pressed={isDarkTheme}
     >
       <span className="theme-toggle__meta">
         <span className="theme-toggle__icon" aria-hidden="true">

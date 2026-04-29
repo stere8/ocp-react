@@ -18,6 +18,7 @@
       "homeCta": "Ir al inicio",
       "contactCta": "Abrir contacto",
       "reloadCta": "Recargar p?gina"
+      "fallbackMessage": "Algo salió mal. Por favor actualice la página."
     },
     "header": {
       "BrandAlt": "Logotipo de Oracle Consults",
@@ -41,7 +42,10 @@
         "CV_NET_PL": "CV .NET PL",
         "CV_PYTHON_EN": "CV Python EN",
         "CV_PYTHON_PL": "CV Python PL"
-      }
+      },
+      "MenuToggleLabel": "Abrir men? de navegaci?n",
+      "SidebarCloseLabel": "Cerrar men? de navegaci?n",
+      "BookingDialogCloseLabel": "Cerrar di?logo de reserva"
     },
     "home": {
       "HeroSection": {

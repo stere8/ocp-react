@@ -41,7 +41,10 @@
         "CV_NET_PL": "CV .NET PL",
         "CV_PYTHON_EN": "CV Python EN",
         "CV_PYTHON_PL": "CV Python PL"
-      }
+      },
+      "MenuToggleLabel": "Open navigation menu",
+      "SidebarCloseLabel": "Close navigation menu",
+      "BookingDialogCloseLabel": "Close booking dialog"
     },
     "home": {
       "HeroSection": {

@@ -99,8 +99,7 @@
 .contact-methods-card a,
 .contact-methods-card p,
 .contact-scheduler-card p,
-.contact-form-card p,
-.contact-form-card label {
+.contact-form-card p {
   color: #475569;
 }
 
@@ -151,13 +150,17 @@
   max-width: none;
 }
 
-.contact-form-card div {
+.contact-form-field {
   margin-bottom: 15px;
 }
 
-.contact-form-card label {
+.contact-form-label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.45rem;
+  color: #0f172a;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 .contact-form-card input,
@@ -166,6 +169,21 @@
   padding: 10px;
   border: 1px solid #d7e3f4;
   border-radius: 8px;
+  color: #0f172a;
+  background: #ffffff;
+}
+
+.contact-form-card input::placeholder,
+.contact-form-card textarea::placeholder {
+  color: #64748b;
+  opacity: 1;
+}
+
+.contact-form-card input:focus,
+.contact-form-card textarea:focus {
+  border-color: rgba(11, 61, 145, 0.42);
+  box-shadow: 0 0 0 3px rgba(11, 61, 145, 0.12);
+  outline: none;
 }
 
 .contact-form-card textarea {

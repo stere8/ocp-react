@@ -131,7 +131,10 @@ const Header = () => {
             </span>
           </Navbar.Brand>
           <span className="site-sidebar-divider site-sidebar-divider--brand" aria-hidden="true" />
-          <Navbar.Toggle aria-controls="site-navbar-sidebar" />
+          <Navbar.Toggle
+            aria-controls="site-navbar-sidebar"
+            aria-label={t('pages.header.MenuToggleLabel')}
+          />
           <Navbar.Offcanvas
             id="site-navbar-sidebar"
             aria-labelledby="site-navbar-sidebar-label"
@@ -139,7 +142,11 @@ const Header = () => {
             className="site-navbar-sidebar"
             onHide={closeMenu}
           >
-            <Offcanvas.Header closeButton className="site-navbar-sidebar__header">
+            <Offcanvas.Header
+              closeButton
+              closeLabel={t('pages.header.SidebarCloseLabel')}
+              className="site-navbar-sidebar__header"
+            >
               <Offcanvas.Title id="site-navbar-sidebar-label">
                 <span className="brand-lockup brand-lockup--sidebar">
                   <img src={logo} alt={t('pages.header.BrandAlt')} className="logo" />

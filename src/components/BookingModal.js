@@ -1,10 +1,12 @@
 import React from 'react';
 import { Button, Modal } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import { useProfileContent } from '../content/profileContent';
 import { useBookingModal } from '../context/BookingModalContext';
 import '../Styles/BookingModal.css';
 
 const BookingModal = () => {
+  const { t } = useTranslation();
   const { site } = useProfileContent();
   const { closeBookingModal, isBookingModalOpen } = useBookingModal();
   const booking = site.booking;
@@ -16,13 +18,15 @@ const BookingModal = () => {
       centered
       size="xl"
       className="booking-modal"
+      aria-labelledby="booking-modal-title"
+      aria-describedby="booking-modal-description"
     >
-      <Modal.Header closeButton>
-        <Modal.Title>{booking.title}</Modal.Title>
+      <Modal.Header closeButton closeLabel={t('pages.header.BookingDialogCloseLabel')}>
+        <Modal.Title id="booking-modal-title">{booking.title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <div className="booking-modal__intro">
-          <p>{booking.intro}</p>
+          <p id="booking-modal-description">{booking.intro}</p>
           <ul>
             {booking.highlights.map((item) => (
               <li key={item}>{item}</li>

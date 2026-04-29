@@ -139,17 +139,45 @@ const Contact = () => {
             </p>
           ) : null}
 
-          <div>
-            <label htmlFor="name">{t('pages.ContactUs.ContactForm.YourNameLabel')}</label>
-            <input id="name" name="from_name" type="text" value={formData.from_name} onChange={handleChange} />
+          <div className="contact-form-field">
+            <label className="contact-form-label" htmlFor="name">{t('pages.ContactUs.ContactForm.YourNameLabel')}</label>
+            <input
+              id="name"
+              name="from_name"
+              type="text"
+              value={formData.from_name}
+              onChange={handleChange}
+              placeholder={t('pages.ContactUs.ContactForm.YourNameLabel')}
+              aria-label={t('pages.ContactUs.ContactForm.YourNameLabel')}
+              autoComplete="name"
+              required
+            />
           </div>
-          <div>
-            <label htmlFor="email">{t('pages.ContactUs.ContactForm.EmailLabel')}</label>
-            <input id="email" name="from_email" type="email" value={formData.from_email} onChange={handleChange} />
+          <div className="contact-form-field">
+            <label className="contact-form-label" htmlFor="email">{t('pages.ContactUs.ContactForm.EmailLabel')}</label>
+            <input
+              id="email"
+              name="from_email"
+              type="email"
+              value={formData.from_email}
+              onChange={handleChange}
+              placeholder={t('pages.ContactUs.ContactForm.EmailLabel')}
+              aria-label={t('pages.ContactUs.ContactForm.EmailLabel')}
+              autoComplete="email"
+              required
+            />
           </div>
-          <div>
-            <label htmlFor="message">{t('pages.ContactUs.ContactForm.MessageLabel')}</label>
-            <textarea id="message" name="message" value={formData.message} onChange={handleChange}></textarea>
+          <div className="contact-form-field">
+            <label className="contact-form-label" htmlFor="message">{t('pages.ContactUs.ContactForm.MessageLabel')}</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder={t('pages.ContactUs.ContactForm.MessageLabel')}
+              aria-label={t('pages.ContactUs.ContactForm.MessageLabel')}
+              required
+            ></textarea>
           </div>
           <button type="submit" disabled={!hasEmailJsConfig || submitState.status === 'loading'}>
             {submitState.status === 'loading' ? 'Sending...' : t('pages.ContactUs.ContactForm.SendButton')}
