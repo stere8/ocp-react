@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet';
 import { Button } from 'react-bootstrap';
 import { useProfileContent } from '../content/profileContent';
 import { useBookingModal } from '../context/BookingModalContext';
+import runtimeConfig, { hasEmailJsConfig } from '../config/runtimeConfig';
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -15,6 +16,12 @@ const Contact = () => {
     from_name: '',
     from_email: '',
     message: ''
+  });
+  const [submitState, setSubmitState] = useState({
+    status: 'idle',
+    message: hasEmailJsConfig
+      ? ''
+      : 'This form is temporarily unavailable. Please use the direct contact links or book a discovery call.'
   });
 
   const handleChange = (e) => {
@@ -28,19 +35,39 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!hasEmailJsConfig) {
+      setSubmitState({
+        status: 'error',
+        message: 'This form is temporarily unavailable. Please use the direct contact links or book a discovery call.'
+      });
+      return;
+    }
+
+    setSubmitState({ status: 'loading', message: 'Sending your message...' });
+
     emailjs.send(
-      'service_njpumpf', // Replace with your EmailJS service ID
-      'template_cmtkw4k', // Replace with your EmailJS template ID
+      runtimeConfig.emailjs.serviceId,
+      runtimeConfig.emailjs.templateId,
       formData,
-      'jbwNUbuZVBETFQtqM' // Replace with your EmailJS user ID
+      runtimeConfig.emailjs.publicKey
     )
-      .then((response) => {
-        console.log('Email sent successfully!', response.status, response.text);
-        alert('Email sent successfully!');
+      .then(() => {
+        setSubmitState({
+          status: 'success',
+          message: 'Your message was sent successfully.'
+        });
+        setFormData({
+          from_name: '',
+          from_email: '',
+          message: ''
+        });
       })
       .catch((error) => {
         console.error('Failed to send email:', error);
-        alert('Failed to send email.');
+        setSubmitState({
+          status: 'error',
+          message: 'Sending failed. Please try again or use the direct contact links.'
+        });
       });
   };
 
@@ -106,6 +133,11 @@ const Contact = () => {
           <h2>{t('pages.ContactUs.LetsConnectHeading')}</h2>
           <p>{t('pages.ContactUs.ContactFormDescription')}</p>
           <p>{t('pages.ContactUs.contactMessage')}</p>
+          {submitState.message ? (
+            <p className={`contact-form-status contact-form-status--${submitState.status}`} role="status">
+              {submitState.message}
+            </p>
+          ) : null}
 
           <div>
             <label htmlFor="name">{t('pages.ContactUs.ContactForm.YourNameLabel')}</label>
@@ -119,7 +151,9 @@ const Contact = () => {
             <label htmlFor="message">{t('pages.ContactUs.ContactForm.MessageLabel')}</label>
             <textarea id="message" name="message" value={formData.message} onChange={handleChange}></textarea>
           </div>
-          <button type="submit">{t('pages.ContactUs.ContactForm.SendButton')}</button>
+          <button type="submit" disabled={!hasEmailJsConfig || submitState.status === 'loading'}>
+            {submitState.status === 'loading' ? 'Sending...' : t('pages.ContactUs.ContactForm.SendButton')}
+          </button>
         </form>
       </section>
     </div>
