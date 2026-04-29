@@ -1,0 +1,62 @@
+.status-page {
+  display: grid;
+  min-height: calc(100vh - var(--layout-top-offset, 0px));
+  align-items: center;
+  padding: 2rem 0 3rem;
+}
+
+.status-page__card {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(11, 61, 145, 0.12), transparent 28%),
+    var(--hero-gradient);
+  box-shadow: var(--shadow-strong);
+  text-align: left;
+}
+
+.status-page__card h1 {
+  max-width: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  color: var(--text-primary);
+  line-height: 1.08;
+}
+
+.status-page__card p {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.status-page__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.status-page__actions .btn {
+  min-width: 190px;
+}
+
+@media (max-width: 768px) {
+  .status-page {
+    padding: calc(var(--layout-top-offset, 60px) + 1rem) 0 2rem;
+  }
+
+  .status-page__card {
+    padding: 2rem 1.2rem;
+    border-radius: 22px;
+  }
+
+  .status-page__actions .btn {
+    width: 100%;
+  }
+}

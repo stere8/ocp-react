@@ -34,9 +34,17 @@
         },
         "error": {
           "type": "object",
-          "required": ["fallbackMessage"],
+          "required": ["fallbackMessage", "eyebrow", "runtimeTitle", "runtimeMessage", "notFoundTitle", "notFoundMessage", "homeCta", "contactCta", "reloadCta"],
           "properties": {
-            "fallbackMessage": { "type": "string" }
+            "fallbackMessage": { "type": "string" },
+            "eyebrow": { "type": "string" },
+            "runtimeTitle": { "type": "string" },
+            "runtimeMessage": { "type": "string" },
+            "notFoundTitle": { "type": "string" },
+            "notFoundMessage": { "type": "string" },
+            "homeCta": { "type": "string" },
+            "contactCta": { "type": "string" },
+            "reloadCta": { "type": "string" }
           }
         },
         "header": {
