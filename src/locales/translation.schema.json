@@ -67,12 +67,10 @@
             "DownloadDropDown": { "type": "string" },
             "CVOptions": {
               "type": "object",
-              "required": ["CV_NET_EN", "CV_NET_PL", "CV_PYTHON_EN", "CV_PYTHON_PL"],
+              "required": ["CV_EN", "CV_PL"],
               "properties": {
-                "CV_NET_EN": { "type": "string" },
-                "CV_NET_PL": { "type": "string" },
-                "CV_PYTHON_EN": { "type": "string" },
-                "CV_PYTHON_PL": { "type": "string" }
+                "CV_EN": { "type": "string" },
+                "CV_PL": { "type": "string" }
               }
             }
           }

@@ -37,10 +37,8 @@
       "LanguageLabel": "Idioma",
       "DownloadDropDown": "Descargar CV",
       "CVOptions": {
-        "CV_NET_EN": "CV .NET EN",
-        "CV_NET_PL": "CV .NET PL",
-        "CV_PYTHON_EN": "CV Python EN",
-        "CV_PYTHON_PL": "CV Python PL"
+        "CV_EN": "CV completo EN",
+        "CV_PL": "CV completo PL"
       },
       "MenuToggleLabel": "Abrir men? de navegaci?n",
       "SidebarCloseLabel": "Cerrar men? de navegaci?n",
