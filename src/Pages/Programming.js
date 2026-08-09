@@ -104,7 +104,7 @@ const Programming = () => {
                             <p>I'm always learning and experimenting. If you have a project in mind, or just want to
                                 connect<Link className="nav-link" to="/contact">let's connect!</Link> also feel free
                                 to <a
-                                    href="/docs/CV - Oreste BO+(EN).pdf" download="CV Oreste TWIZEYIMANA">Download my
+                                    href="/doc/Oreste%20Twizeyimana%20%E2%80%94%20Comprehensive%20CV.pdf" download="Oreste Twizeyimana Comprehensive CV">Download my
                                     CV</a> to learn more about my experience and skills.</p>
                         </div>
                         <h1>{t('programming.projectsTitle')}</h1>

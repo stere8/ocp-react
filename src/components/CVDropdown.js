@@ -28,10 +28,8 @@ const CVDropdown = () => {
                     {t('pages.header.DownloadDropDown')}
                 </option>
 
-                <option value="/doc/CV_NET_EN.pdf">{t('pages.header.CVOptions.CV_NET_EN')}</option>
-                <option value="/doc/CV_NET_PL.pdf">{t('pages.header.CVOptions.CV_NET_PL')}</option>
-                <option value="/doc/CV_PYTHON_EN.pdf">{t('pages.header.CVOptions.CV_PYTHON_EN')}</option>
-                <option value="/doc/CV_PYTHON_PL.pdf">{t('pages.header.CVOptions.CV_PYTHON_PL')}</option>
+                <option value="/doc/Oreste%20Twizeyimana%20%E2%80%94%20Comprehensive%20CV.pdf">{t('pages.header.CVOptions.CV_EN')}</option>
+                <option value="/doc/Oreste%20Twizeyimana%20%E2%80%94%20Kompleksowe%20CV__Compress.pdf">{t('pages.header.CVOptions.CV_PL')}</option>
             </select>
         </div>
     );
